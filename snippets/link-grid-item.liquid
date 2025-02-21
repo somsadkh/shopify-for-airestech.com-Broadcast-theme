@@ -1,0 +1,74 @@
+{% comment %}
+Renders list of links in grid layout
+
+Accepts:
+
+- img: Image Object,
+- label: String,
+- star_count: Integer,
+- title: String,
+- sub_title: String,
+- description: String,
+- link_text: String,
+- link_url: Url
+
+Usage:
+{% render 'link-grid-item', 
+img: link.settings.img,
+img_mobile:link.settings.img_mobile,
+label: link.settings.label,
+star_count: link.settings.star_count,
+title: link.settings.title,
+sub_title: link.settings.sub_title,
+description: link.settings.description,
+link_text: link.settings.link_text,
+link_url: link.settings.link_url
+%}
+
+{% endcomment %}
+
+
+<div class="grid-link-item">
+  <div class="grid-link-item__wrapper">
+    {% if img != blank %}
+      <a href="{{ link_url }}" class="grid-link-item__img {% if img_mobile != blank %} with-mobile-img {% endif %}">
+        {%- render 'image' image: img, aspect_ratio: 0.98 -%}
+
+        {% if img_mobile != blank %}
+          {%- render 'image' image: img_mobile, aspect_ratio: 0.98 -%}
+        {% endif %}
+
+        {% if label != blank %}
+          <div class="grid-link-item__label" style="--fz:{{ label_size }}px;--fz-mobile:{{ label_size_mobile }}px;">{{ label }}</div>
+        {% endif %}
+      </a>
+    {% endif %}
+
+    <div class="grid-link-item__content">
+      {% if star_count > 0 %}
+        <div class="grid-link-item__stars">
+          {% render 'review-stars', star_count: star_count %}
+        </div>
+      {% endif %}
+
+      {% if title != blank %}
+        <h5 class="grid-link-item__title" style="--fz:{{ title_size }}px;--fz-mobile:{{ title_size_mobile }}px;">{{ title }}</h5>
+      {% endif %}
+
+      {% if sub_title != blank %}
+        <div class="grid-link-item__sub-title" style="--fz:{{ sub_title_size }}px;--fz-mobile:{{ sub_title_size_mobile }}px;">{{ sub_title }}</div>
+      {% endif %}
+
+      {% if description != blank %}
+        <div class="grid-link-item__description" style="--fz:{{ text_size }}px;--fz-mobile:{{ text_size_mobile }}px;">{{ description }}</div>
+      {% endif %}
+
+      {% if link_text != blank %}
+        <a
+          href="{{ link_url }}"
+          class="grid-link-item__link btn btn--solid btn--secondary"
+          style="--fz:{{ link_size }}px;--fz-mobile:{{ link_size_mobile }}px;">{{ link_text }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

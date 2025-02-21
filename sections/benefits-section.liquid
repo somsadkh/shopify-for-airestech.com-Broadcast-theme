@@ -1,0 +1,293 @@
+{{ "benefits-section.css" | asset_url | stylesheet_tag }}
+
+<style>
+    .benefits--{{ section.id }} {
+        --PT: {{ section.settings.padding_top }}px;
+        --PB: {{ section.settings.padding_bottom }}px;
+    }
+    @media screen and (max-width: 990px){
+        .benefits__header--title.{{ section.id }} {
+            font-size: {{ section.settings.fs_title_mob }}px !important;
+        }
+        .benefits__header--text.{{ section.id }} {
+            font-size: {{ section.settings.fs_text_mob }}px !important;
+        }
+    }
+</style>
+
+<section class="benefits benefits--{{ section.id }} section-padding">
+    <div class="benefits__wrapper">
+        <div class="benefits__header {% if section.settings.center_text %}center{% endif %}" style="max-width:{{ section.settings.content_max_width }}px;">
+            <div class="benefits__header--title {{ section.id }}" style="color: {{ section.settings.color_title }};font-size: {{ section.settings.fs_title }}px;">{{ section.settings.title }}</div>
+            <div class="benefits__header--text {{ section.id }}" style="color: {{ section.settings.color_text }};font-size: {{ section.settings.fs_text }}px;">{{ section.settings.text }}</div>
+        </div>
+        <div class="benefits__slider">
+            <div class="benefits__slider--swiper swiper">
+                <div class="swiper-wrapper">
+                    {%- for block in section.blocks -%}
+                        <div class="swiper-slide">
+                            <style>
+                                @media screen and (max-width: 990px){
+                                    .benefits__slider--title.{{ block.id }} {
+                                        font-size: {{ block.settings.fs_title_mob }}px !important;
+                                    }
+                                    .benefits__slider--text.{{ block.id }} {
+                                        font-size: {{ block.settings.fs_text_mob }}px !important;
+                                    }
+                                    .benefits__slider--image.{{ block.id }}{
+                                        max-width:{{ block.settings.content_max_width_mob }}% !important;
+                                    }
+                                }
+                            </style>
+                            <div class="benefits__slider--image {{ block.id }}" style="max-width:{{ block.settings.content_max_width }}%;">
+                                <img lazy src="{{ block.settings.img | img_url: "master" }}" alt="{{ block.settings.img.alt }}">
+                            </div>
+                            <div class="benefits__slider--title {{ block.id }}" style="color: {{ block.settings.color_title }};font-size: {{ block.settings.fs_title }}px;">{{ block.settings.title }}</div>
+                            <div class="benefits__slider--text {{ block.id }}" style="color: {{ block.settings.color_text }};font-size: {{ block.settings.fs_text }}px;">{{ block.settings.text }}</div>
+                        </div>
+                    {%- endfor -%}
+                </div>
+                <div class="benefits__slider--pagination swiper-pagination"></div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var swiper = new Swiper(".benefits__slider--swiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        pagination: {
+            el: ".benefits__slider--pagination",
+        },
+        breakpoints: {
+        "1": {
+          slidesPerView: 1.7,
+          spaceBetween: 40,
+        },
+        "450": {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        "990": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "1200": {
+          slidesPerView: 4.5,
+          spaceBetween: 48,
+          slidesPerGroup: 1,
+        },
+      },
+    });
+  </script>
+
+{% schema %}
+  {
+    "name": "Benefits section",
+    "settings": [
+        {
+            "type": "range",
+            "id": "content_max_width",
+            "min": 250,
+            "max": 1000,
+            "step": 15,
+            "unit": "px",
+            "label": "Content max width",
+            "default": 760
+        },
+      {
+        "type": "checkbox",
+        "id": "center_text",
+        "label": "Center text",
+        "default": false
+      },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "color",
+            "id": "color_title",
+            "label": "Color title",
+            "default": "#000000"
+        },
+        {
+            "type": "range",
+            "id": "fs_title",
+            "min": 10,
+            "max": 60,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size title",
+            "default": 48
+        },
+        {
+            "type": "range",
+            "id": "fs_title_mob",
+            "min": 8,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size title mobile",
+            "default": 40
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "color",
+            "id": "color_text",
+            "label": "Color text",
+            "default": "#000000"
+        },
+        {
+            "type": "range",
+            "id": "fs_text",
+            "min": 10,
+            "max": 60,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size text",
+            "default": 48
+        },
+        {
+            "type": "range",
+            "id": "fs_text_mob",
+            "min": 8,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size text mobile",
+            "default": 40
+        },
+        {
+            "type": "header",
+            "content": "Padding"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Top",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Bottom",
+            "default": 50
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Benefit item",
+            "type": "item",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "img",
+                    "label": "Image"
+                },
+                {
+                    "type": "range",
+                    "id": "content_max_width",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "label": "Image max width",
+                    "default": 100
+                },
+                {
+                    "type": "range",
+                    "id": "content_max_width_mob",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "unit": "%",
+                    "label": "Image max width mobile",
+                    "default": 50
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "color",
+                    "id": "color_title",
+                    "label": "Color title",
+                    "default": "#000000"
+                },
+                {
+                    "type": "range",
+                    "id": "fs_title",
+                    "min": 10,
+                    "max": 60,
+                    "step": 1,
+                    "unit": "px",
+                    "label": "Font size title",
+                    "default": 19
+                },
+                {
+                    "type": "range",
+                    "id": "fs_title_mob",
+                    "min": 8,
+                    "max": 40,
+                    "step": 1,
+                    "unit": "px",
+                    "label": "Font size title mobile",
+                    "default": 19
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "Text"
+                },
+                {
+                    "type": "color",
+                    "id": "color_text",
+                    "label": "Color text",
+                    "default": "#000000"
+                },
+                {
+                    "type": "range",
+                    "id": "fs_text",
+                    "min": 10,
+                    "max": 60,
+                    "step": 1,
+                    "unit": "px",
+                    "label": "Font size text",
+                    "default": 16
+                },
+                {
+                    "type": "range",
+                    "id": "fs_text_mob",
+                    "min": 8,
+                    "max": 40,
+                    "step": 1,
+                    "unit": "px",
+                    "label": "Font size text mobile",
+                    "default": 16
+                },
+            ],
+        }
+    ],
+    "presets": [
+      {
+        "name": "Benefits section"
+      }
+    ]
+  }
+{% endschema %}

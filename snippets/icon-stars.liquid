@@ -1,0 +1,42 @@
+<!-- snippets/component__icon.liquid -->
+{% comment %}
+  All available icons can be rendered from this snippet.
+
+  Accepts:
+    - icon: string of icon to render
+    - size: number to set the width and height of the icon
+    - class: string of classes to add to the icon container
+
+  Usage:
+    {% render 'component__icon',
+      icon: 'minus',
+      size: '14',
+      class: '' %}
+
+  Possible enhancements:
+    - Add support for more icon styles.
+    - Add support documentation to upload custom icons.
+
+  Pro tips:
+    - Icons will display inline using text color.
+{% endcomment %}
+
+<span class="flex align-middle {{ class }}" aria-hidden="true">
+  {% case icon %}
+    {% when 'star' %}
+      <?xml version="1.0" encoding="UTF-8"?>
+        <svg xmlns="http://www.w3.org/2000/svg" width="{{ size }}" height="{{ size }}" viewBox="0 0 11 11" fill="none">
+    <path d="M5.2912 1.05753C5.43708 0.60855 6.07226 0.608551 6.21814 1.05753L7.12231 3.84027C7.18755 4.04106 7.37466 4.177 7.58578 4.177L10.5117 4.177C10.9838 4.177 11.1801 4.7811 10.7982 5.05858L8.43103 6.77841C8.26023 6.90251 8.18876 7.12247 8.254 7.32326L9.15817 10.106C9.30405 10.555 8.79018 10.9283 8.40825 10.6508L6.04111 8.93102C5.87031 8.80692 5.63903 8.80692 5.46823 8.93102L3.10109 10.6508C2.71916 10.9283 2.20529 10.555 2.35117 10.106L3.25534 7.32326C3.32058 7.12247 3.24911 6.90251 3.07831 6.77841L0.711164 5.05858C0.329241 4.7811 0.525524 4.177 0.997607 4.177L3.92355 4.177C4.13468 4.177 4.32179 4.04106 4.38703 3.84027L5.2912 1.05753Z" fill="currentColor"/>
+  </svg>
+    {% when 'star-half' %}
+      <svg width="{{ size }}" height="{{ size }}" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.9985 0.74L15.3076 7.44497L22.7069 8.52016L17.3527 13.7392L18.6167 21.1087L11.9985 17.6293L5.38028 21.1087L6.64424 13.7392L1.29 8.52016L8.68937 7.44497L11.9985 0.74ZM11.9985 5.2591V15.3698L15.9604 17.4527L15.2037 13.041L18.409 9.91664L13.9794 9.27298L11.9985 5.2591Z"
+                fill="currentColor"/>
+          </svg>
+    {% when 'star-empty' %}
+    <svg xmlns="http://www.w3.org/2000/svg" width="{{ size }}" height="{{ size }}" viewBox="0 0 11 11" fill="none">
+<path d="M4.93963 0.795321C5.08551 0.346343 5.7207 0.346344 5.86658 0.795321L6.77075 3.57806C6.83599 3.77885 7.0231 3.9148 7.23422 3.9148L10.1602 3.9148C10.6323 3.9148 10.8285 4.51889 10.4466 4.79638L8.07947 6.5162C7.90867 6.6403 7.8372 6.86026 7.90244 7.06105L8.80661 9.84379C8.95249 10.2928 8.43861 10.6661 8.05669 10.3886L5.68955 8.66881C5.51875 8.54471 5.28747 8.54471 5.11666 8.66881L2.74952 10.3886C2.3676 10.6661 1.85373 10.2928 1.99961 9.84379L2.90377 7.06105C2.96901 6.86026 2.89754 6.6403 2.72674 6.5162L0.359602 4.79638C-0.0223215 4.51889 0.173961 3.9148 0.646044 3.9148L3.57199 3.9148C3.78311 3.9148 3.97023 3.77885 4.03547 3.57806L4.93963 0.795321Z" fill="currentColor" fill-opacity="0.5"/>
+</svg>
+  {% endcase %}
+</span>

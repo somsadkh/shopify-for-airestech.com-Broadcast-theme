@@ -1,0 +1,367 @@
+{% schema %}
+{
+  "name": "Collection Banner",
+  "class": "section section-overlay-header",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>The World's Most Tested, Trusted And Scientifically Proven EMF Protection</p>"
+    },
+    {
+      "type": "number",
+      "id": "heading_width",
+      "label": "Heading Width",
+      "default": 435
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_center",
+      "label": "Centered heading",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_center_mobile",
+      "label": "Centered heading mobile",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mobile",
+      "label": "Background Image Mobile"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color Desktop",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "background_color_mobile",
+      "label": "Background Color Desktop",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color_mobile",
+      "label": "Text Color Mobile",
+      "default": "#1B1A20"
+    },
+    {
+      "type": "color",
+      "id": "stats_color",
+      "label": "Stats Number Color",
+      "default": "#FCD34D"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading Font Size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading Font Size",
+      "min": 12,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat Item",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Stat Number",
+          "default": "22"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Stat Text",
+          "default": "<p>Patented Technologies</p>"
+        },
+        {
+          "type": "range",
+          "id": "number_size",
+          "label": "Number Font Size",
+          "min": 20,
+          "max": 80,
+          "step": 2,
+          "unit": "px",
+          "default": 32
+        },
+        {
+          "type": "range",
+          "id": "number_size_mobile",
+          "label": "Number Font Size Mobile",
+          "min": 10,
+          "max": 80,
+          "step": 2,
+          "unit": "px",
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "text_size",
+          "label": "Text Font Size",
+          "min": 12,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "text_size_mobile",
+          "label": "Text Font Size Mobile",
+          "min": 6,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "default": 12
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stats Banner",
+      "blocks": [
+        {
+          "type": "stat"
+        },
+        {
+          "type": "stat"
+        },
+        {
+          "type": "stat"
+        },
+        {
+          "type": "stat"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<section class="collection-banner collection-image-with-title section-padding "
+         data-section-id="{{ section.id }}"
+         data-section-type="collection-image-with-title"
+>
+  <div class="collection-banner__image">
+    {%- render 'image-hero', image: section.settings.background_image_mobile, sizes: '(min-width: 750px) 50vw, calc(100vw - 32px)', desktop_height: section.settings.height, mobile_height: section.settings.mobile_height, show_backfill: false -%}
+  </div>
+  <div class="wrapper--full-padded collection-banner__wrapper">
+    <h2 class="collection-banner__heading {% if section.settings.heading_center %}text-center-pc{% endif %} {% if section.settings.heading_center_mobile %}text-center-mobile{% endif %}">
+      {{ section.settings.heading }}
+    </h2>
+
+    <div class="collection-banner__grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'stat' %}
+          <style>
+            #block-{{ block.id }} .collection-banner__text{
+							font-size: {{ block.settings.text_size }}px;
+            }
+            #block-{{ block.id }} .collection-banner__number{
+							font-size: {{ block.settings.number_size }}px;
+							color: {{ section.settings.stats_color }}
+            }
+
+            @media screen and (max-width: 749px){
+							#block-{{ block.id }} .collection-banner__text{
+								font-size: {{ block.settings.text_size_mobile }}px;
+							}
+							#block-{{ block.id }} .collection-banner__number{
+								font-size: {{ block.settings.number_size_mobile }}px;
+							}
+            }
+          </style>
+          <div id="block-{{ block.id }}" class="collection-banner__item" {{ block.shopify_attributes }}>
+            <div class="collection-banner__number">
+              {{ block.settings.number }}
+            </div>
+            <div class="collection-banner__text">
+              {{ block.settings.text }}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+	.collection-banner {
+		position: relative;
+		width: 100%;
+		background-repeat: no-repeat;
+
+		background-color: {{ section.settings.background_color }};
+		padding-top: {{ section.settings.padding_top }}px;
+		padding-bottom: {{ section.settings.padding_bottom }}px;
+		color: {{ section.settings.text_color }};
+  {% if section.settings.background_image %} background-image: url('{{ section.settings.background_image | image_url: width: 2000 }}');
+		background-size: cover;
+		background-position: center;
+  {% endif %}
+	}
+
+	.collection-banner__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 52px;
+	}
+
+	.collection-banner__image {
+		height: 200px;
+		display: none;
+	}
+
+	.collection-banner__heading {
+		margin: 0;
+		/*font-family: "Practical Grotesk";*/
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 43.2px */
+		text-transform: capitalize;
+		font-size: {{ section.settings.heading_size | default: 36 }}px;
+		color: {{ section.settings.text_color }};
+		max-width: {{ section.settings.heading_width | default: 600 }}px;
+    {% if section.settings.heading_center %}
+      text-align:center;
+    {% else %}
+      text-align:left;
+    {% endif %}
+	}
+
+	.collection-banner__heading > * {
+		margin: 0;
+	}
+
+	.collection-banner__grid {
+		display: inline-flex;
+		text-align: center;
+		gap: 18px;
+	}
+
+	.collection-banner__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 110px;
+	}
+
+	.collection-banner__number {
+		color: #BF9B30;
+		text-align: center;
+		/*font-family: "Practical Grotesk";*/
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 150%;
+	}
+
+	.collection-banner__text {
+		text-align: center;
+		/*font-family: "Practical Grotesk";*/
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 355;
+		line-height: 100%;
+	}
+
+	.collection-banner__text > * {
+		margin: 0;
+	}
+
+	.collection-banner__wrapper{
+		flex-wrap: wrap;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.collection-banner {
+			padding-block: 0;
+			background-image: none;
+			background-color: {{ section.settings.background_color_mobile }};
+			color: {{ section.settings.text_color_mobile }};
+			border-bottom: 1px solid #000;
+		}
+
+    .collection-banner__heading{
+			color: {{ section.settings.text_color_mobile }};
+			font-size: {{ section.settings.heading_size_mobile }}px;
+      {% if section.settings.heading_center_mobile %}
+        text-align:center;
+      {% else %}
+        text-align:left;
+      {% endif %}
+    }
+
+
+		.collection-banner__image {
+			height: 350px;
+			display: flex;
+		}
+
+		.collection-banner__wrapper{
+			flex-direction: column;
+      padding-block: 24px;
+      gap: 24px;
+    }
+	}
+
+	@media screen and (max-width: 749px) {
+		.collection-banner__image {
+			height: 200px;
+		}
+	}
+
+</style>

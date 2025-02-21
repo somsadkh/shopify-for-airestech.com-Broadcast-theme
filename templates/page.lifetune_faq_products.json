@@ -1,0 +1,420 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_accordion_group_qREFhM": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "heading_Vwpb4R": {
+          "type": "heading",
+          "settings": {
+            "title": "Aires Tech - FAQ"
+          }
+        },
+        "question_i6XTVb": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What does modulate mean?",
+            "content": "<p>Modulate simply means to alter or transform. Specific to EMF, modulating involves changing the amplitude or frequency of a wave to a more biologically friendly form. That’s how we eliminate the harmful effects of radiation from your devices!<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_EzUQAx": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Do the Aires Lifetune products need to be charged or cleansed?",
+            "content": "<p>Nope! Our products are powered by the surrounding sources of electromagnetic radiation (aka energy!)<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_C9iFED": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Where can I find the peer-reviewed studies and why do they matter?",
+            "content": "<p>On our technology page! We’ve made free versions accessible for our customers on our site. Peer-reviewed studies are significant in the fact that not only was the initial study\/research done on the subject, but peers in the respective industry reviewed and gave their 'stamp of approval' on the findings from said research. Learn more about peer-reviewed studies vs. third-party testing and why they are not equal in validation.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_gzwiCP": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "How do I verify it works?",
+            "content": "<p>Many are puzzled as to why EMF meters remain unchanged when using Aires products. While EMF meters are fantastic for pinpointing areas of high EMR in homes, workplaces, and vehicles (ideal spots for your Aires products), they don't measure the effectiveness of the Aires device itself. The key to understanding this lies in the unique operating principle of our products: modulation.Aires technology doesn't simply block EMFs in the conventional sense. Instead, it modulates, transforming radiation rather than eliminating it. This means our devices aim to lessen the biological effects of EMFs, while still ensuring other electronic gadgets work as intended. This also clarifies why traditional EMF meters don't serve as an indicator of our product's performance, since the true measure of effectiveness is its impact on the human body, not just the radiation levels in a given space.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_9rAc6Q": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What does nanotechnology mean?",
+            "content": "<p>You will see us use this word to describe our product. The term however may not be present in our literature or patents. That’s because the more technical name for the core of our product is a “circular diffraction lattice”. We adopted the term nanotechnology to more simply describe it because it is a technical device, developed with physics, at a scale that is so small its intricacies are invisible to the human eye. <\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_wXWFeU": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Why are patents important?",
+            "content": "<p>The process of submitting, approval and obtaining patents for both design and function are rigorous, costly processes. Over the course of two decades we have filed patents for our design, for each evolution of our products, as well as for our invention and function of the technology that Lifetune possesses. This is important for many reasons, and not only for intellectual property protection but to verify the extensive research, scientific study and development of our technology to the world.<br\/><br\/>Historical patents for our invention and therefore the function of our technology were registered in Russia, where it was developed (see list below for invention). As we have grown, we have filed industrial design patents in other countries (available on our technology page). Improvements in the technology and growth as a company led to us filing with the WIPO for a utility patent<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        },
+        "question_d6KNLB": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What does the EEG Brain Scan show with Aires Lifetune?",
+            "content": "<p>The demonstration was led by Dr. Nicholas Dogris, Ph.D., BCN, QEEG-D. Dr. Dogris brings a wealth of knowledge from his extensive work in neurostimulation and neuromodulation. Importantly, Dr. Dogris approached this demonstration without any prior exposure to Aires Tech, ensuring an unbiased and professional evaluation. His sole task was to perform standard EEG and qEEG tests, comparing results with and without the use of Aires devices.<br\/><br\/>The brain scan, known as EEG, was utilized to depict neuron activity in the brain, illustrated by distinct colors in the brain images. These colors provide a comparison of the individual's EEG data to the average scores (z-scores) of a similar age and gender demographic. Specifically:<br\/><br\/>Red, orange, and yellow indicate heightened activity.<br\/><br\/>Greens represent the norm.<br\/><br\/>Blues signify reduced activity.<br\/><br\/>Though our primary focus wasn't on measuring heat, the EEG's analysis, termed qEEG, allowed Dr. Dogris to share insights on the potential impacts of tissue heating on the brain. You're invited to view his comprehensive analysis of the demonstration here.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_Vwpb4R",
+        "question_i6XTVb",
+        "question_EzUQAx",
+        "question_C9iFED",
+        "question_gzwiCP",
+        "question_9rAc6Q",
+        "question_wXWFeU",
+        "question_d6KNLB"
+      ],
+      "settings": {
+        "heading_font_size": "heading-large",
+        "question_font_size": "heading-x-small",
+        "width": "wrapper",
+        "columns": "1",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_sidebar_3HbWzw": {
+      "type": "section-sidebar",
+      "blocks": {
+        "header_TYmDye": {
+          "type": "header",
+          "settings": {
+            "title": "Lifetune One"
+          }
+        },
+        "accordion_kx7MfC": {
+          "type": "accordion",
+          "settings": {
+            "title": "Will my phone case fit on my cell phone after attaching the Lifetune One?",
+            "content": "<p>The device can be placed either on the phone case or the actual device itself. If you place your Lifetune One on the device itself, a phone case will not fit over the phone and device as the One is slightly raised like a bubble. You can place the One on phone case without any trouble, but due to having an adhesive it won't be able to transfer from one case to another for multiple uses.<\/p>"
+          }
+        },
+        "accordion_gEejez": {
+          "type": "accordion",
+          "settings": {
+            "title": "What is the effective range of the Lifetune One?",
+            "content": "<p>The effective coverage diameter is 19 feet (5.5 meters)<br\/><\/p>"
+          }
+        },
+        "accordion_BRHxwj": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can the Aires Lifetune One be reapplied on another device?",
+            "content": "<p>Yes, the Aires Lifetune One can be reapplied to either the same device or a new one. Its design includes two extra adhesive stickers to make reapplication simple and secure, even if the original adhesive wears down.<br\/><br\/><strong>Reapplying to the Same Device:<\/strong><\/p><ul><li>Clean the device’s surface to remove any residue or dust.<\/li><li>Remove the old adhesive from the Lifetune One.<\/li><li>Attach a new adhesive sticker to the back of the Lifetune One.<\/li><li>Press the Lifetune One firmly onto the device.<\/li><\/ul><p><strong>Moving to a New Device<\/strong><\/p><ul><li>Gently remove the Lifetune One from the original device.<\/li><li>Clean the surface of the new device.<\/li><li>Attach a fresh adhesive sticker to the back of the Lifetune One.<\/li><li>Secure it onto the new device by pressing firmly.<\/li><\/ul><p>The extra adhesives ensure the Lifetune One stays functional and adaptable to your tech upgrades, keeping you protected wherever life takes you.<\/p>"
+          }
+        },
+        "accordion_jn6aAN": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do I need more than one Lifetune One on each electronic device?",
+            "content": "<p>One unit of the Lifetune One is enough for one small device, such as a cell phone, tablet, Wi-Fi router, etc. For area coverage, we recommend one of our larger devices such as the Lifetune Zone or Lifetune Zone Max.<\/p>"
+          }
+        },
+        "accordion_J3i4yt": {
+          "type": "accordion",
+          "settings": {
+            "title": "How Do I adhere the Lifetune One to my device?",
+            "content": "<p>Clean the surface of the electronic device you wish to attach the One to. Peel the One from the white square backing and press firmly for approximately 30 seconds. Can be attached directly to an electronic device or onto a protective case. The One has a protective polymer coating and is water-resistant.<\/p>"
+          }
+        },
+        "accordion_G6J94D": {
+          "type": "accordion",
+          "settings": {
+            "title": "How do I know if my Aires product is damaged?",
+            "content": "<p>Some signs of damage to look for are any cracks, chips or other wear and tear in or around the Aires silicon resonator chip. In addition, some signs of water damage include droplets\/bubbling either in or around the Aires silicon resonator chip or discolouration of this area.<\/p>"
+          }
+        },
+        "header_Fkp6RY": {
+          "type": "header",
+          "settings": {
+            "title": "Lifetune Go"
+          }
+        },
+        "accordion_jNR3bL": {
+          "type": "accordion",
+          "settings": {
+            "title": "What is the effective range?",
+            "content": "<p>The effective coverage diameter is 32 feet (10 meters)<\/p>"
+          }
+        },
+        "accordion_97ctpe": {
+          "type": "accordion",
+          "settings": {
+            "title": "What is the difference between Go & Flex?",
+            "content": "<p>The main differences between the Lifetune Go & the Lifetune Flex is the size of the microprocessor embedded & the diameter of the protection provided. While the Lifetune Go is slightly smaller in size compared to the Lifetune Flex, so is the microprocessor embedded in the device & the total diameter of protection.<\/p>"
+          }
+        },
+        "accordion_yGzzaj": {
+          "type": "accordion",
+          "settings": {
+            "title": "What comes in the package?",
+            "content": "<p>The Go device and a small military style chain to attach onto a purse, backpack or keychain.<\/p>"
+          }
+        },
+        "accordion_jfg46C": {
+          "type": "accordion",
+          "settings": {
+            "title": "Is the Go waterproof?",
+            "content": "<p>Yes! The Lifetune Go is waterproof, although we don’t recommend having the device submerged for long periods of time.<\/p>"
+          }
+        },
+        "header_fk9eia": {
+          "type": "header",
+          "settings": {
+            "title": "Lifetune Flex"
+          }
+        },
+        "accordion_kkLAxK": {
+          "type": "accordion",
+          "settings": {
+            "title": "What are the dimensions of the Lifetune Flex?",
+            "content": "<p>The product is 35mm (1.37in) in diameter.<\/p>"
+          }
+        },
+        "accordion_m8mYPt": {
+          "type": "accordion",
+          "settings": {
+            "title": "What is the effective range?",
+            "content": "<p>The effective coverage diameter is 48 feet for the Lifetune Flex.<\/p>"
+          }
+        },
+        "accordion_WzWEmj": {
+          "type": "accordion",
+          "settings": {
+            "title": "What is the difference between the Lifetune Flex and Go?",
+            "content": "<p>The main differences between the Lifetune Go & the Lifetune Flex is the size of the microprocessor embedded & the diameter of the protection provided. While the Lifetune Go is slightly smaller in size compared to the Lifetune Flex, so is the microprocessor embedded in the device & the total diameter of protection.<\/p>"
+          }
+        },
+        "accordion_WzHGXh": {
+          "type": "accordion",
+          "settings": {
+            "title": "Is the Lifetune Flex waterproof?",
+            "content": "<p>Yes! The Lifetune Flex is waterproof, although we don’t recommend having the device submerged for long periods of time<\/p>"
+          }
+        },
+        "accordion_WWKMKr": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do I install the Lifetune Flex?",
+            "content": "<p>The Flex does not require installation. It can be carried as is, on the provided key ring, or attached to a chain to be worn as a pendant. The Flex has a protective polymer coating and is water-resistant.<\/p>"
+          }
+        },
+        "accordion_iiNL7R": {
+          "type": "accordion",
+          "settings": {
+            "title": "How to open the Necklace claps of the Lifetune Flex?",
+            "content": "<p>1. Hold the silver parts of the necklace with both hands.<\/p><p>2. Twist them gently, turn one side forward and the other backward, as shown in the image.<\/p><p>3. Be sure to twist gently to avoid any damage.<\/p><p>Once you’ve completed this step, you should be able to pull the parts apart effortlessly.<\/p>"
+          }
+        },
+        "accordion_KR9VGV": {
+          "type": "accordion",
+          "settings": {
+            "title": "How do I know if my Aires product is damaged?",
+            "content": "<p>Some signs of damage to look for are any cracks, chips or other wear and tear in or around the microprocessor. In addition, some signs of water damage include droplets\/bubbling either in or around the microprocessor or discolouration of this area.<\/p>"
+          }
+        },
+        "header_BVJMMN": {
+          "type": "header",
+          "settings": {
+            "title": "Lifetune Zone"
+          }
+        },
+        "accordion_BhPP43": {
+          "type": "accordion",
+          "settings": {
+            "title": "What are the dimensions for the Aires Lifetune Zone?",
+            "content": "<p>The product is 53mm x 53mm x 2mm<\/p>"
+          }
+        },
+        "accordion_K9cMRi": {
+          "type": "accordion",
+          "settings": {
+            "title": "What is the effective range of the Zone?",
+            "content": "<p>The effective range of diameter is 93 ft (28 meters) for the Lifetune Zone<\/p>"
+          }
+        },
+        "accordion_gn6jMd": {
+          "type": "accordion",
+          "settings": {
+            "title": "Does the Lifetune Zone come with a protective case?",
+            "content": "<p>The Lifetune Zone no longer comes with a protective case. We do sell a high quality wood Duo Dock stand for the Zone to set it on.<\/p>"
+          }
+        },
+        "accordion_j4pjWH": {
+          "type": "accordion",
+          "settings": {
+            "title": "How many Zones do I need to protect my home or office?",
+            "content": "<p>One unit of the Lifetune Zone is sufficient enough to offer up to 93 feet in diameter of protection. Additional units may be required if your space is larger than this effective range. That's a circumference of 292 feet, just shy of a 300 sq ft room.<\/p>"
+          }
+        },
+        "accordion_hEDtBr": {
+          "type": "accordion",
+          "settings": {
+            "title": "How do I know if my Aires product is damaged?",
+            "content": "<p>Some signs of damage to look for are any cracks, chips or other wear and tear in or around the Aires silicon resonator chip. In addition, some signs of water damage include droplets\/bubbling either in or around the Aires silicon resonator chip or discolouration of this area.<\/p>"
+          }
+        },
+        "header_MEiPb4": {
+          "type": "header",
+          "settings": {
+            "title": "Lifetune Zone Max"
+          }
+        },
+        "accordion_BbLtfD": {
+          "type": "accordion",
+          "settings": {
+            "title": "What is the effective range?",
+            "content": "<p>The effective coverage diameter is 139 feet (42 meters) for the Zone Max<\/p>"
+          }
+        },
+        "accordion_9XFhWy": {
+          "type": "accordion",
+          "settings": {
+            "title": "What comes in the package for the Aires Lifetune Zone Max?",
+            "content": "<p>The product and installation adhesive.<\/p>"
+          }
+        },
+        "accordion_6P4jme": {
+          "type": "accordion",
+          "settings": {
+            "title": "What are the dimensions of the Lifetune Zone Max?",
+            "content": "<p>The product is 65mm (2.56in) x 122mm (4.80in)<\/p>"
+          }
+        },
+        "accordion_fX9gDY": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do I need to use a protective case with the Zone Max?",
+            "content": "<p>No protective casing is required but we recommend placing it on a secure surface or not near an edge where it will fall, it is fragile.<\/p>"
+          }
+        },
+        "accordion_3eb4df": {
+          "type": "accordion",
+          "settings": {
+            "title": "How do I know if my Aires product is damaged?",
+            "content": "<p>Some signs of damage to look for are any cracks, chips or other wear and tear in or around the Aires silicon resonator chip. In addition, some signs of water damage include droplets\/bubbling either in or around the Aires silicon resonator chip or discolouration of this area.<\/p>"
+          }
+        },
+        "accordion_yqTHXn": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can the Aires Lifetune Zone Max be reinstalled?",
+            "content": "<p>Yes, the Zone Max can be reinstalled multiple times with additional sets of velcro.<\/p>"
+          }
+        },
+        "text_j6bVUb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Send us an email to ask any other questions and someone from our Customer Service team will get back to you as soon as possible. Be sure to include your order number (if you have one).<\/p><p>Please email us at support@airestech.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "header_TYmDye",
+        "accordion_kx7MfC",
+        "accordion_gEejez",
+        "accordion_BRHxwj",
+        "accordion_jn6aAN",
+        "accordion_J3i4yt",
+        "accordion_G6J94D",
+        "header_Fkp6RY",
+        "accordion_jNR3bL",
+        "accordion_97ctpe",
+        "accordion_yGzzaj",
+        "accordion_jfg46C",
+        "header_fk9eia",
+        "accordion_kkLAxK",
+        "accordion_m8mYPt",
+        "accordion_WzWEmj",
+        "accordion_WzHGXh",
+        "accordion_WWKMKr",
+        "accordion_iiNL7R",
+        "accordion_KR9VGV",
+        "header_BVJMMN",
+        "accordion_BhPP43",
+        "accordion_K9cMRi",
+        "accordion_gn6jMd",
+        "accordion_j4pjWH",
+        "accordion_hEDtBr",
+        "header_MEiPb4",
+        "accordion_BbLtfD",
+        "accordion_9XFhWy",
+        "accordion_6P4jme",
+        "accordion_fX9gDY",
+        "accordion_3eb4df",
+        "accordion_yqTHXn",
+        "text_j6bVUb"
+      ],
+      "settings": {
+        "heading_font_size": "heading-medium",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_accordion_group_qREFhM",
+    "section_sidebar_3HbWzw"
+  ]
+}

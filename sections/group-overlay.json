@@ -1,0 +1,93 @@
+{
+  "type": "aside",
+  "name": "Overlay",
+  "sections": {
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "blocks": {
+        "cart-message": {
+          "type": "cart-message",
+          "disabled": true,
+          "settings": {
+            "cart_custom_message_text": "<p>Use coupon code <strong>WELCOME10<\/strong> for 10% off your first order.<\/p>",
+            "cart_custom_message_color": "",
+            "pin_to_bottom": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title": "Your Cart"
+          }
+        },
+        "free-shipping": {
+          "type": "free-shipping",
+          "settings": {
+            "message": "You are ||amount|| away from free shipping.",
+            "free_shipping_gradient": "",
+            "pin_to_bottom": false
+          }
+        },
+        "products": {
+          "type": "products",
+          "settings": {
+            "pin_to_bottom": false
+          }
+        },
+        "upsell-products": {
+          "type": "upsell-products",
+          "settings": {
+            "upsell_auto_open": true,
+            "pin_to_bottom": false
+          }
+        },
+        "order-note": {
+          "type": "order-note",
+          "disabled": true,
+          "settings": {
+            "pin_to_bottom": false
+          }
+        },
+        "gift-note": {
+          "type": "gift-note",
+          "disabled": true,
+          "settings": {
+            "pin_to_bottom": false
+          }
+        },
+        "checkout-buttons": {
+          "type": "checkout-buttons",
+          "settings": {
+            "enable_additional_buttons": true,
+            "show_view_cart_button": false,
+            "pin_to_bottom": false
+          }
+        },
+        "shipping_estimate_p6NAnk": {
+          "type": "shipping-estimate",
+          "disabled": true,
+          "settings": {
+            "pin_to_bottom": false
+          }
+        }
+      },
+      "block_order": [
+        "cart-message",
+        "title",
+        "free-shipping",
+        "products",
+        "upsell-products",
+        "order-note",
+        "gift-note",
+        "checkout-buttons",
+        "shipping_estimate_p6NAnk"
+      ],
+      "settings": {
+        "color_scheme": ""
+      }
+    }
+  },
+  "order": [
+    "cart-drawer"
+  ]
+}

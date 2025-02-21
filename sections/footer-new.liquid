@@ -1,0 +1,426 @@
+{{ "footer.css" | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign languages = false
+  assign countries = false
+  assign show_locale_selector = section.settings.show_locale_selector
+  assign show_country_selector = section.settings.show_country_selector
+  assign show_country_name = section.settings.show_country_name
+  assign show_country_flag = section.settings.show_country_flag
+
+  if show_locale_selector and localization.available_languages.size > 1
+    assign languages = true
+  endif
+
+  if show_country_selector and localization.available_countries.size > 1
+    assign countries = true
+  endif
+
+  capture localization_class
+    echo 'supporting-menu__item supporting-menu__item--localization'
+
+    if lines_and_border.alpha == 0 or lines_and_border == blank
+      echo ' supporting-menu__item--no-borders'
+    endif
+  endcapture
+-%}
+
+<style>
+  @media screen and (max-width: 990px){
+    .footer__newsletter--title.{{ section.id }} {
+      font-size: {{ section.settings.fs_title_mob }}px !important;
+    }
+    .footer__newsletter--text.{{ section.id }} {
+      font-size: {{ section.settings.fs_text_mob }}px !important;
+    }
+    .footer__links--link.{{ section.id }} {
+      font-size: {{ section.settings.fs_list_mob }}px !important;
+    }
+    .footer__image--wrapper.{{ section.id }}{
+      max-width: {{ section.settings.image_width_mob }}% !important; 
+      height: {{ section.settings.image_height_mob }}px !important;
+    }
+  }
+</style>
+
+<footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__info">
+      <div class="footer__newsletter">
+        <div class="footer__newsletter--title {{ section.id }}" style="color: {{ section.settings.color_title }};font-size: {{ section.settings.fs_title }}px;">{{ section.settings.title }}</div>
+        <div class="footer__newsletter--text {{ section.id }}" style="color: {{ section.settings.color_text }};font-size: {{ section.settings.fs_text }}px;">{{ section.settings.text }}</div>
+        {%- render 'newsletter-form' block: section, footer: true -%}
+      </div>
+      <div class="footer__menus">
+        {%- for block in section.blocks -%}
+
+          <style>
+            @media screen and (max-width: 990px){
+              .footer__menus--title.{{ block.id }} {
+                font-size: {{ block.settings.fs_title_mob }}px !important;
+              }
+              .footer__menus--link.{{ block.id }} {
+                font-size: {{ block.settings.fs_list_mob }}px !important;
+              }
+            }
+          </style>
+
+          {%- if block.type == 'menu' -%}
+            <div class="footer__menus--item">
+              <div class="footer__menus--title {{ block.id }}" style="color: {{ block.settings.color_title }};font-size: {{ block.settings.fs_title }}px;">{{ block.settings.title }}</div>
+              <div class="footer__menus--menu">
+                {%- for link in block.settings.menu.links -%}
+                  <a class="footer__menus--link {{ block.id }}" style="color: {{ block.settings.color_list }};font-size: {{ block.settings.fs_list }}px;" href="{{ link.url }}">{{ link.title }}</a>
+                {%- endfor -%}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="footer__image">
+      <div class="footer__image--wrapper {{ section.id }}" style="max-width: {{ section.settings.image_width }}%; height: {{ section.settings.image_height }}px;">
+        {%- if section.settings.image != blank -%}
+          <img lazy src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}">
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="footer__service">
+      <div class="footer__currency">
+        {%- if languages or countries -%}
+          <div class="{{ localization_class }}">
+            {%- render 'localization' unique: section.id, show_locale_selector: show_locale_selector, show_country_selector: show_country_selector, show_country_flag: show_country_flag, show_country_name: show_country_name, class: 'footer', show_icon: true -%}
+          </div>
+        {%- endif -%}
+      </div>
+      <div class="footer__links">
+        {%- for link in section.settings.links.links -%}
+          <a class="footer__links--link {{ section.id }}" style="color: {{ section.settings.color_list }};font-size: {{ section.settings.fs_list }}px;" href="{{ link.url }}">{{ link.title }}</a>
+        {%- endfor -%}
+      </div>
+      <div class="footer__payments">
+        {%- unless shop.enabled_payment_types == empty -%}
+          {%- for type in shop.enabled_payment_types -%}
+            <div class="footer__payments--icon">
+              {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+            </div>
+          {%- endfor -%}
+        {%- endunless -%}
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Newsleter title"
+      },
+      {
+          "type": "color",
+          "id": "color_title",
+          "label": "Color title",
+          "default": "#000000"
+      },
+      {
+          "type": "range",
+          "id": "fs_title",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size title",
+          "default": 16
+      },
+      {
+          "type": "range",
+          "id": "fs_title_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size title mobile",
+          "default": 16
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Newsleter text"
+      },
+      {
+          "type": "color",
+          "id": "color_text",
+          "label": "Color text",
+          "default": "#000000"
+      },
+      {
+          "type": "range",
+          "id": "fs_text",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size text",
+          "default": 16
+      },
+      {
+          "type": "range",
+          "id": "fs_text_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size text mobile",
+          "default": 16
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "range",
+        "id": "image_width",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Max width image",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "image_height",
+        "min": 100,
+        "max": 560,
+        "step": 20,
+        "unit": "px",
+        "label": "Height image",
+        "default": 360
+      },
+      {
+        "type": "range",
+        "id": "image_width_mob",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "label": "Max width image mobile",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "image_height_mob",
+        "min": 50,
+        "max": 350,
+        "step": 10,
+        "unit": "px",
+        "label": "Height image mobile",
+        "default": 110
+      },
+      {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "Join"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_arrow",
+          "label": "Show arrow",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "terms",
+          "label": "Show reCAPTCHA terms",
+          "default": true,
+          "info": "Recommended if your online store preferences have spam protection enabled."
+        },
+        {
+          "type": "header",
+          "content": "Button",
+          "info": "Applies if \"Show name field\" is enabled."
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "Color",
+          "default": "btn--secondary",
+          "info": "Full width button only",
+          "options": [
+            { "value": "btn--black", "label": "Black" },
+            { "value": "btn--white", "label": "White" },
+            { "value": "btn--primary", "label": "Primary" },
+            { "value": "btn--secondary", "label": "Secondary" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_size",
+          "label": "Size",
+          "default": "",
+          "options": [
+            { "label": "Small", "value": "btn--small" },
+            { "label": "Medium", "value": "" },
+            { "label": "Large", "value": "btn--large" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn--solid",
+          "options": [
+            { "label": "Solid", "value": "btn--solid" },
+            { "label": "Outline", "value": "btn--outline" },
+            { "label": "Text", "value": "btn--text" }
+          ]
+        },
+      {
+        "type": "header",
+        "content": "Language selector",
+        "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_locale_selector",
+        "label": "Show language selector",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Country/Region selector",
+        "info": "To add a country/region, go to your [markets settings](/admin/settings/markets)."
+      },
+      {
+        "type": "checkbox",
+        "id": "show_country_selector",
+        "label": "Show country/region selector",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_country_name",
+        "label": "Show country name",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_country_flag",
+        "label": "Show country flag",
+        "default": true
+      },
+      {
+        "type": "link_list",
+        "id": "links",
+        "label": "Bottom menu"
+      },
+      {
+          "type": "color",
+          "id": "color_list",
+          "label": "Color list",
+          "default": "#000000"
+      },
+      {
+          "type": "range",
+          "id": "fs_list",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size list",
+          "default": 16
+      },
+      {
+          "type": "range",
+          "id": "fs_list_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size list mobile",
+          "default": 16
+      },
+    ],
+    "blocks": [
+      {
+        "name": "Menu item",
+        "type": "menu",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+              "type": "color",
+              "id": "color_title",
+              "label": "Color title",
+              "default": "#000000"
+          },
+          {
+              "type": "range",
+              "id": "fs_title",
+              "min": 10,
+              "max": 60,
+              "step": 1,
+              "unit": "px",
+              "label": "Font size title",
+              "default": 16
+          },
+          {
+              "type": "range",
+              "id": "fs_title_mob",
+              "min": 8,
+              "max": 40,
+              "step": 1,
+              "unit": "px",
+              "label": "Font size title mobile",
+              "default": 16
+          },
+          {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Menu"
+          },
+          {
+              "type": "color",
+              "id": "color_list",
+              "label": "Color list",
+              "default": "#000000"
+          },
+          {
+              "type": "range",
+              "id": "fs_list",
+              "min": 10,
+              "max": 60,
+              "step": 1,
+              "unit": "px",
+              "label": "Font size list",
+              "default": 16
+          },
+          {
+              "type": "range",
+              "id": "fs_list_mob",
+              "min": 8,
+              "max": 40,
+              "step": 1,
+              "unit": "px",
+              "label": "Font size list mobile",
+              "default": 16
+          },
+        ],
+      }
+    ],
+    "presets": [
+      {
+        "name": "Footer"
+      }
+    ]
+  }
+{% endschema %}

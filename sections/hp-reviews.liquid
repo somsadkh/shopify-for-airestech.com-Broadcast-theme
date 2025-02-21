@@ -1,0 +1,306 @@
+<!-- @prettify-ignore -->
+
+{{ 'section-hp-reviews.css' | asset_url | stylesheet_tag }}
+
+{%- render 'section-spacing-collapsing', class: '.hp-reviews' -%}
+
+<style>
+  .hp-reviews--{{ section.id }}{
+    background-color: {{ section.settings.bg_color }};
+  }
+</style>
+
+<div class="hp-reviews hp-reviews--{{ section.id }}">
+  <div class="hp-reviews__container">
+    <div class="hp-reviews__header">
+      {% if section.settings.stars_count > 0 %}
+        <div class="hp-reviews__stars">
+          {% render 'review-stars', star_count: section.settings.stars_count %}
+        </div>
+      {% endif %}
+
+      {% if section.settings.title != blank %}
+        <h2 class="section-title" style="--fz:{{ section.settings.title_size }}px;--fz-mobile:{{ section.settings.title_size_mobile }}px;">{{ section.settings.title }}</h2>
+      {% endif %}
+    </div>
+
+    <div class="hp-reviews__body">
+      <div class="hp-reviews__wrapper">
+        {% if section.settings.img != blank %}
+          <div class="hp-reviews__img">
+            {% render 'image', image: section.settings.img, aspect_ratio: 0.81 %}
+          </div>
+        {% endif %}
+        {% for block in section.blocks %}
+          <div class="hp-reviews__row hp-reviews__row-{{ forloop.index }}">
+            <div class="hp-reviews__item">
+              {% if block.settings.stars_count > 0 %}
+                <div class="hp-reviews__item-stars">
+                  {% render 'review-stars', star_count: block.settings.stars_count %}
+                </div>
+              {% endif %}
+
+              {% if block.settings.text != blank %}
+                <div class="hp-reviews__item-text" style="--fz:{{ block.settings.text_size }}px;--fz-mobile:{{ block.settings.text_size_mobile }}px;">{{ block.settings.text }}</div>
+              {% endif %}
+
+              {% if block.settings.name != blank %}
+                <div class="hp-reviews__item-name" style="--fz:{{ block.settings.name_size }}px;--fz-mobile:{{ block.settings.name_size_mobile }}px;">{{ block.settings.name }}</div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="hp-reviews__mobile">
+        {% if section.settings.img != blank %}
+          <div class="hp-reviews__img-mobile">
+            {% render 'image', image: section.settings.img, aspect_ratio: 1.25 %}
+          </div>
+        {% endif %}
+        <div class="hp-reviews__slider swiper">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              <div class="swiper-slide">
+                <div class="hp-reviews__item">
+                {% if block.settings.stars_count > 0 %}
+                  <div class="hp-reviews__item-stars">
+                    {% render 'review-stars', star_count: block.settings.stars_count %}
+                  </div>
+                {% endif %}
+
+                {% if block.settings.text != blank %}
+                  <div class="hp-reviews__item-text" style="--fz:{{ block.settings.text_size }}px;--fz-mobile:{{ block.settings.text_size_mobile }}px;">{{ block.settings.text }}</div>
+                {% endif %}
+
+                {% if block.settings.name != blank %}
+                  <div class="hp-reviews__item-name" style="--fz:{{ block.settings.name_size }}px;--fz-mobile:{{ block.settings.name_size_mobile }}px;">{{ block.settings.name }}</div>
+                {% endif %}
+              </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination hp-reviews__pagination"></div>
+        </div>
+      </div>
+      {% if section.settings.link_text != blank %}
+        {% assign button_style = section.settings.button_style %}
+        <a href="{{ section.settings.link_url }}" class="btn {{ button_style }} {{ section.settings.button_size }} {{ section.settings.button_type }} hp-reviews__btn">{{ section.settings.link_text }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+<script>
+    {
+      const swiper = new Swiper('.hp-reviews--{{ section.id }} .hp-reviews__slider', {
+      loop: false,
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      centeredSlides: true,
+      pagination: {
+        el: '.hp-reviews__pagination',
+      }
+  });
+  }
+</script>
+
+{% schema %}
+  {
+    "name": "HP Reviews",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color"
+      },
+      {
+        "type": "range",
+        "id": "stars_count",
+        "label": "Stars count",
+        "min": 0,
+        "max": 5,
+        "default": 5
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "range",
+        "id": "title_size",
+        "label": "Title size",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "title_size_mobile",
+        "label": "Title size(mobile)",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 32
+      }, 
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      }, {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      }, {
+        "type": "url",
+        "id": "link_url",
+        "label": "Link url"
+      },
+      {
+        "type": "select",
+        "id": "button_type",
+        "label": "Color",
+        "default": "btn--primary",
+        "options": [
+            { "value": "btn--black", "label": "Black" },
+            { "value": "btn--white", "label": "White" },
+            { "value": "btn--primary", "label": "Primary" },
+            { "value": "btn--secondary", "label": "Secondary" }
+        ]
+    },
+    {
+        "type": "select",
+        "id": "button_size",
+        "label": "Size",
+        "default": "",
+        "options": [
+            { "label": "Small", "value": "btn--small" },
+            { "label": "Medium", "value": "" },
+            { "label": "Large", "value": "btn--large" }
+        ]
+    },
+    {
+        "type": "select",
+        "id": "button_style",
+        "label": "Style",
+        "default": "btn--solid",
+        "options": [
+            { "label": "Solid", "value": "btn--solid" },
+            { "label": "Outline", "value": "btn--outline" },
+            { "label": "Text", "value": "btn--text" }
+        ]
+    }, {
+        "type": "paragraph",
+        "content": "Space between template sections(Desktop)"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 0
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 0
+      }, {
+        "type": "paragraph",
+        "content": "Space between template sections(Mobile)"
+      }, {
+        "type": "range",
+        "id": "padding_top_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top mobile",
+        "default": 0
+      }, {
+        "type": "range",
+        "id": "padding_bottom_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "review",
+        "name": "Review",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "range",
+            "id": "stars_count",
+            "label": "Stars count",
+            "min": 0,
+            "max": 5,
+            "default": 5
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "range",
+            "id": "text_size",
+            "label": "Text size",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 14
+          },
+          {
+            "type": "range",
+            "id": "text_size_mobile",
+            "label": "Text size(mobile)",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 14
+          },  {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          },
+          {
+            "type": "range",
+            "id": "name_size",
+            "label": "Name size",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 17
+          },
+          {
+            "type": "range",
+            "id": "name_size_mobile",
+            "label": "Name size(mobile)",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 17
+          }, 
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "HP Reviews"
+      }
+    ]
+  }
+{% endschema %}

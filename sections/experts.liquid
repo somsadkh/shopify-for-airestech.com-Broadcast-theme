@@ -1,0 +1,736 @@
+<!-- /sections/section-blog.liquid -->
+{{ 'experts.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign blog_title = section.settings.title
+  assign color_scheme = 'color-' | append: section.settings.color_scheme
+  assign heading_tag = 'h2'
+  assign expertss_per_row = section.settings.grid
+  assign expertss_per_row_mobile = section.settings.grid_mobile
+  assign link_text = section.settings.link_text
+  assign experts_limit = expertss_per_row | times: section.settings.rows
+  assign show_button = section.settings.show_button
+  assign show_tags = section.settings.show_tags
+  assign columns_medium = 3
+  if expertss_per_row == 2 or expertss_per_row == 4
+    assign columns_medium = 2
+  endif
+  assign is_blog_page = false
+
+  assign aspect_ratio = 1 | divided_by: section.settings.aspect_ratio
+  assign animation_duration = 800
+  assign animation_order = 0
+  assign title_tag = 'h2'
+
+  unless section.settings.heading_tag == 'automatic' or section.settings.heading_tag == blank
+    assign heading_tag = section.settings.heading_tag
+  endunless
+
+  assign button_style = section.settings.button_style
+  if button_style == 'btn--text' and section.settings.show_arrow
+    assign button_style = button_style | append: ' btn--text-no-underline'
+  endif
+-%}
+
+{%- style -%}
+  #Experts--{{ section.id }} {
+  --PT: {{ section.settings.padding_top }}px;
+  --PB: {{ section.settings.padding_bottom }}px;
+
+  --COLUMNS: {{ expertss_per_row }};
+  --COLUMNS-MOBILE: {{ expertss_per_row_mobile }};
+  --COLUMNS-MEDIUM: {{ columns_medium }};
+  }
+  .blog-section__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  #Experts--{{ section.id }} .blog__title {
+  font-size: {{ section.settings.fs_title }}px;
+  }
+  #Experts--{{ section.id }} .btn.btn--top {
+  font-size: {{ section.settings.fs_button }}px;
+  }
+  @media screen and (max-width: 749px){
+  #Experts--{{ section.id }} .blog__title {
+  font-size: {{ section.settings.fs_title_mob }}px;
+  }
+  #Experts--{{ section.id }} .btn.btn--top {
+  font-size: {{ section.settings.fs_button_mob }}px;
+  }
+  }
+{%- endstyle -%}
+
+<section id="Experts--{{ section.id }}"
+         class="{{ section.settings.width }} blog-section section-padding {{ color_scheme }}"
+         data-section-id="{{ section.id }}"
+         data-section-type="blog">
+<div class="blog-section__content">
+  {% if blog_title != blank %}
+  <{{ heading_tag }} class="page__heading blog__title {{ section.settings.heading_font_size }}">{{ blog_title }}
+</{{ heading_tag }}>
+  {% endif %}
+  {%- if link_text != blank -%}
+    {%- assign animation_order = animation_order | plus: 1 -%}
+    <a class="btn btn--top {{ button_style }} {{ section.settings.button_size }} {{ section.settings.button_type }} desktop experts__btn"
+       href="{% if section.settings.link_url != blank %}{{ section.settings.link_url }}{% else %}{{ featured_collection.url }}{% endif %}">
+      <span>{{ link_text | escape }}</span>
+    </a>
+  {%- endif -%}
+</div>
+<div class="grid-outer">
+  <div class="grid blog-listing">
+    {%- for block in section.blocks -%}
+      {%- liquid
+        assign animation_order = animation_order | plus: 1
+
+        if forloop.index > eager_images_limit
+          assign loading = 'lazy'
+        endif
+      -%}
+      <style>
+				.block-{{ block.id }} .experts__title{
+					font-size: {{ block.settings.fs_title }}px;
+        }
+				.block-{{ block.id }} .experts__excerpt{
+					font-size: {{ block.settings.fs_text }}px;
+				}
+				.block-{{ block.id }} .experts__link .btn{
+					font-size: {{ block.settings.fs_button }}px;
+				}
+        @media screen and (max-width: 749px){
+					.block-{{ block.id }} .experts__title{
+						font-size: {{ block.settings.fs_title_mob }}px;
+					}
+					.block-{{ block.id }} .experts__excerpt{
+						font-size: {{ block.settings.fs_text_mob }}px;
+					}
+					.block-{{ block.id }} .experts__link .btn{
+						font-size: {{ block.settings.fs_button_mob }}px;
+					}
+        }
+      </style>
+      {%- capture tags -%}
+        {%- if block.settings.tags != blank and section.settings.show_tags -%}
+          <div class="experts__tags">
+            <span class="experts__tag">{{ block.settings.tags }}</span>
+          </div>
+        {%- endif -%}
+      {%- endcapture -%}
+
+      <article class="experts grid-item block-{{ block.id }}" {{ block.shopify_attributes }}>
+        {%- if block.settings.featured_image -%}
+          <div class="experts__image__outer">
+            <div class="experts__image">
+              {%- capture sizes -%}
+                (min-width: 990px) calc((100vw - 100px) / {{ section.settings.grid }}), (min-width: 750px) calc((100vw - 60px) / 3), calc(100vw - 32px)
+              {%- endcapture -%}
+
+              {%- capture attributes -%}
+                data-aos="img-in"
+                data-aos-anchor="{{ animation_anchor }}"
+                data-aos-order="{{ animation_order }}"
+                data-aos-duration="{{ animation_duration }}"
+                data-aos-easing="ease-out-quart"
+              {%- endcapture -%}
+              {%- render 'image' image: block.settings.featured_image, widths: '250, 280, 360, 480, 560, 640, 720, 840, 960, 1280, 1440, 1600, 1840, 2100, 2400', sizes: sizes, aspect_ratio: aspect_ratio, loading: loading, attributes: attributes, show_backfill: true -%}
+              {{ tags }}
+            </div>
+          </div>
+        {%- else -%}
+          {{ tags }}
+        {%- endif -%}
+
+        <div class="experts__text-wrapper"
+             data-aos="hero"
+             data-aos-anchor="{{ animation_anchor }}"
+             data-aos-order="{{ animation_order }}"
+             data-aos-duration="{{ animation_duration }}"
+        >
+          <{{ title_tag }} class="experts__title">
+          <span>
+              {{ block.settings.featured_heading }}
+            </span>
+        </{{ title_tag }}>
+
+        <p class="experts__excerpt">{{ block.settings.featured_text | strip_html | truncatewords: 30 }}</p>
+
+        {%- if show_button and block.settings.featured_button_text != blank -%}
+          <div class="experts__link">
+            <a href="{{ block.settings.featured_button_link }}"
+               class="btn {{ block.settings.button_style }}  {{ block.settings.button_size }} {{ block.settings.button_type }}">
+                  <span class="btn__text">
+                    {% if block.settings.featured_button_text != blank %}
+                      {{ block.settings.featured_button_text }}
+                    {% else %}
+                      {{ 'blogs.block.settings.read_more' | t }}
+                    {% endif %}
+                  </span>
+            </a>
+          </div>
+        {%- endif -%}
+      </article>
+    {% endfor %}
+  </div>
+</div>
+{%- if link_text != blank -%}
+  {%- assign animation_order = animation_order | plus: 1 -%}
+  <a class="btn btn--top {{ button_style }} {{ section.settings.button_size }} {{ section.settings.button_type }} mobile experts__btn"
+     href="{% if section.settings.link_url != blank %}{{ section.settings.link_url }}{% else %}{{ featured_collection.url }}{% endif %}">
+    <span>{{ link_text | escape }}</span>
+  </a>
+{%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Experts",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "range",
+      "id": "aspect_ratio",
+      "min": 0.5,
+      "max": 1.5,
+      "step": 0.1,
+      "unit": ":1",
+      "label": "Article image aspect ratio",
+      "info": "Wide to tall",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Trusted By The World’s Top Health Experts"
+    },
+    {
+      "type": "range",
+      "id": "fs_title",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size title",
+      "default": 38
+    },
+    {
+      "type": "range",
+      "id": "fs_title_mob",
+      "min": 8,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size title mobile",
+      "default": 23
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "label": "Color",
+      "default": "btn--primary",
+      "options": [
+        {
+          "value": "btn--black",
+          "label": "Black"
+        },
+        {
+          "value": "btn--white",
+          "label": "White"
+        },
+        {
+          "value": "btn--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "btn--secondary",
+          "label": "Secondary"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "fs_button",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Button Font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "fs_button_mob",
+      "min": 8,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Button Font size mobile",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Style",
+      "default": "btn--solid",
+      "options": [
+        {
+          "label": "Solid",
+          "value": "btn--solid"
+        },
+        {
+          "label": "Outline",
+          "value": "btn--outline"
+        },
+        {
+          "label": "Text",
+          "value": "btn--text"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "Show tags",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show 'Read more' button",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper--full-padded",
+      "options": [
+        {
+          "value": "wrapper--full",
+          "label": "Full width"
+        },
+        {
+          "value": "wrapper--full-padded",
+          "label": "Full width padded"
+        },
+        {
+          "value": "wrapper",
+          "label": "Normal"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Articles per row",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "grid_mobile",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Articles per row mobile",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Number of rows",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme_1",
+      "label": "Color scheme"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Top",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Bottom",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Advanced"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading SEO tag",
+      "default": "automatic",
+      "options": [
+        {
+          "value": "automatic",
+          "label": "Automatic"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "title_tag",
+      "label": "Title SEO tag",
+      "default": "automatic",
+      "options": [
+        {
+          "value": "automatic",
+          "label": "Automatic"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "featured_image",
+      "name": "Expert",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "featured_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "tags",
+          "label": "Tag",
+          "default": "Science"
+        },
+        {
+          "type": "header",
+          "content": "Typography"
+        },
+        {
+          "type": "text",
+          "id": "featured_heading",
+          "label": "Heading",
+          "default": "Featured link"
+        },
+        {
+          "type": "range",
+          "id": "fs_title",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size title",
+          "default": 17
+        },
+        {
+          "type": "range",
+          "id": "fs_title_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size title mobile",
+          "default": 16
+        },
+        {
+          "type": "richtext",
+          "id": "featured_text",
+          "label": "Text",
+          "default": "<p>Promote products or collections</p>"
+        },
+        {
+          "type": "range",
+          "id": "fs_text",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size text",
+          "default": 12
+        },
+        {
+          "type": "range",
+          "id": "fs_text_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size text mobile",
+          "default": 14
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "featured_button_text",
+          "label": "Label",
+          "default": "Learn more"
+        },
+        {
+          "type": "url",
+          "id": "featured_button_link",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "Color",
+          "default": "btn--primary",
+          "options": [
+            {
+              "value": "btn--black",
+              "label": "Black"
+            },
+            {
+              "value": "btn--white",
+              "label": "White"
+            },
+            {
+              "value": "btn--primary",
+              "label": "Primary"
+            },
+            {
+              "value": "btn--secondary",
+              "label": "Secondary"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "fs_button",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font button text",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "fs_button_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size button mobile",
+          "default": 12
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn--outline",
+          "options": [
+            {
+              "label": "Solid",
+              "value": "btn--solid"
+            },
+            {
+              "label": "Outline",
+              "value": "btn--outline"
+            },
+            {
+              "label": "Text",
+              "value": "btn--text"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_arrow",
+          "label": "Show button arrow",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Colors"
+        },
+        {
+          "type": "paragraph",
+          "content": "Overrides color scheme. Set to Transparent to revert back to using color schemes."
+        },
+        {
+          "type": "color",
+          "id": "featured_color_text",
+          "label": "Text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "featured_color_overlay",
+          "label": "Overlay",
+          "default": "#222222"
+        },
+        {
+          "type": "range",
+          "id": "featured_overlay_opacity",
+          "label": "Overlay opacity",
+          "step": 5,
+          "max": 100,
+          "min": 0,
+          "unit": "%",
+          "default": 10
+        },
+        {
+          "type": "header",
+          "content": "Advanced"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading SEO tag",
+          "default": "automatic",
+          "options": [
+            {
+              "value": "automatic",
+              "label": "Automatic"
+            },
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Experts",
+      "category": "Text"
+    }
+  ],
+  "disabled_on": {
+    "groups": [
+      "header",
+      "aside",
+      "footer"
+    ]
+  }
+}
+{% endschema %}

@@ -1,0 +1,7 @@
+{% if product.metafields.custom.small_description != blank %}
+  <div class="product__block block-padding" style="--block-padding-bottom: {{ block.settings.padding_bottom }}px;">
+    <div class="product__small-description" style="--fz:{{ block.settings.title_size }}px;--fz-mobile:{{ block.settings.title_size_mobile }}px;">
+      {{ product.metafields.custom.small_description | metafield_tag }}
+    </div>
+  </div>
+{% endif %}

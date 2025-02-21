@@ -1,0 +1,21 @@
+<!-- @prettify-ignore -->
+
+{%- liquid
+    assign padding_top = section.settings.padding_top | append: 'px'
+    assign padding_bottom = section.settings.padding_bottom | append: 'px'
+    assign padding_top_mobile = section.settings.padding_top_mobile | append: 'px'
+    assign padding_bottom_mobile = section.settings.padding_bottom_mobile | append: 'px'
+  -%}
+  
+  {%- style -%}
+    {{ class }}--{{section.id}} {
+        padding-top: {{padding_top}};
+        padding-bottom: {{padding_bottom}};
+    }
+    @media(max-width: 768px) {
+        {{ class }}--{{section.id}} {
+            padding-top: {{padding_top_mobile}};
+            padding-bottom: {{padding_bottom_mobile}};
+        }
+    }
+  {%- endstyle -%}

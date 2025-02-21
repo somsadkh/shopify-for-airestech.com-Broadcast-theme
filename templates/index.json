@@ -1,0 +1,1262 @@
+{
+  "sections": {
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "reviews_9BW4qj": {
+          "type": "reviews",
+          "settings": {
+            "stars_count": 5,
+            "svg": "<svg width=\"23\" height=\"22\" viewbox=\"0 0 23 22\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M11.4292 0.953125L14.4561 8.23075L22.3129 8.86063L16.3269 13.9883L18.1557 21.6552L11.4292 17.5467L4.70267 21.6552L6.53151 13.9883L0.545453 8.86063L8.40226 8.23075L11.4292 0.953125Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "svg_mob": "<svg width=\"19\" height=\"17\" viewbox=\"0 0 19 17\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M9.51755 0.158203L11.9176 5.92871L18.1474 6.42815L13.401 10.494L14.8511 16.5731L9.51755 13.3154L4.18402 16.5731L5.63413 10.494L0.887714 6.42815L7.11746 5.92871L9.51755 0.158203Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "text": "300,000+ protected users",
+            "color_title": "#ffffff",
+            "fs_title": 20,
+            "fs_title_mob": 14
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Proven EMF Protection For Your Modern Lifestyle",
+            "color_title": "#ffffff",
+            "fs_title": 48,
+            "fs_title_mob": 36,
+            "heading_tag": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Scientifically proven to neutralize harmful EMFs from electronic devices, Aires' technology supports your health without interrupting device functionality.<\/p>",
+            "color_title": "#ffffff",
+            "fs_title": 18,
+            "fs_title_mob": 16
+          }
+        },
+        "button-1": {
+          "type": "button",
+          "settings": {
+            "link_text": "SHOP AIRES",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "link": "shopify:\/\/collections\/bestsellers",
+            "button_type": "btn--secondary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "button_popup_Kqp4yc": {
+          "type": "button_popup",
+          "settings": {
+            "link_text": "HOW IT WORKS",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "svg": "<svg width=\"12\" height=\"15\" viewbox=\"0 0 12 15\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M0.0578613 0.0615234V14.0615L11.0579 7.06152L0.0578613 0.0615234Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "button_type": "btn--white",
+            "button_size": "btn--large",
+            "button_style": "btn--outline",
+            "youtube": "",
+            "shopify": "shopify:\/\/files\/videos\/AireTech_Hero_Banner Video_2.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_9BW4qj",
+        "heading",
+        "text",
+        "button-1",
+        "button_popup_Kqp4yc"
+      ],
+      "settings": {
+        "content_max_width": 600,
+        "image_1": "shopify:\/\/shop_images\/Aires_Homepage_01.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "five-fifty-height-hero",
+        "flex_align_desktop": "align--middle-left-desktop",
+        "mobile_image": "shopify:\/\/shop_images\/Aires_Homepage_01_-_v.jpg",
+        "mobile_height": "screen-height-full--mobile",
+        "flex_align_mobile": "align--top-left-mobile",
+        "color_scheme": "scheme-10",
+        "show_text_background": false,
+        "overlay_opacity": 10,
+        "show_overlay_text": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "announcement-1": {
+      "type": "section-announcement",
+      "blocks": {
+        "text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>25+ Clinical Trials<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_YxrjV8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>22 Patents<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_eUFNrW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>9 Peer Reviewed Studies<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_MzAGw8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>$20M In R & D<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_h7CKzD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Public Co. Traded in US, Canada & EU<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text-1",
+        "text_YxrjV8",
+        "text_eUFNrW",
+        "text_MzAGw8",
+        "text_h7CKzD"
+      ],
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": true,
+        "layout": "marquee",
+        "color_scheme": "scheme-1",
+        "padding_top": 15,
+        "padding_bottom": 15
+      }
+    },
+    "press-logos": {
+      "type": "section-press-logos",
+      "blocks": {
+        "logo-item-1": {
+          "type": "logo-item-header",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/image_16_15fb2947-0012-4100-9d05-8fe18b5ec7ca.png",
+            "logo_width": 140,
+            "logo_height": 90,
+            "logo_width_mob": 72,
+            "logo_height_mob": 32,
+            "link": "https:\/\/airestech.com\/pages\/ufc",
+            "text": "Learn More",
+            "color_title": "#000000",
+            "fs_title": 14,
+            "fs_title_mob": 10,
+            "underline": true
+          }
+        },
+        "logo-item-2": {
+          "type": "logo-item-header",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/image_17_43962694-f582-4e16-815d-2a434109dc61.png",
+            "logo_width": 190,
+            "logo_height": 90,
+            "logo_width_mob": 94,
+            "logo_height_mob": 32,
+            "link": "shopify:\/\/blogs\/optimal-health-performance\/aires-tech-named-official-emf-protection-partner-for-canada-basketball",
+            "text": "Learn More",
+            "color_title": "#000000",
+            "fs_title": 14,
+            "fs_title_mob": 10,
+            "underline": true
+          }
+        },
+        "logo-item-3": {
+          "type": "logo-item-header",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_17.png",
+            "logo_width": 90,
+            "logo_height": 90,
+            "logo_width_mob": 40,
+            "logo_height_mob": 32,
+            "link": "https:\/\/airestech.com\/pages\/wwe",
+            "text": "Learn More",
+            "color_title": "#000000",
+            "fs_title": 14,
+            "fs_title_mob": 10,
+            "underline": true
+          }
+        }
+      },
+      "block_order": [
+        "logo-item-1",
+        "logo-item-2",
+        "logo-item-3"
+      ],
+      "settings": {
+        "enable_heading_slider": false,
+        "logo_opacity": 60,
+        "title": "Official Partner of World-Class Sports Organizations",
+        "color_title": "#000000",
+        "fs_title": 20,
+        "fs_title_mob": 14,
+        "color_scheme": "scheme-1",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "benefits_section_LmLk9Y": {
+      "type": "benefits-section",
+      "blocks": {
+        "item_dtHkLd": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_101.jpg",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Better Sleep",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 18,
+            "text": "EMF radiation from your devices can disrupt your sleep. Adding Aires to your bedroom can reduce these effects and help improve sleep quality.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        },
+        "item_AKEznp": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_101-1.jpg",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Clearer Mind",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 19,
+            "text": "EMF exposure may lead to brain fog and tiredness. Using Aires daily can help reduce headaches and improve mental clarity.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        },
+        "item_WLj6Uq": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_101_2.png",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Better Performance",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 18,
+            "text": "Trusted by top athletes, Aires can improve their reaction time, speed up recovery, and reduce inflammation for peak performance.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        },
+        "item_fJHqJJ": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_101_1.jpg",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Hormonal Support",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 18,
+            "text": "Reduce harmful EMF exposure that may affect reproductive health. Aires supports your body for better hormonal health and fertility.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        },
+        "item_rza6DD": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_1071_1.jpg",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Support a Healthy Heart",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 18,
+            "text": "Studies show that EMF radiation can contribute to oxidative stress which affects heart health. Aires works to minimize these negative effects.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        },
+        "item_4fzdLz": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_101-4.jpg",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Boost Immunity",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 17,
+            "text": "Aires technology helps reduce exposure to EMF stressors, allowing your body to focus on what it does best, maintaining strong, balanced immunity.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        }
+      },
+      "block_order": [
+        "item_dtHkLd",
+        "item_AKEznp",
+        "item_WLj6Uq",
+        "item_fJHqJJ",
+        "item_rza6DD",
+        "item_4fzdLz"
+      ],
+      "settings": {
+        "content_max_width": 1000,
+        "center_text": true,
+        "title": "Daily Benefits of Using Aires Proven EMF Protection",
+        "color_title": "#000000",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "text": "Electromagnetic radiation from phones, laptops, and WiFi is everywhere, affecting your body’s biological functions. Aires mitigates the effects of EMF radiation to help you feel your best.",
+        "color_text": "#000000",
+        "fs_text": 18,
+        "fs_text_mob": 16,
+        "padding_top": 65,
+        "padding_bottom": 65
+      }
+    },
+    "section_double_epb6m3": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_KxE6tj": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "The science",
+            "color_title": "#000000",
+            "fs_title": 24,
+            "fs_title_mob": 24,
+            "padding_bottom": 16
+          }
+        },
+        "heading_BUxLCP": {
+          "type": "heading",
+          "settings": {
+            "heading_center": false,
+            "heading_center_mobile": false,
+            "title": "The World’s Most Tested, Trusted and Scientifically Proven EMF Protection",
+            "color_title": "#000000",
+            "fs_title": 32,
+            "fs_title_mob": 26,
+            "padding_bottom": 16,
+            "heading_tag": "h2"
+          }
+        },
+        "text_GNHPG3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Proven through decades of research, clinical trials, and peer-reviewed studies, our technology provides unmatched EMF protection with total transparency. It’s science you can feel safe relying on, every single day.<\/p>",
+            "color_title": "#000000",
+            "fs_title": 16,
+            "fs_title_mob": 14,
+            "padding_bottom": 16
+          }
+        },
+        "icon_text_7Ycbj8": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "<svg width=\"38\" height=\"33\" viewbox=\"0 0 38 33\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M12.2166 26.435H37.6203V1.0625H2.78711V13.8275\" stroke=\"#1B1A20\" stroke-width=\"0.65625\"><\/path>\n<circle cx=\"7.03534\" cy=\"20.4142\" r=\"2.64276\" fill=\"#1B1A20\"><\/circle>\n<path d=\"M6.41309 26.2197L7.1684 29.0386L7.92372 31.8575L9.00143 30.0126L10.8572 31.0715L9.34656 25.4337\" stroke=\"#1B1A20\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M4.98926 25.4346L3.47863 31.0723L5.33439 30.0135L6.4121 31.8583L7.16742 29.0395\" stroke=\"#1B1A20\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M6.04033 14.9116C6.62848 14.4667 7.44065 14.4667 8.0288 14.9116C8.44119 15.2236 8.94653 15.3878 9.46353 15.3778C10.2009 15.3636 10.8579 15.8409 11.0722 16.5466C11.2225 17.0414 11.5348 17.4713 11.9589 17.7671C12.5639 18.1889 12.8148 18.9614 12.5734 19.6582C12.4041 20.1468 12.4041 20.6782 12.5734 21.1668C12.8148 21.8636 12.5639 22.6361 11.9589 23.0579C11.5348 23.3537 11.2225 23.7836 11.0722 24.2784C10.8579 24.9841 10.2009 25.4614 9.46353 25.4472C8.94653 25.4372 8.44119 25.6014 8.0288 25.9133C7.44065 26.3583 6.62848 26.3583 6.04033 25.9133C5.62795 25.6014 5.1226 25.4372 4.6056 25.4472C3.86824 25.4614 3.21119 24.9841 2.9969 24.2784C2.84665 23.7836 2.53433 23.3537 2.11018 23.0579C1.50527 22.6361 1.25429 21.8636 1.49571 21.1668C1.66499 20.6782 1.66499 20.1468 1.49571 19.6582C1.25429 18.9614 1.50527 18.1889 2.11018 17.7671C2.53433 17.4713 2.84665 17.0414 2.9969 16.5466C3.21119 15.8409 3.86824 15.3636 4.6056 15.3778C5.1226 15.3878 5.62795 15.2236 6.04033 14.9116Z\" stroke=\"#1B1A20\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M5.6416 5.40039H34.16\" stroke=\"#1B1A20\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M5.6416 8.77344H34.16\" stroke=\"#1B1A20\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M5.6416 12.1484H34.16\" stroke=\"#1B1A20\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M22.9385 15.5254L34.1602 15.5254\" stroke=\"#1B1A20\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M16.8633 23.3431C16.9444 23.197 17.1153 22.9141 17.2977 22.8736C17.4141 22.8477 17.473 22.8248 17.5829 22.7551C18.3157 22.2904 19.0195 21.7832 19.7679 21.3423C21.0301 20.5987 22.3405 19.9203 23.6642 19.2933C23.8296 19.2149 23.5597 20.0531 23.5413 20.1138C23.2765 20.9872 22.8656 21.9229 22.8656 22.8473C22.8656 23.161 22.9123 23.2722 23.2693 23.0974C24.2117 22.636 24.8046 21.7276 25.5114 21.0001C25.7775 20.7262 25.5291 21.9041 25.6474 22.0619C25.8232 22.2962 27.0212 21.7358 27.1919 21.6582C27.3003 21.6089 27.5166 21.3899 27.5166 21.509C27.5166 21.8353 27.3221 22.2058 27.2446 22.5182C27.2437 22.5218 27.0754 23.1473 27.1831 23.1325C27.4634 23.0938 27.865 22.7656 28.0914 22.6147C28.2862 22.4849 29.7173 21.3432 29.7368 21.7811C29.7448 21.962 29.7464 22.641 30.0746 22.4085C30.6936 21.9701 31.1713 21.3968 31.992 21.4037C32.5692 21.4086 32.7763 21.8746 33.282 22.0356C33.5405 22.1178 33.8999 21.9648 34.1596 21.9215\" stroke=\"#1B1A20\" stroke-width=\"0.65625\"><\/path>\n<\/svg>",
+            "title": "22 Patented Technologies",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 16
+          }
+        },
+        "icon_text_76kaxq": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "<svg width=\"42\" height=\"43\" viewbox=\"0 0 42 43\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"20.9998\" cy=\"21.6384\" r=\"1.65796\" fill=\"black\"><\/circle>\n<path d=\"M20.9997 31.6692C21.4989 31.6692 22.0023 31.4336 22.4902 30.9502C22.9796 30.4654 23.4353 29.7476 23.8252 28.8346C24.6043 27.0099 25.0941 24.4662 25.0941 21.6393C25.0941 18.8124 24.6043 16.2686 23.8252 14.4439C23.4353 13.5309 22.9796 12.8131 22.4902 12.3283C22.0023 11.8449 21.4989 11.6094 20.9997 11.6094C20.5005 11.6094 19.9971 11.8449 19.5092 12.3283C19.0198 12.8131 18.5641 13.5309 18.1743 14.4439C17.3951 16.2686 16.9053 18.8124 16.9053 21.6393C16.9053 24.4662 17.3951 27.0099 18.1743 28.8346C18.5641 29.7476 19.0198 30.4654 19.5092 30.9502C19.9971 31.4336 20.5005 31.6692 20.9997 31.6692Z\" stroke=\"black\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M28.0929 14.5455C27.7399 14.1924 27.2173 14.0031 26.5303 13.9998C25.8414 13.9966 25.0114 14.1819 24.0901 14.5519C22.2486 15.2914 20.1032 16.744 18.104 18.7432C16.1047 20.7424 14.6522 22.8878 13.9127 24.7293C13.5427 25.6507 13.3574 26.4806 13.3606 27.1695C13.3638 27.8565 13.5532 28.3791 13.9063 28.7321C14.2593 29.0852 14.7819 29.2746 15.4689 29.2778C16.1578 29.281 16.9877 29.0957 17.9091 28.7257C19.7506 27.9862 21.896 26.5337 23.8952 24.5344C25.8944 22.5352 27.347 20.3898 28.0865 18.5483C28.4565 17.627 28.6418 16.797 28.6386 16.1081C28.6353 15.4211 28.446 14.8985 28.0929 14.5455Z\" stroke=\"black\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M28.0942 28.7324C28.4472 28.3794 28.6366 27.8568 28.6398 27.1698C28.6431 26.4809 28.4577 25.651 28.0877 24.7296C27.3482 22.8881 25.8957 20.7427 23.8965 18.7435C21.8972 16.7443 19.7518 15.2917 17.9103 14.5522C16.989 14.1822 16.159 13.9969 15.4701 14.0001C14.7831 14.0034 14.2606 14.1927 13.9075 14.5458C13.5544 14.8989 13.3651 15.4214 13.3619 16.1084C13.3586 16.7973 13.544 17.6273 13.914 18.5486C14.6535 20.3901 16.106 22.5355 18.1052 24.5347C20.1044 26.534 22.2499 27.9865 24.0913 28.726C25.0127 29.096 25.8427 29.2813 26.5316 29.2781C27.2185 29.2749 27.7411 29.0855 28.0942 28.7324Z\" stroke=\"black\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M31.0307 21.6394C31.0307 21.14 30.7951 20.6366 30.3116 20.1486C29.8268 19.6592 29.1089 19.2033 28.1958 18.8135C26.3707 18.0343 23.8266 17.5443 20.9993 17.5443C18.1719 17.5443 15.6278 18.0343 13.8028 18.8135C12.8896 19.2033 12.1717 19.6592 11.6869 20.1486C11.2034 20.6366 10.9678 21.14 10.9678 21.6394C10.9678 22.1387 11.2034 22.6421 11.6869 23.1301C12.1717 23.6195 12.8896 24.0754 13.8028 24.4652C15.6278 25.2444 18.1719 25.7344 20.9993 25.7344C23.8266 25.7344 26.3707 25.2444 28.1958 24.4652C29.1089 24.0754 29.8268 23.6195 30.3116 23.1301C30.7951 22.6421 31.0307 22.1387 31.0307 21.6394Z\" stroke=\"black\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M30.4485 8.44966V8.77778H30.7766H35.0543V39.0836H6.94446V4.19336H30.4485V8.44966Z\" stroke=\"black\" stroke-width=\"0.65625\"><\/path>\n<path d=\"M30.6289 4.01367L35.235 8.59846\" stroke=\"black\" stroke-width=\"0.65625\"><\/path>\n<\/svg>",
+            "title": "Proven in 25+ Clinical Trials",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 16
+          }
+        },
+        "icon_text_QDygwB": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "<svg width=\"42\" height=\"43\" viewbox=\"0 0 42 43\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M36.6065 18.5072L28.2458 18.5072C27.8216 18.5072 27.4314 18.7395 27.2293 19.1125L19.5008 34.0177C18.8839 35.1561 17.148 34.575 17.341 33.2945L20.6601 9.98243C20.8588 8.66393 19.0366 8.1119 18.4702 9.319L9.60286 28.4966C9.34561 29.0529 8.78853 29.4091 8.17558 29.4091H6.54883\" stroke=\"black\" stroke-width=\"0.65625\" stroke-linecap=\"square\"><\/path>\n<path d=\"M33.5488 18.5072H30.3236C29.8993 18.5072 29.5092 18.7395 29.307 19.1125L21.5786 34.0177C20.9616 35.1561 19.2258 34.575 19.4187 33.2945L22.7379 9.98243C22.9366 8.66393 21.1143 8.1119 20.5479 9.319L11.8313 28.4875C11.5761 29.0488 11.0165 29.4091 10.3999 29.4091H6.54883\" stroke=\"black\" stroke-width=\"0.65625\" stroke-linecap=\"square\"><\/path>\n<path d=\"M33.734 18.5072H32.4009C31.9767 18.5072 31.5865 18.7395 31.3844 19.1125L23.6559 34.0177C23.039 35.1561 21.3031 34.575 21.4961 33.2945L24.8152 9.98243C25.0139 8.66393 23.1917 8.1119 22.6253 9.319L14.0569 28.4934C13.8038 29.0597 13.2415 29.4243 12.6212 29.4243H6.66284\" stroke=\"black\" stroke-width=\"0.65625\" stroke-linecap=\"square\"><\/path>\n<path d=\"M37.2993 21.638C37.2993 12.5147 29.904 5.11884 20.7816 5.11884C11.6591 5.11884 4.26379 12.5147 4.26379 21.638C4.26379 30.7614 11.6591 38.1572 20.7816 38.1572C29.904 38.1572 37.2993 30.7614 37.2993 21.638Z\" stroke=\"black\" stroke-width=\"0.65625\"><\/path>\n<\/svg>",
+            "title": "$20M In Research & Development",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 16
+          }
+        },
+        "icon_text_YhE4J7": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "<svg width=\"30\" height=\"31\" viewbox=\"0 0 30 31\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<g clip-path=\"url(#clip0_56_249)\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M22.4996 8.90031C22.5201 8.75195 22.5046 8.60086 22.4546 8.45968L22.4303 8.34156C22.3612 8.05426 22.2473 7.77965 22.0928 7.52781C21.9203 7.24656 21.6765 7.00281 21.189 6.51531L16.3328 1.65718C15.8471 1.16968 15.6034 0.925934 15.3203 0.751559C15.0343 0.576462 14.7194 0.453908 14.3903 0.389684C14.2491 0.339706 14.098 0.324275 13.9496 0.344684C13.7415 0.339059 13.4884 0.339059 13.1528 0.339059H9.00902C5.85902 0.339059 4.28402 0.339059 3.08402 0.952184C2.02816 1.49338 1.16897 2.35257 0.627774 3.40843C0.0146485 4.61218 0.0146484 6.18156 0.0146484 9.33156V21.3316C0.0146484 24.4816 0.0146485 26.0566 0.627774 27.2566C1.16897 28.3124 2.02816 29.1716 3.08402 29.7128C4.28777 30.3259 5.85902 30.3259 9.00902 30.3259H13.5521C14.304 30.3259 14.6809 29.3453 14.2028 28.7659C14.1248 28.669 14.0264 28.5905 13.9146 28.536C13.8028 28.4816 13.6803 28.4525 13.5559 28.4509H8.99965C7.39278 28.4509 6.29965 28.4491 5.4559 28.3797C4.63465 28.3122 4.21277 28.1922 3.92027 28.0422C3.2147 27.6827 2.64104 27.109 2.28152 26.4034C2.13152 26.1109 2.00965 25.6909 1.94402 24.8678C1.87652 24.0241 1.87465 22.9366 1.87465 21.3241V9.32406C1.87465 7.71718 1.87465 6.62406 1.94402 5.78031C2.01152 4.95906 2.1334 4.53718 2.28152 4.24468C2.64152 3.53968 3.21527 2.96593 3.92027 2.60593C4.21277 2.45593 4.63465 2.33406 5.45777 2.26843C6.29965 2.20093 7.38715 2.20093 8.99965 2.20093H13.1246V8.76343C13.1246 9.01207 13.2234 9.25053 13.3992 9.42635C13.5751 9.60216 13.8135 9.70093 14.0621 9.70093H20.6246V10.7266C20.6246 11.1953 21.0128 11.5703 21.4797 11.6134C22.014 11.6603 22.4978 11.2609 22.4978 10.7247V9.68781C22.4978 9.35406 22.4978 9.10093 22.4884 8.89093L22.4996 8.90031ZM14.9997 2.97531L19.8559 7.83156H14.9997V2.97531Z\" fill=\"black\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M20.625 28.457C22.1887 28.457 23.6437 27.9788 24.8437 27.1613L27.6 29.9176C27.8635 30.1811 28.221 30.3292 28.5937 30.3292C28.9664 30.3292 29.3239 30.1811 29.5875 29.9176C29.851 29.654 29.9991 29.2966 29.9991 28.9238C29.9991 28.5511 29.851 28.1936 29.5875 27.9301L26.8312 25.1738C27.6487 23.972 28.1268 22.5301 28.1268 20.9551C28.1268 16.8113 24.7706 13.4551 20.6268 13.4551C16.4831 13.4551 13.1268 16.8113 13.1268 20.9551C13.1268 25.0988 16.4831 28.4551 20.6268 28.4551L20.625 28.457ZM20.625 26.582C23.7375 26.582 26.25 24.0695 26.25 20.957C26.25 17.8445 23.7375 15.332 20.625 15.332C17.5125 15.332 15 17.8445 15 20.957C15 24.0695 17.5125 26.582 20.625 26.582Z\" fill=\"black\"><\/path>\n<\/g>\n<defs>\n<clippath id=\"clip0_56_249\">\n<rect width=\"30\" height=\"30\" fill=\"white\" transform=\"translate(0 0.332031)\"><\/rect>\n<\/clippath>\n<\/defs>\n<\/svg>",
+            "title": "9 Peer-Reviewed Studies",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 16
+          }
+        },
+        "buttons_aMGmiq": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "SHOP AIRES",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "button_url": "shopify:\/\/collections\/bestsellers",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        },
+        "buttons_VqyyT4": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "LEARN MORE",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "button_url": "shopify:\/\/pages\/tech",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_KxE6tj",
+        "heading_BUxLCP",
+        "text_GNHPG3",
+        "icon_text_7Ycbj8",
+        "icon_text_76kaxq",
+        "icon_text_QDygwB",
+        "icon_text_YhE4J7",
+        "buttons_aMGmiq",
+        "buttons_VqyyT4"
+      ],
+      "settings": {
+        "bg": "#f7f5f2",
+        "image_1": "shopify:\/\/shop_images\/Group_909-min.jpg",
+        "image_width": "one-half",
+        "image_contain": false,
+        "text_alignment": "text-left",
+        "layout": "is-reversed",
+        "width": "wrapper--full",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-8",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "brain_scan_videos_AiUtNJ": {
+      "type": "brain-scan-videos",
+      "blocks": {
+        "item_7TLeUC": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "title": "Canada Basketball RJ Barrett's Positive Findings",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris described even with RJ's high-output neural activity, there was significant results above baseline range. This was another example of variability in brain activity by individuals and still Aires' presence showed impactful performance.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/BAItJubdKZI"
+          }
+        },
+        "item_RepXhN": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "title": "Pro UFC Fighter Maycee Barber's Impressive Results",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback Specialist Chris Wyllie performed an EEG brain scan on UFC's Maycee Barber and improvements were clear with Aires present. Maycee has noted that she no longer gets headaches since she's been using Aires!",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/_syXvHqHXh0?si=1Jbrj-mKZ_a59ZFx"
+          }
+        },
+        "item_JAMXhy": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-4.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-4.jpg",
+            "title": "Four Individuals EEG Brain Scan",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris performed four separate EEG demonstrations with individuals and their tech devices. Each scan showed positive results with Aires devices present compared to no Aires.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/TGh-IEmNeNY?si=8JNrKZlJ-nOPmQxB"
+          }
+        }
+      },
+      "block_order": [
+        "item_7TLeUC",
+        "item_RepXhN",
+        "item_JAMXhy"
+      ],
+      "settings": {
+        "content_max_width": 25,
+        "subtitle_center": false,
+        "subtitle_center_mobile": false,
+        "subtitle": "AIRES IN ACTION",
+        "color_subtitle": "#000000",
+        "fs_subtitle": 14,
+        "fs_subtitle_mob": 16,
+        "title": "The Real-time Proof of Aires Tech With EEG Brain Scans",
+        "heading_center": false,
+        "heading_center_mobile": false,
+        "color_title": "#000000",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "text": "EEG brain scans track electrical activity to help doctors understand brain function. Here, licensed professionals mapped EEG results to show measurable changes in brain activity when using Aires products alongside digital devices.",
+        "color_text": "#000000",
+        "fs_text": 16,
+        "fs_text_mob": 14,
+        "padding_top": 100,
+        "padding_bottom": 50
+      }
+    },
+    "featured_collection_fUJg9J": {
+      "type": "featured-collection",
+      "blocks": {
+        "line_item_F4iyRP": {
+          "type": "line_item",
+          "settings": {
+            "title": "Personal Protection"
+          }
+        },
+        "line_item_HHVJgm": {
+          "type": "line_item",
+          "settings": {
+            "title": "On-the-Go Protection"
+          }
+        },
+        "line_item_JrW3a7": {
+          "type": "line_item",
+          "settings": {
+            "title": "Whole Room Protection"
+          }
+        },
+        "link_HpqcWL": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/1_80f9998a-65b4-40f7-8723-325320dc2d3b.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/1_80f9998a-65b4-40f7-8723-325320dc2d3b.jpg",
+            "label": "Device Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "One",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "19ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A device to adhere to your personal tech like phones and laptops.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop One",
+            "link_url": "shopify:\/\/products\/lifetune-one",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_x7i7RK": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_ba28621f-fdaa-4f78-af62-6a38ca5496a0.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/2_ba28621f-fdaa-4f78-af62-6a38ca5496a0.jpg",
+            "label": "Personal Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Go",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "32ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A personal accessory to attach to your keys, bag, pet collar or to wear.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Go",
+            "link_url": "shopify:\/\/products\/lifetune-go",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_LJcaym": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_e82cd8ec-72b8-4361-aa5f-e60259c2fd87.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/3_e82cd8ec-72b8-4361-aa5f-e60259c2fd87.jpg",
+            "label": "Versatile Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Flex",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "42ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A versatile wearable protection for on-the-go in your daily life.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Flex",
+            "link_url": "shopify:\/\/products\/lifetune-flex",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_zBgTNa": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_f521aeb3-7307-4cc9-b4af-46538d3251b4.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/4_f521aeb3-7307-4cc9-b4af-46538d3251b4.jpg",
+            "label": "Small Space",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Zone",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "93ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A device to place in your small spaces like car, office space or home.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Zone",
+            "link_url": "shopify:\/\/products\/lifetune-zone",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_AwexQH": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/5_c8b6ff41-9b62-4e28-851a-e41009ddc428.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/5_c8b6ff41-9b62-4e28-851a-e41009ddc428.jpg",
+            "label": "Large Space",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Zone Max",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "139ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>The biggest protection device for large areas like living rooms.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop max",
+            "link_url": "shopify:\/\/products\/lifetune-zone-max",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "line_item_F4iyRP",
+        "line_item_HHVJgm",
+        "line_item_JrW3a7",
+        "link_HpqcWL",
+        "link_x7i7RK",
+        "link_LJcaym",
+        "link_zBgTNa",
+        "link_AwexQH"
+      ],
+      "settings": {
+        "bg_color": "#237aa3",
+        "bg_img": "shopify:\/\/shop_images\/Radius__Radius_1-min.jpg",
+        "title": "<p>Choose the EMF Protection <br\/>That’s Best For You<\/p>",
+        "title_size": 32,
+        "title_size_mobile": 26,
+        "sub_title": "Full range coverage",
+        "sub_title_size": 14,
+        "link_text": "Shop all",
+        "link_url": "shopify:\/\/collections\/bestsellers",
+        "link_size": 20,
+        "link_size_mobile": 16,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "section_double_slider_8x4G93": {
+      "type": "section-double-slider",
+      "blocks": {
+        "text_slide_VNDPdR": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "Aires Athletes",
+            "color_subtitle": "#000000",
+            "fs_subtitle": 14,
+            "fs_subtitle_mob": 14,
+            "title": "Unlocking a Performance Edge",
+            "color_title": "#000000",
+            "fs_title": 26,
+            "fs_title_mob": 20,
+            "text": "<p>Elite athletes trust Aires to help them unlock new levels of performance. Our technology creates a refined, optimized environment against EMFs that enables them to reach new heights.<\/p>",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 16,
+            "button_text": "Learn more",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "button_url": "shopify:\/\/pages\/aires-athletes",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/3_1.jpg",
+            "heading_tag": "automatic"
+          }
+        },
+        "text_slide_mAydaW": {
+          "type": "text-slide",
+          "disabled": true,
+          "settings": {
+            "subheading": "Aires Athletes",
+            "color_subtitle": "#000000",
+            "fs_subtitle": 14,
+            "fs_subtitle_mob": 14,
+            "title": "Aires Is Taking Over Pro Sports",
+            "color_title": "#000000",
+            "fs_title": 26,
+            "fs_title_mob": 20,
+            "text": "<p>Endorsed by the UFC Performance Institute, Senior VP Dr. Duncan French stated, “It was astonishing to witness the silent effects of EMF radiation on human physiology, and seeing how Aires Tech can restore optimal brain function through EEG recordings was impressive. The science behind it is truly remarkable\"<\/p>",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 16,
+            "button_text": "Learn more",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "button_url": "shopify:\/\/pages\/aires-athletes",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/1_1.jpg",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_VNDPdR",
+        "text_slide_mAydaW"
+      ],
+      "settings": {
+        "bg": "#eae6dd",
+        "image_1": "shopify:\/\/shop_images\/3_1.jpg",
+        "image_width": "one-half",
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-8",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "experts_3BMLyg": {
+      "type": "experts",
+      "blocks": {
+        "featured_image_frQnD6": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Dr_Dogris_edited.jpg",
+            "tags": "Neuroscience",
+            "featured_heading": "Nicholas Dogris, Ph.D., BCN, QEEG-D",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>CEO & Co-Founder, NeuroField, Inc.<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "https:\/\/airestech.com\/blogs\/inside-aires-tech\/spotlight-dr-nicholas-dogris",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_eTGHwh": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Frame_248-4.jpg",
+            "tags": "Neuroscience",
+            "featured_heading": "Dr. Robert P. Turner, MD, MSCR, QEEG-D, BCN",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Founder, Network Neurology Health, LLC<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "https:\/\/airestech.com\/blogs\/connect\/insights-on-emf-protection-with-dr-robert-turner",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_ibmrr8": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Frame_248-2.jpg",
+            "tags": "Functional Medicine",
+            "featured_heading": "Dr. Jill Carnahan, MD, ABIHM, ABoIM, IFMCP",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Founder, Your Functional Medicine Expert<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "https:\/\/airestech.com\/blogs\/podcasts\/navigating-health-challenges-the-mind-body-balance-with-jill-carnahan",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_hbdAyn": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/EDIT_Dr._Dan_Rubin_FABNO-min.png",
+            "tags": "Naturopath",
+            "featured_heading": "Dan Rubin, ND, FABNO",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Co-Founder, Naturopathic Specialists, LLC<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn More",
+            "featured_button_link": "https:\/\/listenandcare.com\/dan-rubin-nd-fabno\/",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_Dwbgx7": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Frame_248.jpg",
+            "tags": "Holistic Health",
+            "featured_heading": "Ben Greenfield",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Health Consultant, Speaker, NY Times Best-Selling Author<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "https:\/\/airestech.com\/blogs\/optimal-health-performance\/ben-greenfield-health-expert-aires-advocate",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_kU6rdt": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Frame_248-1.jpg",
+            "tags": "Holistic Health",
+            "featured_heading": "Allyssa LaScala",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Integrative Health Practitioner<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "https:\/\/airestech.com\/blogs\/inside-aires-tech\/interview-with-alyssa-lascala",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_eyHUBq": {
+          "type": "featured_image",
+          "disabled": true,
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Frame_248-2.jpg",
+            "tags": "Holistic Health",
+            "featured_heading": "Danny Morel",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Holistic Health & Life Coach, Spiritual Guide<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "https:\/\/youtu.be\/xypfhx0paPE?si=R2m400mj_fIwG_U4",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_Jhmdi7": {
+          "type": "featured_image",
+          "disabled": true,
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Frame_248-2.jpg",
+            "tags": "Neuroscience",
+            "featured_heading": "Dr. Jill Carnahan, MD, ABIHM, ABoIM, IFMCP",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Founder, Your Functional Medicine Expert<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "https:\/\/youtu.be\/7Si914TItbs?si=JtqkEw6EeJ9r4uZh",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_frQnD6",
+        "featured_image_eTGHwh",
+        "featured_image_ibmrr8",
+        "featured_image_hbdAyn",
+        "featured_image_Dwbgx7",
+        "featured_image_kU6rdt",
+        "featured_image_eyHUBq",
+        "featured_image_Jhmdi7"
+      ],
+      "settings": {
+        "aspect_ratio": 1.1,
+        "title": "Trusted By The World’s Top Health Experts",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "link_text": "",
+        "link_url": "shopify:\/\/collections",
+        "button_type": "btn--primary",
+        "fs_button": 14,
+        "fs_button_mob": 12,
+        "button_style": "btn--outline",
+        "show_tags": true,
+        "show_button": true,
+        "width": "wrapper--full-padded",
+        "grid": 4,
+        "grid_mobile": 2,
+        "rows": 2,
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "heading_tag": "automatic",
+        "title_tag": "automatic"
+      }
+    },
+    "scrolling_icons_fkMPAE": {
+      "type": "scrolling-icons",
+      "blocks": {
+        "image_GWnDqi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mask-group-71-668855b11d9b3_webp.png",
+            "image_width": 160
+          }
+        },
+        "image_p4a8aL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/espn_png.png",
+            "image_width": 160
+          }
+        },
+        "image_xT4haa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1024px-ESPN_U_logo_svg_png.png",
+            "image_width": 60
+          }
+        },
+        "image_HUmcxj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FOX_Sports_logo_svg_png.png",
+            "image_width": 120
+          }
+        },
+        "image_qa644Q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fox_News_Channel_logo_svg_png.png",
+            "image_width": 60
+          }
+        },
+        "image_eDmDa7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mask-group-68-6688542780fe7_webp.png",
+            "image_width": 90
+          }
+        },
+        "image_UWcegW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-18-65f34c1ecebc1_webp.png",
+            "image_width": 120
+          }
+        }
+      },
+      "block_order": [
+        "image_GWnDqi",
+        "image_p4a8aL",
+        "image_xT4haa",
+        "image_HUmcxj",
+        "image_qa644Q",
+        "image_eDmDa7",
+        "image_UWcegW"
+      ],
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 100,
+        "show_border": true,
+        "layout": "marquee",
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "hp_reviews_nBjKeV": {
+      "type": "hp-reviews",
+      "blocks": {
+        "review_BjDgHw": {
+          "type": "review",
+          "settings": {
+            "stars_count": 5,
+            "text": "<p>“As a mom, I’m always looking for ways to keep my kids safe in a world surrounded by devices. The Lifetune Flex has been such a relief! My son wears it every day, and I love that it’s lightweight and comfortable for him”<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 14,
+            "name": "Amanda H.",
+            "name_size": 17,
+            "name_size_mobile": 17
+          }
+        },
+        "review_6TyrrN": {
+          "type": "review",
+          "settings": {
+            "stars_count": 5,
+            "text": "<p>“Hours on my phone used to leave me feeling drained and unfocused. With the Lifetune One, I’m protected from harmful EMFs, and I’ve noticed I feel clearer and less tired every day”<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 14,
+            "name": "Olivia R.",
+            "name_size": 17,
+            "name_size_mobile": 17
+          }
+        },
+        "review_9UNi7G": {
+          "type": "review",
+          "settings": {
+            "stars_count": 5,
+            "text": "<p>“With devices everywhere, I worried about EMFs in my kids’ playroom. The Lifetune Zone protects the entire room, and now I know they’re safe while they play and grow.\"<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 14,
+            "name": "John F.",
+            "name_size": 17,
+            "name_size_mobile": 17
+          }
+        }
+      },
+      "block_order": [
+        "review_BjDgHw",
+        "review_6TyrrN",
+        "review_9UNi7G"
+      ],
+      "settings": {
+        "bg_color": "#f7f5f2",
+        "stars_count": 5,
+        "title": "300,000+ People Worldwide Trust Aires for Proven EMF Protection",
+        "title_size": 32,
+        "title_size_mobile": 26,
+        "img": "shopify:\/\/shop_images\/Aires_HP_-_Reviews.jpg",
+        "link_text": "SHOP AIRES",
+        "link_url": "shopify:\/\/collections\/bestsellers",
+        "button_type": "btn--secondary",
+        "button_size": "btn--large",
+        "button_style": "btn--solid",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "section_blog_iJ78QL": {
+      "type": "section-blog",
+      "settings": {
+        "blog_name": "emf-101",
+        "show_view_all_link": true,
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "aspect_ratio": 0.7,
+        "sub_title": "Blog",
+        "sub_title_size": 16,
+        "sub_title_size_mobile": 14,
+        "title": "Your Education For All Things EMF and Wellness",
+        "title_size": 32,
+        "title_size_mobile": 26,
+        "title_font_size": "heading-small",
+        "show_tags": false,
+        "show_author": false,
+        "show_date": false,
+        "show_button": true,
+        "show_comments": false,
+        "width": "wrapper--full-padded",
+        "grid": 3,
+        "rows": 1,
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic",
+        "title_tag": "automatic"
+      }
+    },
+    "replo_homepage_certified_space_G79Rec": {
+      "type": "replo-homepage-certified_space",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "announcement-1",
+    "press-logos",
+    "benefits_section_LmLk9Y",
+    "section_double_epb6m3",
+    "brain_scan_videos_AiUtNJ",
+    "featured_collection_fUJg9J",
+    "section_double_slider_8x4G93",
+    "experts_3BMLyg",
+    "scrolling_icons_fkMPAE",
+    "hp_reviews_nBjKeV",
+    "replo_homepage_certified_space_G79Rec",
+    "section_blog_iJ78QL"
+  ]
+}

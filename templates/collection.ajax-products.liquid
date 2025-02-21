@@ -1,0 +1,75 @@
+{% comment %}
+  Determine the collection to use based on the request
+  This allows both 'all' and specific collection handles
+{% endcomment %}
+{% assign current_collection = collections[collection.handle] | default: collections.all %}
+<section class="collection collection-products collection-{{ collection.handle }} section-padding {{ color_scheme }}"
+         id="Collection--{{ section.id }}"
+         data-section-id="{{ section.id }}"
+         data-section-type="collection"
+         data-collection="{{ collection.url | default: '/collections/all' }}">
+
+    <div class="collection__products">
+        <div class="grid-outer" data-products-grid>
+            <div class="grid" id="CollectionLoop">
+                {%- if collection.products_count > 0 -%}
+                    {%- if featured_images_array.size > 0 -%}
+                        {%- liquid
+                            assign counter_grid = 1
+                            assign counter_delay = 0
+                            assign added_images_index = ''
+                            assign items_on_row_remaining = columns_desktop
+
+                            for product in collection.products
+                                for featured_image in featured_images_array
+                                    if featured_image == ''
+                                        continue
+                                    endif
+
+                                    assign featured_image_index = forloop.index
+                                    assign featured_image_position = featured_image | split: '#featured_image_position#' | last | split: '#featured_image_html#' | first | times: 1
+                                    assign featured_image_markup = featured_image | split: '#featured_image_html#' | last | split: '#featured_image#' | first
+                                    assign featured_image_index_tag = '@' | append: featured_image_index | append: '@'
+
+                                    if featured_image_position <= counter_grid
+                                        unless added_images_index contains featured_image_index_tag
+                                            assign counter_grid = counter_grid | plus: 1
+                                            assign added_images_index = added_images_index | append: '@' | append: featured_image_index | append: '@#'
+
+                                            echo featured_image_markup
+                                        endunless
+                                    endif
+                                endfor
+
+                                assign counter_delay = counter_delay | plus: 1
+                                assign counter_grid = counter_grid | plus: 1
+                                assign items_on_row_remaining = items_on_row_remaining | minus: 1
+
+                                if collection
+                                    render 'product-grid-item', product: product, index: forloop.index, sizes: image_sizes
+                                endif
+                            endfor
+                        -%}
+
+                    {%- else -%}
+                        {%- for product in collection.products -%}
+                            {%- assign grid_int = section.settings.grid | times: 1 -%}
+                            {%- assign animation_delay = forloop.index0 | modulo: grid_int | times: 1 -%}
+                            {%- render 'product-grid-item', product: product, animation_delay: animation_delay, index: forloop.index, sizes: image_sizes -%}
+                        {%- endfor -%}
+                    {%- endif -%}
+                {%- else -%}
+                    <div class="no-results">
+                        <p><strong>{{ 'collections.general.no_matches' | t }}</strong></p>
+                    </div>
+                {%- endif -%}
+            </div>
+
+            <div class="grid__loader">
+                <div class="loader grid__loader-line">
+                    <div class="loader-indeterminate"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

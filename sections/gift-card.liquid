@@ -1,0 +1,43 @@
+{%- comment -%}
+This file has been modified by the Yoast SEO for Shopify app.
+You can learn more about this (and learn how to cleanly revert these changes) at https://yoa.st/removing-theme-changes.
+{%- endcomment -%}
+<header id="header" class="giftcard-header">
+  <div class="h1">
+    {% if section.settings.logo != blank %}
+      <a href="{{ shop.url }}" {% if disabled_by_yoast_seo %}itemprop="url"{% endif %}>
+        <img src="{{ section.settings.logo | image_url }}"
+            style="width: {{ section.settings.logo_max_limit }}px; margin: 0 auto;"
+            alt="{{ section.settings.logo.alt | default: shop.name }}"
+            loading="eager">
+      </a>
+    {% else %}
+      <a href="{{ shop.url }}">
+        {{ shop.name | escape }}
+      </a>
+    {% endif %}
+  </div>
+  <div class="shop-url">{{ shop.url }}</div>
+</header>
+{% schema %}
+{
+  "name": "Gift card",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type":    "range",
+      "id":      "logo_max_limit",
+      "min":     5,
+      "max":     495,
+      "step":    5,
+      "unit":    "px",
+      "label":   "Logo width",
+      "default": 300
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,748 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_rich_text_bbjwcq": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_9ccJYR": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Introducing",
+            "padding_bottom": 16
+          }
+        },
+        "heading_4HaExp": {
+          "type": "heading",
+          "settings": {
+            "title": "About Us",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_mpFAY3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Aires, we pride ourselves on being more than just an EMF protection company. We’re on a mission to mitigate the effects of EMF radiation for individuals, families, and communities using proven, science-backed devices that are rigorously researched, consistently tested, and scientifically proven. <\/p><p>Our journey, deeply rooted in a rich history of wellness and innovation, began with the pioneering research of our founder’s father and his team at the non-profit, Aires Technologies Foundation in Russia. In the late 1990s and early 2000s, the researchers at the foundation developed a patented technology aimed at protecting military personnel from radar emissions, setting the stage for our relentless commitment to scientific excellence, and our transformative consumer products.<\/p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_xj7j7P": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "SHOP AIRES",
+            "button_url": "shopify:\/\/collections\/shop-aires-emf-protection",
+            "button_type": "btn--secondary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_9ccJYR",
+        "heading_4HaExp",
+        "text_mpFAY3",
+        "buttons_xj7j7P"
+      ],
+      "settings": {
+        "align_text": "text-center",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_opacity": 0,
+        "show_overlay_text": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section_multicolumn_39cXm7": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "text_P9xtFn": {
+          "type": "text",
+          "settings": {
+            "column_width": 33,
+            "title": "From military to consumer",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Our story significantly turned in 2012 when Dimitry Serov brought this military-grade technology to the consumer market. Known on the Canadian Stock Exchange as American Aires Inc. (CSE: WIFI) and to the general public as Aires Tech, we have since become an industry-leading enterprise in EMF protection. <\/p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_3dFYGJ": {
+          "type": "text",
+          "settings": {
+            "column_width": 33,
+            "title": "Scientific research",
+            "heading_font_size": "heading-medium",
+            "text": "<p>Our impressive intellectual portfolio includes 22 patents and a vast array of scientific research, with 25 Clinical & Scientific Trials and Reports, 5 Scientific Publications, and 8 Peer-Reviewed Studies. Our commitment to scientific excellence is further exemplified by our investments exceeding $20 million (USD)  in research and development.<\/p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_Wxtg9x": {
+          "type": "text",
+          "settings": {
+            "column_width": 33,
+            "title": "Product growth",
+            "heading_font_size": "heading-medium",
+            "text": "<p>In 2012, we launched our pioneering products, the Aires Shield and Aires Defender, featuring advanced 1.0-nanometer etching technology, marking the beginning of our journey in precision-driven innovation. As we embraced the 4G LTE era in 2014, we introduced the Aires Shield Extreme, Aires Defender Infinity, and Aires Black Crystal, adapting to the new bandwidth with enhanced capabilities.<\/p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_P9xtFn",
+        "text_3dFYGJ",
+        "text_Wxtg9x"
+      ],
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "double-1": {
+      "type": "section-double",
+      "blocks": {
+        "heading-1-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Cutting-edge Technology",
+            "color_title": "#000000",
+            "fs_title": 32,
+            "fs_title_mob": 26,
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text-1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In 2020, we launched our most technologically advanced devices to the market, an achievement that saw our devices equipped to meet the demands of protection against 5G technology. Our advanced, protective devices, with their Aires silicon resonator chips etched to an impressive 0.4 nanometres (significantly smaller than the average human hair), demonstrate our precision and expertise - embedding a powerful, protective technology into consumer products that aren’t much larger than a thumbnail. The series has now evolved into a comprehensive range (One, Flex, Go, Zone, and Zone Max) that facilitates comprehensive, complete, and up-to-date protection against pervasive, and growing, EMFs.<\/p>",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 14,
+            "padding_bottom": 16
+          }
+        },
+        "buttons_iRTGMj": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "LEARN MORE",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "button_url": "shopify:\/\/pages\/tech",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading-1-1",
+        "text-1-1",
+        "buttons_iRTGMj"
+      ],
+      "settings": {
+        "bg": "#f7f5f2",
+        "image_1": "shopify:\/\/shop_images\/1_3f363856-7e10-40d1-b6c4-7aef0c755c63.jpg",
+        "image_width": "one-half",
+        "image_contain": false,
+        "text_alignment": "text-left",
+        "layout": "is-reversed",
+        "width": "wrapper--full",
+        "height": "five-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_multicolumn_iLtK99": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "text_xRVmNm": {
+          "type": "text",
+          "settings": {
+            "column_width": 50,
+            "title": "",
+            "heading_font_size": "heading-medium",
+            "text": "<p>We’re dedicated to bridging the gap between technology and wellness. Our mission is to provide cutting-edge solutions that protect against electromagnetic radiation while ensuring they integrate seamlessly into everyday life. Our products stand alone in the EMF protection market, characterized by their scientific ingenuity and practical application.<\/p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_KqpN6r": {
+          "type": "text",
+          "settings": {
+            "column_width": 50,
+            "title": "",
+            "heading_font_size": "heading-small",
+            "text": "<p>Our approach involves continuous commitment to quality production, rigorous scientific testing, and unwavering loyalty to our customers. By staying up-to-date on the latest scientific advancements and customer needs, we ensure our products are ahead of their time and essential for a safer, healthier lifestyles in our connected society.<\/p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_xRVmNm",
+        "text_KqpN6r"
+      ],
+      "settings": {
+        "title": "",
+        "heading_font_size": "heading-medium",
+        "description": "",
+        "align_heading": "text-left",
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout_mobile": "1",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_double_pnpRTz": {
+      "type": "section-double",
+      "blocks": {
+        "heading_n6hj7y": {
+          "type": "heading",
+          "settings": {
+            "title": "Powering Perfomance",
+            "color_title": "#000000",
+            "fs_title": 32,
+            "fs_title_mob": 26,
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_4Fp6ny": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re proud to partner with leading organizations like the UFC, Canadian Basketball, and WWE, supporting athletes on their journey to peak health and performance. These collaborations highlight our commitment to enhancing well-being and resilience through cutting-edge EMF protection technology, trusted by elite professionals worldwide.<\/p>",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 14,
+            "padding_bottom": 16
+          }
+        },
+        "buttons_XTmeXh": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "LEARN MORE",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "button_url": "shopify:\/\/pages\/aires-athletes",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_n6hj7y",
+        "text_4Fp6ny",
+        "buttons_XTmeXh"
+      ],
+      "settings": {
+        "bg": "#f7f5f2",
+        "image_1": "shopify:\/\/shop_images\/2_b3b706b5-f7f2-4b43-bb40-070b7311f669.jpg",
+        "image_width": "one-half",
+        "image_contain": false,
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full",
+        "height": "five-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "announcement-1": {
+      "type": "section-announcement",
+      "blocks": {
+        "text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>25+ Clinical Trials<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_YxrjV8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>22 Patents<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_eUFNrW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>9 Peer Reviewed Studies<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_MzAGw8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>$20M In R & D<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_h7CKzD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Public Co. Traded in US, Canada & EU<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text-1",
+        "text_YxrjV8",
+        "text_eUFNrW",
+        "text_MzAGw8",
+        "text_h7CKzD"
+      ],
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": true,
+        "layout": "marquee",
+        "color_scheme": "scheme-1",
+        "padding_top": 15,
+        "padding_bottom": 15
+      }
+    },
+    "brain_scan_videos_AiUtNJ": {
+      "type": "brain-scan-videos",
+      "blocks": {
+        "item_7TLeUC": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "title": "Canada Basketball RJ Barrett's Positive Findings",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris described even with RJ's high-output neural activity, there was significant results above baseline range. This was another example of variability in brain activity by individuals and still Aires' presence showed impactful performance.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/BAItJubdKZI"
+          }
+        },
+        "item_RepXhN": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "title": "Pro UFC Fighter Maycee Barber's Impressive Results",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback Specialist Chris Wyllie performed an EEG brain scan on UFC's Maycee Barber and improvements were clear with Aires present. Maycee has noted that she no longer gets headaches since she's been using Aires!",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/_syXvHqHXh0?si=1Jbrj-mKZ_a59ZFx"
+          }
+        },
+        "item_JAMXhy": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-4.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-4.jpg",
+            "title": "Four Individuals EEG Brain Scan",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris performed four separate EEG demonstrations with individuals and their tech devices. Each scan showed positive results with Aires devices present compared to no Aires.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/TGh-IEmNeNY?si=8JNrKZlJ-nOPmQxB"
+          }
+        }
+      },
+      "block_order": [
+        "item_7TLeUC",
+        "item_RepXhN",
+        "item_JAMXhy"
+      ],
+      "settings": {
+        "content_max_width": 25,
+        "subtitle": "AIRES IN ACTION",
+        "color_subtitle": "#000000",
+        "fs_subtitle": 14,
+        "fs_subtitle_mob": 16,
+        "title": "The Real-time Proof of Aires Tech With EEG Brain Scans",
+        "color_title": "#000000",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "text": "EEG brain scans track electrical activity to help doctors understand brain function. Here, licensed professionals mapped EEG results to show measurable changes in brain activity when using Aires products alongside digital devices.",
+        "color_text": "#000000",
+        "fs_text": 16,
+        "fs_text_mob": 14,
+        "padding_top": 100,
+        "padding_bottom": 50
+      }
+    },
+    "featured_collection_fUJg9J": {
+      "type": "featured-collection",
+      "blocks": {
+        "line_item_F4iyRP": {
+          "type": "line_item",
+          "settings": {
+            "title": "Personal Protection"
+          }
+        },
+        "line_item_HHVJgm": {
+          "type": "line_item",
+          "settings": {
+            "title": "On-the-Go Protection"
+          }
+        },
+        "line_item_JrW3a7": {
+          "type": "line_item",
+          "settings": {
+            "title": "Whole Room Protection"
+          }
+        },
+        "link_HpqcWL": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/1_80f9998a-65b4-40f7-8723-325320dc2d3b.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/1_80f9998a-65b4-40f7-8723-325320dc2d3b.jpg",
+            "label": "Personal Device",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "One",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "19ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A device to adhere to your personal tech like phones and laptops.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop One",
+            "link_url": "shopify:\/\/products\/lifetune-one",
+            "link_size": 16,
+            "link_size_mobile": 14
+          }
+        },
+        "link_x7i7RK": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_ba28621f-fdaa-4f78-af62-6a38ca5496a0.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/2_ba28621f-fdaa-4f78-af62-6a38ca5496a0.jpg",
+            "label": "Personal Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Go",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "32ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A personal accessory to attach to your keys, bag, pet collar or to wear.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Go",
+            "link_url": "shopify:\/\/products\/lifetune-go",
+            "link_size": 16,
+            "link_size_mobile": 14
+          }
+        },
+        "link_LJcaym": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_e82cd8ec-72b8-4361-aa5f-e60259c2fd87.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/3_e82cd8ec-72b8-4361-aa5f-e60259c2fd87.jpg",
+            "label": "Versatile Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Flex",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "42ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A versatile wearable protection for on-the-go in your daily life.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Flex",
+            "link_url": "shopify:\/\/products\/lifetune-flex",
+            "link_size": 16,
+            "link_size_mobile": 14
+          }
+        },
+        "link_zBgTNa": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_f521aeb3-7307-4cc9-b4af-46538d3251b4.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/4_f521aeb3-7307-4cc9-b4af-46538d3251b4.jpg",
+            "label": "Small Room",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Zone",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "93ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A device to place in your small spaces like car, office space or home.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Zone",
+            "link_url": "shopify:\/\/products\/lifetune-zone",
+            "link_size": 16,
+            "link_size_mobile": 14
+          }
+        },
+        "link_AwexQH": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/5_c8b6ff41-9b62-4e28-851a-e41009ddc428.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/5_c8b6ff41-9b62-4e28-851a-e41009ddc428.jpg",
+            "label": "Large Room",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Zone Max",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "139ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>The biggest protection device for large areas like living rooms.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop max",
+            "link_url": "shopify:\/\/products\/lifetune-zone-max",
+            "link_size": 16,
+            "link_size_mobile": 14
+          }
+        }
+      },
+      "block_order": [
+        "line_item_F4iyRP",
+        "line_item_HHVJgm",
+        "line_item_JrW3a7",
+        "link_HpqcWL",
+        "link_x7i7RK",
+        "link_LJcaym",
+        "link_zBgTNa",
+        "link_AwexQH"
+      ],
+      "settings": {
+        "bg_color": "#237aa3",
+        "bg_img": "shopify:\/\/shop_images\/Radius__Radius_1-min.jpg",
+        "title": "<p>Choose the EMF Protection <br\/>That’s Best For You<\/p>",
+        "title_size": 32,
+        "title_size_mobile": 26,
+        "sub_title": "Full range coverage",
+        "sub_title_size": 14,
+        "link_text": "Shop all",
+        "link_url": "shopify:\/\/collections\/bestsellers",
+        "link_size": 20,
+        "link_size_mobile": 16,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "scrolling_icons_fkMPAE": {
+      "type": "scrolling-icons",
+      "blocks": {
+        "image_GWnDqi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mask-group-71-668855b11d9b3_webp.png",
+            "image_width": 160
+          }
+        },
+        "image_p4a8aL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/espn_png.png",
+            "image_width": 160
+          }
+        },
+        "image_xT4haa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1024px-ESPN_U_logo_svg_png.png",
+            "image_width": 60
+          }
+        },
+        "image_HUmcxj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FOX_Sports_logo_svg_png.png",
+            "image_width": 120
+          }
+        },
+        "image_qa644Q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fox_News_Channel_logo_svg_png.png",
+            "image_width": 60
+          }
+        },
+        "image_eDmDa7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mask-group-68-6688542780fe7_webp.png",
+            "image_width": 90
+          }
+        },
+        "image_UWcegW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-18-65f34c1ecebc1_webp.png",
+            "image_width": 120
+          }
+        }
+      },
+      "block_order": [
+        "image_GWnDqi",
+        "image_p4a8aL",
+        "image_xT4haa",
+        "image_HUmcxj",
+        "image_qa644Q",
+        "image_eDmDa7",
+        "image_UWcegW"
+      ],
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 100,
+        "show_border": true,
+        "layout": "marquee",
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_rich_text_bbjwcq",
+    "section_multicolumn_39cXm7",
+    "double-1",
+    "section_multicolumn_iLtK99",
+    "section_double_pnpRTz",
+    "announcement-1",
+    "brain_scan_videos_AiUtNJ",
+    "featured_collection_fUJg9J",
+    "scrolling_icons_fkMPAE"
+  ]
+}

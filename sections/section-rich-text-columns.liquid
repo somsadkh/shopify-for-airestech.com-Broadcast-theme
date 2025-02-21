@@ -1,0 +1,884 @@
+<!-- /sections/section-rich-text-columns.liquid -->
+{%- liquid
+  assign color_scheme = 'color-' | append: section.settings.color_scheme
+
+  for block in section.blocks
+    if block.settings.position == 'left'
+      assign column_left_items = column_left_items | plus: 1
+    endif
+  endfor
+
+  assign animation_order = 0
+  assign animation_order_left = 0
+  assign animation_order_right = column_left_items
+  assign animation_anchor = '#RteColumns--' | append: section.id
+-%}
+
+{%- style -%}
+  #RteColumns--{{ section.id }} {
+  --PT: {{ section.settings.padding_top }}px;
+  --PB: {{ section.settings.padding_bottom }}px;
+
+  --rte-column-width-left: {{ section.settings.left_column_width }}%;
+  --rte-column-width-right: {{ section.settings.right_column_width }}%;
+  }
+{%- endstyle -%}
+
+{%- for block in section.blocks -%}
+  {%- liquid
+    capture block_style
+      echo 'style="'
+      echo '--block-padding-bottom:' | append: block.settings.padding_bottom | append: 'px;'
+      echo '"'
+    endcapture
+  -%}
+
+  {%- capture block_code -%}
+    {%- liquid
+      if block.settings.position == 'left'
+        assign animation_order_left = animation_order_left | plus: 1
+        assign animation_order = animation_order_left
+      else
+        assign animation_order_right = animation_order_right | plus: 1
+        assign animation_order = animation_order_right
+      endif
+    -%}
+
+    <style>
+			.block-{{ block.id }} .hero__title {
+				font-size: {{ block.settings.fs_title }}px;
+			}
+
+			.block-{{ block.id }} .hero__rte {
+				font-size: {{ block.settings.fs_text }}px;
+				margin-bottom: 0;
+			}
+
+			.block-{{ block.id }} .btn {
+				font-size: {{ block.settings.fs_button }}px;
+			}
+
+			@media screen and (max-width: 749px) {
+				.block-{{ block.id }} .hero__title {
+					font-size: {{ block.settings.fs_title_mob }}px;
+				}
+
+				.block-{{ block.id }} .hero__rte {
+					font-size: {{ block.settings.fs_text_mob }}px;
+				}
+
+				.block-{{ block.id }} .btn  {
+					font-size: {{ block.settings.fs_button_mob }}px;
+				}
+			}
+    </style>
+
+  <div class="rte-columns-block block-{{ block.id }}" {{ block.shopify_attributes }} {{ block_style }}>
+    {%- case block.type -%}
+      {%- when 'heading' -%}
+        {%- if block.settings.title != blank -%}
+          {%- liquid
+            assign heading_tag = 'h2'
+
+            unless block.settings.heading_tag == 'automatic' or block.settings.heading_tag == blank
+              assign heading_tag = block.settings.heading_tag
+            endunless
+          -%}
+
+          <{{ heading_tag }} class="hero__title hero__heading {% if block.settings.heading_center %}text-center-pc{% endif %} {% if block.settings.heading_center_mobile %}text-center-mobile{% endif %} {{ block.settings.heading_font_size }} block-padding"
+          data-aos="hero"
+          data-aos-anchor="{{ animation_anchor }}"
+          data-aos-order="{{ animation_order }}"
+          >
+          {{ block.settings.title }}
+          </{{ heading_tag }}>
+        {%- endif -%}
+
+      {%- when 'text' -%}
+        {%- if block.settings.text != blank -%}
+
+          <div class="hero__rte {{ block.settings.text_font_size }} block-padding"
+               data-aos="hero"
+               data-aos-anchor="{{ animation_anchor }}"
+               data-aos-order="{{ animation_order }}"
+          >
+            {{ block.settings.text }}
+          </div>
+        {%- endif -%}
+
+      {%- when 'text_with_title' -%}
+        {%- if block.settings.text != blank or block.settings.title != blank -%}
+        <div class="hero__content hero__content--custom  block-padding"
+             data-aos="hero"
+             data-aos-anchor="{{ animation_anchor }}"
+             data-aos-order="{{ animation_order }}"
+        >
+          {%- liquid
+            assign heading_tag = 'h2'
+
+            unless block.settings.heading_tag == 'automatic' or block.settings.heading_tag == blank
+              assign heading_tag = block.settings.heading_tag
+            endunless
+          -%}
+
+          <{{ heading_tag }} class="hero__title {{ block.settings.heading_font_size }}"
+
+          >
+          {{ block.settings.title }}
+          </{{ heading_tag }}>
+
+          <div class="hero__rte {{ block.settings.text_font_size }}">
+            {{ block.settings.text }}
+          </div>
+          </div>
+        {%- endif -%}
+
+      {%- when 'buttons' -%}
+        {%- liquid
+          assign button_style = block.settings.button_style
+          if button_style == 'btn--text' and block.settings.show_arrow
+            assign button_style = button_style | append: ' btn--text-no-underline'
+          endif
+
+          if block.settings.button_secondary_text
+            assign button_secondary_style = block.settings.button_secondary_style
+            if button_secondary_style == 'btn--text' and block.settings.show_secondary_arrow
+              assign button_secondary_style = button_secondary_style | append: ' btn--text-no-underline'
+            endif
+          endif
+        -%}
+
+        {%- if block.settings.button_text != blank and block.settings.button_secondary_text != blank -%}
+          <div class="hero__button-group">
+        {%- endif -%}
+
+        {%- if block.settings.button_text != blank -%}
+          <div class="hero__button block-padding {% if block.settings.heading_center %}text-center-pc{% endif %} {% if block.settings.heading_center_mobile %}text-center-mobile{% endif %}"
+               data-aos="hero"
+               data-aos-anchor="{{ animation_anchor }}"
+               data-aos-order="{{ animation_order }}"
+          >
+            <a href="{{ block.settings.button_url | default: '#!' }}"
+               class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}">
+              <span>{{ block.settings.button_text }}</span>
+
+              {%- if block.settings.show_arrow -%}
+                {%- render 'icon-arrow-right' -%}
+              {%- endif -%}
+            </a>
+          </div>
+        {%- endif -%}
+
+        {%- if block.settings.button_secondary_text != blank -%}
+          <div class="hero__button block-padding {% if block.settings.heading_center %}text-center-pc{% endif %} {% if block.settings.heading_center_mobile %}text-center-mobile{% endif %}"
+               data-aos="hero"
+               data-aos-anchor="{{ animation_anchor }}"
+               data-aos-order="{{ animation_order }}"
+          >
+            <a href="{{ block.settings.button_secondary_url | default: '#!' }}"
+               class="btn {{ button_secondary_style }} {{ block.settings.button_secondary_size }} {{ block.settings.button_secondary_type }}">
+              <span>{{ block.settings.button_secondary_text }}</span>
+
+              {%- if block.settings.show_secondary_arrow -%}
+                {%- render 'icon-arrow-right' -%}
+              {%- endif -%}
+            </a>
+          </div>
+        {%- endif -%}
+
+        {%- if block.settings.button_text != blank and block.settings.button_secondary_text != blank -%}
+          </div>
+        {%- endif -%}
+    {%- endcase -%}
+    </div>
+  {%- endcapture -%}
+
+  {%- case block.settings.position -%}
+    {%- when 'left' -%}
+      {%- capture column_left -%}
+        {{ column_left }}
+        {{ block_code }}
+      {%- endcapture -%}
+
+    {%- when 'right' -%}
+      {%- capture column_right -%}
+        {{ column_right }}
+        {{ block_code }}
+      {%- endcapture -%}
+  {%- endcase -%}
+{%- endfor -%}
+
+<section id="RteColumns--{{ section.id }}"
+         class="index-rte-columns section-padding {{ color_scheme }}"
+         data-section-id="{{ section.id }}"
+         data-section-type="rich-text">
+  <div class="rich-text-columns__wrapper {{ section.settings.width }}">
+    {%- if section.blocks.size > 0 -%}
+      <div class="rich-text-columns__left {{ section.settings.align_text_mobile }}">{{ column_left }}</div>
+      <div class="rich-text-columns__right {{ section.settings.align_text }} {{ section.settings.align_text_mobile }}">{{ column_right }}</div>
+    {%- else -%}
+      {%- render 'no-blocks' -%}
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Rich text columns",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Left column"
+    },
+    {
+      "type": "paragraph",
+      "content": "Desktop only"
+    },
+    {
+      "type": "range",
+      "id": "left_column_width",
+      "label": "Width",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Right column"
+    },
+    {
+      "type": "paragraph",
+      "content": "Desktop only"
+    },
+    {
+      "type": "range",
+      "id": "right_column_width",
+      "label": "Width",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 40
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "Text alignment",
+      "default": "text-left",
+      "options": [
+        {
+          "value": "text-left",
+          "label": "Left"
+        },
+        {
+          "value": "text-right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "Width",
+      "default": "wrapper--full-padded",
+      "options": [
+        {
+          "value": "wrapper--full-padded",
+          "label": "Full width padded"
+        },
+        {
+          "value": "wrapper",
+          "label": "Normal"
+        },
+        {
+          "value": "wrapper--narrow",
+          "label": "Narrow"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "select",
+      "id": "align_text_mobile",
+      "label": "Text alignment",
+      "default": "text-left--mobile",
+      "options": [
+        {
+          "value": "text-left--mobile",
+          "label": "Left"
+        },
+        {
+          "value": "text-center--mobile",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme_1",
+      "label": "Color scheme"
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom",
+      "default": 100
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Rich text columns"
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_center",
+          "label": "Centered heading",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_center_mobile",
+          "label": "Centered heading mobile",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "fs_title",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size title",
+          "default": 32
+        },
+        {
+          "type": "range",
+          "id": "fs_title_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size title mobile",
+          "default": 32
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Column",
+          "default": "right",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Padding"
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 50,
+          "step": 2,
+          "unit": "px",
+          "label": "Bottom",
+          "default": 16
+        },
+        {
+          "type": "header",
+          "content": "Advanced"
+        },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Heading SEO tag",
+          "default": "automatic",
+          "options": [
+            {
+              "value": "automatic",
+              "label": "Automatic"
+            },
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "range",
+          "id": "fs_text",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size title",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "fs_text_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size title mobile",
+          "default": 16
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Column",
+          "default": "right",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Padding"
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 50,
+          "step": 2,
+          "unit": "px",
+          "label": "Bottom",
+          "default": 16
+        }
+      ]
+    },
+    {
+      "type": "text_with_title",
+      "name": "Title With text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Rich text columns"
+        },
+        {
+          "type": "range",
+          "id": "fs_title",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size title",
+          "default": 19
+        },
+        {
+          "type": "range",
+          "id": "fs_title_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size title mobile",
+          "default": 19
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "range",
+          "id": "fs_text",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size text",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "fs_text_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size text mobile",
+          "default": 16
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Column",
+          "default": "right",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Padding"
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 50,
+          "step": 2,
+          "unit": "px",
+          "label": "Title Padding Bottom",
+          "default": 16
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "Buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Column",
+          "default": "right",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_center",
+          "label": "Centered heading",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_center_mobile",
+          "label": "Centered heading mobile",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Primary button"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Text",
+          "default": "Learn more"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "button_type",
+          "label": "Color",
+          "default": "btn--primary",
+          "options": [
+            {
+              "value": "btn--black",
+              "label": "Black"
+            },
+            {
+              "value": "btn--white",
+              "label": "White"
+            },
+            {
+              "value": "btn--primary",
+              "label": "Primary"
+            },
+            {
+              "value": "btn--secondary",
+              "label": "Secondary"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "fs_button",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size button",
+          "default": 14
+        },
+        {
+          "type": "range",
+          "id": "fs_button_mob",
+          "min": 8,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size button mobile",
+          "default": 14
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Style",
+          "default": "btn--solid",
+          "options": [
+            {
+              "label": "Solid",
+              "value": "btn--solid"
+            },
+            {
+              "label": "Outline",
+              "value": "btn--outline"
+            },
+            {
+              "label": "Text",
+              "value": "btn--text"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_arrow",
+          "label": "Show arrow",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Secondary button"
+        },
+        {
+          "type": "text",
+          "id": "button_secondary_text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "button_secondary_url",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "button_secondary_type",
+          "label": "Color",
+          "default": "btn--primary",
+          "options": [
+            {
+              "value": "btn--black",
+              "label": "Black"
+            },
+            {
+              "value": "btn--white",
+              "label": "White"
+            },
+            {
+              "value": "btn--primary",
+              "label": "Primary"
+            },
+            {
+              "value": "btn--secondary",
+              "label": "Secondary"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_secondary_size",
+          "label": "Size",
+          "default": "",
+          "options": [
+            {
+              "label": "Small",
+              "value": "btn--small"
+            },
+            {
+              "label": "Medium",
+              "value": ""
+            },
+            {
+              "label": "Large",
+              "value": "btn--large"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "button_secondary_style",
+          "label": "Style",
+          "default": "btn--outline",
+          "options": [
+            {
+              "label": "Solid",
+              "value": "btn--solid"
+            },
+            {
+              "label": "Outline",
+              "value": "btn--outline"
+            },
+            {
+              "label": "Text",
+              "value": "btn--text"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "id": "show_secondary_arrow",
+          "label": "Show arrow",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Padding"
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 50,
+          "step": 2,
+          "unit": "px",
+          "label": "Bottom",
+          "default": 16
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rich text columns",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "heading",
+          "settings": {
+            "position": "left"
+          }
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": [
+      "header",
+      "aside",
+      "footer"
+    ]
+  }
+}
+{% endschema %}

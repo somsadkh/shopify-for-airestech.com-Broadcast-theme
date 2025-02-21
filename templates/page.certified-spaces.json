@@ -1,0 +1,129 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "replo_s01_c_spaces_KBzyCP": {
+      "type": "replo-s01-c_spaces",
+      "settings": {}
+    },
+    "section_announcement_Uwzmdy": {
+      "type": "section-announcement",
+      "blocks": {
+        "text_P4i4mF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>25+ Clinical Trials<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_tTAaG7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>22 Patents<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_ALtGgp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>9 Peer Reviewed Studies<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_BUwBGE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>$20M In R & D<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_ngpHrx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Public Co. Traded in US, Canada & EU<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_P4i4mF",
+        "text_tTAaG7",
+        "text_ALtGgp",
+        "text_BUwBGE",
+        "text_ngpHrx"
+      ],
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": true,
+        "layout": "marquee",
+        "color_scheme": "",
+        "padding_top": 15,
+        "padding_bottom": 15
+      }
+    },
+    "replo_s02_c_spaces_yN6kQU": {
+      "type": "replo-s02-c_spaces",
+      "settings": {}
+    },
+    "replo_s03_c_spaces_djW9d6": {
+      "type": "replo-s03-c_spaces",
+      "settings": {}
+    },
+    "replo_s04_c_spaces_F7Vf4i": {
+      "type": "replo-s04-c_spaces",
+      "settings": {}
+    },
+    "replo_s05_c_spaces_n3DqBX": {
+      "type": "replo-s05-c_spaces",
+      "settings": {}
+    },
+    "replo_s06_c_spaces_NMw9QL": {
+      "type": "replo-s06-c_spaces",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "replo_s01_c_spaces_KBzyCP",
+    "section_announcement_Uwzmdy",
+    "replo_s02_c_spaces_yN6kQU",
+    "replo_s03_c_spaces_djW9d6",
+    "replo_s04_c_spaces_F7Vf4i",
+    "replo_s05_c_spaces_n3DqBX",
+    "replo_s06_c_spaces_NMw9QL"
+  ]
+}

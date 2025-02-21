@@ -1,0 +1,221 @@
+{{ 'section-icons-with-text.css' | asset_url | stylesheet_tag }}
+
+{%- render 'section-spacing-collapsing', class: '.icons-with-text' -%}
+
+<div class="icons-with-text icons-with-text--{{ section.id }}">
+  <div class="icons-with-text__wrapper">
+    {% if section.settings.title != blank or section.settings.text != blank %}
+      <div class="icons-with-text__header {% if section.settings.heading_center %}text-center-pc{% endif %} {% if section.settings.heading_center_mobile %}text-center-mobile{% endif %}">
+        {% if section.settings.title != blank %}
+          <h2 class="section-title" style="--fz:{{ section.settings.title_size }}px;--fz-mobile:{{ section.settings.title_size_mobile }}px;">{{ section.settings.title }}</h2>
+        {% endif %}
+
+        {% if section.settings.text != blank %}
+          <div class="icons-with-text__text {% if section.settings.hide_text_on_mobile %}hide-on-mobile{% endif %}" style="--fz:{{ section.settings.text_size }}px;--fz-mobile:{{ section.settings.text_size_mobile }}px;">{{ section.settings.text }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="icons-with-text__grid">
+      {% for block in section.blocks %}
+        <div class="icons-with-text__item">
+          {% if block.settings.icon != blank %}
+            <div class="icons-with-text__item-icon">
+              <img
+                src="{{ block.settings.icon | img_url: 'master' }}"
+                alt="{{ block.settings.icon }}"
+                loading="lazy">
+            </div>
+          {% endif %}
+
+          <div>
+            {% if block.settings.title != blank %}
+              <div class="icons-with-text__item-title" style="--fz:{{ block.settings.title_size }}px;--fz-mobile:{{ block.settings.title_size_mobile }}px;">{{ block.settings.title }}</div>
+            {% endif %}
+
+            {% if block.settings.text != blank %}
+              <div class="icons-with-text__item-text" style="--fz:{{ block.settings.text_size }}px;--fz-mobile:{{ block.settings.text_size_mobile }}px;">{{ block.settings.text }}</div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Icons with text",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "heading_center",
+        "label": "Centered heading",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "heading_center_mobile",
+        "label": "Centered heading mobile",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+       {
+        "type": "range",
+        "id": "title_size",
+        "label": "Title size",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "title_size_mobile",
+        "label": "Title size(mobile)",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 32
+      }, 
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      },
+       {
+        "type": "range",
+        "id": "text_size",
+        "label": "Text size",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "text_size_mobile",
+        "label": "Text size(mobile)",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 16
+      }, 
+      {
+        "type": "checkbox",
+        "id": "hide_text_on_mobile",
+        "label": "Hide text on mobile"
+      },
+      {
+        "type": "paragraph",
+        "content": "Space between template sections(Desktop)"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 0
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 0
+      }, {
+        "type": "paragraph",
+        "content": "Space between template sections(Mobile)"
+      }, {
+        "type": "range",
+        "id": "padding_top_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top mobile",
+        "default": 0
+      }, {
+        "type": "range",
+        "id": "padding_bottom_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+        "type": "range",
+        "id": "title_size",
+        "label": "Title size",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 19
+      },
+      {
+        "type": "range",
+        "id": "title_size_mobile",
+        "label": "Title size(mobile)",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 20
+      }, {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+        "type": "range",
+        "id": "text_size",
+        "label": "Text size",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "text_size_mobile",
+        "label": "Text size(mobile)",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 16
+      }, 
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Icons with text"
+      }
+    ]
+  }
+{% endschema %}

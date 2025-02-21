@@ -1,0 +1,165 @@
+<div class="scrolling-icons">
+  {%- render 'announcement' -%}
+</div>
+
+{% schema %}
+  {
+    "name": "Scrolling icons",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Slider"
+      },
+      {
+        "type": "range",
+        "id": "slider_speed",
+        "label": "Autoplay speed",
+        "unit": "sec",
+        "min": 5,
+        "max": 20,
+        "step": 1,
+        "default": 7
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Scrolling text"
+      }, {
+        "type": "range",
+        "id": "marquee_speed",
+        "label": "Autoplay speed",
+        "unit": "%",
+        "min": 50,
+        "max": 300,
+        "step": 25,
+        "default": 100
+      }, {
+        "type": "select",
+        "id": "direction",
+        "label": "Text direction",
+        "default": "ticker-rtl",
+        "options": [
+          {
+            "value": "ticker-ltr",
+            "label": "Left to right"
+          }, {
+            "value": "ticker-rtl",
+            "label": "Right to left"
+          }
+        ]
+      }, {
+        "type": "range",
+        "id": "message_spacing",
+        "label": "Space between messages",
+        "default": 10,
+        "min": 5,
+        "max": 100,
+        "step": 5,
+        "unit": "px"
+      }, {
+        "type": "header",
+        "content": "Background image (optional)"
+      }, {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Image"
+      }, {
+        "type": "header",
+        "content": "Layout"
+      }, {
+        "type": "checkbox",
+        "id": "show_border",
+        "label": "Show border",
+        "default": false
+      }, {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "marquee",
+        "options": [
+          {
+            "value": "slider",
+            "label": "Slider"
+          }, {
+            "value": "marquee",
+            "label": "Scrolling text"
+          }
+        ]
+      }, {
+        "type": "header",
+        "content": "Colors"
+      }, {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "default": "scheme_1",
+        "label": "Color scheme"
+      }, {
+        "type": "header",
+        "content": "Padding"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Top",
+        "default": 5
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Bottom",
+        "default": 5
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "range",
+            "id": "image_width",
+            "label": "Width",
+            "unit": "px",
+            "min": 20,
+            "max": 180,
+            "step": 10,
+            "default": 100
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Scrolling icons",
+        "category": "Text"
+      }
+    ],
+    "disabled_on": {
+      "groups": ["header", "aside"]
+    }
+  }
+{% endschema %}

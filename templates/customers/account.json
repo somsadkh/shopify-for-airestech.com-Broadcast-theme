@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "main": {
+      "type": "customer-account",
+      "blocks": {
+        "account": {
+          "type": "account",
+          "settings": {}
+        },
+        "email": {
+          "type": "email",
+          "settings": {
+            "title": "Support",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "account",
+        "email"
+      ],
+      "settings": {}
+    },
+    "17388816329b6c5267": {
+      "type": "apps",
+      "blocks": {
+        "rivo_loyalty_rewards_referrals_lp_customer_account_ae3mjx": {
+          "type": "shopify:\/\/apps\/rivo-loyalty-rewards-referrals\/blocks\/lp-customer-account\/580e9665-b2cd-4dbc-b6ba-6445ac9e6871",
+          "settings": {
+            "account_card_enabled": true,
+            "account_card_background_color": "linear-gradient(180deg, rgba(245, 242, 236, 1), rgba(245, 242, 236, 1) 100%)",
+            "account_card_font_color": "#212121",
+            "account_card_logo": "shopify:\/\/shop_images\/Aires-Signature_Black_1.png",
+            "referral_block_enabled": true,
+            "referral_block_background_color": "linear-gradient(270deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "referral_block_font_color": "#212121",
+            "activity_block_enabled": false,
+            "activity_block_background_color": "",
+            "activity_block_font_color": "",
+            "activity_header_background_color": "",
+            "activity_header_font_color": "",
+            "rewards_block_enabled": true,
+            "rewards_progress_enabled": true,
+            "unused_rewards_enabled": true,
+            "rewards_arrow_icon_enabled": false,
+            "rewards_progress_bar_color": "#ab8c52",
+            "vip_tier_block_enabled": true
+          }
+        },
+        "rivo_loyalty_rewards_referrals_lp_customer_account_extras_jnECQT": {
+          "type": "shopify:\/\/apps\/rivo-loyalty-rewards-referrals\/blocks\/lp-customer-account-extras\/580e9665-b2cd-4dbc-b6ba-6445ac9e6871",
+          "settings": {
+            "account_dashboard_max_width": 1600,
+            "title_font_style": "inherit",
+            "title_font_family": "\"Practical Grotesk\", sans-serif",
+            "subtitle_font_family": "\"Practical Grotesk\", sans-serif",
+            "block_background_color": "#FFFFFF",
+            "block_font_color": "#212121",
+            "block_title_font_size": 18,
+            "block_title_font_weight": 400,
+            "block_body_font_size": 15,
+            "block_subtitle_font_weight": 400,
+            "corner_type": "rounded",
+            "block_border": "1px solid #D1CDC4",
+            "modal_background_color": "#ffffff",
+            "modal_font_color": "#212121",
+            "modal_icon_color": "#212121",
+            "modal_icon_position_top": 15,
+            "modal_icon_position_right": 15,
+            "modal_login_title_font_size": 22,
+            "modal_title_font_size": 22,
+            "modal_subtitle_font_size": 16,
+            "modal_body_font_size": 16,
+            "modal_icon_size": 72,
+            "custom_css": "#rivo-account-dashboard {\n    margin: 0 auto;\n    max-width: 1100px;\n    padding-left: 50px;\n    padding-right: 50px;\n}\n\n.rivo-account-block {\n     padding: 0;\n}\n\n@media (min-width: 1400px) {\n    #rivo-account-dashboard {\n        max-width: 80vw;\n    }\n}\n\n\/* --- ACCOUNT CARD --- *\/\n\n.rivo-account-card {\n    border: 0 !important;\n}\n\n.rivo-account-card a {\n    font-size: 15px;\n}\n\n.rivo-account-card-content-logo {\n    max-height: 35px;\n}\n\n.rivo-account-card-content-logo img {\n    max-height: 35px;\n}\n\n\/* --- REFERRALS --- *\/\n\n.rivo-account-referral-url-wrapper {\n    background: #F7F5F2;\n    padding: 5px;\n}\n\ninput.rivo-coupon-code,\n.rivo-form-input {\n    font-size: 14px !important;\n}\n\n.rivo-account-referral-block-actions a {\n    text-decoration: underline;\n    font-weight: 500;\n    color: #9A7E4A;\n}\n\n.rivo-account-referral-url-wrapper button {\n    font-size: 15px;\n}\n\n.rivo-account-referral-block .btn.button-1.btn--solid.btn--large.btn--secondary {\n    padding: 0px;\n    font-size: 14px;\n    min-width: 80px;\n    min-height: 42px;\n}\n\n\/* --- VIP TIERS  --- *\/\n\n.rivo-account-progress-container {\n    background: #F7F5F2;\n}\n\n.rivo-account-vip-tier-block {\n    min-height: 162px;\n}\n\n\/* --- REWARDS --- *\/\n\n.rivo-account-points-purchase-card {}\n\n.rivo-account-points-purchase-card-icon {\n    width: fit-content;\n}\n\n.rivo-account-points-purchase-card-description {\n    font-size: 14px;\n}\n\n.rivo-account-progress-labels {\n    font-weight: 500;\n    font-size: 14px;\n}\n\ndiv.rivo-account-points-purchases {\n    margin: 0px !important;\n}\n\n@media screen and (max-width: 950px) {\n    .rivo-account-card {\n        min-height: 100%;\n    }\n    .rivo-account-rewards-block {\n        min-height: 100% !important;\n    }\n    .rivo-account-referral-block {\n        min-height: 100%;\n    }\n    .rivo-account-vip-tier-block {\n        min-height: 100% !important;\n    }\n}\n\n@media (max-width: 749px) {\n    .rivo-account-card-content-logo img {\n        max-height: 22px;\n    }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "rivo_loyalty_rewards_referrals_lp_customer_account_ae3mjx",
+        "rivo_loyalty_rewards_referrals_lp_customer_account_extras_jnECQT"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17388816329b6c5267"
+  ]
+}

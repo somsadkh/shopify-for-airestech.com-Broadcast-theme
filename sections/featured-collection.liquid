@@ -1,0 +1,373 @@
+<!-- @prettify-ignore -->
+
+{{ 'section-featured-collection.css' | asset_url | stylesheet_tag }}
+
+{%- render 'section-spacing-collapsing', class: '.featured-collection' -%}
+
+
+<style>
+  .featured-collection--{{ section.id }} .featured-collection__bg{
+    {% if section.settings.bg_img != blank %}
+      background-image: url('{{ section.settings.bg_img | img_url: 'master' }}');
+      background-size: cover;
+      background-repeat: no-repeat;
+    {% else %}
+      background-color: {{ section.settings.bg_color }};
+    {% endif %}
+  }
+</style>
+
+<div class="featured-collection featured-collection--{{ section.id }}">
+    <div class="featured-collection__bg">
+      <div class="featured-collection__wrapper">
+        {% if section.settings.sub_title != blank %}
+          <div class="featured-collection__sub-title" style="--fz:{{ section.settings.sub_title_size }}px;">{{ section.settings.sub_title }}</div>
+        {% endif %}
+    
+        {% if section.settings.title != blank %}
+          <h2 class="section-title" style="--fz:{{ section.settings.title_size }}px;--fz-mobile:{{ section.settings.title_size_mobile }}px;">{{ section.settings.title }}</h2>
+        {% endif %}
+    
+        {% assign line_items = section.blocks | where: 'type', 'line_item' %}
+        {% if line_items.size > 0 %}
+          <div class="featured-collection__line">
+            <div class="line">
+              {% render 'icon-right' %}
+            </div>
+            <div class="featured-collection__line-wrapper">
+              {% for block in line_items %}
+                <div class="featured-collection__line-item">
+                  <span>{{ block.settings.title }}</span>
+                  <div class="featured-collection__line-item-point"></div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+    
+        {% assign links = section.blocks | where: 'type', 'link' %}
+        {% if links.size > 0 %}
+          <div class="featured-collection__grid">
+            {% for link in links %}
+              <div class="featured-collection__item {% if link.settings.full_width_mobile %}mobile-full-width{% endif %}">
+                {% render 'link-grid-item'
+                 , img: link.settings.img,
+                 img_mobile: link.settings.img_mobile
+                 label: link.settings.label,
+                 label_size: link.settings.label_size,
+                 label_size_mobile: link.settings.label_size_mobile,
+                 star_count: link.settings.stars_count,
+                 title: link.settings.title,
+                 title_size: link.settings.title_size,
+                 title_size_mobile: link.settings.title_size_mobile,
+                 sub_title: link.settings.sub_title,
+                 sub_title_size: link.settings.sub_title_size,
+                 sub_title_size_mobile: link.settings.sub_title_size_mobile
+                 description: link.settings.description,
+                 text_size: link.settings.text_size,
+                 text_size_mobile: link.settings.text_size_mobile
+                 link_text: link.settings.link_text,
+                 link_url: link.settings.link_url,
+                 link_size: link.settings.link_size,
+                 link_size_mobile: link.settings.link_size_mobile,
+                 %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+    
+        {% if section.settings.link_text != blank %}
+          <a href="{{ section.settings.link_url }}" class="btn btn--solid btn--secondary featured-collection-btn" style="--fz:{{ section.settings.link_size }}px;--fz-mobile:{{ section.settings.link_size_mobile }}px;">{{ section.settings.link_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Featured collection(new)",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color"
+      },
+      {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Background image"
+      },
+      {
+        "type": "richtext",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "range",
+        "id": "title_size",
+        "label": "Title size",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 32
+      },
+      {
+        "type": "range",
+        "id": "title_size_mobile",
+        "label": "Title size(mobile)",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 32
+      }, 
+      {
+        "type": "textarea",
+        "id": "sub_title",
+        "label": "Sub title(mobile only)"
+      },
+      {
+        "type": "range",
+        "id": "sub_title_size",
+        "label": "Sub title size",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 14
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link text"
+      }, {
+        "type": "url",
+        "id": "link_url",
+        "label": "Link url"
+      },
+      {
+        "type": "range",
+        "id": "link_size",
+        "label": "Link size",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "link_size_mobile",
+        "label": "Link size(mobile)",
+        "min": 8,
+        "max": 50,
+        "unit": "px",
+        "default": 14
+      }, {
+        "type": "paragraph",
+        "content": "Space between template sections(Desktop)"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 0
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 0
+      }, {
+        "type": "paragraph",
+        "content": "Space between template sections(Mobile)"
+      }, {
+        "type": "range",
+        "id": "padding_top_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top mobile",
+        "default": 0
+      }, {
+        "type": "range",
+        "id": "padding_bottom_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom mobile",
+        "default": 0
+      }
+
+    ],
+    "blocks": [
+      {
+        "type": "line_item",
+        "name": "Line item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }
+        ]
+      }, {
+        "type": "link",
+        "name": "Link",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "img_mobile",
+            "label": "Image(mobile)"
+          },
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Label"
+          },
+          {
+            "type": "range",
+            "id": "label_size",
+            "label": "Label size",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 14
+          },
+          {
+            "type": "range",
+            "id": "label_size_mobile",
+            "label": "Label size",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 14
+          },
+          {
+            "type": "range",
+            "id": "stars_count",
+            "label": "Stars count",
+            "min": 0,
+            "max": 5,
+            "default": 5
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "range",
+            "id": "title_size",
+            "label": "Title size",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 19
+          },
+          {
+            "type": "range",
+            "id": "title_size_mobile",
+            "label": "Title size(mobile)",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 19
+          }, {
+            "type": "textarea",
+            "id": "sub_title",
+            "label": "Sub title"
+          },
+          {
+            "type": "range",
+            "id": "sub_title_size",
+            "label": "Sub title size",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 14
+          },
+          {
+            "type": "range",
+            "id": "sub_title_size_mobile",
+            "label": "Sub title size(mobile)",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 14
+          }, {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "range",
+            "id": "text_size",
+            "label": "Text size",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 14
+          },
+          {
+            "type": "range",
+            "id": "text_size_mobile",
+            "label": "Text size(mobile)",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 14
+          },
+          {
+            "type": "text",
+            "id": "link_text",
+            "label": "Link text"
+          }, {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link url"
+          },
+          {
+            "type": "range",
+            "id": "link_size",
+            "label": "Link size",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 14
+          },
+          {
+            "type": "range",
+            "id": "link_size_mobile",
+            "label": "Link size(mobile)",
+            "min": 8,
+            "max": 50,
+            "unit": "px",
+            "default": 14
+          },
+          {
+            "type": "checkbox",
+            "id": "full_width_mobile",
+            "label": "Full width mobile",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured collection(new)"
+      }
+    ]
+  }
+{% endschema %}

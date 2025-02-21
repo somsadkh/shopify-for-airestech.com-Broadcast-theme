@@ -1,0 +1,509 @@
+{{ 'brain-scan-videos.css' | asset_url | stylesheet_tag }}
+
+<style>
+    .brain-scan-videos--{{ section.id }} {
+        --PT: {{ section.settings.padding_top }}px;
+        --PB: {{ section.settings.padding_bottom }}px;
+    }
+    @media screen and (max-width: 990px){
+        .brain-scan-videos__title.{{ section.id }} {
+            font-size: {{ section.settings.fs_title_mob }}px !important;
+        }
+        .brain-scan-videos__subtitle.{{ section.id }} {
+            font-size: {{ section.settings.fs_subtitle_mob }}px !important;
+        }
+        .brain-scan-videos__text.{{ section.id }} {
+            font-size: {{ section.settings.fs_text_mob }}px !important;
+        }
+    }
+</style>
+
+<section class="brain-scan-videos brain-scan-videos--{{ section.id }} section-padding">
+    <div class="brain-scan-videos__wrapper">
+        <div class="brain-scan-videos__info" style="max-width: {{ section.settings.content_max_width }}%;">
+            <div class="brain-scan-videos__subtitle {% if section.settings.subtitle_center %}text-center-pc{% endif %} {% if section.settings.subtitle_center_mobile %}text-center-mobile{% endif %} {{ section.id }}" style="color: {{ section.settings.color_subtitle }};font-size: {{ section.settings.fs_subtitle }}px;">{{ section.settings.subtitle }}</div>
+            <div class="brain-scan-videos__title {% if section.settings.heading_center %}text-center-pc{% endif %} {% if section.settings.heading_center_mobile %}text-center-mobile{% endif %} {{ section.id }}" style="color: {{ section.settings.color_title }};font-size: {{ section.settings.fs_title }}px;">{{ section.settings.title }}</div>
+            <div class="brain-scan-videos__text {{ section.id }}" style="color: {{ section.settings.color_text }};font-size: {{ section.settings.fs_text }}px;">{{ section.settings.text }}</div>
+
+            <div class="brain-scan-videos__arrows">
+                <div class="swiper-button-prev brain-scan-videos__prev">{%- render 'arrow-prev' -%}</div>
+                <div class="swiper-button-next brain-scan-videos__next">{%- render 'arrow-next' -%}</div>
+            </div>
+        </div>
+        <div class="brain-scan-videos__slider swiper">
+            <div class="swiper-wrapper">
+                {%- for block in section.blocks -%}
+                    <style>
+                        @media screen and (max-width: 990px){
+                            .brain-scan-videos__item--title.{{ block.id }} {
+                                font-size: {{ block.settings.fs_title_mob }}px !important;
+                            }
+                            .brain-scan-videos__item--text.{{ block.id }} {
+                                font-size: {{ block.settings.fs_text_mob }}px !important;
+                            }
+                        }
+                    </style>
+
+                    <div class="swiper-slide brain-scan-videos__item">
+                        <div class="brain-scan-videos__image">
+                            {%- if block.settings.show_play == true -%}
+                                {%- render 'icon-youtube-new' -%}
+                            {%- endif -%}
+                            <img lazy src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}">
+                            {% if block.settings.image_mob != blank %}
+                                <img class="mobile" lazy src="{{ block.settings.image_mob | img_url: 'master' }}" alt="{{ block.settings.image.alt }}">
+                            {%- else -%}
+                                <img class="mobile" lazy src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}">
+                            {% endif %}
+                        </div>
+                        <div class="brain-scan-videos__item--title {{ block.id }}" style="color: {{ block.settings.color_title }};font-size: {{ block.settings.fs_title }}px;">{{ block.settings.title }}</div>
+                        <div class="brain-scan-videos__item--text {{ block.id }}" style="color: {{ block.settings.color_text }};font-size: {{ block.settings.fs_text }}px;">{{ block.settings.text }}</div>
+                        {%- if block.settings.button_text != blank -%}
+                            {%- liquid
+                                assign prev_index = forloop.index0 | minus: 1
+                                assign next_index = forloop.index0 | plus: 1
+                                assign prev_block = section.blocks[prev_index]
+                                assign next_block = section.blocks[next_index]
+                                assign animation_order = animation_order | plus: 1
+                                assign first_button_of_group = false
+                                assign last_button_of_group = false
+                                if next_block.type == 'buttons' and forloop.index0 == 0 or prev_block.type != 'buttons' and next_index != section.blocks.size and next_block.type == 'buttons'
+                                    assign first_button_of_group = true
+                                endif
+                
+                                if prev_block.type == 'buttons' and next_block.type != 'buttons' and prev_index != -1 or forloop.index == section.blocks.size and prev_block.type == 'buttons'
+                                    assign last_button_of_group = true
+                                endif
+                
+                                assign button_style = block.settings.button_style
+                                if button_style == 'btn--text' and block.settings.show_arrow
+                                    assign button_style = button_style | append: ' btn--text-no-underline'
+                                endif
+                            -%}
+                
+                            <div class="hero__button popup block-padding"
+                                data-aos="hero"
+                                data-aos-anchor="{{ animation_anchor }}"
+                                data-aos-order="{{ animation_order }}"
+                                {{ block.shopify_attributes }}
+                                style="{{ block_style }}"
+                            >
+                                <a href="{{ block.settings.button_url | default: '#!' }}" class="btn {{ button_style }} {{ block.settings.button_size }} {{ block.settings.button_type }}">
+                                    <span>{{ block.settings.button_text }}</span>
+                
+                                    {%- if block.settings.show_arrow -%}
+                                        {%- render 'icon-arrow-right' -%}
+                                    {%- endif -%}
+                                </a>
+                            </div>
+                        {%- endif -%}
+                    </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+
+    {%- for block in section.blocks -%}
+        <div class="brain-scan-videos--popup">
+            {%- if block.settings.youtube != blank -%}
+
+                {%- capture iframe -%}
+                    <iframe id="youtube-video" width="560" height="315" 
+                        src="{{ block.settings.youtube }}?enablejsapi=1&modestbranding=1&autoplay=1&mute=1" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                {%- endcapture -%}
+                <div class="brain-scan-videos--popup__wrapper" data-iframe='{{ iframe }}'>
+                    <span class="brain-scan-videos--close">×</span>
+                    <div class="content"></div>
+                </div>
+            {%- else -%}
+                <div class="brain-scan-videos--popup__wrapper-video">
+                    <span class="brain-scan-videos--close">×</span>
+                    <video src="{{block.settings.shopify.sources[1].url}}" controls></video>
+                </div>
+            {%- endif -%}
+        </div>
+    {%- endfor -%}
+</section>
+
+
+<script>
+    var swiper = new Swiper(".brain-scan-videos__slider", {
+        slidesPerView: 2.5,
+        spaceBetween: 55,
+        navigation: {
+            nextEl: ".brain-scan-videos__next",
+            prevEl: ".brain-scan-videos__prev",
+        },
+        breakpoints: {
+            "1": {
+                slidesPerView: 1.5,
+                spaceBetween: 32,
+            },
+            "450": {
+                slidesPerView: 1.8,
+                spaceBetween: 40,
+            },
+            "990": {
+                slidesPerView: 2.3,
+                spaceBetween: 40,
+            },
+            "1200": {
+                slidesPerView: 2.5,
+                spaceBetween: 55,
+            },
+        },
+    });
+
+    const brainItems = document.querySelectorAll(".brain-scan-videos__item");
+    const brainPopup = document.querySelectorAll(".brain-scan-videos--popup");
+
+    brainItems.forEach((item, index) =>{
+        const brainButtonPopup = item.querySelector(".hero__button.popup");
+        const brainButtonPopupPlay = item.querySelector(".play-video");
+        
+        const brainPopupClose = brainPopup[index].querySelector(".brain-scan-videos--close");
+        const video = brainPopup[index].querySelector("video");
+        if(brainButtonPopupPlay){
+            brainButtonPopupPlay.addEventListener("click", ()=>{
+                brainPopup[index].classList.add("active");
+                document.body.style.overflow = 'hidden'
+                if(brainPopup[index].querySelector(".brain-scan-videos--popup__wrapper")){
+
+                    const wrapper = brainPopup[index].querySelector(".brain-scan-videos--popup__wrapper .content");
+                    const htmlContent = brainPopup[index].querySelector(".brain-scan-videos--popup__wrapper").getAttribute('data-iframe');
+
+                    wrapper.innerHTML = htmlContent;
+                }
+            })
+        }
+        
+        if(brainButtonPopup){
+            brainButtonPopup.addEventListener("click", ()=>{
+                brainPopup[index].classList.add("active");
+                document.body.style.overflow = 'hidden'
+                if(brainPopup[index].querySelector(".brain-scan-videos--popup__wrapper")){
+                    const wrapper = brainPopup[index].querySelector(".brain-scan-videos--popup__wrapper .content");
+                    const htmlContent = brainPopup[index].querySelector(".brain-scan-videos--popup__wrapper").getAttribute('data-iframe');
+                    wrapper.innerHTML = htmlContent;
+                }
+            })
+        }
+
+        brainPopupClose.addEventListener("click", ()=>{
+                brainPopup[index].classList.remove("active")
+                document.body.style.overflow = 'auto'
+
+                if(brainPopup[index].querySelector(".brain-scan-videos--popup__wrapper")){
+                    const wrapper = brainPopup[index].querySelector(".brain-scan-videos--popup__wrapper .content");
+                    wrapper.innerHTML = "";
+                }
+                if(video){
+                    video.pause()
+                }
+            })
+    })
+</script>
+
+{% schema %}
+  {
+    "name": "Brain scan videos section",
+    "settings": [
+        {
+            "type": "range",
+            "id": "content_max_width",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "Max width main info",
+            "default": 26
+        },
+        {
+            "type": "checkbox",
+            "id": "subtitle_center",
+            "label": "Centered subtitle",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "subtitle_center_mobile",
+            "label": "Centered subtitle mobile",
+            "default": false
+          },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
+        },
+        {
+            "type": "color",
+            "id": "color_subtitle",
+            "label": "Color subtitle",
+            "default": "#000000"
+        },
+        {
+            "type": "range",
+            "id": "fs_subtitle",
+            "min": 10,
+            "max": 60,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size subtitle",
+            "default": 16
+        },
+        {
+            "type": "range",
+            "id": "fs_subtitle_mob",
+            "min": 8,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size subtitle mobile",
+            "default": 16
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "checkbox",
+            "id": "heading_center",
+            "label": "Centered heading",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "heading_center_mobile",
+            "label": "Centered heading mobile",
+            "default": false
+          },
+        {
+            "type": "color",
+            "id": "color_title",
+            "label": "Color title",
+            "default": "#000000"
+        },
+        {
+            "type": "range",
+            "id": "fs_title",
+            "min": 10,
+            "max": 60,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size title",
+            "default": 16
+        },
+        {
+            "type": "range",
+            "id": "fs_title_mob",
+            "min": 8,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size title mobile",
+            "default": 16
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "color",
+            "id": "color_text",
+            "label": "Color text",
+            "default": "#000000"
+        },
+        {
+            "type": "range",
+            "id": "fs_text",
+            "min": 10,
+            "max": 60,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size text",
+            "default": 16
+        },
+        {
+            "type": "range",
+            "id": "fs_text_mob",
+            "min": 8,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Font size text mobile",
+            "default": 16
+        },
+        {
+            "type": "header",
+            "content": "Padding"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Top",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Bottom",
+            "default": 50
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Video item",
+            "type": "item",
+            "settings": [
+                {
+                  "type": "checkbox",
+                  "id": "show_play",
+                  "label": "Show play icon",
+                  "default": true
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image_mob",
+                    "label": "Image mobile"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "color",
+                    "id": "color_title",
+                    "label": "Color title",
+                    "default": "#000000"
+                },
+                {
+                    "type": "range",
+                    "id": "fs_title",
+                    "min": 10,
+                    "max": 60,
+                    "step": 1,
+                    "unit": "px",
+                    "label": "Font size title",
+                    "default": 23
+                },
+                {
+                    "type": "range",
+                    "id": "fs_title_mob",
+                    "min": 8,
+                    "max": 40,
+                    "step": 1,
+                    "unit": "px",
+                    "label": "Font size title mobile",
+                    "default": 16
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "Text"
+                },
+                {
+                    "type": "color",
+                    "id": "color_text",
+                    "label": "Color text",
+                    "default": "#000000"
+                },
+                {
+                    "type": "range",
+                    "id": "fs_text",
+                    "min": 10,
+                    "max": 60,
+                    "step": 1,
+                    "unit": "px",
+                    "label": "Font size text",
+                    "default": 16
+                },
+                {
+                    "type": "range",
+                    "id": "fs_text_mob",
+                    "min": 8,
+                    "max": 40,
+                    "step": 1,
+                    "unit": "px",
+                    "label": "Font size text mobile",
+                    "default": 16
+                },
+                {
+                    "type": "text",
+                    "id": "button_text",
+                    "label": "Text",
+                    "default": "View Video"
+                },
+                {
+                    "type": "select",
+                    "id": "button_type",
+                    "label": "Color",
+                    "default": "btn--primary",
+                    "options": [
+                        { "value": "btn--black", "label": "Black" },
+                        { "value": "btn--white", "label": "White" },
+                        { "value": "btn--primary", "label": "Primary" },
+                        { "value": "btn--secondary", "label": "Secondary" }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "button_size",
+                    "label": "Size",
+                    "default": "",
+                    "options": [
+                        { "label": "Small", "value": "btn--small" },
+                        { "label": "Medium", "value": "" },
+                        { "label": "Large", "value": "btn--large" }
+                    ]
+                },
+                {
+                    "type": "select",
+                    "id": "button_style",
+                    "label": "Style",
+                    "default": "btn--solid",
+                    "options": [
+                        { "label": "Solid", "value": "btn--solid" },
+                        { "label": "Outline", "value": "btn--outline" },
+                        { "label": "Text", "value": "btn--text" }
+                    ]
+                },
+                {
+                    "type": "textarea",
+                    "id": "youtube",
+                    "label": "Youtube link"
+                },
+                {
+                    "type": "video",
+                    "id": "shopify",
+                    "label": "Shopify video"
+                },
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Brain scan videos section"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,52 @@
+<!-- snippets/component__rating.liquid -->
+{% comment %} 
+  Rating component.
+
+  Accepts:
+    - product: {object} Product object.
+    - enable_stars: {boolean} Whether to display stars.
+    - enable_badge: {boolean} Whether to display a badge.
+    - badge_background: {string} Background color for the badge.
+    - badge_text: {string} Text for the badge.
+  
+  Usage:
+    {% render 'component__rating', 
+      product: product,
+      enable_stars: true,
+      enable_badge: true,
+      badge_background: 'color__bg-secondary',
+      badge_text: 'text'
+    %}
+{% endcomment %}
+
+{% comment %} 
+  Below metafields can be swapped to connect to any app. E.g. using Loox you might use the following metafields
+
+  - {% assign rating = product.metafields.loox.avg_rating %}
+  - {% assign rating_count = product.metafields.loox.num_reviews %}
+  - {% assign max = 5 %}
+{% endcomment %}
+{% comment %}{% assign rating = product.metafields.reviews.rating.value | times: 1 | default: 5 %}{% endcomment %}
+{% assign rating = product.metafields.reviews.rating.value.rating | times: 1 %}
+{% assign rating_count = product.metafields.reviews.rating_count %}
+{% assign max = 5 %}
+{% assign full_stars = rating | floor %}
+{% assign full_stars_plus_one = full_stars | plus: 1 %}
+{% assign has_half_star = rating | modulo: 1 %}
+{% assign size = sizes | default: 14 %}
+
+{% if rating > 0 %}
+  <div class="flex flex-align-center rating {{ class }}" style="color: #1E1E1E;">
+    {% for iteration in (1..max) %}
+      {% if iteration <= full_stars %}
+        {% render 'icon-stars', icon: 'star', size: size %}
+      {% elsif iteration == full_stars_plus_one and has_half_star > 0 %}
+        {% render 'icon-stars', icon: 'star', size: size %}
+      {% else %}
+        {% render 'icon-stars', icon: 'star-empty', size: size %}
+      {% endif %}
+    {% endfor %}
+  </div>
+{% else %}
+  {% render 'icon-stars', icon: 'star', size: size %}
+{% endif %}

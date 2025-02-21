@@ -1,0 +1,212 @@
+{
+  "sections": {
+    "featured": {
+      "type": "featured-posts",
+      "blocks": {
+        "feat": {
+          "type": "featured_post",
+          "settings": {
+            "featured_post": "inside-aires-tech\/why-emf-blockers-are-not-the-solution-for-emf-protection",
+            "subheading": "NEW ARTICLE"
+          }
+        }
+      },
+      "block_order": [
+        "feat"
+      ],
+      "settings": {
+        "show_author": false,
+        "show_date": true,
+        "show_button": true,
+        "heading_font_size": "heading-medium",
+        "width": "wrapper--full",
+        "height": "five-fifty-height-hero",
+        "mobile_height": "screen-height-one-third--mobile",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_blog_H8JU8m": {
+      "type": "section-blog",
+      "settings": {
+        "blog_name": "emf-101",
+        "show_view_all_link": false,
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "aspect_ratio": 0.7,
+        "sub_title": "",
+        "sub_title_size": 16,
+        "sub_title_size_mobile": 14,
+        "title": "EMF 101",
+        "title_size": 32,
+        "title_size_mobile": 32,
+        "title_font_size": "heading-small",
+        "show_tags": false,
+        "show_author": false,
+        "show_date": false,
+        "show_button": true,
+        "show_comments": false,
+        "width": "wrapper--full-padded",
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "heading_tag": "automatic",
+        "title_tag": "automatic"
+      }
+    },
+    "section_blog_bctjJ7": {
+      "type": "section-blog",
+      "settings": {
+        "blog_name": "digital-wellness",
+        "show_view_all_link": false,
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "aspect_ratio": 0.7,
+        "sub_title": "",
+        "sub_title_size": 16,
+        "sub_title_size_mobile": 14,
+        "title": "Digital Wellness",
+        "title_size": 32,
+        "title_size_mobile": 32,
+        "title_font_size": "heading-small",
+        "show_tags": false,
+        "show_author": false,
+        "show_date": false,
+        "show_button": true,
+        "show_comments": false,
+        "width": "wrapper--full-padded",
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "heading_tag": "automatic",
+        "title_tag": "automatic"
+      }
+    },
+    "section_blog_NMNRiJ": {
+      "type": "section-blog",
+      "settings": {
+        "blog_name": "podcasts",
+        "show_view_all_link": false,
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "aspect_ratio": 0.7,
+        "sub_title": "",
+        "sub_title_size": 16,
+        "sub_title_size_mobile": 14,
+        "title": "Recent Podcasts",
+        "title_size": 32,
+        "title_size_mobile": 32,
+        "title_font_size": "heading-small",
+        "show_tags": false,
+        "show_author": false,
+        "show_date": false,
+        "show_button": true,
+        "show_comments": false,
+        "width": "wrapper--full-padded",
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "heading_tag": "automatic",
+        "title_tag": "automatic"
+      }
+    },
+    "section_rich_text_jKTcUA": {
+      "type": "section-rich-text",
+      "blocks": {
+        "subheading_XqdtmJ": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Introducing",
+            "padding_bottom": 16
+          }
+        },
+        "heading_VXzNTD": {
+          "type": "heading",
+          "settings": {
+            "title": "All Blogs",
+            "heading_font_size": "heading-large",
+            "padding_bottom": 0,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_x9tBRN": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_Mzi7hF": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_XqdtmJ",
+        "heading_VXzNTD",
+        "text_x9tBRN",
+        "buttons_Mzi7hF"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_opacity": 0,
+        "show_overlay_text": false,
+        "padding_top": 26,
+        "padding_bottom": 26
+      }
+    },
+    "main": {
+      "type": "blog",
+      "settings": {
+        "show_title": false,
+        "show_rss": false,
+        "show_tag_nav": false,
+        "aspect_ratio": 0.7,
+        "title_font_size": "heading-small",
+        "show_tags": false,
+        "show_author": false,
+        "show_date": false,
+        "show_button": true,
+        "show_comments": false,
+        "grid": 4,
+        "rows": 4,
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 0,
+        "title_tag": "automatic"
+      }
+    }
+  },
+  "order": [
+    "featured",
+    "section_blog_H8JU8m",
+    "section_blog_bctjJ7",
+    "section_blog_NMNRiJ",
+    "section_rich_text_jKTcUA",
+    "main"
+  ]
+}
