@@ -1,0 +1,352 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_custom_content_nrAcwF": {
+      "type": "section-custom-content",
+      "blocks": {
+        "text_fhqqK9": {
+          "type": "text",
+          "settings": {
+            "subheading": "EMF 101",
+            "title": "Understanding Electromagnetic Fields",
+            "heading_font_size": "heading-medium",
+            "text": "<p><strong>Electromagnetic fields (EMFs)<\/strong> are invisible areas of energy that surround electrical and wireless devices. EMFs exist on a spectrum, ranging from <strong>low-frequency fields<\/strong> like power lines and household electronics to the <strong>high-frequency fields<\/strong> that surround Wi-Fi routers, cell phones, and radio signals. While we naturally encounter EMFs from the Earth’s magnetic field and the sun, our exposure to man-made EMFs has significantly increased with modern technology.<\/p>",
+            "text_font_size": "body-medium",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "",
+            "color": "",
+            "heading_tag": "automatic"
+          }
+        },
+        "image_pKJ3P6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/linkedin-salesw-solutions-Be5aVKFv9ho-unsplash-min.jpg",
+            "title": "",
+            "heading_font_size": "heading-large",
+            "text": "",
+            "text_font_size": "body-medium",
+            "flex_align": "align--middle-center",
+            "show_text_background": false,
+            "bg_color": "",
+            "color": "",
+            "overlay_opacity": 0,
+            "overlay_color": "",
+            "show_overlay_text": false,
+            "link_text": "",
+            "link": "",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_fhqqK9",
+        "image_pKJ3P6"
+      ],
+      "settings": {
+        "borders": false,
+        "gutters": false,
+        "width": "wrapper--full-padded",
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_7KtWEh": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_nRfnni": {
+          "type": "heading",
+          "settings": {
+            "title": "The Wave Forward",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_U8AyGM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For expert insights, personal stories, and current research on the impacts of EMFs, follow along with <a href=\"https:\/\/airestech.com\/blogs\/connect\/start-here?_pos=1&_sid=3f167c795&_ss=r\"><span style=\"text-decoration:underline\"><em><strong>The Wave Forward<\/strong><\/em><\/span><\/a>! More than a blog, this is a movement dedicated to exploring the relationship between technology and wellness with a focus on how EMFs affect health. Covering topics ranging from EMF safety to digital wellness to tech innovation, <em>The Wave Forward<\/em> offers practical tips for reducing exposure and optimizing well-being in the midst of the technology we use every day. With a thriving community and a <a href=\"https:\/\/airestech.com\/blogs\/podcasts\"><span style=\"text-decoration:underline\">podcast featuring industry leaders<\/span><\/a>, <em>The Wave Forward<\/em> serves as a trusted resource for anyone interested in navigating modern technology without compromising their health.<\/p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_nRfnni",
+        "text_U8AyGM"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_opacity": 0,
+        "show_overlay_text": false,
+        "padding_top": 46,
+        "padding_bottom": 18
+      }
+    },
+    "section_hero_w96cBG": {
+      "type": "section-hero",
+      "settings": {
+        "content_max_width": 540,
+        "image_1": "shopify:\/\/shop_images\/img_5781_jpg_4249ff06-bb11-4bdb-ae8a-7bea865156ef.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "screen-height-three-quarters",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_opacity": 0,
+        "show_overlay_text": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_rich_text_VCVjix": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_yGdzJr": {
+          "type": "heading",
+          "settings": {
+            "title": "Potential Risks of EMF Exposure",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_APWTCe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Exposure to EMFs has been linked to potential health concerns including:<\/p><ul><li><a href=\"https:\/\/airestech.com\/blogs\/optimal-health-performance\/emf-radiation-and-headaches?_pos=1&_sid=355578267&_ss=r\"><span style=\"text-decoration:underline\">Headaches<\/span><\/a><\/li><li><a href=\"https:\/\/airestech.com\/blogs\/optimal-health-performance\/the-science-behind-emf-radiation-burnout?_pos=10&_sid=0de75b3bc&_ss=r\"><span style=\"text-decoration:underline\">Fatigue<\/span><\/a><\/li><li><a href=\"https:\/\/airestech.com\/blogs\/optimal-health-performance\/sleeping-with-the-enemy-emfs-sleep-disruption?_pos=1&_sid=e3f50003f&_ss=r\"><span style=\"text-decoration:underline\">Sleep disturbances<\/span><\/a><\/li><li><a href=\"https:\/\/airestech.com\/blogs\/emf-101\/protecting-your-brain-from-emfs-understanding-the-invisible-threat?_pos=6&_sid=62b44ec31&_ss=r\"><span style=\"text-decoration:underline\">Brain fog and difficulty concentration<\/span><\/a><\/li><li><a href=\"https:\/\/airestech.com\/blogs\/optimal-health-performance\/what-is-oxidative-stress?_pos=2&_sid=5395f9577&_ss=r\"><span style=\"text-decoration:underline\">Increased oxidative stress<\/span><\/a><\/li><li><a href=\"https:\/\/airestech.com\/blogs\/optimal-health-performance\/immune-system-emf-how-does-your-exposure-impact-your-immunity?_pos=2&_sid=9ac3904b7&_ss=r\"><span style=\"text-decoration:underline\">Impaired immunity<\/span><\/a><\/li><li><a href=\"https:\/\/airestech.com\/blogs\/optimal-health-performance\/emf-radiation-is-a-fertility-risk-factor?_pos=7&_sid=b463d3cef&_ss=r\"><span style=\"text-decoration:underline\">Reproductive challenges <\/span><\/a><\/li><\/ul><p>The World Health Organization has classified radiofrequency (RF) EMF – which is emitted by cell phones and other wireless devices – as “<a href=\"https:\/\/www.iarc.who.int\/pressrelease\/iarc-classifies-radiofrequency-electromagnetic-fields-as-possibly-carcinogenic-to-humans\/\"><span style=\"text-decoration:underline\">possibly carcinogenic<\/span><\/a>” to humans. Despite growing research on these effects, <a href=\"https:\/\/airestech.com\/blogs\/podcasts\/the-truth-behind-emf-safety-limits?_pos=1&_sid=da7f7c0fd&_ss=r\"><span style=\"text-decoration:underline\">current regulations are outdated<\/span><\/a> and fail to account for the cumulative and chronic exposure most people experience in today’s wireless world. These standards primarily focus on thermal effects, overlooking the potential biological impact of non-ionizing radiation. <\/p><p><a href=\"https:\/\/airestech.com\/blogs\/podcasts\/spinal-truths-technologys-effect-on-core-health-dr-erb?_pos=3&_sid=e1d146a1d&_ss=r\"><span style=\"text-decoration:underline\">As electrical beings<\/span><\/a>, our bodies rely on natural electromagnetic signals for essential functions like brain activity and heart rhythms. We are living in an environment saturated with artificial EMFs, so it’s crucial to be mindful of our exposure and take proactive steps to minimize any potential harm.<\/p><p>With researchers still working to fully understand the long-term risks of EMF exposure, many people are looking for innovative ways to mitigate the potential harm from these invisible dangers. People typically discover EMFs for one of three reasons: <\/p><ul><li><strong>They’re experiencing health issues and searching for answers. <\/strong>Especially in cases of <a href=\"https:\/\/airestech.com\/blogs\/optimal-health-performance\/global-researchers-sound-the-alarm-on-electromagnetic-hypersensitivity?_pos=2&_sid=f2d3fcc76&_ss=r\"><span style=\"text-decoration:underline\">EMF hypersensitivity<\/span><\/a>, people sometimes exhaust all other explanations that could be causing their symptoms. When they address their EMF exposure, they finally start to heal.<\/li><li><strong>They’re looking to optimize athletic performance and recovery.<\/strong> For <a href=\"https:\/\/airestech.com\/pages\/aires-athletes\"><span style=\"text-decoration:underline\">athletes wanting to stay at the top of their game<\/span><\/a>, mitigating EMF exposure gives them that extra edge to <a href=\"https:\/\/airestech.com\/blogs\/podcasts\/the-future-of-athletic-excellence-with-ufc-fighter-maycee-barber?_pos=4&_sid=9707a4d9b&_ss=r\"><span style=\"text-decoration:underline\">keep them ahead of their opponents.<\/span><\/a> <\/li><li><strong>They’re interested in preventative care to protect their long-term health and their family’s well-being.<\/strong> With growing evidence that <a href=\"https:\/\/airestech.com\/blogs\/digital-wellness\/current-emf-regulations-to-protect-children?_pos=4&_sid=f4202bd84&_ss=r\"><span style=\"text-decoration:underline\">children’s developing brains and bodies are more susceptible to EMFs,<\/span><\/a> parents are always on the lookout for innovative ways to safeguard against potential harm.  <\/li><\/ul><p>Once aware of the potential risks of EMFs, many assume that blocking them is the best solution. However, blocking isn’t always effective – or even practical – as it can interfere with essential wireless communication. Instead, Aires takes a smarter approach that focuses on modulating EMFs into a more biologically compatible form without disrupting the functionality of our devices.<\/p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_yGdzJr",
+        "text_APWTCe"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_opacity": 0,
+        "show_overlay_text": false,
+        "padding_top": 46,
+        "padding_bottom": 100
+      }
+    },
+    "section_hero_mDwF6d": {
+      "type": "section-hero",
+      "settings": {
+        "content_max_width": 540,
+        "image_1": "shopify:\/\/shop_images\/img_2068_jpg_c2088c53-c6b4-4f6e-87b7-deccf720bb6e.jpg",
+        "link": "",
+        "width": "wrapper--full",
+        "height": "screen-height-three-quarters",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "color_scheme": "",
+        "show_text_background": false,
+        "overlay_opacity": 0,
+        "show_overlay_text": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_rich_text_CiwaY4": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_pHk7FM": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Blocking EMF Isn't Always The Best Option",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_FmgTgP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Some products are designed to eliminate EMF exposure through the use of shielding materials or Faraday cages which completely block EMFs. This, however, isn’t always the most practical solution for our modern lives. Wireless communication relies on EMFs, so blocking the signal renders your device useless. At the same time, we are surrounded by many different EMF sources - from 5G towers to your neighbors’ Wi-Fi signals. Blocking one source won’t offer protection from all the EMFs we encounter in a day. <\/p><p>Rather than blocking EMFs, <a href=\"https:\/\/airestech.com\/blogs\/inside-aires-tech\/reshaping-electromagnetic-fields-the-science-behind-stable-resonance?_pos=1&_sid=776544643&_ss=r\"><span style=\"text-decoration:underline\"><strong>reshaping them into a more biologically compatible form<\/strong><\/span><\/a> is a more effective approach to EMF protection. This is where structured resonance technology like Aires comes in. Aires devices modify the way EMFs interact with biological systems - like our bodies - without interfering with data transmission. The result? Safety <em>and<\/em> functionality.<\/p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_pHk7FM",
+        "text_FmgTgP"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_opacity": 0,
+        "show_overlay_text": false,
+        "padding_top": 46,
+        "padding_bottom": 46
+      }
+    },
+    "section_double_PYyrkL": {
+      "type": "section-double",
+      "blocks": {
+        "heading_EmK7px": {
+          "type": "heading",
+          "settings": {
+            "heading_center": false,
+            "heading_center_mobile": false,
+            "title": "Transforming Electromagnetic Fields",
+            "color_title": "#000000",
+            "fs_title": 32,
+            "fs_title_mob": 32,
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_W3GpMy": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https:\/\/airestech.com\/blogs\/inside-aires-tech\/why-emf-blockers-are-not-the-solution-for-emf-protection\"><span style=\"text-decoration:underline\">Aires devices don’t block EMFs<\/span><\/a>. If they did, our phones and other wireless devices wouldn’t work. Instead, <a href=\"https:\/\/airestech.com\/blogs\/inside-aires-tech\/how-aires-tech-works-harmonizing-the-digital-world?_pos=1&_sid=6af7bf4e4&_ss=r\"><span style=\"text-decoration:underline\">Aires works by transforming disruptive man-made EMFs<\/span><\/a> into a more biologically compatible form. Using a precisely engineered fractal matrix imprinted on a silicon resonator, Aires devices passively interacts with incoming EMFs by <a href=\"https:\/\/airestech.com\/blogs\/inside-aires-tech\/aires-tech-fractal-matrix-how-an-elegant-design-modulates-harmful-emf?_pos=1&_sid=711f49315&_ss=r\"><span style=\"text-decoration:underline\">altering their amplitude, phase, and polarization<\/span><\/a>.<\/p><p>This process reduces electromagnetic field conflict, making the energy more compatible with our bodies’ natural bioelectrical systems. Unlike traditional EMF-blocking products which interfere with device function, Aires devices allow wireless signals to remain intact while minimizing their potential biological impact. <\/p><p><a href=\"https:\/\/airestech.com\/blogs\/inside-aires-tech\/why-emf-blockers-are-not-the-solution-for-emf-protection\"><span style=\"text-decoration:underline\">Instead of blocking EMFs<\/span><\/a>, Aires transforms them, creating a biologically-compatible energy that supports your well-being without disrupting connectivity. <\/p>",
+            "color_title": "#000000",
+            "fs_title": 16,
+            "fs_title_mob": 16,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_EmK7px",
+        "text_W3GpMy"
+      ],
+      "settings": {
+        "bg": "#F7F5F2",
+        "image_1": "shopify:\/\/shop_images\/img_9645_jpg.jpg",
+        "image_width": "one-half",
+        "image_contain": false,
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "section_rich_text_n4rQcP": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_wVh6zW": {
+          "type": "heading",
+          "settings": {
+            "title": "A Smarter Approach to EMFs",
+            "heading_font_size": "heading-medium",
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_E4iTpV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>EMFs are an unavoidable part of modern life, but that doesn’t mean we need to fear them. Instead of trying to block them entirely or remove ourselves from all technology, Aires offers a better solution. By modulating EMFs to work more efficiently with the human body, we can enjoy a balanced, healthier relationship with our digital world.<\/p>",
+            "text_font_size": "body-medium",
+            "padding_bottom": 16
+          }
+        },
+        "buttons_4xLXFm": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "button_url": "shopify:\/\/blogs\/emf-101",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        },
+        "buttons_xeem6N": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Get Protected",
+            "button_url": "shopify:\/\/collections\/bestsellers",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_wVh6zW",
+        "text_E4iTpV",
+        "buttons_4xLXFm",
+        "buttons_xeem6N"
+      ],
+      "settings": {
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "overlay_opacity": 0,
+        "show_overlay_text": false,
+        "padding_top": 46,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_custom_content_nrAcwF",
+    "section_rich_text_7KtWEh",
+    "section_hero_w96cBG",
+    "section_rich_text_VCVjix",
+    "section_hero_mDwF6d",
+    "section_rich_text_CiwaY4",
+    "section_double_PYyrkL",
+    "section_rich_text_n4rQcP"
+  ]
+}

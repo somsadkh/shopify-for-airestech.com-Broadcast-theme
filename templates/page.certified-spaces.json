@@ -99,6 +99,58 @@
       "type": "replo-s02-c_spaces",
       "settings": {}
     },
+    "section_double_slider_7j7jCn": {
+      "type": "section-double-slider",
+      "blocks": {
+        "text_slide_Daxnwh": {
+          "type": "text-slide",
+          "settings": {
+            "subheading": "A Historic Milestone in Sports & Technology",
+            "color_subtitle": "#000000",
+            "fs_subtitle": 14,
+            "fs_subtitle_mob": 14,
+            "title": "Target Center Becomes the World’s First EMF-Friendly Arena!",
+            "color_title": "#000000",
+            "fs_title": 32,
+            "fs_title_mob": 26,
+            "text": "<p>For the first time in history, a major sports arena has been officially Aires Certified™, setting a new precedent for wellness in high-performance spaces.<\/p><p>The Target Center, home of the Minnesota Timberwolves, now stands as the first EMF-friendly stadium, integrating Aires Technology at every WiFi connection point to create a safer, optimized environment for athletes, fans, and staff.<\/p>",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14,
+            "button_text": "Learn more",
+            "fs_button": 14,
+            "fs_button_mob": 14,
+            "button_url": "https:\/\/airestech.com\/pages\/timberwolves-arena-aires-certified-space",
+            "button_type": "btn--primary",
+            "button_size": "btn--large",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image": "shopify:\/\/shop_images\/Frame_1189-min.jpg",
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "text_slide_Daxnwh"
+      ],
+      "settings": {
+        "bg": "#eae6dd",
+        "image_1": "shopify:\/\/shop_images\/Frame_1189_1_-min.jpg",
+        "image_width": "one-half",
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
     "replo_s03_c_spaces_djW9d6": {
       "type": "replo-s03-c_spaces",
       "settings": {}
@@ -121,6 +173,7 @@
     "replo_s01_c_spaces_KBzyCP",
     "section_announcement_Uwzmdy",
     "replo_s02_c_spaces_yN6kQU",
+    "section_double_slider_7j7jCn",
     "replo_s03_c_spaces_djW9d6",
     "replo_s04_c_spaces_F7Vf4i",
     "replo_s05_c_spaces_n3DqBX",

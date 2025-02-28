@@ -24778,5 +24778,33 @@ body.has-header-sticky .timeline {
   .product-item__info  .caps--link {
     font-size: 14px;
   }
+  .logos__slider.grid-on-mobile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
 }
 
+.custom-dots-container{
+  display: flex;
+}
+.custom-dot{
+  display: block;
+  width: 68px;
+  padding: 0;
+  margin: 0 5px;
+  border-bottom: 4px solid #1B1A20;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -100%;
+  font-style: normal;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: .2;
+}
+.custom-dot.active{
+  opacity: 1;
+}
+.brick__slider  .flickity-page-dots{
+  display: none;
+}

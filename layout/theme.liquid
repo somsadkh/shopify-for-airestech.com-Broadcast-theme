@@ -4,14 +4,29 @@
     {% render 'yoast-seo' %}
     {% render 'replo-head' %}
     {%- render 'head' -%}
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    >
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     {{ content_for_header }}
+
+    <!-- Snap Pixel Code -->
+    <script type='text/javascript'>
+      (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+      {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+      a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+      r.src=n;var u=t.getElementsByTagName(s)[0];
+      u.parentNode.insertBefore(r,u);})(window,document,
+      'https://sc-static.net/scevent.min.js');
+      
+      snaptr('init', 'ae312fe1-ce9c-49dc-84d7-24d0fdf802d5', {
+        'user_email': '__INSERT_USER_EMAIL__'
+      });
+      
+      snaptr('track', 'PAGE_VIEW');
+      
+      </script>
+      <!-- End Snap Pixel Code -->
+
+      
   </head>
 
   <body
@@ -82,7 +97,6 @@
       fetchpriority="high"
       src="https://cdn.intelligems.io/esm/f5ecef78a1f8/bundle.js"
     ></script>
-
     {% comment %} Install SocialLadder App {% endcomment %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://socialladder.rkiapps.com/Shopify/socialladder-shopify.js" type="text/javascript"></script>

@@ -2,6 +2,58 @@
 
 {%- render 'section-double' -%}
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(()=>{
+      const sliders = document.querySelectorAll(".brick__slider");
+  
+      sliders.forEach((slider) => {
+        const flickityInstance = themeVendor.Flickity.data(slider);
+        if (!flickityInstance) return;
+    
+        const slides = slider.querySelectorAll(".flickity-slider > *");
+        const totalSlides = slides.length;
+    
+        slides.forEach((slide, slideIndex) => {
+          // Створюємо контейнер для дотсів
+          const dotsContainer = document.createElement("div");
+          dotsContainer.classList.add("custom-dots-container");
+    
+          for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement("div");
+            dot.classList.add("custom-dot");
+    
+            if (i === slideIndex) {
+              dot.classList.add("active"); // Початкове підсвічування
+            }
+    
+            dot.addEventListener("click", () => {
+              flickityInstance.select(i);
+            });
+    
+            dotsContainer.appendChild(dot);
+          }
+    
+          slide.querySelector('.hero__content').appendChild(dotsContainer);
+        });
+    
+        // Слухаємо зміну активного слайда
+        flickityInstance.on("change", (index) => {
+          slides.forEach((slide) => {
+            const dots = slide.querySelectorAll(".custom-dot");
+            dots.forEach((dot, dotIndex) => {
+              dot.classList.toggle("active", dotIndex === index);
+            });
+          });
+        });
+      });
+    },1000)
+  });
+  
+  
+  
+</script>
+
 {% schema %}
 {
   "name": "Image with text slider",

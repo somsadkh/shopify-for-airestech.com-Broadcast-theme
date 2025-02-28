@@ -152,7 +152,7 @@
         data-aos-anchor="{{ animation_anchor }}"
         data-aos-order="{{ animation_order }}"
       >
-        <div class="logos__slider" data-slider-logos{% if request.design_mode %} data-block-scroll{% endif %}>
+        <div class="logos__slider {% if section.settings.grid_on_mobile %}grid-on-mobile{% endif %}" data-slider-logos{% if request.design_mode %} data-block-scroll{% endif %}>
           {{ slides }}
         </div>
       </div>
@@ -180,6 +180,12 @@
   "name": "Press logos",
   "max_blocks": 25,
   "settings": [
+      {
+      "type": "checkbox",
+      "id": "grid_on_mobile",
+      "label": "Grid on mobile",
+      "default": true
+    },
     {
       "type": "checkbox",
       "id": "enable_heading_slider",
