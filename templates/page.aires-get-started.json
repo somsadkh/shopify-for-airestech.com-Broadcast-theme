@@ -34,8 +34,6 @@
         "heading_DKDCXY": {
           "type": "heading",
           "settings": {
-            "heading_center": false,
-            "heading_center_mobile": false,
             "title": "Welcome to a Healthier, EMF-Protected Lifestyle",
             "color_title": "#000000",
             "fs_title": 32,
@@ -175,72 +173,6 @@
         "heading_tag": "automatic"
       }
     },
-    "section_announcement_XPcntH": {
-      "type": "section-announcement",
-      "blocks": {
-        "text_aUP9Vz": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Enjoy $20 Off Your Next Order<\/strong> |  Use code: MOREAIRES<\/p>",
-            "text_font_size": "body-medium",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_REw4Qm": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p><strong>Create a free shipping countdown<\/strong><\/p>",
-            "text_font_size": "body-small",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "message_hfkHr7": {
-          "type": "message",
-          "disabled": true,
-          "settings": {
-            "show_wheel": false,
-            "message": "You are ||amount|| away from free shipping.",
-            "text_font_size": "body-small",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        },
-        "text_8ChRxn": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p><strong>Create a scrolling marquee or a simple announcement<\/strong><\/p>",
-            "text_font_size": "body-small",
-            "color": "",
-            "target_device_enabled": false,
-            "target_device": "mobile"
-          }
-        }
-      },
-      "block_order": [
-        "text_aUP9Vz",
-        "text_REw4Qm",
-        "message_hfkHr7",
-        "text_8ChRxn"
-      ],
-      "settings": {
-        "slider_speed": 7,
-        "text_alignment": "center",
-        "marquee_speed": 100,
-        "direction": "ticker-rtl",
-        "message_spacing": 10,
-        "show_border": false,
-        "layout": "marquee",
-        "color_scheme": "",
-        "padding_top": 5,
-        "padding_bottom": 5
-      }
-    },
     "section_text_promo_RrX6TK": {
       "type": "section-text-promo",
       "blocks": {
@@ -333,7 +265,6 @@
     "main",
     "section_double_G8YMYe",
     "section_columns_c8fRMz",
-    "section_announcement_XPcntH",
     "section_text_promo_RrX6TK",
     "section_blog_jAqek4",
     "section_divider_kBYBrz"

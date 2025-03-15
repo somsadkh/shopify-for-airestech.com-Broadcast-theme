@@ -188,6 +188,13 @@
     {%- unless product.has_only_default_variant -%}
       {%- assign selects_counter = 0 -%}
       <div class="product__selectors" data-product-variants>
+
+        {% assign hide_option_title = false %}
+        {% if product.metafields.custom.product_options_description != blank %}
+          {% assign hide_option_title = true %}
+          <div class="product__selectors-description">{{ product.metafields.custom.product_options_description }}</div>
+        {% endif %}
+
         {%- for option in product.options_with_values -%}
 
           {%- liquid
@@ -274,7 +281,7 @@
 
               <fieldset>
                 <div class="{{ radio_fieldset_class }}">
-                  <legend class="radio__legend{% if is_size_option and size_chart_link and show_size_link_separated == false %} radio__legend--size{% endif %}">
+                  <legend class="radio__legend {% if hide_option_title %}hidden{% endif %} {% if is_size_option and size_chart_link and show_size_link_separated == false %} radio__legend--size{% endif %}">
                     <span class="radio__legend__label{% if size_style == 'text' %} radio__legend__label--text{% endif %}">
                       <span class="radio__legend__option-name">{{ option.name }}</span>
 
@@ -332,6 +339,20 @@
                       {%- else -%}
                         {% comment %} radio button {% endcomment %}
                         <span class="radio__button"{% if has_variant_option_image %} data-variant-option-image{% endif %}>
+                          
+                          {% if product.options.size == 1 %}
+                            {% for variant in product.variants %}
+                              {% if variant.option1 == value %}
+                                {% if variant.compare_at_price > variant.price %}
+                                  {% assign discount_percentage = variant.compare_at_price | minus: variant.price | times: 100 | divided_by: variant.compare_at_price %}
+                                  {% assign discount_amount = variant.compare_at_price | minus: variant.price %}
+                              
+                                  <span class="radio__button-save-badge">{{ discount_percentage | round: 0 }}% OFF - <b>{{ discount_amount | money | remove: '.00' | remove: ',00' }}</b></span>
+                                {% endif %}                              
+                              {% endif %}
+                            {% endfor %}
+                          {% endif %}
+
                           <input
                             type="radio"
                             form="{{ product_form_id }}"
@@ -490,7 +511,7 @@
 {%- endcapture -%}
 
 {%- if product_variant_options != blank -%}
-  <div class="product__block{% if settings.show_lines %} product__block--lines{% endif %} product__form__holder block-padding"
+  <div class="product__block product__block-options {% if settings.show_lines %} product__block--lines{% endif %} product__form__holder block-padding"
     {{ block_style }}
     {{ block.shopify_attributes }}
     {% if animation_name %}

@@ -188,13 +188,13 @@
         const productsOuter = document.querySelector('[data-products-grid]');
         const path = window.location.pathname;
         const handle = path.replace(/^\/collections\//, '').replace(/\/$/, '');
-
+        console.warn('this is AB')
         function fetchCollectionProducts(collectionHandle) {
             productsOuter.classList.add('is-loading')
             setTabActive(collectionHandle)
 
             // Fetch for specific collection
-            fetch(`/collections/${collectionHandle}?view=collection`)
+            fetch(`/collections/${collectionHandle}?view=collection-sticky_cart`)
                 .then(response => response.text())
                 .then(html => {
                     const parser = new DOMParser();
@@ -214,7 +214,7 @@
             history.pushState(
                 null,
                 title,
-                `/collections/${collectionHandle}`
+                `/collections/${collectionHandle}?view=collection-sticky_cart`
             );
             document.title = `${title}`;
 
@@ -268,7 +268,7 @@
 
 {% schema %}
 {
-  "name": "Collection products",
+  "name": "Collection products AB",
   "settings": [
     {
       "type": "checkbox",

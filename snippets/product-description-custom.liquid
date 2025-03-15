@@ -1,0 +1,12 @@
+<div class="product__block product__block--description product__block--custom-description block-padding"
+    {{ block_style }}
+    {% if animation_name %}
+        data-animation="{{ animation_name }}"
+        data-animation-duration="{{ animation_duration }}"
+        data-animation-delay="{{ animation_delay }}"
+    {% endif %}
+>
+    <div class="product-quick-add__description rte">
+        {{ text }}
+    </div>
+</div>

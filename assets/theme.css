@@ -23023,7 +23023,7 @@ dialog.is-loading .loader {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   width: 100%;
-  max-width: var(--DRAWER-WIDTH);
+  max-width: 500px;
   max-height: 100%;
   background: var(--bg);
 }
@@ -23045,11 +23045,11 @@ dialog.is-loading .loader {
   }
 }
 
-@media only screen and (max-width: 749px) {
+/* @media only screen and (max-width: 749px) {
   .product-quick-add__images {
     display: none;
   }
-}
+} */
 .product-quick-add__images .product__slides {
   height: auto;
 }
@@ -23078,7 +23078,7 @@ dialog.is-loading .loader {
 
 .product-quick-add__form {
   width: 100%;
-  padding: var(--outer);
+  padding: 24px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -24807,4 +24807,170 @@ body.has-header-sticky .timeline {
 }
 .brick__slider  .flickity-page-dots{
   display: none;
+}
+
+
+
+/* NEW QUICK ADD POPUP DESIGN */
+.product__selectors .radio__fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.radio__fieldset .radio__buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-left: 0px;
+}
+.product-quick-add__form .radio__button{
+  width: calc(50% - 6px);
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.radio__fieldset .radio__button label{
+  border: 1px solid var(--Black, #1D1E23);
+  font-size: 15px;
+  color: var(--Black, #1D1E23);
+  line-height: 150%;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.radio__fieldset .radio__button input:checked~label{
+  border-color:var(--Black, #1D1E23);
+  background: var(--Black, #1D1E23);
+  color: #fff;
+}
+.radio__button-save-badge{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  padding: 0px 8px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.product-quick-add__form .custom-review-star-widget svg{
+  width: 20px;
+  height: 20px;
+}
+.product-quick-add__form .custom-review-star-widget{
+  margin-bottom: 6px;
+}
+.product-quick-add__form .product__block-title{
+  margin-bottom: 6px;
+}
+.product-quick-add__form .shop-pay-terms{
+  display: none;
+}
+.product-quick-add__form .product__block-price{
+  margin-bottom: 6px;
+}
+.product-quick-add__form .product__block--custom-description{
+  min-height: fit-content;
+  margin-bottom: 25px;
+}
+.product-quick-add__form .product__block--lines{
+  border-width: 0.5px;
+  border-color: #000;
+  border-bottom: 0px;
+}
+.product-quick-add__form .product__price--off{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  padding: 4px 8px;
+}
+[data-price-off-amount-value]{
+  font-weight: 700;
+}
+.product-quick-add__images .badge-box{
+  position: absolute;
+  left: 29px;
+  bottom: 19px;
+  line-height: 150%;
+  text-transform: initial;
+  padding: 4px 8px;
+}
+.product-quick-add__title-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 16px;
+  flex-wrap: wrap;
+}
+.product__selectors-description{
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+.product__photo.mobile-image{
+  display: none;
+}
+.product__content .radio__button{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: calc(25% - 12px* 3 / 4);
+}
+.product__content .product__block-options{
+  border-top: none;
+  border-bottom: none;
+  padding-top: 0px;
+}
+.product__content .product__selectors-description{
+  margin-top: 0px;
+}
+
+@media (max-width: 749px){
+  .product__slide.with-mobile-image .product__photo.desktop-image{
+    display: none;
+  }
+  .product__slide.with-mobile-image .product__photo.mobile-image{
+    display: block;
+    height: fit-content;
+  }
+  .product__slide.with-mobile-image .product__photo.mobile-image .image-wrapper {
+    aspect-ratio: var(--aspect-ratio);
+    height: auto;
+    position: static;
+    transform: none;
+  }
+  .product__slide.with-mobile-image{
+    height: auto;
+  }
+  .product-quick-add__form{
+    padding: 16px;
+  }
+  .product-quick-add__form .product__title{
+    font-weight: 700;
+  }
+  .product-quick-add__form .custom-review-star-widget svg{
+    width: 15px;
+    height: 15px;
+  }
+  .product-quick-add__form .product__price--off{
+    font-size: 11px;
+    margin-left: 6px;
+  }
+  .radio__button-save-badge{
+    font-size: 12px;
+  }
+  .radio__fieldset .radio__button label{
+    font-size: 14px;
+  }
+  .product-quick-add__form .product__submit__buttons{
+    margin-top: 16px;
+  }
+  .product-quick-add__form .product__block-options{
+    margin-bottom: 0px;
+  }
+  .product__content .radio__button{
+    min-width: calc(50% - 6px);
+  }
 }

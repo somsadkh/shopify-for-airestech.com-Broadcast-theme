@@ -19,7 +19,92 @@
   if product_tags contains '_preorder'
     assign preorder = true
   endif
+
+  assign product_card_data = product.metafields.custom.product_card_data.value
 -%}
+
+
+{%- capture over_image_content -%}
+  {%- liquid
+    assign product_tags = product.tags | join: ',' | append: ','
+    assign preorder = false
+    assign is_preorder_meta = false
+    assign on_sale = false
+    assign sold_out = false
+    assign badge = ''
+    assign badge_new = ''
+    assign badge_soldout = ''
+
+    if product.metafields.theme.badge != blank and product.metafields.theme.badge.type == 'single_line_text_field'
+      assign badge = product.metafields.theme.badge.value
+    endif
+
+    if badge == '' and product_tags contains '_badge_'
+      assign badge = product_tags | split: '_badge_'
+      assign badge = badge[1] | split: ',' | first | replace: '_', ' '
+    endif
+
+    if product.metafields.theme.preorder.type == 'boolean' and product.metafields.theme.preorder.value == true
+      assign is_preorder_meta = true
+    endif
+
+    if product_tags contains '_preorder' or is_preorder_meta
+      assign preorder = true
+    endif
+
+    if product.compare_at_price > product.price and settings.sale_tags_enable
+      assign on_sale = true
+    endif
+
+    unless product.available
+      assign sold_out = true
+    endunless
+
+    if settings.show_automatic_new_badge
+      assign product_created_timestamp = product.created_at | date: '%s' | plus: 0
+      assign days_in_seconds = settings.badge_new_date_limit | times: 24 | times: 60 | times: 60
+      assign current_date_timestamp = "now" | date: '%s'
+      assign check_date_timestamp = current_date_timestamp | minus: days_in_seconds
+
+      if product_created_timestamp > check_date_timestamp
+        assign badge_new = 'products.product.new' | t
+      endif
+    endif
+
+    if settings.show_sold_out_badge and sold_out
+      assign badge_soldout = 'products.product.sold_out' | t
+    endif
+  -%}
+
+  {%- if badge != '' or badge_new != '' or badge_soldout != '' -%}
+    <span class="badge-box"
+          data-aos="fade"
+          data-aos-delay="{{ aos_delay }}"
+          data-aos-duration="{{ aos_duration }}"
+          data-aos-anchor="{{ aos_anchor }}">
+      {%- if badge_soldout != '' -%}
+        {{ badge_soldout }}
+      {%- elsif badge_new != '' -%}
+        {{ badge_new }}
+      {%- else -%}
+        {{ badge }}
+      {%- endif -%}
+    </span>
+  {%- elsif preorder and sold_out == false -%}
+    <span class="preorder-box"
+          data-aos="fade"
+          data-aos-delay="{{ aos_delay }}"
+          data-aos-duration="{{ aos_duration }}"
+          data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.pre_order' | t }}</span>
+  {%- elsif on_sale and sold_out == false -%}
+    <span class="sale-box"
+          data-aos="fade"
+          data-aos-delay="{{ aos_delay }}"
+          data-aos-duration="{{ aos_duration }}"
+          data-aos-anchor="{{ aos_anchor }}">{{ 'products.product.on_sale' | t }}</span>
+  {%- endif -%}
+
+{%- endcapture -%}
 
 <div data-api-content>
 
@@ -37,7 +122,9 @@
       data-animation-delay="{{ animation_delay }}"
       {%- assign animation_delay = animation_delay | plus: animation_delay_increment -%}
     >
-      {%- if product.media.size > 0 -%}
+     
+
+      {%- if product_card_data == blank and product_card_data.product_media.value == blank -%}
         {%- for media in product.media -%}
           {%- render 'media', media: media, featured_media: featured_media, enable_video_looping: true, sectionkey: section.id, product_api: true, image_width: '365', loading: 'eager', cover: true -%}
         {%- endfor -%}
@@ -55,25 +142,53 @@
           </button>
         {%- endif -%}
       {%- else -%}
-        <div class="product__slide">
-          <div class="product__photo">
-            {%- render 'image' image: product.featured_image, widths: '365, 550, 730, 1100, 1460', loading: 'eager', cover: true -%}
+        {% assign product_image = product.featured_image %}
+        {% assign product_media = product_card_data.product_media.value %}
+        {% assign first_image = product_media | first %}
+        {% if first_image != blank %}
+          {% assign product_image = first_image %}
+        {% endif %}
+
+        <div class="product__slide {% if product_card_data.mobile_product_media_quick_view_window_ != blank %}with-mobile-image{% endif %}">
+          <div class="product__photo desktop-image">
+            {%- render 'image' image: product_image, widths: '365, 550, 730, 1100, 1460', loading: 'eager', cover: true -%}
           </div>
+          {% if product_card_data.mobile_product_media_quick_view_window_ != blank %}
+            <div class="product__photo mobile-image">
+              {%- render 'image' image: product_card_data.mobile_product_media_quick_view_window_.value, widths: '365, 550, 730, 1100, 1460', loading: 'eager', cover: true -%}
+            </div>
+          {% endif %}
         </div>
       {%- endif -%}
+
+      {{ over_image_content }}
     </div>
   </product-images>
 
   <div class="product-quick-add__form">
     <div class="product-quick-add__form__inner" data-form-wrapper>
-      {%- liquid
-        assign product_form_id = 'product-form-upsell-' | append: section.id | append: '-' | append: product.id
+      <div class="product-quick-add__title-wrapper">
+       {% liquid
+        assign custom_product_title = product_card_data.product_title
+        render 'product-title' product: product, is_title_linked: true, animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration, custom_product_title: custom_product_title
+        render 'junip-stars-widget', product: product
+       %}
+      </div>
 
-        render 'product-title' product: product, is_title_linked: true, animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration
+      {%- liquid
         assign animation_delay = animation_delay | plus: animation_delay_increment
+
+        assign product_form_id = 'product-form-upsell-' | append: section.id | append: '-' | append: product.id
+        
 
         render 'product-price' product: product, unique: unique, animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration
         assign animation_delay = animation_delay | plus: animation_delay_increment
+
+        if product.metafields.custom.small_description != blank
+          assign small_description = product.metafields.custom.small_description | metafield_tag
+          render 'product-description-custom' text: small_description,  animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration
+          assign animation_delay = animation_delay | plus: animation_delay_increment
+        endif
 
         render 'product-siblings' product: product, product_form_id: product_form_id, block: block, metafields: true, product_api: true, animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration
         assign animation_delay = animation_delay | plus: animation_delay_increment
@@ -81,8 +196,6 @@
         render 'product-variant-options' product: product, unique: unique, product_form_id: product_form_id, enable_size_chart: false, animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration, quickview: true
         assign animation_delay = animation_delay | plus: animation_delay_increment
 
-        render 'product-description' product: product, product_api: true, animation_name: animation_name, animation_delay: animation_delay, animation_duration: animation_duration
-        assign animation_delay = animation_delay | plus: animation_delay_increment
       -%}
 
       {%- comment -%}
@@ -128,3 +241,5 @@
     <span data-variant-final-sale-metafield style="display:none;">{{ metafields_data }}</span>
   {% endunless %}
 </div>
+
+

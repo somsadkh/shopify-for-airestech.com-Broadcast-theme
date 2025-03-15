@@ -73,7 +73,7 @@
       }
     },
     "main": {
-      "type": "collection",
+      "type": "collection-ab",
       "blocks": {
         "product_section_PWLAjy": {
           "type": "product_section",
@@ -150,7 +150,7 @@
       ],
       "settings": {
         "add_to_cart_the_first_selected_option": false,
-        "hide_qty_box": false,
+        "hide_qty_box": true,
         "grid": 3,
         "grid_mobile": "2",
         "color_scheme": "",

@@ -36,7 +36,7 @@
 {% assign size = sizes | default: 14 %}
 
 {% if rating > 0 %}
-  <div class="flex flex-align-center rating {{ class }}" style="color: #1E1E1E;">
+  <div class="flex flex-align-center rating custom-review-star-widget {{ class }}" style="color: #1E1E1E;">
     {% for iteration in (1..max) %}
       {% if iteration <= full_stars %}
         {% render 'icon-stars', icon: 'star', size: size %}

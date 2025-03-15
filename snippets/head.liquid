@@ -753,6 +753,30 @@ You can learn more about this (and learn how to cleanly revert these changes) at
     -webkit-text-size-adjust: 100%;
   }
 
+  .product-quick-add__form .product__title{
+    font-size:{{ settings.quick_view_title_size }}px;
+  }
+
+  .radio__button-save-badge,
+  .product-quick-add__form .product__price--off,
+  .product__content .product__price--off{
+    color:{{ settings.quick_view_sale_badge_text_color }};
+    background: {{ settings.quick_view_sale_badge_bg }};
+  }
+
+  .product-quick-add__images .badge-box{
+    font-size:{{ settings.quick_view_image_badge_size }}px;
+  }
+
+  @media (max-width: 749px){
+    .product-quick-add__form .product__title{
+      font-size:{{ settings.quick_view_title_size_mobile }}px;
+    }
+    .product-quick-add__images .badge-box{
+      font-size:{{ settings.quick_view_image_badge_size_mobile }}px;
+    }
+  }
+
   {% endstyle %}
 
   {%- unless settings.type_base_font.system? -%}

@@ -455,7 +455,11 @@
 
     <quick-add-product>
       <div class="quick-add__holder" data-quick-add-holder="{{ product.id }}">
-        {% assign add_to_cart_first_variant = product.metafields.custom.add_to_cart_the_first_selected_option %}
+        {% assign add_to_cart_first_variant = false %}
+        {% if section.settings.add_to_cart_the_first_selected_option == true or product.metafields.custom.add_to_cart_the_first_selected_option == true %}
+          {% assign add_to_cart_first_variant = true %}
+        {% endif %}
+        
 
         {%- if product.variants.size == 1 or add_to_cart_first_variant == true -%}
           {%- assign product_form_id = 'ProductForm--' | append: unique -%}

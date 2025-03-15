@@ -1,5 +1,5 @@
 <!-- @prettify-ignore -->
-<div class="product__block product__head block-padding"
+<div class="product__block product__head product__block-title block-padding"
   {{ block_style }}
   {% if animation_name %}
     data-animation="{{ animation_name }}"
@@ -27,11 +27,16 @@
 
   <div class="product__title__wrapper" {{ block.shopify_attributes }}>
     <h1 class="product__title" style="--fz:{{ block.settings.title_size }}px;--fz-mobile:{{ block.settings.title_size_mobile }}px;">
+      {% assign title = product.title %}
+      {% if custom_product_title != blank %}
+        {% assign title = custom_product_title %}
+      {% endif %}
+
       {%- unless is_title_linked -%}
-        <span data-zoom-caption>{{ product.title | strip_html }}</span>
+        <span data-zoom-caption>{{ title | strip_html }}</span>
       {%- else -%}
         <a href="{{ product.url }}">
-          <span data-zoom-caption>{{ product.title | strip_html }}</span>
+          <span data-zoom-caption>{{ title | strip_html }}</span>
         </a>
       {%- endunless -%}
     </h1>

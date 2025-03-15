@@ -1,107 +1,181 @@
 <!doctype html>
 <html class="no-js no-touch supports-no-cookies" lang="{{ request.locale.iso_code }}">
-  <head>
-    {% render 'yoast-seo' %}
-    {% render 'replo-head' %}
-    {%- render 'head' -%}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    {{ content_for_header }}
 
-    <!-- Snap Pixel Code -->
-    <script type='text/javascript'>
-      (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
-      {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
-      a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
-      r.src=n;var u=t.getElementsByTagName(s)[0];
-      u.parentNode.insertBefore(r,u);})(window,document,
-      'https://sc-static.net/scevent.min.js');
-      
-      snaptr('init', 'ae312fe1-ce9c-49dc-84d7-24d0fdf802d5', {
-        'user_email': '__INSERT_USER_EMAIL__'
-      });
-      
-      snaptr('track', 'PAGE_VIEW');
-      
-      </script>
-      <!-- End Snap Pixel Code -->
+<head>
 
-      
-  </head>
+  <script>
+/* >> Heatmap.com :: Snippet << */
+(function (h,e,a,t,m,ap) {
+  (h._heatmap_paq = []).push([ 'setTrackerUrl', (h.heatUrl = e) + a]);
+  h.hErrorLogs=h.hErrorLogs || []; ap=t.createElement('script'); 
+  ap.src=h.heatUrl+'preprocessor.min.js?sid='+m; 
+  ap.defer=true; t.head.appendChild(ap);
+  ['error', 'unhandledrejection'].forEach(function (ty) {
+      h.addEventListener(ty, function (et) { h.hErrorLogs.push({ type: ty, event: et }); });
+  });
+})(window,'https://dashboard.heatmap.com/','heatmap.php',document,3328);
+</script>
+  
+  
+  {% render 'yoast-seo' %}
+  
+  
+  
+{% render 'replo-head' %}
+  {%- render 'head' -%}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  {{ content_for_header }}
+  
+  <!-- Snap Pixel Code -->
+  <script type='text/javascript'>
+    (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+    {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+    a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+    r.src=n;var u=t.getElementsByTagName(s)[0];
+    u.parentNode.insertBefore(r,u);})(window,document,
+    'https://sc-static.net/scevent.min.js');
+    
+    snaptr('init', 'ae312fe1-ce9c-49dc-84d7-24d0fdf802d5', {
+      'user_email': '__INSERT_USER_EMAIL__'
+    });
+    
+    snaptr('track', 'PAGE_VIEW');
+    
+    </script>
+    <!-- End Snap Pixel Code -->
 
-  <body
-    id="{{ page_title | handle }}"
-    class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}"
-    data-animations="{{ settings.animations_enable }}"
-  >
-    {%- render 'loading' -%}
+    
+</head>
 
-    <a class="in-page-link visually-hidden skip-link" data-skip-content href="#MainContent">
-      {{- 'general.accessibility.skip_to_content' | t -}}
-    </a>
+<body id="{{ page_title | handle }}" class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}" data-animations="{{ settings.animations_enable }}">
+  {%- render 'loading' -%}
 
-    <div class="container" data-site-container>
-      <div class="header-sections">
-        {% sections 'group-header' %}
-      </div>
+  <a class="in-page-link visually-hidden skip-link" data-skip-content href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
-      {% sections 'group-overlay' %}
-
-      <!-- CONTENT -->
-      <main role="main" id="MainContent" class="main-content">
-        {{ content_for_layout }}
-      </main>
+  <div class="container" data-site-container>
+    <div class="header-sections">
+      {% sections 'group-header' %}
     </div>
 
-    {% sections 'group-pre-footer' %}
+    {% sections 'group-overlay' %}
 
-    <footer class="footer-sections">
-      {% sections 'group-footer' %}
-    </footer>
+    <!-- CONTENT -->
+    <main role="main" id="MainContent" class="main-content">
 
-    {% render 'template-swatch' %}
+      {{ content_for_layout }}
 
-    {% render 'zoom-pswp' %}
+    </main>
+  </div>
 
-    {%- if template.name != 'product' and settings.show_scroll_top_button -%}
-      <button
-        type="button"
-        class="btn btn--scroll-top btn--black btn--solid"
-        aria-label="{{ 'general.accessibility.scroll_to_top' | t }}"
-        data-scroll-top-button
-      >
-        {%- render 'icon-arrow-up' -%}
-      </button>
-    {%- endif -%}
+  {% sections 'group-pre-footer' %}
+<!-- eDesk Shopify widget 8c2025d82 --><script>(window._xsq||(function(x,s){window._xsq=[];var d=function(){var c,b,a=document.createElement("iframe");a.src="javascript:false";a.title="";a.role="presentation";(a.frameElement||a).style.cssText="display: none";document.body.appendChild(a);try{b=a.contentWindow.document}catch(g){c=document.domain,a.src="javascript:var d=document.open();d.domain='"+c+"';void(0);",b=a.contentWindow.document}b.open()._l=function(){var a=this.createElement("script");c&&(this.domain=c);a.id="js-iframe-async";a.src="https://"+x+s;this.body.appendChild(a)};b.write('<body onload="document._l();">');b.close()};window.addEventListener?window.addEventListener("load",d,!1):window.attachEvent?window.attachEvent("onload",d):setTimeout(d,2E3);return _xsq})('widgets.xsellco.com','/js/widgets.js')).push(['load','8c2025d82',document.scripts[document.scripts.length - 1]]);</script><!-- End eDesk Shopify widget 8c2025d82 -->
+  <footer class="footer-sections">
+    {% sections 'group-footer' %}
+  </footer>
 
-    {%- comment -%}
-      In order to use your custom javascript file at assets/custom.js
-      just cut this next line and paste it outside this comment:
-      <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
-    {%- endcomment -%}
-    <!-- Paste marketing code or third party scripts below this comment line ============== -->
+  {% render 'template-swatch' %}
 
-    {% render 'junip-store-key' %}
-    <!-- And above this comment line ================================================== -->
-    <script>
-      window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
-      window._template = {
-          directory: "{{ template.directory }}",
-          name: "{{ template.name }}",
-          suffix: "{{ template.suffix }}"
-      };
-    </script>
-    <script
-      type="module"
-      blocking="render"
-      fetchpriority="high"
-      src="https://cdn.intelligems.io/esm/f5ecef78a1f8/bundle.js"
-    ></script>
-    {% comment %} Install SocialLadder App {% endcomment %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://socialladder.rkiapps.com/Shopify/socialladder-shopify.js" type="text/javascript"></script>
-    {% comment %} End {% endcomment %}
+  {% render 'zoom-pswp' %}
 
-<!-- eDesk Shopify widget 8c2025d82 --><script>(window._xsq||(function(x,s){window._xsq=[];var d=function(){var c,b,a=document.createElement("iframe");a.src="javascript:false";a.title="";a.role="presentation";(a.frameElement||a).style.cssText="display: none";document.body.appendChild(a);try{b=a.contentWindow.document}catch(g){c=document.domain,a.src="javascript:var d=document.open();d.domain='"+c+"';void(0);",b=a.contentWindow.document}b.open()._l=function(){var a=this.createElement("script");c&&(this.domain=c);a.id="js-iframe-async";a.src="https://"+x+s;this.body.appendChild(a)};b.write('<body onload="document._l();">');b.close()};window.addEventListener?window.addEventListener("load",d,!1):window.attachEvent?window.attachEvent("onload",d):setTimeout(d,2E3);return _xsq})('widgets.xsellco.com','/js/widgets.js')).push(['load','8c2025d82',document.scripts[document.scripts.length - 1]]);</script><!-- End eDesk Shopify widget 8c2025d82 -->    
-  </body>
+
+  {%- if template.name != 'product' and settings.show_scroll_top_button -%}
+    <button type="button" class="btn btn--scroll-top btn--black btn--solid" aria-label="{{ 'general.accessibility.scroll_to_top' | t }}" data-scroll-top-button>
+      {%- render 'icon-arrow-up' -%}
+    </button>
+  {%- endif -%}
+
+  {%- comment -%}
+    In order to use your custom javascript file at assets/custom.js
+    just cut this next line and paste it outside this comment:
+    <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+  {%- endcomment -%}
+  <!-- Paste marketing code or third party scripts below this comment line ============== -->
+
+
+  {% render 'junip-store-key' %}
+  <!-- And above this comment line ================================================== -->
+  <script>
+    window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
+    window._template = {
+        directory: "{{ template.directory }}",
+        name: "{{ template.name }}",
+        suffix: "{{ template.suffix }}"
+    };
+  </script>
+
+  <script>
+    function customFormatMoney(cents, format) {
+      if (typeof cents === 'string') {
+        cents = cents.replace('.', '');
+      }
+      let value = '';
+      const placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
+      const formatString = format || moneyFormat;
+
+      function formatWithDelimiters(number, precision = 2, thousands = ',', decimal = '.') {
+        if (isNaN(number) || number == null) {
+          return 0;
+        }
+
+        number = (number / 100.0).toFixed(precision);
+
+        const parts = number.split('.');
+        const dollarsAmount = parts[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, `$1${thousands}`);
+        const centsAmount = parts[1] ? decimal + parts[1] : '';
+
+        return dollarsAmount + centsAmount;
+      }
+
+      switch (formatString.match(placeholderRegex)[1]) {
+        case 'amount':
+          value = formatWithDelimiters(cents, 2);
+          break;
+        case 'amount_no_decimals':
+          value = formatWithDelimiters(cents, 0);
+          break;
+        case 'amount_with_comma_separator':
+          value = formatWithDelimiters(cents, 2, '.', ',');
+          break;
+        case 'amount_no_decimals_with_comma_separator':
+          value = formatWithDelimiters(cents, 0, '.', ',');
+          break;
+        case 'amount_with_apostrophe_separator':
+          value = formatWithDelimiters(cents, 2, "'", '.');
+          break;
+        case 'amount_no_decimals_with_space_separator':
+          value = formatWithDelimiters(cents, 0, ' ', '');
+          break;
+        case 'amount_with_space_separator':
+          value = formatWithDelimiters(cents, 2, ' ', ',');
+          break;
+        case 'amount_with_period_and_space_separator':
+          value = formatWithDelimiters(cents, 2, ' ', '.');
+          break;
+      }
+
+      return formatString.replace(placeholderRegex, value);
+    }
+
+    function calculateSaleAmountPrice(elem, comparePrice, price){
+      let difference = comparePrice - price;
+      elem = elem.priceOffAmount;
+      let saveAmountElem = elem?.parentNode.querySelector('[data-price-off-amount-value]');
+      
+
+      if(difference > 0 && saveAmountElem){
+        let string = customFormatMoney(difference, theme.moneyFormat).replace(/(\.00|,00)$/, '');
+        saveAmountElem.innerHTML = `- ${string}`;
+      }
+    }
+  </script>
+
+  {% comment %} Install SocialLadder App {% endcomment %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://socialladder.rkiapps.com/Shopify/socialladder-shopify.js" type="text/javascript"></script>
+  {% comment %} End {% endcomment %}
+
+  <script type="module" blocking="render" fetchpriority="high" src="https://cdn.intelligems.io/esm/f5ecef78a1f8/bundle.js"></script>
+</body>
 </html>

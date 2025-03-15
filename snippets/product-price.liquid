@@ -10,7 +10,7 @@
   endif
 -%}
 
-<div class="product__block block-padding"
+<div class="product__block product__block-price block-padding"
   {{ block_style }}
   {% if animation_name %}
     data-animation="{{ animation_name }}"
@@ -89,6 +89,7 @@
           <span class="product__price--off hidden" data-price-off-badge>
             <span data-price-off-amount></span>
             {{ 'products.product.off' | t }}
+            <span data-price-off-amount-value></span>
           </span>
         {%- endif -%}
 
