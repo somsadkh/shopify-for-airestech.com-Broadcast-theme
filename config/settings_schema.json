@@ -668,6 +668,16 @@
     ]
   },
   {
+    "name": "Hide Countdown Bar",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "hide_countdown_bar",
+        "label": "Hide Countdown Bar Links"
+      }
+    ]
+  },
+  {
     "name": "Search",
     "settings": [
       {

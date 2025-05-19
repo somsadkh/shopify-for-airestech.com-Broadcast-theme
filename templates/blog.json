@@ -14,6 +14,7 @@
       "block_order": [
         "feat"
       ],
+      "disabled": true,
       "settings": {
         "show_author": false,
         "show_date": true,
@@ -29,8 +30,9 @@
     },
     "section_blog_H8JU8m": {
       "type": "section-blog",
+      "disabled": true,
       "settings": {
-        "blog_name": "emf-101",
+        "blog_name": "emf-education",
         "show_view_all_link": false,
         "button_type": "btn--primary",
         "button_size": "",
@@ -60,6 +62,7 @@
     },
     "section_blog_bctjJ7": {
       "type": "section-blog",
+      "disabled": true,
       "settings": {
         "blog_name": "digital-wellness",
         "show_view_all_link": false,
@@ -91,6 +94,7 @@
     },
     "section_blog_NMNRiJ": {
       "type": "section-blog",
+      "disabled": true,
       "settings": {
         "blog_name": "podcasts",
         "show_view_all_link": false,
@@ -169,6 +173,7 @@
         "text_x9tBRN",
         "buttons_Mzi7hF"
       ],
+      "disabled": true,
       "settings": {
         "align_text": "text-left",
         "width": "wrapper",
@@ -181,6 +186,7 @@
     },
     "main": {
       "type": "blog",
+      "disabled": true,
       "settings": {
         "show_title": false,
         "show_rss": false,
@@ -199,6 +205,89 @@
         "padding_bottom": 0,
         "title_tag": "automatic"
       }
+    },
+    "main_blog_449nfB": {
+      "type": "main-blog",
+      "blocks": {
+        "blog_mWAy3f": {
+          "type": "blog",
+          "settings": {
+            "blog": "most-recent",
+            "custom_blog_title": ""
+          }
+        },
+        "blog_zp8EAy": {
+          "type": "blog",
+          "settings": {
+            "blog": "emf-education",
+            "custom_blog_title": "EMF Education"
+          }
+        },
+        "blog_yydkdd": {
+          "type": "blog",
+          "settings": {
+            "blog": "digital-wellness",
+            "custom_blog_title": ""
+          }
+        },
+        "blog_98axcC": {
+          "type": "blog",
+          "settings": {
+            "blog": "podcasts",
+            "custom_blog_title": ""
+          }
+        },
+        "blog_4GCPhk": {
+          "type": "blog",
+          "settings": {
+            "blog": "inside-aires-tech",
+            "custom_blog_title": "Inside Aires"
+          }
+        },
+        "blog_n6iBJ7": {
+          "type": "blog",
+          "settings": {
+            "blog": "emf-voices",
+            "custom_blog_title": ""
+          }
+        },
+        "blog_GwLibB": {
+          "type": "blog",
+          "disabled": true,
+          "settings": {
+            "blog": "optimal-health-performance",
+            "custom_blog_title": ""
+          }
+        },
+        "blog_n649pK": {
+          "type": "blog",
+          "disabled": true,
+          "settings": {
+            "blog": "current-events",
+            "custom_blog_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "blog_mWAy3f",
+        "blog_zp8EAy",
+        "blog_yydkdd",
+        "blog_98axcC",
+        "blog_4GCPhk",
+        "blog_n6iBJ7",
+        "blog_GwLibB",
+        "blog_n649pK"
+      ],
+      "settings": {
+        "heading": "Explore, Learn & Stay Ahead With The Wave Forward",
+        "text": "Find science-backed studies, expert interviews, and actionable tips to stay informed in a rapidly evolving world.",
+        "button_style": "outline",
+        "content_width": 488,
+        "padding_top": 66,
+        "padding_bottom": 64,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 40
+      }
     }
   },
   "order": [
@@ -207,6 +296,7 @@
     "section_blog_bctjJ7",
     "section_blog_NMNRiJ",
     "section_rich_text_jKTcUA",
-    "main"
+    "main",
+    "main_blog_449nfB"
   ]
 }

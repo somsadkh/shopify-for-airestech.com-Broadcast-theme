@@ -300,7 +300,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Learn more",
-            "button_url": "shopify:\/\/blogs\/emf-101",
+            "button_url": "shopify:\/\/blogs\/emf-education",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",

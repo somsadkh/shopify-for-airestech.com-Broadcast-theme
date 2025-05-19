@@ -4,7 +4,7 @@
       "type": "product",
       "blocks": {
         "junip_product_reviews_ugc_junip_product_summary_rJJk8A": {
-          "type": "shopify:\/\/apps\/junip-product-reviews-ugc\/blocks\/junip-product-summary\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "type": "shopify:\/\/apps\/junip\/blocks\/junip-product-summary\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
           "settings": {
             "product": "{{product}}"
           }
@@ -664,8 +664,8 @@
           "type": "item",
           "settings": {
             "show_play": true,
-            "image": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
-            "image_mob": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_1073-4.webp",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-4.webp",
             "title": "Four Individuals EEG Brain Scan",
             "color_title": "#000000",
             "fs_title": 22,
@@ -918,7 +918,7 @@
       "type": "apps",
       "blocks": {
         "junip_product_reviews_ugc_junip_product_review_DczmFT": {
-          "type": "shopify:\/\/apps\/junip-product-reviews-ugc\/blocks\/junip-product-review\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "type": "shopify:\/\/apps\/junip\/blocks\/junip-product-review\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
           "settings": {
             "product": "{{product}}"
           }

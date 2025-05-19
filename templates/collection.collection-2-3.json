@@ -1,0 +1,560 @@
+{
+  "sections": {
+    "hero": {
+      "type": "collection-banner",
+      "blocks": {
+        "stat_wA9b9A": {
+          "type": "stat",
+          "settings": {
+            "number": "22",
+            "text": "<p>Patented  Technologies<\/p>",
+            "number_size": 32,
+            "number_size_mobile": 20,
+            "text_size": 16,
+            "text_size_mobile": 12
+          }
+        },
+        "stat_KtbMyX": {
+          "type": "stat",
+          "settings": {
+            "number": "25+",
+            "text": "<p>Proven in 25+ Clinical Trials<\/p>",
+            "number_size": 32,
+            "number_size_mobile": 20,
+            "text_size": 16,
+            "text_size_mobile": 12
+          }
+        },
+        "stat_Nf4pyb": {
+          "type": "stat",
+          "settings": {
+            "number": "$20M",
+            "text": "<p>In Research  & Development<\/p>",
+            "number_size": 32,
+            "number_size_mobile": 20,
+            "text_size": 16,
+            "text_size_mobile": 12
+          }
+        },
+        "stat_xhDVcp": {
+          "type": "stat",
+          "settings": {
+            "number": "9",
+            "text": "<p>Peer-Reviewed Studies<\/p>",
+            "number_size": 32,
+            "number_size_mobile": 20,
+            "text_size": 16,
+            "text_size_mobile": 12
+          }
+        }
+      },
+      "block_order": [
+        "stat_wA9b9A",
+        "stat_KtbMyX",
+        "stat_Nf4pyb",
+        "stat_xhDVcp"
+      ],
+      "settings": {
+        "heading": "<p>The World's Most Tested, Trusted And Scientifically Proven EMF Protection<\/p>",
+        "heading_width": 435,
+        "heading_center": true,
+        "heading_center_mobile": true,
+        "background_image": "shopify:\/\/shop_images\/collection-image.png",
+        "background_image_mobile": "shopify:\/\/shop_images\/banner-mobile.png",
+        "background_color": "#ffffff",
+        "background_color_mobile": "#ffffff",
+        "text_color": "#ffffff",
+        "text_color_mobile": "#1b1a20",
+        "stats_color": "#bf9b30",
+        "padding_top": 108,
+        "padding_bottom": 60,
+        "heading_size": 32,
+        "heading_size_mobile": 26
+      }
+    },
+    "main": {
+      "type": "collection-2-3",
+      "blocks": {
+        "product_section_PWLAjy": {
+          "type": "product_section",
+          "settings": {
+            "collection": "bestsellers",
+            "tag_name": "Best-Sellers"
+          }
+        },
+        "product_section_QHThbM": {
+          "type": "product_section",
+          "settings": {
+            "collection": "bundles",
+            "tag_name": "Bundles"
+          }
+        },
+        "product_section_kLqCfq": {
+          "type": "product_section",
+          "settings": {
+            "collection": "personal-protection",
+            "tag_name": "Personal Protection"
+          }
+        },
+        "product_section_agdGdA": {
+          "type": "product_section",
+          "settings": {
+            "collection": "area-protection",
+            "tag_name": "Area Protection"
+          }
+        },
+        "product_section_WxQig9": {
+          "type": "product_section",
+          "settings": {
+            "collection": "accessories",
+            "tag_name": "Accessories"
+          }
+        },
+        "product_section_Ym8EiK": {
+          "type": "product_section",
+          "settings": {
+            "collection": "shop-aires-emf-protection",
+            "tag_name": "Shop All"
+          }
+        },
+        "featured_image_xKgAGz": {
+          "type": "featured_image",
+          "disabled": true,
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/featured-image.png",
+            "position": 4,
+            "featured_heading": "",
+            "heading_font_size": "heading-large",
+            "featured_text": "",
+            "featured_button_text": "",
+            "featured_button_link": "shopify:\/\/collections\/bundles",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 0,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "product_section_PWLAjy",
+        "product_section_QHThbM",
+        "product_section_kLqCfq",
+        "product_section_agdGdA",
+        "product_section_WxQig9",
+        "product_section_Ym8EiK",
+        "featured_image_xKgAGz"
+      ],
+      "settings": {
+        "add_to_cart_the_first_selected_option": true,
+        "hide_qty_box": false,
+        "grid": 3,
+        "grid_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_epb6m3": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_KxE6tj": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "The science",
+            "color_title": "#000000",
+            "fs_title": 24,
+            "fs_title_mob": 24,
+            "padding_bottom": 16
+          }
+        },
+        "heading_BUxLCP": {
+          "type": "heading",
+          "settings": {
+            "heading_center": false,
+            "heading_center_mobile": false,
+            "title": "Build Your Own Bundle",
+            "color_title": "#000000",
+            "fs_title": 32,
+            "fs_title_mob": 26,
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_GNHPG3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The more you add, the more you save!<\/p>",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "padding_bottom": 16
+          }
+        },
+        "icon_text_7Ycbj8": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "",
+            "title": "3+ Items = 10% Off\u2028",
+            "color_title": "#000000",
+            "fs_title": 24,
+            "fs_title_mob": 18
+          }
+        },
+        "icon_text_76kaxq": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "",
+            "title": "5+ Items = 15% Off\u2028",
+            "color_title": "#000000",
+            "fs_title": 24,
+            "fs_title_mob": 18
+          }
+        },
+        "icon_text_QDygwB": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "",
+            "title": "7+ Items = 20% Off",
+            "color_title": "#000000",
+            "fs_title": 24,
+            "fs_title_mob": 18
+          }
+        },
+        "buttons_aMGmiq": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "BUILD YOUR BUNDLE",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "button_url": "shopify:\/\/pages\/build-your-own-bundle",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_KxE6tj",
+        "heading_BUxLCP",
+        "text_GNHPG3",
+        "icon_text_7Ycbj8",
+        "icon_text_76kaxq",
+        "icon_text_QDygwB",
+        "buttons_aMGmiq"
+      ],
+      "settings": {
+        "bg": "#f7f5f2",
+        "image_1": "shopify:\/\/shop_images\/Build_Your_Bundle.jpg",
+        "image_width": "one-half",
+        "image_contain": false,
+        "text_alignment": "text-center",
+        "layout": "is-reversed",
+        "width": "wrapper--full",
+        "height": "five-fifty-height-hero",
+        "mobile_height": "image-height--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "scheme-8",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "benefits_section_LmLk9Y": {
+      "type": "benefits-section",
+      "blocks": {
+        "item_dtHkLd": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_101.jpg",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Better Sleep",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 18,
+            "text": "EMF radiation from your devices can disrupt your sleep. Adding Aires to your bedroom can reduce these effects and help improve sleep quality.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        },
+        "item_AKEznp": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_101-1.jpg",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Clearer Mind",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 19,
+            "text": "EMF exposure may lead to brain fog and tiredness. Using Aires daily can help reduce headaches and improve mental clarity.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        },
+        "item_WLj6Uq": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_101_2.png",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Better Performance",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 18,
+            "text": "Trusted by top athletes, Aires can improve their reaction time, speed up recovery, and reduce inflammation for peak performance.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        },
+        "item_fJHqJJ": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_101_1.jpg",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Hormonal Support",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 18,
+            "text": "Reduce harmful EMF exposure that may affect reproductive health. Aires supports your body for better hormonal health and fertility.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        },
+        "item_rza6DD": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_1071_1.jpg",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Support a Healthy Heart",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 18,
+            "text": "Studies show that EMF radiation can contribute to oxidative stress which affects heart health. Aires works to minimize these negative effects.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        },
+        "item_4fzdLz": {
+          "type": "item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Frame_101-4.jpg",
+            "content_max_width": 100,
+            "content_max_width_mob": 50,
+            "title": "Boost Immunity",
+            "color_title": "#000000",
+            "fs_title": 20,
+            "fs_title_mob": 17,
+            "text": "Aires technology helps reduce exposure to EMF stressors, allowing your body to focus on what it does best, maintaining strong, balanced immunity.",
+            "color_text": "#000000",
+            "fs_text": 16,
+            "fs_text_mob": 14
+          }
+        }
+      },
+      "block_order": [
+        "item_dtHkLd",
+        "item_AKEznp",
+        "item_WLj6Uq",
+        "item_fJHqJJ",
+        "item_rza6DD",
+        "item_4fzdLz"
+      ],
+      "settings": {
+        "content_max_width": 1000,
+        "center_text": true,
+        "title": "Daily Benefits of Using Aires Proven EMF Protection",
+        "color_title": "#000000",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "text": "Electromagnetic radiation from phones, laptops, and WiFi is everywhere, affecting your body’s biological functions. Aires mitigates the effects of EMF radiation to help you feel your best.",
+        "color_text": "#000000",
+        "fs_text": 18,
+        "fs_text_mob": 16,
+        "padding_top": 65,
+        "padding_bottom": 65
+      }
+    },
+    "section_rich_text_columns_XN9nTp": {
+      "type": "section-rich-text-columns",
+      "blocks": {
+        "heading_4xVF6m": {
+          "type": "heading",
+          "settings": {
+            "title": "Scientifically-Validated EMF Protection You Can Trust",
+            "heading_center": true,
+            "heading_center_mobile": true,
+            "fs_title": 32,
+            "fs_title_mob": 26,
+            "position": "left",
+            "padding_bottom": 32,
+            "heading_tag": "automatic"
+          }
+        },
+        "buttons_Nk6Nch": {
+          "type": "buttons",
+          "settings": {
+            "position": "left",
+            "heading_center": true,
+            "heading_center_mobile": true,
+            "button_text": "Read More",
+            "button_url": "shopify:\/\/pages\/tech",
+            "button_type": "btn--primary",
+            "fs_button": 14,
+            "fs_button_mob": 14,
+            "button_style": "btn--text",
+            "show_arrow": false,
+            "button_secondary_text": "",
+            "button_secondary_url": "",
+            "button_secondary_type": "btn--primary",
+            "button_secondary_size": "",
+            "button_secondary_style": "btn--outline",
+            "show_secondary_arrow": false,
+            "padding_bottom": 0
+          }
+        },
+        "text_with_title_8kUDGj": {
+          "type": "text_with_title",
+          "settings": {
+            "title": "Patented, peer-reviewed, scientifically-proven protection",
+            "fs_title": 22,
+            "fs_title_mob": 20,
+            "text": "<p>Our technology has been rigorously studied, tested, and validated by third parties to effectively protect you from EMF exposure.<\/p>",
+            "fs_text": 18,
+            "fs_text_mob": 16,
+            "position": "right",
+            "padding_bottom": 8
+          }
+        },
+        "text_with_title_bkgCgc": {
+          "type": "text_with_title",
+          "settings": {
+            "title": "Integrated technology that doesn’t disrupt your devices",
+            "fs_title": 22,
+            "fs_title_mob": 20,
+            "text": "<p>Silicon resonator chip negates EMF radiation present in your surroundings without damaging your tech.<\/p>",
+            "fs_text": 18,
+            "fs_text_mob": 16,
+            "position": "right",
+            "padding_bottom": 8
+          }
+        },
+        "text_with_title_9tjH7L": {
+          "type": "text_with_title",
+          "settings": {
+            "title": "Comprehensive protection for all forms of EMF",
+            "fs_title": 22,
+            "fs_title_mob": 20,
+            "text": "<p>Each product has a predetermined protective radius and protects against all forms of EMF, giving you peace of mind for your personal devices and every room in your home.<\/p>",
+            "fs_text": 18,
+            "fs_text_mob": 16,
+            "position": "right",
+            "padding_bottom": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_4xVF6m",
+        "buttons_Nk6Nch",
+        "text_with_title_8kUDGj",
+        "text_with_title_bkgCgc",
+        "text_with_title_9tjH7L"
+      ],
+      "settings": {
+        "left_column_width": 40,
+        "right_column_width": 60,
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "align_text_mobile": "text-left--mobile",
+        "color_scheme": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section_reviews_haR9MP": {
+      "type": "section-reviews",
+      "blocks": {
+        "review_6LWdGX": {
+          "type": "review",
+          "settings": {
+            "title": "Amanda",
+            "subheading": "Verified User",
+            "review_content": "<p>“As a mom, I’m always looking for ways to keep my kids safe in a world surrounded by devices. The Lifetune Flex has been such a relief! My son wears it every day, and I love that it’s lightweight and comfortable for him”<\/p>",
+            "featured_image": "shopify:\/\/shop_images\/1_1950beed-bb41-46a2-853e-ca895176a82b.jpg",
+            "review_url": ""
+          }
+        },
+        "review_FcJYdg": {
+          "type": "review",
+          "settings": {
+            "title": "Olivia",
+            "subheading": "Verified User",
+            "review_content": "<p>“Hours on my phone used to leave me feeling drained and unfocused. With the Lifetune One, I’m protected from harmful EMFs, and I’ve noticed I feel clearer and less tired every day”<\/p>",
+            "featured_image": "shopify:\/\/shop_images\/2_7617cde5-199d-4855-a28a-28dde093c833.jpg",
+            "review_url": ""
+          }
+        },
+        "review_jAbFnt": {
+          "type": "review",
+          "settings": {
+            "title": "John",
+            "subheading": "Verified User",
+            "review_content": "<p>“With devices everywhere, I worried about EMFs in my kids’ playroom. The Lifetune Zone protects the entire room, and now I know they’re safe while they play and grow.\"<\/p>",
+            "featured_image": "shopify:\/\/shop_images\/3_83ccbb36-df43-4cb7-986d-bd74ae24da07.jpg",
+            "review_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "review_6LWdGX",
+        "review_FcJYdg",
+        "review_jAbFnt"
+      ],
+      "settings": {
+        "content_max_width": 550,
+        "stars_count": 5,
+        "heading_center": true,
+        "heading_center_mobile": true,
+        "title": "Over 300,000 People Worldwide Trust Aires For EMF Protection",
+        "color_title": "#000000",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "text": "",
+        "color_text": "#000000",
+        "fs_text": 32,
+        "fs_text_mob": 26,
+        "show_featured_image": true,
+        "image_aspect_ratio": 1,
+        "show_quotation_marks": false,
+        "heading_font_size": "heading-x-small",
+        "text_align": "text-left",
+        "color_scheme": "",
+        "card_bg_color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "main",
+    "section_double_epb6m3",
+    "benefits_section_LmLk9Y",
+    "section_rich_text_columns_XN9nTp",
+    "section_reviews_haR9MP"
+  ]
+}

@@ -99,6 +99,109 @@
       "type": "replo-s02-c_spaces",
       "settings": {}
     },
+    "section_columns_Fng8E8": {
+      "type": "section-columns",
+      "blocks": {
+        "image_8MQm7b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TmbrwlvsArena.png",
+            "title": "Target Arena - Home of The Minnesota Timberwolves",
+            "heading_font_size": "heading-small",
+            "text": "<p>You can find Aires devices at all of the wifi access points! Environmental stressors for fans, athletes, staff & coaches are being mitigated for optimal game-time & event experience.<\/p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_QgqMHW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JillOffice.png",
+            "title": "Dr. Jill Carnahan's Functional Medicine Office - Colorado, USA",
+            "heading_font_size": "heading-small",
+            "text": "<p>As a clinical partner and product user, Dr. Carnahan integrates our solutions into her practice to support patients dealing with chronic illness and environmental stressors.<\/p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_N4ahcm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HighAltitude.png",
+            "title": "High Altitude Martial Arts Gym - Colorado, USA",
+            "heading_font_size": "heading-small",
+            "text": "<p>Elite performance requires elite tech! Welcome High Altitude Martial Arts to Aires Certified Spaces™, training facility to #AiresAthletes Maycee Barber and Cory Sandhagen.<\/p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        },
+        "image_aMfPbX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ArtOfRecovery.png",
+            "title": "Shawn Fairchild's Art of Recovery - Arizona, USA",
+            "heading_font_size": "heading-small",
+            "text": "<p>The ideal place to elevate your recovery experience for elite performance just got a whole lot better. Congrats to Shawn Fairchild to host the first Aires Certified™ wellness center in history!<\/p>",
+            "text_font_size": "body-small",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "image_aspect_ratio": 1,
+            "mobile_image_aspect_ratio": 1,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "image_8MQm7b",
+        "image_QgqMHW",
+        "image_N4ahcm",
+        "image_aMfPbX"
+      ],
+      "name": "Text columns with images",
+      "settings": {
+        "title": "Real-World Spaces, Officially Certified",
+        "heading_font_size": "heading-medium",
+        "align_heading": "text-center",
+        "align_text": "text-left",
+        "width": "wrapper--full-padded",
+        "align_columns": "flex-align-top",
+        "layout": "grid",
+        "grid": 4,
+        "layout_mobile": "2",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
     "section_double_slider_7j7jCn": {
       "type": "section-double-slider",
       "blocks": {
@@ -133,6 +236,7 @@
       "block_order": [
         "text_slide_Daxnwh"
       ],
+      "disabled": true,
       "settings": {
         "bg": "#eae6dd",
         "image_1": "shopify:\/\/shop_images\/Frame_1189_1_-min.jpg",
@@ -173,6 +277,7 @@
     "replo_s01_c_spaces_KBzyCP",
     "section_announcement_Uwzmdy",
     "replo_s02_c_spaces_yN6kQU",
+    "section_columns_Fng8E8",
     "section_double_slider_7j7jCn",
     "replo_s03_c_spaces_djW9d6",
     "replo_s04_c_spaces_F7Vf4i",

@@ -800,7 +800,7 @@
             "button_text": "Learn more",
             "fs_button": 20,
             "fs_button_mob": 16,
-            "button_url": "shopify:\/\/pages\/aires-athletes",
+            "button_url": "shopify:\/\/pages\/athlete",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -827,7 +827,7 @@
             "button_text": "Learn more",
             "fs_button": 20,
             "fs_button_mob": 16,
-            "button_url": "shopify:\/\/pages\/aires-athletes",
+            "button_url": "shopify:\/\/pages\/athlete",
             "button_type": "btn--primary",
             "button_size": "",
             "button_style": "btn--solid",
@@ -1008,17 +1008,16 @@
         },
         "featured_image_eyHUBq": {
           "type": "featured_image",
-          "disabled": true,
           "settings": {
-            "featured_image": "shopify:\/\/shop_images\/Frame_248-2.jpg",
-            "tags": "Holistic Health",
-            "featured_heading": "Danny Morel",
+            "featured_image": "shopify:\/\/shop_images\/doctor_edit.png",
+            "tags": "Doctor Expert",
+            "featured_heading": "Dr. Andrew Michrowski, Ph.D.",
             "fs_title": 18,
             "fs_title_mob": 16,
-            "featured_text": "<p>Holistic Health & Life Coach, Spiritual Guide<\/p>",
+            "featured_text": "<p>President Planetary Association for Clean Energy<\/p>",
             "fs_text": 14,
             "fs_text_mob": 12,
-            "featured_button_text": "Learn more",
+            "featured_button_text": "",
             "featured_button_link": "https:\/\/youtu.be\/xypfhx0paPE?si=R2m400mj_fIwG_U4",
             "button_type": "btn--primary",
             "fs_button": 16,
@@ -1142,6 +1141,13 @@
             "image": "shopify:\/\/shop_images\/image-18-65f34c1ecebc1_webp.png",
             "image_width": 120
           }
+        },
+        "image_TNjw4G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mask-group-71-668855b11d9b3_webp_edit.png",
+            "image_width": 120
+          }
         }
       },
       "block_order": [
@@ -1151,7 +1157,8 @@
         "image_HUmcxj",
         "image_qa644Q",
         "image_eDmDa7",
-        "image_UWcegW"
+        "image_UWcegW",
+        "image_TNjw4G"
       ],
       "settings": {
         "slider_speed": 7,
@@ -1236,7 +1243,7 @@
     "section_blog_iJ78QL": {
       "type": "section-blog",
       "settings": {
-        "blog_name": "emf-101",
+        "blog_name": "emf-education",
         "show_view_all_link": true,
         "button_type": "btn--primary",
         "button_size": "",

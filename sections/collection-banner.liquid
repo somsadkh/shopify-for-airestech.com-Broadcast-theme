@@ -4,6 +4,12 @@
   "class": "section section-overlay-header",
   "settings": [
     {
+      "type": "checkbox",
+      "id": "transparent_header",
+      "label": "Make Visible Header?",
+      "default": false
+    },
+    {
       "type": "richtext",
       "id": "heading",
       "label": "Heading",
@@ -89,6 +95,26 @@
     },
     {
       "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding Top Mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding Bottom Mobile",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
       "id": "heading_size",
       "label": "Heading Font Size",
       "min": 20,
@@ -106,6 +132,114 @@
       "step": 2,
       "unit": "px",
       "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Border Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_top_border",
+      "label": "Enable Top Border",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "top_border_color",
+      "label": "Top Border Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "top_border_thickness",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Top Border Thickness",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "top_border_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Top Border Opacity",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "top_border_style",
+      "label": "Top Border Style",
+      "options": [
+        {
+          "value": "solid",
+          "label": "Solid"
+        },
+        {
+          "value": "dashed",
+          "label": "Dashed"
+        },
+        {
+          "value": "dotted",
+          "label": "Dotted"
+        }
+      ],
+      "default": "solid"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_bottom_border",
+      "label": "Enable Bottom Border",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "bottom_border_color",
+      "label": "Bottom Border Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "bottom_border_thickness",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Bottom Border Thickness",
+      "default": 1
+    },
+    {
+      "type": "select",
+      "id": "bottom_border_style",
+      "label": "Bottom Border Style",
+      "options": [
+        {
+          "value": "solid",
+          "label": "Solid"
+        },
+        {
+          "value": "dashed",
+          "label": "Dashed"
+        },
+        {
+          "value": "dotted",
+          "label": "Dotted"
+        }
+      ],
+      "default": "solid"
+    },
+    {
+      "type": "range",
+      "id": "bottom_border_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Bottom Border Opacity",
+      "default": 100
     }
   ],
   "blocks": [
@@ -195,9 +329,11 @@
          data-section-id="{{ section.id }}"
          data-section-type="collection-image-with-title"
 >
-  <div class="collection-banner__image">
-    {%- render 'image-hero', image: section.settings.background_image_mobile, sizes: '(min-width: 750px) 50vw, calc(100vw - 32px)', desktop_height: section.settings.height, mobile_height: section.settings.mobile_height, show_backfill: false -%}
-  </div>
+  {% if section.settings.background_image_mobile %}
+    <div class="collection-banner__image">
+      {%- render 'image-hero', image: section.settings.background_image_mobile, sizes: '(min-width: 750px) 50vw, calc(100vw - 32px)', desktop_height: section.settings.height, mobile_height: section.settings.mobile_height, show_backfill: false -%}
+    </div>
+  {% endif %}
   <div class="wrapper--full-padded collection-banner__wrapper">
     <h2 class="collection-banner__heading {% if section.settings.heading_center %}text-center-pc{% endif %} {% if section.settings.heading_center_mobile %}text-center-mobile{% endif %}">
       {{ section.settings.heading }}
@@ -207,22 +343,24 @@
       {% for block in section.blocks %}
         {% if block.type == 'stat' %}
           <style>
-            #block-{{ block.id }} .collection-banner__text{
+						#block-{{ block.id }} .collection-banner__text {
 							font-size: {{ block.settings.text_size }}px;
-            }
-            #block-{{ block.id }} .collection-banner__number{
+						}
+
+						#block-{{ block.id }} .collection-banner__number {
 							font-size: {{ block.settings.number_size }}px;
 							color: {{ section.settings.stats_color }}
-            }
+						}
 
-            @media screen and (max-width: 749px){
-							#block-{{ block.id }} .collection-banner__text{
+						@media screen and (max-width: 749px) {
+							#block-{{ block.id }} .collection-banner__text {
 								font-size: {{ block.settings.text_size_mobile }}px;
 							}
-							#block-{{ block.id }} .collection-banner__number{
+
+							#block-{{ block.id }} .collection-banner__number {
 								font-size: {{ block.settings.number_size_mobile }}px;
 							}
-            }
+						}
           </style>
           <div id="block-{{ block.id }}" class="collection-banner__item" {{ block.shopify_attributes }}>
             <div class="collection-banner__number">
@@ -252,6 +390,22 @@
 		background-size: cover;
 		background-position: center;
   {% endif %}
+
+  {% if section.settings.enable_top_border %}
+		border-top: {{ section.settings.top_border_thickness }}px {{ section.settings.top_border_style }} rgba({{ section.settings.bottom_border_color | color_extract: 'red' }},
+  {{ section.settings.bottom_border_color | color_extract: 'green' }},
+  {{ section.settings.bottom_border_color | color_extract: 'blue' }},
+  {{ section.settings.top_border_opacity  | divided_by: 100.0  }}
+	);;
+  {% endif %}
+
+  {% if section.settings.enable_bottom_border %}
+		border-bottom: {{ section.settings.bottom_border_thickness }}px {{ section.settings.bottom_border_style }} rgba({{ section.settings.bottom_border_color | color_extract: 'red' }},
+  {{ section.settings.bottom_border_color | color_extract: 'green' }},
+  {{ section.settings.bottom_border_color | color_extract: 'blue' }},
+  {{ section.settings.bottom_border_opacity | divided_by: 100.0   }}
+	);
+  {% endif %}
 	}
 
 	.collection-banner__wrapper {
@@ -265,6 +419,8 @@
 		display: none;
 	}
 
+
+
 	.collection-banner__heading {
 		margin: 0;
 		/*font-family: "Practical Grotesk";*/
@@ -275,11 +431,9 @@
 		font-size: {{ section.settings.heading_size | default: 36 }}px;
 		color: {{ section.settings.text_color }};
 		max-width: {{ section.settings.heading_width | default: 600 }}px;
-    {% if section.settings.heading_center %}
-      text-align:center;
-    {% else %}
-      text-align:left;
-    {% endif %}
+  {% if section.settings.heading_center %} text-align: center;
+  {% else %} text-align: left;
+  {% endif %}
 	}
 
 	.collection-banner__heading > * {
@@ -322,7 +476,7 @@
 		margin: 0;
 	}
 
-	.collection-banner__wrapper{
+	.collection-banner__wrapper {
 		flex-wrap: wrap;
 	}
 
@@ -335,15 +489,13 @@
 			border-bottom: 1px solid #000;
 		}
 
-    .collection-banner__heading{
+		.collection-banner__heading {
 			color: {{ section.settings.text_color_mobile }};
 			font-size: {{ section.settings.heading_size_mobile }}px;
-      {% if section.settings.heading_center_mobile %}
-        text-align:center;
-      {% else %}
-        text-align:left;
-      {% endif %}
-    }
+    {% if section.settings.heading_center_mobile %} text-align: center;
+    {% else %} text-align: left;
+    {% endif %}
+		}
 
 
 		.collection-banner__image {
@@ -351,11 +503,12 @@
 			display: flex;
 		}
 
-		.collection-banner__wrapper{
+		.collection-banner__wrapper {
 			flex-direction: column;
-      padding-block: 24px;
-      gap: 24px;
-    }
+			padding-top: {{ section.settings.padding_top_mobile }}px;
+			padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+			gap: 24px;
+		}
 	}
 
 	@media screen and (max-width: 749px) {
@@ -365,3 +518,9 @@
 	}
 
 </style>
+
+{% if section.settings.transparent_header == true %}
+  <script>
+      document.querySelector('.header__wrapper').removeAttribute('data-header-transparent')
+  </script>
+{% endif %}

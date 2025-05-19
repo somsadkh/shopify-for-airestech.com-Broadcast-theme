@@ -149,7 +149,7 @@
         "featured_image_xKgAGz"
       ],
       "settings": {
-        "add_to_cart_the_first_selected_option": false,
+        "add_to_cart_the_first_selected_option": true,
         "hide_qty_box": false,
         "grid": 3,
         "grid_mobile": "2",
