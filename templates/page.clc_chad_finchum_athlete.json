@@ -1,0 +1,332 @@
+{
+  "sections": {
+    "replo_chad_section_1_jVCwj8": {
+      "type": "replo-chad-section_1",
+      "name": "chad_section_1",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "section_press_logos_Hf4LYh": {
+      "type": "section-press-logos",
+      "blocks": {
+        "logo_item_header_VPCLLk": {
+          "type": "logo-item-header",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/image_16_15fb2947-0012-4100-9d05-8fe18b5ec7ca.png",
+            "logo_width": 140,
+            "logo_height": 90,
+            "logo_width_mob": 72,
+            "logo_height_mob": 32,
+            "link": "",
+            "text": "Learn More",
+            "color_title": "#000000",
+            "fs_title": 14,
+            "fs_title_mob": 10,
+            "underline": true
+          }
+        },
+        "logo_item_header_c9z3kX": {
+          "type": "logo-item-header",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/image_17_43962694-f582-4e16-815d-2a434109dc61.png",
+            "logo_width": 190,
+            "logo_height": 90,
+            "logo_width_mob": 94,
+            "logo_height_mob": 32,
+            "link": "",
+            "text": "Learn More",
+            "color_title": "#000000",
+            "fs_title": 14,
+            "fs_title_mob": 10,
+            "underline": true
+          }
+        },
+        "logo_item_header_9VtPrx": {
+          "type": "logo-item-header",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_17.png",
+            "logo_width": 90,
+            "logo_height": 90,
+            "logo_width_mob": 40,
+            "logo_height_mob": 32,
+            "link": "",
+            "text": "Learn More",
+            "color_title": "#000000",
+            "fs_title": 14,
+            "fs_title_mob": 10,
+            "underline": true
+          }
+        },
+        "logo_item_header_tQUFbP": {
+          "type": "logo-item-header",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TW_no_bg_website.png",
+            "logo_width": 90,
+            "logo_height": 90,
+            "logo_width_mob": 40,
+            "logo_height_mob": 32,
+            "link": "",
+            "text": "Learn More",
+            "color_title": "#000000",
+            "fs_title": 14,
+            "fs_title_mob": 10,
+            "underline": true
+          }
+        }
+      },
+      "block_order": [
+        "logo_item_header_VPCLLk",
+        "logo_item_header_c9z3kX",
+        "logo_item_header_9VtPrx",
+        "logo_item_header_tQUFbP"
+      ],
+      "name": "Press logos",
+      "settings": {
+        "grid_on_mobile": true,
+        "enable_heading_slider": false,
+        "logo_opacity": 60,
+        "title": "Official Partner of World-Class Sports Organizations",
+        "color_title": "#000000",
+        "fs_title": 20,
+        "fs_title_mob": 14,
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "replo_chad_section_3_6Yt8X9": {
+      "type": "replo-chad-section_3",
+      "name": "chad_section_3",
+      "settings": {}
+    },
+    "replo_chad_section_4_jXKaNH": {
+      "type": "replo-chad-section_4",
+      "name": "chad_section_4",
+      "settings": {}
+    },
+    "replo_chad_section_5_34jGeU": {
+      "type": "replo-chad-section_5",
+      "name": "chad_section_5",
+      "settings": {}
+    },
+    "replo_chad_section_6_VTPaxt": {
+      "type": "replo-chad-section_6",
+      "name": "chad_section_6",
+      "settings": {}
+    },
+    "replo_chad_section_7_EALpky": {
+      "type": "replo-chad-section_7",
+      "name": "chad_section_7",
+      "settings": {}
+    },
+    "replo_chad_section_8_JydkkW": {
+      "type": "replo-chad-section_8",
+      "name": "chad_section_8",
+      "settings": {}
+    },
+    "featured_collection_RMVmwT": {
+      "type": "featured-collection",
+      "blocks": {
+        "line_item_UNjDGg": {
+          "type": "line_item",
+          "settings": {
+            "title": "Personal Protection"
+          }
+        },
+        "line_item_fnYpEd": {
+          "type": "line_item",
+          "settings": {
+            "title": "On-the-Go Protection"
+          }
+        },
+        "line_item_gHNLm9": {
+          "type": "line_item",
+          "settings": {
+            "title": "Whole Room Protection"
+          }
+        },
+        "link_GraCUD": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/1_80f9998a-65b4-40f7-8723-325320dc2d3b.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/1_80f9998a-65b4-40f7-8723-325320dc2d3b.jpg",
+            "label": "Device Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "One",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "19ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A device to adhere to your personal tech like phones and laptops.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop One",
+            "link_url": "shopify:\/\/products\/lifetune-one",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_pweFwb": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_ba28621f-fdaa-4f78-af62-6a38ca5496a0.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/2_ba28621f-fdaa-4f78-af62-6a38ca5496a0.jpg",
+            "label": "Personal Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Go",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "32ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A personal accessory to attach to your keys, bag, pet collar or to wear.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Go",
+            "link_url": "shopify:\/\/products\/lifetune-go",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_ztpm3D": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_e82cd8ec-72b8-4361-aa5f-e60259c2fd87.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/3_e82cd8ec-72b8-4361-aa5f-e60259c2fd87.jpg",
+            "label": "Versatile Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Flex",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "42ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A versatile wearable protection for on-the-go in your daily life.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Flex",
+            "link_url": "shopify:\/\/products\/lifetune-flex",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_LextTA": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_f521aeb3-7307-4cc9-b4af-46538d3251b4.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/4_f521aeb3-7307-4cc9-b4af-46538d3251b4.jpg",
+            "label": "Small Space",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Zone",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "93ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A device to place in your small spaces like car, office space or home.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Zone",
+            "link_url": "shopify:\/\/products\/lifetune-zone",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_MXedbx": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/5_c8b6ff41-9b62-4e28-851a-e41009ddc428.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/5_c8b6ff41-9b62-4e28-851a-e41009ddc428.jpg",
+            "label": "Large Space",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Zone Max",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "139ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>The biggest protection device for large areas like living rooms.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop max",
+            "link_url": "shopify:\/\/products\/lifetune-zone-max",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "line_item_UNjDGg",
+        "line_item_fnYpEd",
+        "line_item_gHNLm9",
+        "link_GraCUD",
+        "link_pweFwb",
+        "link_ztpm3D",
+        "link_LextTA",
+        "link_MXedbx"
+      ],
+      "name": "Featured collection(new)",
+      "settings": {
+        "bg_color": "#237aa3",
+        "bg_img": "shopify:\/\/shop_images\/Radius__Radius_1-min.jpg",
+        "title": "<p>Choose the EMF Protection <br\/>That’s Best For You<\/p>",
+        "title_size": 32,
+        "title_size_mobile": 32,
+        "sub_title": "Full range coverage",
+        "sub_title_size": 14,
+        "link_text": "Shop all",
+        "link_url": "",
+        "link_size": 20,
+        "link_size_mobile": 16,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "replo_chad_section_1_jVCwj8",
+    "main",
+    "section_press_logos_Hf4LYh",
+    "replo_chad_section_3_6Yt8X9",
+    "replo_chad_section_4_jXKaNH",
+    "replo_chad_section_5_34jGeU",
+    "replo_chad_section_6_VTPaxt",
+    "replo_chad_section_7_EALpky",
+    "replo_chad_section_8_JydkkW",
+    "featured_collection_RMVmwT"
+  ]
+}

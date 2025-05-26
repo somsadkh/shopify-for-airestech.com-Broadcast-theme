@@ -123,6 +123,21 @@
             "width": "half",
             "padding_bottom": 16
           }
+        },
+        "custom_block_xBEfiE": {
+          "type": "custom_block",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "liquid_code": "",
+            "font_size": 30,
+            "font_size_mobile": 20,
+            "font_weight": "500",
+            "text_color": "#000000",
+            "line_height": 1.2,
+            "margin_bottom": 42,
+            "margin_bottom_mobile": 19
+          }
         }
       },
       "block_order": [
@@ -137,7 +152,8 @@
         "divider_BjXPHG",
         "upsell",
         "icon_1",
-        "icon_2"
+        "icon_2",
+        "custom_block_xBEfiE"
       ],
       "settings": {
         "product_sticky_enable": true,

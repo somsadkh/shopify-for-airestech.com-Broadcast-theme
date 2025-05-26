@@ -361,6 +361,49 @@ You can learn more about this (and learn how to cleanly revert these changes) at
                       {{ block.settings.code }}
                     </div>
 
+                  {%- when 'custom_block' -%}
+                    {% liquid
+                      assign title = block.settings.title
+                      assign liquid_code = block.settings.liquid_code
+                    %}
+                    <div class="custom-block component-{{ block.id }}" {{ block.shopify_attributes }}>
+                      {% if title != blank %}
+                        <h3 class="custom-block__title">{{ title }}</h3>
+                      {% endif %}
+                      {% if liquid_code != blank %}
+                        <div class="custom-block__content">
+                          {{ liquid_code }}
+                        </div>
+                      {% endif %}
+                    </div>
+                    <style>
+	                    .custom-block.component-{{ block.id }} {
+		                    --custom-title-font-size: {{ block.settings.font_size }}px;
+		                    --custom-title-font-size-mobile: {{ block.settings.font_size_mobile }}px;
+		                    --custom-title-font-weight: {{ block.settings.font_weight }};
+		                    --custom-title-text-color: {{ block.settings.text_color }};
+		                    --custom-title-line-height: {{ block.settings.line_height }};
+		                    --custom-title-margin-bottom: {{ block.settings.margin_bottom}}px;
+		                    --custom-title-margin-bottom-mobile: {{ block.settings.margin_bottom_mobile }}px;
+	                    }
+	                    .custom-block.component-{{ block.id }} .custom-block__title {
+		                    font-size: var(--custom-title-font-size);
+		                    font-weight: var(--custom-title-font-weight);
+		                    color: var(--custom-title-text-color);
+		                    line-height: var(--custom-title-line-height);
+		                    margin-bottom: var(--custom-title-margin-bottom);
+		                    margin-top: 0;
+	                    }
+	                    .custom-block.component-{{ block.id }} .custom-block__content {
+	                    }
+	                    @media screen and (max-width: 640px){
+		                    .custom-block.component-{{ block.id }} .custom-block__title {
+			                    font-size: var(--custom-title-font-size-mobile);
+			                    margin-bottom: var(--custom-title-margin-bottom-mobile);
+		                    }
+	                    }
+                    </style>
+
                   {%- when 'siblings' -%}
                     {%- render 'product-siblings' product: product, product_form_id: product_form_id, block: block, block_style: block_style, quick_add_product: false -%}
 
@@ -2326,6 +2369,94 @@ You can learn more about this (and learn how to cleanly revert these changes) at
             "unit": "px",
             "label": "Bottom",
             "default": 16
+          }
+        ]
+      },
+      {
+        "type": "custom_block",
+        "name": "Custom block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "html",
+            "id": "liquid_code",
+            "label": "Liquid Code"
+          },
+          {
+            "type": "header",
+            "content": "Typography title"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "label": "Font Size",
+            "min": 10,
+            "max": 50,
+            "step": 1,
+            "default": 30,
+            "unit": "px"
+          },
+          {
+            "type": "range",
+            "id": "font_size_mobile",
+            "label": "Font Size (Mobile)",
+            "min": 10,
+            "max": 50,
+            "step": 1,
+            "default": 20,
+            "unit": "px"
+          },
+          {
+            "type": "select",
+            "id": "font_weight",
+            "label": "Font Weight",
+            "default": "500",
+            "options": [
+              { "value": "300", "label": "Light (300)" },
+              { "value": "400", "label": "Normal (400)" },
+              { "value": "500", "label": "Medium (500)" },
+              { "value": "600", "label": "Semi Bold (600)" },
+              { "value": "700", "label": "Bold (700)" }
+            ]
+          },
+          {
+            "type": "color",
+            "id": "text_color",
+            "label": "Color",
+            "default": "#000000"
+          },
+          {
+            "type": "range",
+            "id": "line_height",
+            "label": "Line Height",
+            "min": 1.0,
+            "max": 2.0,
+            "step": 0.1,
+            "default": 1.2
+          },
+          {
+            "type": "range",
+            "id": "margin_bottom",
+            "label": "Margin Bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 42,
+            "unit": "px"
+          },
+          {
+            "type": "range",
+            "id": "margin_bottom_mobile",
+            "label": "Margin Bottom (Mobile)",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 19,
+            "unit": "px"
           }
         ]
       }
