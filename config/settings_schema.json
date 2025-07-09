@@ -516,6 +516,22 @@
     "name": "Layout",
     "settings": [
       {
+        "type": "text",
+        "id": "alt_header_templates",
+        "label": "New white header and footer for pages:",
+        "default": "investors_news_blog"
+      },
+      {
+        "type": "text",
+        "id": "alt_black_header_templates",
+        "label": "New black header for pages:"
+      },
+      {
+        "type": "text",
+        "id": "transparent_header_templates",
+        "label": "Transparent header for pages:"
+      },
+      {
         "type": "select",
         "id": "grid_style",
         "label": "Grid style",

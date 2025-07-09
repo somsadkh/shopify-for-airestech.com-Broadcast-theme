@@ -161,7 +161,7 @@ You can learn more about this (and learn how to cleanly revert these changes) at
             {%- endif -%}
 
               {%- for media in product.media -%}
-                {%- render 'media', media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true -%}
+                {%- render 'media', aspect_ratio_custom: section.settings.aspect_ratio_3_2, media: media, featured_media: featured_media, enable_video_looping: enable_video_looping, sectionkey: unique, image_width: image_width, cover: true -%}
               {%- endfor -%}
 
             {%- if section.settings.enable_zoom -%}
@@ -831,6 +831,12 @@ You can learn more about this (and learn how to cleanly revert these changes) at
           }
         ],
         "default": "thumbs"
+      },
+       {
+        "type": "checkbox",
+        "id": "aspect_ratio_3_2",
+        "label": "Images 3:2 aspect ratio",
+        "default": false
       },
       {
         "type": "header",

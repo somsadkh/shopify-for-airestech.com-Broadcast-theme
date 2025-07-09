@@ -1,0 +1,157 @@
+{{ 'custom-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  class="custom-contact-form section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient"
+>
+  <div
+    class="custom-contact-form__content"
+  >
+    <div class="custom-contact-form__title">
+      {%- if section.settings.heading != blank -%}
+        <h2>{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <p class="custom-contact-form__text">
+          {{ section.settings.text }}
+        </p>
+      {%- endif -%}
+    </div>
+    <div class="custom-contact-form__form">
+      {%- for block in section.blocks -%}
+         {% render block %}
+      {%- endfor -%}
+    </div>
+    <div class="custom-contact-form__items">
+      <div class="custom-contact-form__item">
+      {%- if section.settings.email != blank -%}
+        <span>Email</span>
+        <a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
+      {%- endif -%}
+      </div>
+            <div class="custom-contact-form__item">
+      {%- if section.settings.phone != blank -%}
+        <span>Phone</span>
+        <a href="tel:{{ section.settings.phone }}">{{ section.settings.phone }}</a>
+      {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Contact Form",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "background-1"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Some Title",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Email"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "default": "Some Email",
+      "label": "Email"
+    },
+    {
+      "type": "header",
+      "content": "Phone"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "default": "+1 (415) 707-0102",
+      "label": "Phone"
+    },
+    {
+      "type": "header",
+      "content": "Paddings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top Desktop",
+      "default": 66
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom Desktop",
+      "default": 66
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top Mobile",
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom Mobile",
+      "default": 42
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Custom Contact Form"
+    }
+  ]
+}
+{% endschema %}

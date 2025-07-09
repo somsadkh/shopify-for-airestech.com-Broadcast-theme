@@ -1,0 +1,345 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "1750430288d67a9934": {
+      "type": "apps",
+      "blocks": {
+        "govx_id_exclusive_discounts_govx_id_button_wtp6yk": {
+          "type": "shopify:\/\/apps\/govx-id-exclusive-discounts\/blocks\/govx-id-button\/2b41cbab-a2d3-48ab-85b4-09f16dcc4bf0",
+          "settings": {
+            "cta_layout": "full",
+            "cta_prompt": "Sign In To Receive Your Discount"
+          }
+        }
+      },
+      "block_order": [
+        "govx_id_exclusive_discounts_govx_id_button_wtp6yk"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "replo_c_ufc_section_1_cYd7Kj": {
+      "type": "replo-c-ufc-section-1",
+      "name": "c-ufc-section-1",
+      "settings": {}
+    },
+    "section_announcement_irwaA6": {
+      "type": "section-announcement",
+      "blocks": {
+        "text_N3i9pf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>25+ Clinical Trials<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_tam76Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>22 Patents<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_XQUj8C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>9 Peer Reviewed Studies<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_gzadhM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>$20M In R & D<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_DKLTPh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Public Co. Traded in US, Canada & EU<strong> |<\/strong><\/p>",
+            "text_font_size": "body-x-large",
+            "color": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text_N3i9pf",
+        "text_tam76Q",
+        "text_XQUj8C",
+        "text_gzadhM",
+        "text_DKLTPh"
+      ],
+      "name": "Scrolling text",
+      "settings": {
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "show_border": true,
+        "layout": "marquee",
+        "color_scheme": "",
+        "padding_top": 15,
+        "padding_bottom": 15
+      }
+    },
+    "replo_duncan_french_t_fJFjWn": {
+      "type": "replo-duncan-french_t",
+      "name": "Duncan_french_t",
+      "settings": {}
+    },
+    "replo_c_ufc_section_2_XPw9Qi": {
+      "type": "replo-c-ufc-section-2",
+      "name": "c-ufc-section-2",
+      "settings": {}
+    },
+    "replo_c_ufc_section_3_zJgqRk": {
+      "type": "replo-c-ufc-section-3",
+      "name": "c-ufc-section-3",
+      "settings": {}
+    },
+    "replo_c_ufc_section_4_P3DtLU": {
+      "type": "replo-c-ufc-section-4",
+      "name": "c-ufc-section-4",
+      "settings": {}
+    },
+    "replo_c_ufc_section_5_kfgTgz": {
+      "type": "replo-c-ufc-section-5",
+      "name": "c-ufc-section-5",
+      "settings": {}
+    },
+    "replo_c_ufc_section_6_EzTUDd": {
+      "type": "replo-c-ufc-section-6",
+      "name": "c-ufc-section-6",
+      "settings": {}
+    },
+    "replo_c_ufc_section_7_7RmiPi": {
+      "type": "replo-c-ufc-section-7",
+      "name": "c-ufc-section-7",
+      "settings": {}
+    },
+    "featured_collection_iMDVMb": {
+      "type": "featured-collection",
+      "blocks": {
+        "line_item_MChVRk": {
+          "type": "line_item",
+          "settings": {
+            "title": "Personal Protection"
+          }
+        },
+        "line_item_4q6Wx7": {
+          "type": "line_item",
+          "settings": {
+            "title": "On-the-Go Protection"
+          }
+        },
+        "line_item_VcxLVY": {
+          "type": "line_item",
+          "settings": {
+            "title": "Whole Room Protection"
+          }
+        },
+        "link_w9PqVD": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/1_80f9998a-65b4-40f7-8723-325320dc2d3b.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/1_80f9998a-65b4-40f7-8723-325320dc2d3b.jpg",
+            "label": "Device Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "One",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "19ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 14,
+            "description": "<p>A device to adhere to your personal tech like phones and laptops.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop One",
+            "link_url": "shopify:\/\/products\/lifetune-one",
+            "link_size": 14,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_9WxjP3": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_ba28621f-fdaa-4f78-af62-6a38ca5496a0.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/2_ba28621f-fdaa-4f78-af62-6a38ca5496a0.jpg",
+            "label": "On the Go Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Go",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "32ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 14,
+            "description": "<p>A personal accessory to attach to your keys, bag, pet collar or to wear.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Go",
+            "link_url": "shopify:\/\/products\/lifetune-go",
+            "link_size": 14,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_EhzNVa": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_e82cd8ec-72b8-4361-aa5f-e60259c2fd87.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/3_e82cd8ec-72b8-4361-aa5f-e60259c2fd87.jpg",
+            "label": "Versatile Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Flex",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "42ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 14,
+            "description": "<p>A versatile wearable protection for on-the-go in your daily life.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Flex",
+            "link_url": "shopify:\/\/products\/lifetune-flex",
+            "link_size": 14,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_Rcp3h3": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_f521aeb3-7307-4cc9-b4af-46538d3251b4.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/4_f521aeb3-7307-4cc9-b4af-46538d3251b4.jpg",
+            "label": "Small Space",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Zone",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "93ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 14,
+            "description": "<p>A device to place in your small spaces like car, office space or home.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Zone",
+            "link_url": "shopify:\/\/products\/lifetune-zone",
+            "link_size": 14,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_tPjWKC": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/5_c8b6ff41-9b62-4e28-851a-e41009ddc428.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/5_c8b6ff41-9b62-4e28-851a-e41009ddc428.jpg",
+            "label": "Large Space",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Zone Max",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "139ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 14,
+            "description": "<p>The biggest protection device for large areas like living rooms.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Zone Max",
+            "link_url": "shopify:\/\/products\/lifetune-zone-max",
+            "link_size": 14,
+            "link_size_mobile": 14,
+            "full_width_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "line_item_MChVRk",
+        "line_item_4q6Wx7",
+        "line_item_VcxLVY",
+        "link_w9PqVD",
+        "link_9WxjP3",
+        "link_EhzNVa",
+        "link_Rcp3h3",
+        "link_tPjWKC"
+      ],
+      "name": "Featured collection(new)",
+      "settings": {
+        "bg_color": "#237aa3",
+        "bg_img": "shopify:\/\/shop_images\/Radius__Radius_1-min.jpg",
+        "title": "<p>Explore UFC's Top Aires Picks<\/p>",
+        "title_size": 32,
+        "title_size_mobile": 26,
+        "sub_title": "",
+        "sub_title_size": 14,
+        "link_text": "Shop All",
+        "link_url": "shopify:\/\/collections\/bestsellers",
+        "link_size": 20,
+        "link_size_mobile": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1750430288d67a9934",
+    "replo_c_ufc_section_1_cYd7Kj",
+    "section_announcement_irwaA6",
+    "replo_duncan_french_t_fJFjWn",
+    "replo_c_ufc_section_2_XPw9Qi",
+    "replo_c_ufc_section_3_zJgqRk",
+    "replo_c_ufc_section_4_P3DtLU",
+    "replo_c_ufc_section_5_kfgTgz",
+    "replo_c_ufc_section_6_EzTUDd",
+    "replo_c_ufc_section_7_7RmiPi",
+    "featured_collection_iMDVMb"
+  ]
+}

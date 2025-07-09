@@ -1,12 +1,205 @@
+
+
 .main-blog__content {
   max-width: 1360px;
   padding: 0 16px;
   margin: 0 auto;
 }
 
+.template-suffix-investors_news_blog{
+  background: #fcfbf9;
+}
+
+.main-blog__investors {
+  max-width: 1028px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-blog__investors .main-blog__header-text p{
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+.main-blog__investors .main-blog__blogs-buttons{
+  gap: 8px;
+  padding: 0 0 12px 0;
+}
+
+.main-blog__investors .main-blog__blogs--title{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 52px;
+  position: relative;
+}
+
+.main-blog__investors .main-blog__blogs--title:after{
+  content: '';
+  width: 1.5px;
+  height: 52px;
+  bottom: 0;
+  left: 50%;
+  background: #000000;
+  display: block;
+  position: absolute;
+}
+
+.main-blog__investors .blog-posts__container-more-posts{
+  flex-direction: column;
+  margin-top: 33px;
+}
+
+.main-blog__investors .main-blog__blogs-posts{
+  margin-top: 33px;
+}
+
+.main-blog__investors .blog-posts__container-more-posts .main-blog__post{
+  width: 100%;
+}
+
+.main-blog__investors .main-blog__pagination{
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 48px;
+}
+
+.main-blog__pagination .dots{
+  line-height: 1;
+  margin-top: auto;
+}
+
+.main-blog__investors .main-blog__pagination button{
+  font-weight: 400;
+  font-size: 19.6px;
+  line-height: 150%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  padding: 9px 19px;
+  border: 1.23px solid #000000;
+  color: #000000;
+}
+
+.main-blog__investors .main-blog__pagination button:disabled{
+  background: #4B5E7B;
+  border: 1.23px solid #4B5E7B;
+  color: #FFFFFF;
+}
+
+.main-blog__investors .main-blog__post{
+  border: 1px solid #00000080;
+}
+
+.main-blog__investors .main-blog__post-info {
+  gap: 18px;
+}
+
+.main-blog__investors .main-blog__post-info .main-blog__post-title{
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 130%;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.main-blog__investors .main-blog__post-info .main-blog__post-excerpt{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+.main-blog__investors .main-blog__post-info .main-blog__post-btn{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-decoration: none; 
+  padding: 9px 17px;
+  border: 1.1px solid #000000;
+  text-transform: uppercase;
+  width: fit-content;
+  display: block; 
+}
+
 @media screen and (max-width: 749px) {
   .main-blog__content {
     padding: 0;
+  }
+
+  .main-blog__investors .main-blog__blogs-buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: none;
+    overflow-x: scroll;
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+
+  .main-blog__investors .main-blog__blogs-buttons::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .main-blog__investors .main-blog__blog-button{
+    width: fit-content;
+    font-size: 16px;
+  }
+
+  .main-blog__investors .main-blog__header{
+    padding: 0 20px;
+  }
+
+  .main-blog__investors .main-blog__blogs-posts{
+    padding: 0 27px;
+  }
+
+  .main-blog__investors .main-blog__blogs--title{
+    font-weight: 400;
+    font-size: 26px !important;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 35px;
+  }
+
+  .main-blog__investors .main-blog__header-text p{
+    font-size: 16px;
+  }
+
+  .main-blog__investors .main-blog__blogs-posts{
+    margin-top: 26px;
+  }
+
+  .main-blog__investors .main-blog__blogs--title:after{
+    height: 35px;
+  }
+
+  .main-blog__investors .main-blog__post-info .main-blog__post-title{
+    font-size: 22px;
+  }
+
+  .main-blog__investors .main-blog__header-text{
+    gap: 8px;
+  }
+
+  .main-blog__investors .main-blog__blogs{
+    margin-top: 15px;
+  }
+
+  .main-blog__investors .blog-posts__container-more-posts{
+    margin-top: 13px;
+  }
+
+  .main-blog__investors .main-blog__post-info{
+    padding: 24px 38px;
   }
 }
 
@@ -15,7 +208,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 21px;
 }
 
 @media screen and (max-width: 749px) {
@@ -355,7 +548,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   vertical-align: middle;
   text-decoration: underline;
   text-decoration-style: solid;

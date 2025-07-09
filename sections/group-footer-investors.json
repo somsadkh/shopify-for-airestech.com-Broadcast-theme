@@ -1,0 +1,54 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer-investors": {
+      "type": "footer-investors",
+      "blocks": {
+        "link_wdH3kh": {
+          "type": "link",
+          "settings": {
+            "link_text": " Shop Aires Consumer Site",
+            "link": "https:\/\/airestech.com\/"
+          }
+        },
+        "link_xXRPmz": {
+          "type": "link",
+          "settings": {
+            "link_text": "Privacy Policy",
+            "link": "shopify:\/\/policies\/privacy-policy"
+          }
+        },
+        "link_zFa6wM": {
+          "type": "link",
+          "settings": {
+            "link_text": "Terms of Service",
+            "link": "shopify:\/\/policies\/terms-of-service"
+          }
+        },
+        "link_at4wxx": {
+          "type": "link",
+          "settings": {
+            "link_text": "© COPYRIGHT 2025. American Aires Inc. ALL RIGHTS RESERVED.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_wdH3kh",
+        "link_xXRPmz",
+        "link_zFa6wM",
+        "link_at4wxx"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "center_links": true,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "footer-investors"
+  ]
+}

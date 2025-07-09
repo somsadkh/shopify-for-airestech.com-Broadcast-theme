@@ -51,7 +51,7 @@
         "menu_HUwkwi"
       ],
       "settings": {
-        "title": "Get 25% Off Your First Order",
+        "title": "Get 20% Off Your First Order",
         "color_title": "#000000",
         "fs_title": 16,
         "fs_title_mob": 18,
@@ -64,7 +64,7 @@
         "image_height": 100,
         "image_width_mob": 100,
         "image_height_mob": 50,
-        "button_text": "Get 25% OFF",
+        "button_text": "Get 20% OFF",
         "show_arrow": true,
         "terms": true,
         "button_type": "btn--primary",

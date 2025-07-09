@@ -1,0 +1,632 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "replo_dogris_section_1_xgQyrw": {
+      "type": "replo-dogris-section-1",
+      "name": "Dogris - section - 1",
+      "settings": {}
+    },
+    "replo_dogris_section_2_qTfbL4": {
+      "type": "replo-dogris-section-2",
+      "disabled": true,
+      "name": "Dogris - section - 2",
+      "settings": {}
+    },
+    "brain_scan_videos_twzBpR": {
+      "type": "brain-scan-videos",
+      "blocks": {
+        "item_iUceqM": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Desktop_1_0a6700f9-de6f-4ce0-8af0-280dc68a7124.png",
+            "image_mob": "shopify:\/\/shop_images\/Desktop_1_0a6700f9-de6f-4ce0-8af0-280dc68a7124.png",
+            "title": "Pro UFC Fighter & Coach Tim Welch’s Clear EEG Results",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback Specialist Dr. Dogris’ testing revealed that Tim Welch experienced heightened brainwave activity, linked to anxiety, brain fog, and attention issues, when exposed to a cell phone. With Aires Tech protection, his EEG scan showed clear improvements.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/Doc2NK18pb0?si=TTih-SgMkLLl4tSX"
+          }
+        },
+        "item_LraTzn": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "title": "Canada Basketball RJ Barrett's Positive Findings",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris described even with RJ's high-output neural activity, there was significant results above baseline range. This was another example of variability in brain activity by individuals and still Aires' presence showed impactful performance.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/BAItJubdKZI"
+          }
+        },
+        "item_XNxQwW": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Mobile_2.png",
+            "image_mob": "shopify:\/\/shop_images\/Mobile_2.png",
+            "title": "Pro UFC Fighter Cory Sandhagen’s EEG Results Show Sharper Focus",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback testing by Dr. Dogris revealed that Cory Sandhagen experienced heightened brain and heart activity when exposed to a cell phone, causing stress responses and reduced reaction time. With Aires Tech protection, his EEG scans showed improved brainwave balance and significantly faster response speeds, supporting peak performance.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/SkpDrggZeO4?si=xrQ1IdAat3gBxmdt&amp;start=2"
+          }
+        },
+        "item_7HAh9N": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-4.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-4.jpg",
+            "title": "Four Individuals EEG Brain Scan",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris performed four separate EEG demonstrations with individuals and their tech devices. Each scan showed positive results with Aires devices present compared to no Aires.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/TGh-IEmNeNY?si=8JNrKZlJ-nOPmQxB"
+          }
+        }
+      },
+      "block_order": [
+        "item_iUceqM",
+        "item_LraTzn",
+        "item_XNxQwW",
+        "item_7HAh9N"
+      ],
+      "name": "Brain scan videos section",
+      "settings": {
+        "content_max_width": 26,
+        "subtitle_center": false,
+        "subtitle_center_mobile": false,
+        "subtitle": "AIRES IN ACTION",
+        "color_subtitle": "#000000",
+        "fs_subtitle": 14,
+        "fs_subtitle_mob": 16,
+        "title": "Dr. Dogris Put Aires to the Test",
+        "heading_center": false,
+        "heading_center_mobile": false,
+        "color_title": "#000000",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "text": "By performing 4 EEG brain scans in real time. These brain scans track electrical activity to help doctors understand brain function. Here, EEG results show measurable changes in brain activity when using Aires products alongside digital devices.",
+        "color_text": "#000000",
+        "fs_text": 16,
+        "fs_text_mob": 14,
+        "padding_top": 100,
+        "padding_bottom": 50
+      }
+    },
+    "replo_dogris_section_3_PCgVF8": {
+      "type": "replo-dogris-section-3",
+      "name": "Dogris - section - 3",
+      "settings": {}
+    },
+    "replo_dogris_section_4_feqcPb": {
+      "type": "replo-dogris-section-4",
+      "name": "Dogris - section - 4",
+      "settings": {}
+    },
+    "replo_dogris_section_5_jqyLnc": {
+      "type": "replo-dogris-section-5",
+      "name": "Dogris - section - 5",
+      "settings": {}
+    },
+    "section_double_NmAFyB": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_fwV3Vb": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "color_title": "#000000",
+            "fs_title": 24,
+            "fs_title_mob": 24,
+            "padding_bottom": 16
+          }
+        },
+        "heading_qfejgU": {
+          "type": "heading",
+          "settings": {
+            "heading_center": false,
+            "heading_center_mobile": false,
+            "title": "Why Dr. Dogris Trusts Aires For Proven EMF Protection",
+            "color_title": "#000000",
+            "fs_title": 32,
+            "fs_title_mob": 32,
+            "padding_bottom": 16,
+            "heading_tag": "automatic"
+          }
+        },
+        "text_BmBqyV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Proven through decades of research, clinical trials, and peer-reviewed studies, our technology provides unmatched EMF protection with total transparency. It’s science you can feel safe relying on, every single day.<\/p>",
+            "color_title": "#000000",
+            "fs_title": 16,
+            "fs_title_mob": 16,
+            "padding_bottom": 16
+          }
+        },
+        "icon_text_JKJCdE": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "<svg width=\"42\" viewbox=\"0 0 201 200\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M67.6458 144.049H184.333V31.9999H24.3329V88.3723\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<circle cx=\"44.3663\" cy=\"116\" r=\"12\" fill=\"#1B1A20\"><\/circle>\n<path d=\"M40.5595 142.943L44.368 157.16L47.899 170.338L52.9373 161.713L61.6128 166.663L54.5507 140.307\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M34.1817 140.313L27.1196 166.669L35.7951 161.719L40.8334 170.343L44.3644 157.165\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M39.5465 90.0575C42.3974 87.9008 46.3342 87.9008 49.1851 90.0575C51.0621 91.4776 53.3623 92.2249 55.7155 92.1794C59.2896 92.1103 62.4745 94.4242 63.5133 97.8448C64.1971 100.097 65.6187 102.054 67.5493 103.4C70.4815 105.445 71.698 109.189 70.5278 112.567C69.7573 114.791 69.7573 117.209 70.5278 119.433C71.698 122.811 70.4815 126.555 67.5493 128.6C65.6187 129.946 64.1971 131.903 63.5133 134.155C62.4745 137.576 59.2896 139.89 55.7155 139.821C53.3623 139.775 51.0621 140.522 49.185 141.942C46.3342 144.099 42.3974 144.099 39.5465 141.942C37.6694 140.522 35.3693 139.775 33.016 139.821C29.4419 139.89 26.257 137.576 25.2183 134.155C24.5344 131.903 23.1128 129.946 21.1823 128.6C18.2501 126.555 17.0335 122.811 18.2038 119.433C18.9743 117.209 18.9743 114.791 18.2038 112.567C17.0335 109.189 18.2501 105.445 21.1823 103.4C23.1128 102.054 24.5344 100.097 25.2183 97.8448C26.257 94.4242 29.4419 92.1103 33.016 92.1794C35.3693 92.2249 37.6694 91.4776 39.5465 90.0575Z\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M40.333 47.9999H168.333\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M40.333 63.9999H168.333\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M40.333 80H168.333\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M120.333 96L168.333 95.8698\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M88.316 128.204C94.3883 122.132 106.23 109.142 112.517 112.101C118.804 115.06 113.19 134.497 112.517 135.77C111.305 138.064 126.655 122.007 128.631 119.973C129.806 118.763 128.631 127 128.631 127.845C128.631 128.69 136.651 119.445 136.492 119.973C135.489 123.316 133.483 129.879 136.492 129.464C138.505 129.186 147.091 122.163 147.123 122.879C147.158 123.678 147.681 128.872 149.131 127.845C151.864 125.909 154.382 119.942 158.006 119.973C160.555 119.995 158.732 126.817 160.965 127.528C162.106 127.891 164.188 121.829 168.525 121.829\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<\/svg>",
+            "title": "22 Patented Technologies",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 16
+          }
+        },
+        "icon_text_WHLBDx": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "<svg width=\"42\" viewbox=\"0 0 201 200\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<ellipse cx=\"100.234\" cy=\"100.001\" rx=\"8.24778\" ry=\"8.24779\" fill=\"#1B1A20\"><\/ellipse>\n<path d=\"M100.236 150.278C102.849 150.278 105.444 149.043 107.92 146.59C110.4 144.133 112.692 140.515 114.643 135.945C118.544 126.809 120.987 114.102 120.987 100C120.987 85.8985 118.544 73.191 114.643 64.0556C112.692 59.4856 110.4 55.8675 107.92 53.41C105.444 50.9578 102.849 49.7227 100.236 49.7227C97.6226 49.7227 95.0273 50.9578 92.5519 53.41C90.0712 55.8675 87.7799 59.4856 85.8286 64.0556C81.9281 73.191 79.4852 85.8985 79.4852 100C79.4852 114.102 81.9281 126.809 85.8286 135.945C87.7799 140.515 90.0712 144.133 92.5519 146.59C95.0273 149.043 97.6226 150.278 100.236 150.278Z\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M135.79 64.4428C133.942 62.5947 131.233 61.6328 127.748 61.6164C124.256 61.6 120.077 62.5384 115.465 64.3904C106.246 68.0927 95.5311 75.352 85.5581 85.325C75.5851 95.298 68.3258 106.013 64.6236 115.232C62.7716 119.844 61.8332 124.023 61.8496 127.515C61.866 131 62.8278 133.709 64.676 135.557C66.5241 137.405 69.233 138.367 72.7179 138.384C76.2102 138.4 80.3895 137.462 85.0014 135.61C94.2206 131.907 104.935 124.648 114.908 114.675C124.881 104.702 132.14 93.9875 135.843 84.7683C137.695 80.1564 138.633 75.9771 138.617 72.4848C138.6 68.9999 137.638 66.291 135.79 64.4428Z\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M135.794 135.557C137.643 133.709 138.604 131 138.621 127.515C138.637 124.023 137.699 119.844 135.847 115.232C132.145 106.013 124.885 95.298 114.912 85.325C104.939 75.352 94.2247 68.0927 85.0055 64.3904C80.3936 62.5384 76.2143 61.6 72.722 61.6164C69.2371 61.6328 66.5282 62.5947 64.6801 64.4428C62.8319 66.291 61.8701 68.9999 61.8537 72.4848C61.8373 75.9771 62.7757 80.1564 64.6277 84.7683C68.3299 93.9875 75.5892 104.702 85.5622 114.675C95.5352 124.648 106.25 131.907 115.469 135.61C120.081 137.462 124.26 138.4 127.752 138.384C131.237 138.367 133.946 137.405 135.794 135.557Z\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M150.519 100.001C150.519 97.3874 149.284 94.7918 146.831 92.316C144.374 89.8349 140.755 87.5433 136.184 85.5917C127.047 81.6907 114.338 79.2474 100.234 79.2474C86.13 79.2474 73.4205 81.6907 64.2837 85.5917C59.713 87.5433 56.0942 89.8349 53.6364 92.316C51.1838 94.7918 49.9485 97.3874 49.9485 100.001C49.9485 102.615 51.1838 105.21 53.6364 107.686C56.0942 110.167 59.713 112.459 64.2837 114.41C73.4205 118.311 86.13 120.755 100.234 120.755C114.338 120.755 127.047 118.311 136.184 114.41C140.755 112.459 144.374 110.167 146.831 107.686C149.284 105.21 150.519 102.615 150.519 100.001Z\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M145.541 37.6672V38.9172H146.791H167.473V182.752H32.9915V17.25H145.541V37.6672Z\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M145.913 16.8891L167.834 38.5474\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<\/svg>",
+            "title": "Proven in 25+ Clinical Trials",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 16
+          }
+        },
+        "icon_text_cPGLdf": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "<svg width=\"42\" viewbox=\"0 0 201 203\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M167.529 170.957V38.6203H145.932V17.2844H32.6423V182.717H157.693\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M146.312 16.9153L167.908 38.2775\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<line x1=\"45.9583\" y1=\"38.75\" x2=\"128.089\" y2=\"38.75\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/line>\n<line x1=\"45.9583\" y1=\"54.75\" x2=\"154.807\" y2=\"54.75\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/line>\n<line x1=\"45.9583\" y1=\"70.75\" x2=\"154.807\" y2=\"70.75\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/line>\n<line x1=\"45.9583\" y1=\"86.75\" x2=\"69.702\" y2=\"86.75\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/line>\n<line x1=\"136.089\" y1=\"86.75\" x2=\"154.807\" y2=\"86.75\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/line>\n<line x1=\"45.9583\" y1=\"102.75\" x2=\"61.7629\" y2=\"102.75\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/line>\n<line x1=\"45.9583\" y1=\"118.75\" x2=\"60.2859\" y2=\"118.75\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/line>\n<line x1=\"144.089\" y1=\"118.75\" x2=\"154.807\" y2=\"118.75\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/line>\n<line x1=\"142.862\" y1=\"102.75\" x2=\"154.807\" y2=\"102.75\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/line>\n<circle cx=\"102.45\" cy=\"113.432\" r=\"42.3238\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/circle>\n<path d=\"M95.4455 138.905L94.4266 130.754C93.8747 130.541 93.355 130.287 92.8677 129.989C92.3803 129.692 91.9023 129.374 91.4336 129.034L83.8555 132.218L76.8505 120.119L83.4097 115.152C83.3673 114.854 83.346 114.568 83.346 114.293V112.574C83.346 112.297 83.3673 112.01 83.4097 111.713L76.8505 106.746L83.8555 94.6463L91.4336 97.8303C91.9006 97.4907 92.3888 97.1723 92.8982 96.8751C93.4077 96.5779 93.9171 96.3232 94.4266 96.1109L95.4455 87.9597H109.455L110.474 96.1109C111.026 96.3232 111.547 96.5779 112.036 96.8751C112.525 97.1723 113.002 97.4907 113.467 97.8303L121.045 94.6463L128.05 106.746L121.491 111.713C121.534 112.01 121.555 112.297 121.555 112.574V114.291C121.555 114.567 121.512 114.854 121.427 115.152L127.987 120.119L120.982 132.218L113.467 129.034C113 129.374 112.512 129.692 112.003 129.989C111.493 130.287 110.984 130.541 110.474 130.754L109.455 138.905H95.4455ZM102.578 122.348C105.04 122.348 107.142 121.477 108.882 119.737C110.623 117.996 111.493 115.895 111.493 113.432C111.493 110.97 110.623 108.868 108.882 107.128C107.142 105.387 105.04 104.517 102.578 104.517C100.073 104.517 97.9605 105.387 96.2402 107.128C94.52 108.868 93.6607 110.97 93.6624 113.432C93.6641 115.895 94.5242 117.996 96.2428 119.737C97.9613 121.477 100.073 122.348 102.578 122.348Z\" fill=\"#1B1A20\"><\/path>\n<rect x=\"128.524\" y=\"147.509\" width=\"7.2354\" height=\"22.7149\" transform=\"rotate(-45 128.524 147.509)\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/rect>\n<rect x=\"141.22\" y=\"166.7\" width=\"15.7574\" height=\"48.3944\" transform=\"rotate(-45 141.22 166.7)\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/rect>\n<\/svg>",
+            "title": "$20M In Research & Development",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 16
+          }
+        },
+        "icon_text_MeqVc3": {
+          "type": "icon_text",
+          "settings": {
+            "svg": "<svg width=\"42\" viewbox=\"0 0 201 201\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"128.962\" cy=\"111.851\" r=\"22.6722\" transform=\"rotate(-30 128.962 111.851)\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/circle>\n<path d=\"M158.625 152.279L177.519 185.003L168.033 190.48L150.411 159.958L150.411 159.957L149.14 157.755L158.625 152.279Z\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M48.6808 48.1874H157.292\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M48.6808 64.1874H157.292\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M48.6808 80.1875H98.5721\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M48.6808 149.188H98.5721\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M48.6808 168.188H133.73\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M48.6822 96.1875H82.5\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M48.6822 113.459L82.5 113.321\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M48.6822 130.731L82.5 130.592\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M151.957 157.346L142.357 140.72C127.569 147.603 109.712 142.157 101.402 127.763C92.6145 112.542 97.8295 93.0797 113.05 84.292C128.271 75.5043 147.734 80.7193 156.521 95.94C164.832 110.334 160.619 128.521 147.265 137.887L156.864 154.513\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M168.723 153.75V37.6672H146.791V16H31.7415V184.002H152.681\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<path d=\"M145.913 16.8891L167.834 38.5474\" stroke=\"#1B1A20\" stroke-width=\"2.5\"><\/path>\n<\/svg>",
+            "title": "9 Peer-Reviewed Studies",
+            "color_title": "#000000",
+            "fs_title": 18,
+            "fs_title_mob": 16
+          }
+        },
+        "buttons_3FRdPf": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "SHOP AIRES",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "button_url": "shopify:\/\/collections\/bestsellers",
+            "button_type": "btn--secondary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        },
+        "buttons_9HPmfq": {
+          "type": "buttons",
+          "settings": {
+            "button_text": "Learn more",
+            "fs_button": 20,
+            "fs_button_mob": 16,
+            "button_url": "shopify:\/\/pages\/tech",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_fwV3Vb",
+        "heading_qfejgU",
+        "text_BmBqyV",
+        "icon_text_JKJCdE",
+        "icon_text_WHLBDx",
+        "icon_text_cPGLdf",
+        "icon_text_MeqVc3",
+        "buttons_3FRdPf",
+        "buttons_9HPmfq"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "bg": "#f7f5f2",
+        "image_1": "shopify:\/\/shop_images\/Group_909-min.jpg",
+        "image_width": "one-half",
+        "image_contain": false,
+        "text_alignment": "text-left",
+        "layout": "",
+        "width": "wrapper--full",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "reverse_blocks": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_placeholder": true
+      }
+    },
+    "brain_scan_videos_bnn7fR": {
+      "type": "brain-scan-videos",
+      "blocks": {
+        "item_N8bcGG": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Desktop_1_0a6700f9-de6f-4ce0-8af0-280dc68a7124.png",
+            "image_mob": "shopify:\/\/shop_images\/Desktop_1_0a6700f9-de6f-4ce0-8af0-280dc68a7124.png",
+            "title": "Pro UFC Fighter & Coach Tim Welch’s Clear EEG Results",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback Specialist Dr. Dogris’ testing revealed that Tim Welch experienced heightened brainwave activity, linked to anxiety, brain fog, and attention issues, when exposed to a cell phone. With Aires Tech protection, his EEG scan showed clear improvements.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/Doc2NK18pb0?si=TTih-SgMkLLl4tSX"
+          }
+        },
+        "item_HL6WUf": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "title": "Canada Basketball RJ Barrett's Positive Findings",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris described even with RJ's high-output neural activity, there was significant results above baseline range. This was another example of variability in brain activity by individuals and still Aires' presence showed impactful performance.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 16,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/BAItJubdKZI"
+          }
+        },
+        "item_AqkCCx": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Mobile_2.png",
+            "image_mob": "shopify:\/\/shop_images\/Mobile_2.png",
+            "title": "Pro UFC Fighter Cory Sandhagen’s EEG Results Show Sharper Focus",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback testing by Dr. Dogris revealed that Cory Sandhagen experienced heightened brain and heart activity when exposed to a cell phone, causing stress responses and reduced reaction time. With Aires Tech protection, his EEG scans showed improved brainwave balance and significantly faster response speeds, supporting peak performance.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/SkpDrggZeO4?si=xrQ1IdAat3gBxmdt&amp;start=2"
+          }
+        },
+        "item_9xfCwe": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "title": "Pro UFC Fighter Maycee Barber's Impressive Results",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback Specialist Chris Wyllie performed an EEG brain scan on UFC's Maycee Barber and improvements were clear with Aires present. Maycee has noted that she no longer gets headaches since she's been using Aires!",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/_syXvHqHXh0?si=1Jbrj-mKZ_a59ZFx"
+          }
+        },
+        "item_AkWGjP": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-4.webp",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-4.webp",
+            "title": "Four Individuals EEG Brain Scan",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris performed four separate EEG demonstrations with individuals and their tech devices. Each scan showed positive results with Aires devices present compared to no Aires.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/TGh-IEmNeNY?si=8JNrKZlJ-nOPmQxB"
+          }
+        }
+      },
+      "block_order": [
+        "item_N8bcGG",
+        "item_HL6WUf",
+        "item_AqkCCx",
+        "item_9xfCwe",
+        "item_AkWGjP"
+      ],
+      "disabled": true,
+      "name": "Brain scan videos section",
+      "settings": {
+        "content_max_width": 25,
+        "subtitle_center": false,
+        "subtitle_center_mobile": false,
+        "subtitle": "AIRES IN ACTION",
+        "color_subtitle": "#000000",
+        "fs_subtitle": 14,
+        "fs_subtitle_mob": 16,
+        "title": "The Real-time Proof of Aires Tech With EEG Brain Scans",
+        "heading_center": false,
+        "heading_center_mobile": false,
+        "color_title": "#000000",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "text": "EEG brain scans track electrical activity to help doctors understand brain function. Here, licensed professionals mapped EEG results to show measurable changes in brain activity when using Aires products alongside digital devices.",
+        "color_text": "#000000",
+        "fs_text": 16,
+        "fs_text_mob": 14,
+        "padding_top": 100,
+        "padding_bottom": 50
+      }
+    },
+    "replo_dogris_section_7_4wPWe9": {
+      "type": "replo-dogris-section-7",
+      "name": "Dogris - section - 7",
+      "settings": {}
+    },
+    "featured_collection_RMVmwT": {
+      "type": "featured-collection",
+      "blocks": {
+        "line_item_UNjDGg": {
+          "type": "line_item",
+          "settings": {
+            "title": "Personal Protection"
+          }
+        },
+        "line_item_fnYpEd": {
+          "type": "line_item",
+          "settings": {
+            "title": "On-the-Go Protection"
+          }
+        },
+        "line_item_gHNLm9": {
+          "type": "line_item",
+          "settings": {
+            "title": "Whole Room Protection"
+          }
+        },
+        "link_GraCUD": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/1_80f9998a-65b4-40f7-8723-325320dc2d3b.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/1_80f9998a-65b4-40f7-8723-325320dc2d3b.jpg",
+            "label": "Device Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "One",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "19ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A device to adhere to your personal tech like phones and laptops.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop One",
+            "link_url": "shopify:\/\/products\/lifetune-one",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_pweFwb": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_ba28621f-fdaa-4f78-af62-6a38ca5496a0.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/2_ba28621f-fdaa-4f78-af62-6a38ca5496a0.jpg",
+            "label": "Personal Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Go",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "32ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A personal accessory to attach to your keys, bag, pet collar or to wear.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Go",
+            "link_url": "shopify:\/\/products\/lifetune-go",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_ztpm3D": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_e82cd8ec-72b8-4361-aa5f-e60259c2fd87.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/3_e82cd8ec-72b8-4361-aa5f-e60259c2fd87.jpg",
+            "label": "Versatile Protection",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Flex",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "42ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A versatile wearable protection for on-the-go in your daily life.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Flex",
+            "link_url": "shopify:\/\/products\/lifetune-flex",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_LextTA": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_f521aeb3-7307-4cc9-b4af-46538d3251b4.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/4_f521aeb3-7307-4cc9-b4af-46538d3251b4.jpg",
+            "label": "Small Space",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Zone",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "93ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>A device to place in your small spaces like car, office space or home.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop Zone",
+            "link_url": "shopify:\/\/products\/lifetune-zone",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        },
+        "link_MXedbx": {
+          "type": "link",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/5_c8b6ff41-9b62-4e28-851a-e41009ddc428.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/5_c8b6ff41-9b62-4e28-851a-e41009ddc428.jpg",
+            "label": "Large Space",
+            "label_size": 14,
+            "label_size_mobile": 10,
+            "stars_count": 5,
+            "title": "Zone Max",
+            "title_size": 20,
+            "title_size_mobile": 16,
+            "sub_title": "139ft Protection",
+            "sub_title_size": 14,
+            "sub_title_size_mobile": 12,
+            "description": "<p>The biggest protection device for large areas like living rooms.<\/p>",
+            "text_size": 14,
+            "text_size_mobile": 12,
+            "link_text": "Shop max",
+            "link_url": "shopify:\/\/products\/lifetune-zone-max",
+            "link_size": 16,
+            "link_size_mobile": 14,
+            "full_width_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "line_item_UNjDGg",
+        "line_item_fnYpEd",
+        "line_item_gHNLm9",
+        "link_GraCUD",
+        "link_pweFwb",
+        "link_ztpm3D",
+        "link_LextTA",
+        "link_MXedbx"
+      ],
+      "name": "Featured collection(new)",
+      "settings": {
+        "bg_color": "#237aa3",
+        "bg_img": "shopify:\/\/shop_images\/Radius__Radius_1-min.jpg",
+        "title": "<p>Choose the EMF Protection <br\/>That’s Best For You<\/p>",
+        "title_size": 32,
+        "title_size_mobile": 32,
+        "sub_title": "Full range coverage",
+        "sub_title_size": 14,
+        "link_text": "Shop all",
+        "link_url": "",
+        "link_size": 20,
+        "link_size_mobile": 16,
+        "padding_top": 50,
+        "padding_bottom": 0,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "replo_dogris_section_1_xgQyrw",
+    "replo_dogris_section_2_qTfbL4",
+    "brain_scan_videos_twzBpR",
+    "replo_dogris_section_3_PCgVF8",
+    "replo_dogris_section_4_feqcPb",
+    "replo_dogris_section_5_jqyLnc",
+    "section_double_NmAFyB",
+    "brain_scan_videos_bnn7fR",
+    "replo_dogris_section_7_4wPWe9",
+    "featured_collection_RMVmwT"
+  ]
+}

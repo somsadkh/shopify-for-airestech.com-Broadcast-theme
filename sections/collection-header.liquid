@@ -1,0 +1,492 @@
+
+{% schema %}
+{
+  "name": "Collection Banner",
+  "class": "section section-customizable-banner",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>Shop All</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "body_text",
+      "label": "Body Text",
+      "default": "<p>Targeted relief for <b>every stage of life</b></p>"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "min": 80,
+      "max": 600,
+      "step": 10,
+      "unit": "px",
+      "label": "Banner Height",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "mobile_height",
+      "min": 80,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Mobile Banner Height",
+      "default": 120
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#efe5d8"
+    },
+    {
+      "type": "select",
+      "id": "horizontal_alignment",
+      "label": "Horizontal Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Vertical Alignment",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Border Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_top_border",
+      "label": "Enable Top Border",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "top_border_color",
+      "label": "Top Border Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "top_border_thickness",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Top Border Thickness",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "top_border_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Top Border Opacity",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "top_border_style",
+      "label": "Top Border Style",
+      "options": [
+        {
+          "value": "solid",
+          "label": "Solid"
+        },
+        {
+          "value": "dashed",
+          "label": "Dashed"
+        },
+        {
+          "value": "dotted",
+          "label": "Dotted"
+        }
+      ],
+      "default": "solid"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_bottom_border",
+      "label": "Enable Bottom Border",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "bottom_border_color",
+      "label": "Bottom Border Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "bottom_border_thickness",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Bottom Border Thickness",
+      "default": 1
+    },
+    {
+      "type": "select",
+      "id": "bottom_border_style",
+      "label": "Bottom Border Style",
+      "options": [
+        {
+          "value": "solid",
+          "label": "Solid"
+        },
+        {
+          "value": "dashed",
+          "label": "Dashed"
+        },
+        {
+          "value": "dotted",
+          "label": "Dotted"
+        }
+      ],
+      "default": "solid"
+    },
+    {
+      "type": "range",
+      "id": "bottom_border_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Bottom Border Opacity",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Heading Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 16,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading Font Size",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "min": 16,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading Font Size (Mobile)",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading Text Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment_mobile",
+      "label": "Heading Text Alignment (Mobile)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Body Text Typography"
+    },
+    {
+      "type": "range",
+      "id": "body_size",
+      "min": 12,
+      "max": 36,
+      "step": 1,
+      "unit": "px",
+      "label": "Body Font Size",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "body_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Body Font Size (Mobile)",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "body_color",
+      "label": "Body Text Color",
+      "default": "#4d4d4d"
+    },
+    {
+      "type": "select",
+      "id": "body_alignment",
+      "label": "Body Text Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "body_alignment_mobile",
+      "label": "Body Text Alignment (Mobile)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Additional Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Top (Mobile)",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding Bottom (Mobile)",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Banner",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="customizable-banner"
+     id="customizable-banner-{{ section.id }}"
+     data-section-id="{{ section.id }}"
+     data-section-type="customizable-banner">
+  <div class="customizable-banner__content">
+    <div class="customizable-banner__heading">
+      {{ section.settings.heading }}
+    </div>
+    <div class="customizable-banner__body">
+      {{ section.settings.body_text }}
+    </div>
+  </div>
+</div>
+
+<style>
+	#customizable-banner-{{ section.id }} {
+		width: 100%;
+		height: {{ section.settings.height }}px;
+		background-color: {{ section.settings.background_color }};
+		display: flex;
+		flex-direction: column;
+		padding-top: {{ section.settings.padding_top }}px;
+		padding-bottom: {{ section.settings.padding_bottom }}px;
+
+  {% if section.settings.horizontal_alignment == 'left' %}
+		align-items: flex-start;
+  {% elsif section.settings.horizontal_alignment == 'center' %}
+		align-items: center;
+  {% else %}
+		align-items: flex-end;
+  {% endif %}
+
+  {% if section.settings.vertical_alignment == 'top' %}
+		justify-content: flex-start;
+  {% elsif section.settings.vertical_alignment == 'center' %}
+		justify-content: center;
+  {% else %}
+		justify-content: flex-end;
+  {% endif %}
+
+  {% if section.settings.enable_top_border %}
+		border-top: {{ section.settings.top_border_thickness }}px {{ section.settings.top_border_style }} rgba({{ section.settings.bottom_border_color | color_extract: 'red' }},
+  {{ section.settings.bottom_border_color | color_extract: 'green' }},
+  {{ section.settings.bottom_border_color | color_extract: 'blue' }},
+  {{ section.settings.top_border_opacity  | divided_by: 100.0  }}
+	);;
+  {% endif %}
+
+  {% if section.settings.enable_bottom_border %}
+		border-bottom: {{ section.settings.bottom_border_thickness }}px {{ section.settings.bottom_border_style }} rgba({{ section.settings.bottom_border_color | color_extract: 'red' }},
+  {{ section.settings.bottom_border_color | color_extract: 'green' }},
+  {{ section.settings.bottom_border_color | color_extract: 'blue' }},
+  {{ section.settings.bottom_border_opacity | divided_by: 100.0   }}
+	);
+  {% endif %}
+	}
+	#customizable-banner-{{ section.id }} .customizable-banner__content {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		padding: 0 20px;
+	}
+
+	#customizable-banner-{{ section.id }} .customizable-banner__heading {
+		font-size: {{ section.settings.heading_size }}px;
+		color: {{ section.settings.heading_color }};
+		text-align: {{ section.settings.heading_alignment }};
+		margin-bottom: 10px;
+	}
+
+	#customizable-banner-{{ section.id }} .customizable-banner__heading > * {
+		margin: 0;
+	}
+
+	#customizable-banner-{{ section.id }} .customizable-banner__body {
+		font-size: {{ section.settings.body_size }}px;
+		color: {{ section.settings.body_color }};
+		text-align: {{ section.settings.body_alignment }};
+	}
+
+	#customizable-banner-{{ section.id }} .customizable-banner__body > * {
+		margin: 0;
+	}
+
+	@media screen and (max-width: 749px) {
+		#customizable-banner-{{ section.id }} {
+			height: {{ section.settings.mobile_height }}px;
+			padding-top: {{ section.settings.padding_top_mobile }}px;
+			padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+		}
+
+		#customizable-banner-{{ section.id }} .customizable-banner__heading {
+			font-size: {{ section.settings.heading_size_mobile }}px;
+			text-align: {{ section.settings.heading_alignment_mobile }};
+		}
+
+		#customizable-banner-{{ section.id }} .customizable-banner__body {
+			font-size: {{ section.settings.body_size_mobile }}px;
+			text-align: {{ section.settings.body_alignment_mobile }};
+		}
+	}
+</style>

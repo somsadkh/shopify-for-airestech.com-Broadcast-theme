@@ -1,0 +1,407 @@
+{{ 'market-breakdown.css' | asset_url | stylesheet_tag }}
+
+<section class="market-breakdown">
+    <div class="market-breakdown__wrapper">
+        <div class="market-breakdown__title" style="font-size:{{ section.settings.fs_heading }}px; color: {{ section.settings.heading_cl }};">{{ section.settings.title }}</div>
+        <div class="market-breakdown__block">
+            <div class="market-breakdown__item">
+                <div class="market-breakdown__item--title" style="font-size:{{ section.settings.fs_title_1 }}px; color: {{ section.settings.title_cl_1 }};">{{ section.settings.exchange }}</div>
+                <div class="market-breakdown__item--content">
+                    <div class="market-breakdown__item--text" style="font-size:{{ section.settings.fs_title_2 }}px; color: {{ section.settings.title_cl_2 }};">{{ section.settings.text }}</div>
+                    <div class="market-breakdown__item--text" style="font-size:{{ section.settings.fs_title_2 }}px; color: {{ section.settings.title_cl_2 }};">{{ section.settings.text_2 }}</div>
+                </div>
+
+                <div class="market-breakdown__item--title" style="font-size:{{ section.settings.fs_title_1 }}px; color: {{ section.settings.title_cl_1 }};">{{ section.settings.capital }}</div>
+                <div class="market-breakdown__item--flex">
+                    <div class="market-breakdown__item--info" style="font-size:{{ section.settings.fs_title }}px; color: {{ section.settings.title_cl }};">
+                        {{ section.settings.title_2 }}
+                        <span class="market-breakdown__item--value" style="font-size:{{ section.settings.fs_value }}px; color: {{ section.settings.value_cl }};">{{ section.settings.value }}</span>
+                    </div>
+                    <div class="market-breakdown__item--info" style="font-size:{{ section.settings.fs_title }}px; color: {{ section.settings.title_cl }};">
+                        {{ section.settings.title_3 }}
+                        <span class="market-breakdown__item--value" style="font-size:{{ section.settings.fs_value }}px; color: {{ section.settings.value_cl }};">{{ section.settings.value_2 }}</span>
+                    </div>
+                    <div class="market-breakdown__item--info" style="font-size:{{ section.settings.fs_title }}px; color: {{ section.settings.title_cl }};">
+                        {{ section.settings.title_4 }}
+                        <span class="market-breakdown__item--value" style="font-size:{{ section.settings.fs_value }}px; color: {{ section.settings.value_cl }};">{{ section.settings.value_3 }}</span>
+                    </div>
+                    <div class="market-breakdown__item--info" style="font-size:{{ section.settings.fs_title }}px; color: {{ section.settings.title_cl }};">
+                        {{ section.settings.title_5 }}
+                        <span class="market-breakdown__item--value" style="font-size:{{ section.settings.fs_value }}px; color: {{ section.settings.value_cl }};">{{ section.settings.value_4 }}</span>
+                    </div>
+                    <div class="market-breakdown__item--info" style="font-size:{{ section.settings.fs_title }}px; color: {{ section.settings.title_cl }};">
+                        {{ section.settings.title_6 }}
+                        <span class="market-breakdown__item--value" style="font-size:{{ section.settings.fs_value }}px; color: {{ section.settings.value_cl }};">{{ section.settings.value_5 }}</span>
+                    </div>
+                </div>
+                {%- if section.settings.url_btn != blank and section.settings.title_btn != blank -%}
+                    <a class="market-breakdown__item--btn" style="font-size:{{ section.settings.fs_btn }}px; color: {{ section.settings.btn_cl }};" target="_blank" href="{{ section.settings.url_btn }}">{{ section.settings.title_btn }}</a>
+                {%- endif -%}
+            </div>
+            <div class="market-breakdown__item chart">
+                {{ section.settings.chart }}
+            </div>
+        </div>
+        <div class="market-breakdown__block">
+            <div class="market-breakdown__item">
+                <div class="market-breakdown__block-2--title" style="font-size:{{ section.settings.fs_block_2_title }}px; color: {{ section.settings.block_2_title_cl }};">{{ section.settings.block_2_title }}</div>
+                <div class="market-breakdown__block-2--text" style="font-size:{{ section.settings.fs_block_2_text }}px; color: {{ section.settings.block_2_text_cl }};">{{ section.settings.block_2_text }}</div>
+                {%- if section.settings.url_btn_2 != blank and section.settings.title_btn_2 != blank -%}
+                    <a class="market-breakdown__block-2--btn" style="font-size:{{ section.settings.fs_btn_2 }}px; color: {{ section.settings.btn_cl_2 }};" target="_blank" href="{{ section.settings.url_btn_2 }}">{{ section.settings.title_btn_2 }}</a>
+                {%- endif -%}
+            </div>
+            <div class="market-breakdown__item">
+                {% assign sorted_articles = section.settings.blog.articles | sort: 'published_at' | reverse %}
+
+                <div class="market-breakdown__blog--title" style="font-size:{{ section.settings.title_blog_fs }}px; color: {{ section.settings.title_blog_cl }};">{{ section.settings.title_blog }}</div>
+
+                <div class="market-breakdown__blog--articles">
+                {% for article in sorted_articles limit: 3 %}
+                    <a href="{{ article.url }}" target="_blank" class="market-breakdown__blog--article">
+                        <div class="market-breakdown__blog--article-title">{{ article.title }}</div>
+                        <div class="market-breakdown__blog--article-date">{{ article.published_at | date: "%m-%d-%Y" }}</div>
+                    </a>
+                {% endfor %}
+                </div>
+
+                {%- if section.settings.url_btn_blog != blank and section.settings.title_btn_blog != blank -%}
+                    <a class="market-breakdown__blog--btn" style="font-size:{{ section.settings.fs_btn_blog }}px; color: {{ section.settings.btn_cl_blog }};" target="_blank" href="{{ section.settings.url_btn_blog }}">{{ section.settings.title_btn_blog }}</a>
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+{% schema %}
+{
+    "name": "Market breakdown section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Investor Overview: Capital Market Breakdown"
+        },
+        {
+            "type": "range",
+            "id": "fs_heading",
+            "min": 14,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Title font-size",
+            "default": 36
+        },
+        {
+            "type": "color",
+            "id": "heading_cl",
+            "label": "Title color"
+        },
+        {
+            "type": "text",
+            "id": "exchange",
+            "label": "Title",
+            "default": "Exchange/Symbol"
+        },
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "CSE: WIFI"
+        },
+        {
+            "type": "text",
+            "id": "text_2",
+            "label": "Text",
+            "default": "OTCQB: AAIRF"
+        },
+        {
+            "type": "text",
+            "id": "capital",
+            "label": "Title",
+            "default": "Capital Markets (as of Apr. 03, 2025)"
+        },
+        {
+            "type": "range",
+            "id": "fs_title_1",
+            "min": 14,
+            "max": 32,
+            "step": 1,
+            "unit": "px",
+            "label": "Title font-size",
+            "default": 29
+        },
+        {
+            "type": "color",
+            "id": "title_cl_1",
+            "label": "Title color"
+        },
+        {
+            "type": "range",
+            "id": "fs_title_2",
+            "min": 14,
+            "max": 32,
+            "step": 1,
+            "unit": "px",
+            "label": "Text font-size",
+            "default": 22
+        },
+        {
+            "type": "color",
+            "id": "title_cl_2",
+            "label": "Text color"
+        },
+        {
+            "type": "text",
+            "id": "title_2",
+            "label": "Title",
+            "default": "Shares Issued and Outstanding"
+        },
+        {
+            "type": "text",
+            "id": "value",
+            "label": "Value",
+            "default": "104,607,000"
+        },
+        {
+            "type": "text",
+            "id": "title_3",
+            "label": "Title",
+            "default": "Warrants & Options Outstanding"
+        },
+        {
+            "type": "text",
+            "id": "value_2",
+            "label": "Value",
+            "default": "24,688,244"
+        },
+        {
+            "type": "text",
+            "id": "title_4",
+            "label": "Title",
+            "default": "Fully Diluted Shares Outstanding"
+        },
+        {
+            "type": "text",
+            "id": "value_3",
+            "label": "Value",
+            "default": "129,295,244"
+        },
+        {
+            "type": "text",
+            "id": "title_5",
+            "label": "Title",
+            "default": "Management Ownership"
+        },
+        {
+            "type": "text",
+            "id": "value_4",
+            "label": "Value",
+            "default": "28%"
+        },
+        {
+            "type": "text",
+            "id": "title_6",
+            "label": "Title",
+            "default": "Market Capitalization @ C$0.175"
+        },
+        {
+            "type": "text",
+            "id": "value_5",
+            "label": "Value",
+            "default": "$18M"
+        },
+        {
+            "type": "color",
+            "id": "title_cl",
+            "label": "Title color"
+        },
+        {
+            "type": "color",
+            "id": "value_cl",
+            "label": "Value color"
+        },
+        {
+            "type": "range",
+            "id": "fs_title",
+            "min": 14,
+            "max": 26,
+            "step": 1,
+            "unit": "px",
+            "label": "Title font-size",
+            "default": 22
+        },
+        {
+            "type": "range",
+            "id": "fs_value",
+            "min": 14,
+            "max": 26,
+            "step": 1,
+            "unit": "px",
+            "label": "Value font-size",
+            "default": 22
+        },
+        {
+            "type": "header",
+            "content": "Button"
+        },
+        {
+            "type": "text",
+            "id": "title_btn",
+            "label": "Title",
+            "default": "FILINGS"
+        },
+        {
+            "type": "url",
+            "id": "url_btn",
+            "label": "Url"
+        },
+        {
+            "type": "range",
+            "id": "fs_btn",
+            "min": 14,
+            "max": 32,
+            "step": 1,
+            "unit": "px",
+            "label": "Button font-size",
+            "default": 30
+        },
+        {
+            "type": "color",
+            "id": "btn_cl",
+            "label": "Button color"
+        },
+        {
+            "type": "html",
+            "id": "chart",
+            "label": "Widget code"
+        },
+        {
+            "type": "text",
+            "id": "block_2_title",
+            "label": "Title block 2",
+            "default": "Corporate Presentation"
+        },
+        {
+            "type": "range",
+            "id": "fs_block_2_title",
+            "min": 14,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Title block 2 font-size",
+            "default": 38
+        },
+        {
+            "type": "color",
+            "id": "block_2_title_cl",
+            "label": "Title block 2 color"
+        },
+        {
+            "type": "text",
+            "id": "block_2_text",
+            "label": "Text block 2",
+            "default": "Everything you need to know about  American Aires Inc."
+        },
+        {
+            "type": "range",
+            "id": "fs_block_2_text",
+            "min": 14,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Text block 2 font-size",
+            "default": 28
+        },
+        {
+            "type": "color",
+            "id": "block_2_text_cl",
+            "label": "Text block 2 color"
+        },
+        {
+            "type": "text",
+            "id": "title_btn_2",
+            "label": "Text button",
+            "default": "CORPORATE PRESENTATION"
+        },
+        {
+            "type": "url",
+            "id": "url_btn_2",
+            "label": "Url"
+        },
+        {
+            "type": "range",
+            "id": "fs_btn_2",
+            "min": 14,
+            "max": 32,
+            "step": 1,
+            "unit": "px",
+            "label": "Button font-size",
+            "default": 24
+        },
+        {
+            "type": "color",
+            "id": "btn_cl_2",
+            "label": "Button color"
+        },
+        {
+            "type": "text",
+            "id": "title_blog",
+            "label": "Title blog",
+            "default": "News Releases"
+        },
+        {
+            "type": "range",
+            "id": "title_blog_fs",
+            "min": 14,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Title blog font-size",
+            "default": 38
+        },
+        {
+            "type": "color",
+            "id": "title_blog_cl",
+            "label": "Title blog color"
+        },
+        {
+            "type": "blog",
+            "id": "blog",
+            "label": "Blog"
+        },
+        {
+            "type": "text",
+            "id": "title_btn_blog",
+            "label": "Text button",
+            "default": "VIEW ALL"
+        },
+        {
+            "type": "url",
+            "id": "url_btn_blog",
+            "label": "Url"
+        },
+        {
+            "type": "range",
+            "id": "fs_btn_blog",
+            "min": 14,
+            "max": 32,
+            "step": 1,
+            "unit": "px",
+            "label": "Button font-size",
+            "default": 30
+        },
+        {
+            "type": "color",
+            "id": "btn_cl_blog",
+            "label": "Button color"
+        },
+    ],
+    "presets": [
+        {
+            "name": "Market breakdown section"
+        }
+    ]
+}
+{% endschema %}

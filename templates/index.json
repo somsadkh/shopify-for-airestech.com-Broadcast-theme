@@ -173,7 +173,7 @@
             "logo_height": 90,
             "logo_width_mob": 72,
             "logo_height_mob": 32,
-            "link": "https:\/\/airestech.com\/pages\/ufc",
+            "link": "https:\/\/airestech.com\/pages\/ufc-official-partner",
             "text": "Learn More",
             "color_title": "#000000",
             "fs_title": 14,
@@ -190,7 +190,7 @@
             "logo_width_mob": 94,
             "logo_height_mob": 32,
             "link": "shopify:\/\/blogs\/optimal-health-performance\/aires-tech-named-official-emf-protection-partner-for-canada-basketball",
-            "text": "Learn More",
+            "text": "",
             "color_title": "#000000",
             "fs_title": 14,
             "fs_title_mob": 10,
@@ -513,6 +513,27 @@
     "brain_scan_videos_AiUtNJ": {
       "type": "brain-scan-videos",
       "blocks": {
+        "item_Y9eeeL": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Desktop_1_0a6700f9-de6f-4ce0-8af0-280dc68a7124.png",
+            "image_mob": "shopify:\/\/shop_images\/Desktop_1_0a6700f9-de6f-4ce0-8af0-280dc68a7124.png",
+            "title": "Pro UFC Fighter & Coach Tim Welch’s Clear EEG Results",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback Specialist Dr. Dogris’ testing revealed that Tim Welch experienced heightened brainwave activity, linked to anxiety, brain fog, and attention issues, when exposed to a cell phone. With Aires Tech protection, his EEG scan showed clear improvements.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/Doc2NK18pb0?si=TTih-SgMkLLl4tSX"
+          }
+        },
         "item_7TLeUC": {
           "type": "item",
           "settings": {
@@ -532,6 +553,27 @@
             "button_size": "",
             "button_style": "btn--solid",
             "youtube": "https:\/\/www.youtube.com\/embed\/BAItJubdKZI"
+          }
+        },
+        "item_H3xAaN": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Mobile_2.png",
+            "image_mob": "shopify:\/\/shop_images\/Mobile_2.png",
+            "title": "Pro UFC Fighter Cory Sandhagen’s EEG Results Show Sharper Focus",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback testing by Dr. Dogris revealed that Cory Sandhagen experienced heightened brain and heart activity when exposed to a cell phone, causing stress responses and reduced reaction time. With Aires Tech protection, his EEG scans showed improved brainwave balance and significantly faster response speeds, supporting peak performance.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/SkpDrggZeO4?si=xrQ1IdAat3gBxmdt&amp;start=2"
           }
         },
         "item_RepXhN": {
@@ -578,7 +620,9 @@
         }
       },
       "block_order": [
+        "item_Y9eeeL",
         "item_7TLeUC",
+        "item_H3xAaN",
         "item_RepXhN",
         "item_JAMXhy"
       ],

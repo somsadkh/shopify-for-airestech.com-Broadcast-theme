@@ -94,7 +94,7 @@
       "type": "apps",
       "blocks": {
         "easy_bundles_app_block_bundle_page_GG34xC": {
-          "type": "shopify:\/\/apps\/easy-bundles\/blocks\/app-block-bundlePage\/05b1325c-6303-4da5-8e2f-b13ab2a50e1a",
+          "type": "shopify:\/\/apps\/eb-easy-bundle-builder\/blocks\/app-block-bundlePage\/05b1325c-6303-4da5-8e2f-b13ab2a50e1a",
           "settings": {
             "bundle_id": 2
           }

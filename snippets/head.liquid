@@ -924,7 +924,8 @@ You can learn more about this (and learn how to cleanly revert these changes) at
 
   <!-- Theme Javascript ============================================================== -->
   <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
-  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+  {% comment %} <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+  <script src="{{ 'theme.dev.js' | asset_url }}" defer="defer"></script>
 
   {%- if request.design_mode -%}
     <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer" data-owner-email="{{ shop.email }}" data-owner-id="{{ shop.id }}"></script>

@@ -1,0 +1,17 @@
+{%- assign per_page = 9 -%}
+{%- assign sorted_articles = blog.articles | sort: 'updated_at' | reverse -%}
+
+{%- paginate blog.articles by per_page -%}
+    <div class="blog-posts__container-more-posts">
+        {%- for article in blog.articles -%}
+            <div class="main-blog__post">
+                <div class="main-blog__post-info">
+                    <a class="main-blog__post-title" target="_blank" href="{{ article.url }}">{{ article.title }}</a>
+                    <p class="main-blog__post-excerpt">{{ article.excerpt | truncate: 213 }}</p>
+                    <a class="main-blog__post-btn" target="_blank" href="{{ article.url }}">Read more</a>
+                </div>
+            </div>
+        {%- endfor -%}
+    </div>
+    {%- render 'pagination-new', paginate: paginate -%}
+{%- endpaginate -%}

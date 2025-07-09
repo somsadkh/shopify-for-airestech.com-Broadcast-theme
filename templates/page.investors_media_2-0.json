@@ -1,0 +1,116 @@
+{
+  "sections": {
+    "replo_media_s_1_cj7AVJ": {
+      "type": "replo-media-s-1",
+      "name": "media-s-1",
+      "settings": {}
+    },
+    "replo_media_s_2_gCc3Bh": {
+      "type": "replo-media-s-2",
+      "name": "media-s-2",
+      "settings": {}
+    },
+    "replo_media_s_4_A8KpVT": {
+      "type": "replo-media-s-4",
+      "name": "media-s-4",
+      "settings": {}
+    },
+    "section_blog_investors_gLQVJD": {
+      "type": "section-blog-investors",
+      "name": "Media - Invest News Blog",
+      "settings": {
+        "section_color_scheme": "",
+        "heading": "Latest Press Release News",
+        "blog": "investor-news-2025",
+        "text_read_more": "Read More",
+        "fs_title_main": 32,
+        "fs_title_main_mob": 26,
+        "fs_title": 22,
+        "fs_btn": 20,
+        "fs_title_mob": 16,
+        "fs_btn_mob": 16,
+        "padding_top": 90,
+        "padding_bottom": 90,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "replo_media_s_6_3VaDP7": {
+      "type": "replo-media-s-6",
+      "name": "media-s-6",
+      "settings": {}
+    },
+    "replo_media_s_7_BnGKbE": {
+      "type": "replo-media-s-7",
+      "name": "media-s-7",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "replo_investor_m_11_KREeGM": {
+      "type": "replo-investor-m-11",
+      "name": "investor-m-11",
+      "settings": {}
+    },
+    "custom_contact_form_cetmcG": {
+      "type": "custom-contact-form",
+      "blocks": {
+        "powerful_form_builder_app_block_cnFb86": {
+          "type": "shopify:\/\/apps\/powerful-form-builder\/blocks\/app-block\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTI4MjE=\"><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder_app_block_cnFb86"
+      ],
+      "disabled": true,
+      "name": "Custom Contact Form",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Contact Us",
+        "text": "",
+        "email": "wifi@airestech.com",
+        "phone": "+1 (415) 707-0102",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "replo_investor_subscribe_tAKA8Q": {
+      "type": "replo-investor-subscribe",
+      "disabled": true,
+      "name": "Investor - Subscribe",
+      "settings": {}
+    }
+  },
+  "order": [
+    "replo_media_s_1_cj7AVJ",
+    "replo_media_s_2_gCc3Bh",
+    "replo_media_s_4_A8KpVT",
+    "section_blog_investors_gLQVJD",
+    "replo_media_s_6_3VaDP7",
+    "replo_media_s_7_BnGKbE",
+    "main",
+    "custom_contact_form_cetmcG",
+    "replo_investor_subscribe_tAKA8Q",
+    "replo_investor_m_11_KREeGM"
+  ]
+}

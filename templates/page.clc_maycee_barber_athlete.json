@@ -34,7 +34,7 @@
             "logo_width_mob": 72,
             "logo_height_mob": 32,
             "link": "",
-            "text": "Learn More",
+            "text": "",
             "color_title": "#000000",
             "fs_title": 14,
             "fs_title_mob": 10,
@@ -50,7 +50,7 @@
             "logo_width_mob": 94,
             "logo_height_mob": 32,
             "link": "",
-            "text": "Learn More",
+            "text": "",
             "color_title": "#000000",
             "fs_title": 14,
             "fs_title_mob": 10,
@@ -66,7 +66,7 @@
             "logo_width_mob": 40,
             "logo_height_mob": 32,
             "link": "",
-            "text": "Learn More",
+            "text": "",
             "color_title": "#000000",
             "fs_title": 14,
             "fs_title_mob": 10,
@@ -82,7 +82,7 @@
             "logo_width_mob": 40,
             "logo_height_mob": 32,
             "link": "",
-            "text": "Learn More",
+            "text": "",
             "color_title": "#000000",
             "fs_title": 14,
             "fs_title_mob": 10,
@@ -110,6 +110,11 @@
         "padding_bottom": 50
       }
     },
+    "replo_maycee_section_6_YkJBG3": {
+      "type": "replo-maycee-section_6",
+      "name": "maycee_section_6",
+      "settings": {}
+    },
     "replo_maycee_section_3_Q4LRqW": {
       "type": "replo-maycee-section_3",
       "name": "maycee_section_3",
@@ -125,13 +130,9 @@
       "name": "maycee_section_5",
       "settings": {}
     },
-    "replo_maycee_section_6_YkJBG3": {
-      "type": "replo-maycee-section_6",
-      "name": "maycee_section_6",
-      "settings": {}
-    },
     "replo_maycee_section_7_3x9ixN": {
       "type": "replo-maycee-section_7",
+      "disabled": true,
       "name": "maycee_section_7",
       "settings": {}
     },
@@ -321,10 +322,10 @@
     "replo_maycee_section_1_yyHJth",
     "main",
     "section_press_logos_Hf4LYh",
+    "replo_maycee_section_6_YkJBG3",
     "replo_maycee_section_3_Q4LRqW",
     "replo_maycee_section_4_87GwGj",
     "replo_maycee_section_5_dNPLGq",
-    "replo_maycee_section_6_YkJBG3",
     "replo_maycee_section_7_3x9ixN",
     "replo_maycee_section_8_WnGeXQ",
     "featured_collection_RMVmwT"

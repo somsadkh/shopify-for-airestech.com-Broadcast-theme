@@ -18,6 +18,12 @@
   unless media_aspect_ratio
     assign media_aspect_ratio = 1
   endunless
+
+  if aspect_ratio_custom == true
+    assign media_aspect_ratio_mobile = 1.5
+  else 
+    assign media_aspect_ratio_mobile = 1
+  endif
   assign media_padding_top = 1 | divided_by: media_aspect_ratio | times: 100 | round: 2
 
   capture image
@@ -43,6 +49,14 @@
   endcapture
 -%}
 
+<style>
+  @media (max-width: 749px){
+    .product__photo{
+      --aspect-ratio: {{ media_aspect_ratio_mobile }} !important;
+    }
+  }
+</style>
+ 
 <div
   class="product__slide{% unless featured_media == media %} media--hidden{% else %} media--active{% endunless %}"
   data-image-id="{{ media.id }}"

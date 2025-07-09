@@ -74,6 +74,7 @@
       h.windowHeight = Math.min(window.screen.height, window.innerHeight);
       h.footerHeight = getHeight('[data-section-type*="footer"]');
       h.headerHeight = getHeight('[data-header-height]');
+      h.announcementHeight = getHeight('[data-announcement-height]');
       h.stickyHeaderHeight = document.querySelector('[data-header-sticky]') ? h.headerHeight : 0;
       h.collectionNavHeight = getHeight('[data-collection-nav]');
       h.logoHeight = getFooterLogoWithPadding();
@@ -87,16 +88,16 @@
     }
 
     function setVars() {
-      const {windowHeight, headerHeight, logoHeight, footerHeight, collectionNavHeight} = readHeights();
+      const {windowHeight, headerHeight, announcementHeight, logoHeight, footerHeight, collectionNavHeight} = readHeights();
 
       document.documentElement.style.setProperty('--full-height', `${windowHeight}px`);
       document.documentElement.style.setProperty('--three-quarters', `${windowHeight * (3 / 4)}px`);
       document.documentElement.style.setProperty('--two-thirds', `${windowHeight * (2 / 3)}px`);
       document.documentElement.style.setProperty('--one-half', `${windowHeight / 2}px`);
       document.documentElement.style.setProperty('--one-third', `${windowHeight / 3}px`);
-
+      
       document.documentElement.style.setProperty('--collection-nav-height', `${collectionNavHeight}px`);
-      document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+      document.documentElement.style.setProperty('--header-height', `${headerHeight + announcementHeight}px`);
       document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
       document.documentElement.style.setProperty('--content-full', `${windowHeight - headerHeight - logoHeight / 2}px`);
       document.documentElement.style.setProperty('--content-min', `${windowHeight - headerHeight - footerHeight}px`);

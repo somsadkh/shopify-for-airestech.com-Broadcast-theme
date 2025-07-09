@@ -6019,7 +6019,7 @@ toggle-ellipsis {
 	animation: slideOutRight 0.6s ease;
 	animation-fill-mode: forwards;
 }
-@media only screen and (min-width: 480px) {
+@media  screen and (min-width: 480px) {
 	.drawer__inner {
 		max-width: var(--DRAWER-WIDTH);
 	}
@@ -7080,7 +7080,7 @@ body.has-first-section-overlay-header [data-header-transparent]:not(.meganav--vi
 		pointer-events: none;
 	}
 }
-@media only screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
 	.header__desktop {
 		position: static;
 	}
@@ -7096,19 +7096,23 @@ body.has-first-section-overlay-header [data-header-transparent]:not(.meganav--vi
 	visibility: hidden;
 }
 
-.js__show__mobile .header__mobile,
-[data-header-style=drawer] .header__mobile {
-	display: grid;
+@media screen and (max-width: 1024px) {
+	.js__show__mobile .header__mobile,
+	[data-header-style=drawer] .header__mobile {
+		display: grid;
+	}
+	.js__show__mobile .header__desktop,
+	[data-header-style=drawer] .header__desktop {
+		position: relative;
+		overflow: hidden;
+		max-height: 0;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
 }
-.js__show__mobile .header__desktop,
-[data-header-style=drawer] .header__desktop {
-	position: relative;
-	overflow: hidden;
-	max-height: 0;
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-}
+
+
 
 /* ============================================================================
   #Site Nav and Dropdowns

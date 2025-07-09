@@ -1,0 +1,41 @@
+<div class="main-blog__pagination">
+    {% if paginate.pages > 1 %}
+      {%- assign current = paginate.current_page -%}
+      {%- assign total = paginate.pages -%}
+      {%- if total <= 4 -%}
+        {%- for i in (1..total) -%}
+          <button class="pagination-link" data-page="{{ i }}" {% if i == current %}disabled{% endif %}>{{ i }}</button>
+        {%- endfor -%}
+      {%- else -%}
+        <button class="pagination-link" data-page="1" {% if current == 1 %}disabled{% endif %}>1</button>
+            {%- assign total_minus = total | minus: 1 -%}
+        {% if current == 1 %}
+          <button class="pagination-link" data-page="2">2</button>
+          <span class="dots">...</span>
+          <button class="pagination-link" data-page="{{ total }}">{{ total }}</button>
+        {% elsif current == 2 %}
+          <button class="pagination-link" data-page="2" disabled>2</button>
+          <button class="pagination-link" data-page="3">3</button>
+          <span class="dots">...</span>
+          <button class="pagination-link" data-page="{{ total }}">{{ total }}</button>
+        {% elsif current == total %}
+          <span class="dots">...</span>
+          <button class="pagination-link" data-page="{{ total | minus: 2 }}">{{ total | minus: 2 }}</button>
+          <button class="pagination-link" data-page="{{ total | minus: 1 }}">{{ total | minus: 1 }}</button>
+          <button class="pagination-link" data-page="{{ total }}" disabled>{{ total }}</button>
+        {% elsif current == total_minus %}
+          <span class="dots">...</span>
+          <button class="pagination-link" data-page="{{ current | minus: 1 }}">{{ current | minus: 1 }}</button>
+          <button class="pagination-link" data-page="{{ current }}" disabled>{{ current }}</button>
+          <button class="pagination-link" data-page="{{ total }}">{{ total }}</button>
+        {% else %}
+          <span class="dots">...</span>
+          <button class="pagination-link" data-page="{{ current | minus: 1 }}">{{ current | minus: 1 }}</button>
+          <button class="pagination-link" data-page="{{ current }}" disabled>{{ current }}</button>
+          <button class="pagination-link" data-page="{{ current | plus: 1 }}">{{ current | plus: 1 }}</button>
+          <span class="dots">...</span>
+          <button class="pagination-link" data-page="{{ total }}">{{ total }}</button>
+        {% endif %}
+      {%- endif -%}
+    {% endif %}
+</div>

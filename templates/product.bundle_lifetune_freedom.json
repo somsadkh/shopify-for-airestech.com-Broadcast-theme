@@ -4,7 +4,7 @@
       "type": "product",
       "blocks": {
         "junip_product_reviews_ugc_junip_product_summary_rJJk8A": {
-          "type": "shopify:\/\/apps\/junip-product-reviews-ugc\/blocks\/junip-product-summary\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "type": "shopify:\/\/apps\/junip\/blocks\/junip-product-summary\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
           "settings": {
             "product": "{{product}}"
           }
@@ -917,7 +917,7 @@
       "type": "apps",
       "blocks": {
         "junip_product_reviews_ugc_junip_product_review_DczmFT": {
-          "type": "shopify:\/\/apps\/junip-product-reviews-ugc\/blocks\/junip-product-review\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+          "type": "shopify:\/\/apps\/junip\/blocks\/junip-product-review\/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
           "settings": {
             "product": "{{product}}"
           }

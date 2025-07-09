@@ -1,0 +1,566 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "replo_science_s_1_v1_T8eHMt": {
+      "type": "replo-science-s-1-v1",
+      "name": "science-s-1-v1",
+      "settings": {}
+    },
+    "replo_tech_s_1_rLEBbQ": {
+      "type": "replo-tech-s-1",
+      "disabled": true,
+      "name": "tech-s-1",
+      "settings": {}
+    },
+    "brain_scan_videos_NkHaaQ": {
+      "type": "brain-scan-videos",
+      "blocks": {
+        "item_xygEBK": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Desktop_1_0a6700f9-de6f-4ce0-8af0-280dc68a7124.png",
+            "image_mob": "shopify:\/\/shop_images\/Desktop_1_0a6700f9-de6f-4ce0-8af0-280dc68a7124.png",
+            "title": "Pro UFC Fighter & Coach Tim Welch’s Clear EEG Results",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback Specialist Dr. Dogris’ testing revealed that Tim Welch experienced heightened brainwave activity, linked to anxiety, brain fog, and attention issues, when exposed to a cell phone. With Aires Tech protection, his EEG scan showed clear improvements.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/Doc2NK18pb0?si=TTih-SgMkLLl4tSX"
+          }
+        },
+        "item_jmFkhw": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "title": "Canada Basketball RJ Barrett's Positive Findings",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris described even with RJ's high-output neural activity, there was significant results above baseline range. This was another example of variability in brain activity by individuals and still Aires' presence showed impactful performance.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/BAItJubdKZI"
+          }
+        },
+        "item_rEjCxW": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Mobile_2.png",
+            "image_mob": "shopify:\/\/shop_images\/Mobile_2.png",
+            "title": "Pro UFC Fighter Cory Sandhagen’s EEG Results Show Sharper Focus",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback testing by Dr. Dogris revealed that Cory Sandhagen experienced heightened brain and heart activity when exposed to a cell phone, causing stress responses and reduced reaction time. With Aires Tech protection, his EEG scans showed improved brainwave balance and significantly faster response speeds, supporting peak performance.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/SkpDrggZeO4?si=xrQ1IdAat3gBxmdt&amp;start=2"
+          }
+        },
+        "item_gi6Hd8": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "title": "Pro UFC Fighter Maycee Barber's Impressive Results",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback Specialist Chris Wyllie performed an EEG brain scan on UFC's Maycee Barber and improvements were clear with Aires present. Maycee has noted that she no longer gets headaches since she's been using Aires!",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/https:\/\/www.youtube.com\/embed\/_syXvHqHXh0?si=1Jbrj-mKZ_a59ZFx"
+          }
+        },
+        "item_nBij9i": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-4.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-4.jpg",
+            "title": "Four Individuals EEG Brain Scan",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris performed four separate EEG demonstrations with individuals and their tech devices. Each scan showed positive results with Aires devices present compared to no Aires.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/TGh-IEmNeNY?si=8JNrKZlJ-nOPmQxB"
+          }
+        }
+      },
+      "block_order": [
+        "item_xygEBK",
+        "item_jmFkhw",
+        "item_rEjCxW",
+        "item_gi6Hd8",
+        "item_nBij9i"
+      ],
+      "name": "Brain scan videos section",
+      "settings": {
+        "content_max_width": 25,
+        "subtitle_center": false,
+        "subtitle_center_mobile": false,
+        "subtitle": "AIRES IN ACTION",
+        "color_subtitle": "#000000",
+        "fs_subtitle": 16,
+        "fs_subtitle_mob": 14,
+        "title": "The Real-time Proof of Aires Tech With EEG Brain Scans",
+        "heading_center": false,
+        "heading_center_mobile": false,
+        "color_title": "#000000",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "text": "EEG brain scans track electrical activity to help doctors understand brain function. Here, licensed professionals mapped EEG results to show measurable changes in brain activity when using Aires products alongside digital devices.",
+        "color_text": "#000000",
+        "fs_text": 16,
+        "fs_text_mob": 14,
+        "padding_top": 100,
+        "padding_bottom": 50
+      }
+    },
+    "replo_science_s_3_bDxPVE": {
+      "type": "replo-science-s-3",
+      "name": "science-s-3",
+      "settings": {}
+    },
+    "replo_investor_m_6_pYrpVj": {
+      "type": "replo-investor-m-6",
+      "disabled": true,
+      "name": "investor-m-6",
+      "settings": {}
+    },
+    "replo_investor_m_7_6rdLhV": {
+      "type": "replo-investor-m-7",
+      "name": "investor-m-7",
+      "settings": {}
+    },
+    "replo_tech_s_5_tBqzEP": {
+      "type": "replo-tech-s-5",
+      "disabled": true,
+      "name": "tech-s-5",
+      "settings": {}
+    },
+    "replo_science_s_5_4FeVD4": {
+      "type": "replo-science-s-5",
+      "name": "science-s-5",
+      "settings": {}
+    },
+    "experts_EaYtn6": {
+      "type": "experts",
+      "blocks": {
+        "featured_image_BNkQMy": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Dr_Dogris_edited.jpg",
+            "tags": "Neuroscience",
+            "featured_heading": "Nicholas Dogris, Ph.D., BCN, QEEG-D",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>CEO & Co-Founder, NeuroField, Inc.<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_gePRzj": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Frame_248-4.jpg",
+            "tags": "Neuroscience",
+            "featured_heading": "Dr. Robert P. Turner, MD, MSCR, QEEG-D, BCN",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Founder, Network Neurology Health, LLC<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_3cxGhT": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Frame_248-2.jpg",
+            "tags": "Functional Medicine",
+            "featured_heading": "Dr. Jill Carnahan, MD, ABIHM, ABoIM, IFMCP",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Founder, Your Functional Medicine Expert<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_MGf3Cx": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/doctor_edit.png",
+            "tags": "",
+            "featured_heading": "Dr. Andrew Michrowski, Ph.D.",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>President Planetary Association for Clean Energy<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_h3RzwH": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/EDIT_Dr._Dan_Rubin_FABNO-min.png",
+            "tags": "Naturopath",
+            "featured_heading": "Dan Rubin, ND, FABNO",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Co-Founder, Naturopathic Specialists, LLC<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_YHiHAJ": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Frame_248.jpg",
+            "tags": "Holistic Health",
+            "featured_heading": "Ben Greenfield",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Health Consultant, Speaker, NY Times Best-Selling Author<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        },
+        "featured_image_UEJBCU": {
+          "type": "featured_image",
+          "settings": {
+            "featured_image": "shopify:\/\/shop_images\/Frame_248-1.jpg",
+            "tags": "Holistic Health",
+            "featured_heading": "Allyssa LaScala",
+            "fs_title": 18,
+            "fs_title_mob": 16,
+            "featured_text": "<p>Integrative Health Practitioner<\/p>",
+            "fs_text": 14,
+            "fs_text_mob": 12,
+            "featured_button_text": "Learn more",
+            "featured_button_link": "",
+            "button_type": "btn--primary",
+            "fs_button": 16,
+            "fs_button_mob": 12,
+            "button_style": "btn--outline",
+            "show_arrow": false,
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#222222",
+            "featured_overlay_opacity": 10,
+            "heading_tag": "automatic"
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_BNkQMy",
+        "featured_image_gePRzj",
+        "featured_image_3cxGhT",
+        "featured_image_MGf3Cx",
+        "featured_image_h3RzwH",
+        "featured_image_YHiHAJ",
+        "featured_image_UEJBCU"
+      ],
+      "name": "Experts",
+      "settings": {
+        "aspect_ratio": 1.1,
+        "title": "Trusted By The World’s Top Health Experts",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "link_text": "",
+        "link_url": "",
+        "button_type": "btn--primary",
+        "fs_button": 14,
+        "fs_button_mob": 12,
+        "button_style": "btn--solid",
+        "show_tags": true,
+        "show_button": false,
+        "width": "wrapper--full-padded",
+        "grid": 4,
+        "grid_mobile": 2,
+        "rows": 2,
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 50,
+        "heading_tag": "automatic",
+        "title_tag": "automatic"
+      }
+    },
+    "replo_investor_m_11_KREeGM": {
+      "type": "replo-investor-m-11",
+      "disabled": true,
+      "name": "investor-m-11",
+      "settings": {}
+    },
+    "custom_contact_form_cetmcG": {
+      "type": "custom-contact-form",
+      "blocks": {
+        "powerful_form_builder_app_block_cnFb86": {
+          "type": "shopify:\/\/apps\/powerful-form-builder\/blocks\/app-block\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTI4MjE=\"><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder_app_block_cnFb86"
+      ],
+      "disabled": true,
+      "name": "Custom Contact Form",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Contact Us",
+        "text": "",
+        "email": "wifi@airestech.com",
+        "phone": "+1 (415) 707-0102",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "article_tabs_xiVHhn": {
+      "type": "article-tabs",
+      "blocks": {
+        "tab_6rihC3": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Peer Review",
+            "tab_article_1": "aires-scientific-peer-reviewed-research\/method-for-protecting-biological-objects-from-the-negative-influence-of-technogenic-electromagnetic-radiation-2019",
+            "tab_article_2": "aires-scientific-peer-reviewed-research\/calculation-of-the-strength-and-intensity-of-the-electromagnetic-field-in-the-interaction-of-electromagnetic-radiation",
+            "tab_article_3": "aires-scientific-peer-reviewed-research\/study-of-effect-of-the-aires-fractal-resonator-on-the-state-of-erythrocytes-in-human-blood-1",
+            "tab_article_4": "aires-scientific-peer-reviewed-research\/influence-of-the-aires-shield-electromagnetic-anomaly-neutralizer-on-changes-in-eeg-parameters-caused-by-a-mobile-phones-electromagnetic-field-1",
+            "tab_article_5": "aires-scientific-peer-reviewed-research\/research-on-aires-defenders-influence-on-the-variability-of-heart-rhythm",
+            "tab_article_6": "aires-scientific-peer-reviewed-research\/investigation-of-the-protective-action-of-the-aires-microprocessor-aires-shield-aires-defender-aires-aquacluster-against-the-effect-of-electromagnetic-radiation-on-the-structural-state-of-an-aqueous-environment-1",
+            "tab_article_7": "aires-scientific-peer-reviewed-research\/calculation-of-the-strength-and-intensity-of-the-electromagnetic-field-in-the-interaction-of-electromagnetic-radiation-at-a-frequency-of-2-4-ghz-wifi-with-an-airesc32s-resonator-microprocessor-which-is-used-in-the-aires-guardian-2018-model",
+            "tab_article_8": ""
+          }
+        },
+        "tab_X9LtjM": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Publications",
+            "tab_article_1": "aires-scientific-peer-reviewed-research\/high-frequency-electromagnetic-radiation-action-and-influence-resonators-converters-on-frequency-of-chromosome-aberrations-in-bone-marrow-cells-of-male-wistar-rats",
+            "tab_article_2": "aires-scientific-peer-reviewed-research\/investigation-of-the-circle-fractal-structure-interaction-with-gigahertz-frequency-electromagnetic-waves",
+            "tab_article_3": "aires-scientific-peer-reviewed-research\/computer-simulation-of-the-response-of-a-semiconductor-wafer-with-a-self-affine-pattern-in-the-form-of-a-system-of-coupled-ring-grooves-to-electromagnetic-radiation-1",
+            "tab_article_4": "aires-scientific-peer-reviewed-research\/evaluation-of-the-effectiveness-of-using-aires-shield-electronic-anomaly-neutralizers-to-reduce-the-negative-influence-of-a-cellular-phones-electromagnetic-field-1",
+            "tab_article_5": "aires-scientific-peer-reviewed-research\/distributed-computing-of-interaction-of-electromagnetic-radiation-with-a-structured-surface",
+            "tab_article_6": "",
+            "tab_article_7": "",
+            "tab_article_8": ""
+          }
+        },
+        "tab_cbxyiF": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Effective Range",
+            "tab_article_1": "aires-scientific-peer-reviewed-research\/r-d-evaluation-of-the-effective-range-of-the-lifetune-one-2022-model-at-a-frequency-of-4-9-ghz-wi-fi-5g",
+            "tab_article_2": "aires-scientific-peer-reviewed-research\/r-d-evaluation-of-the-effective-range-of-the-lifetune-go-2022-model-at-a-frequency-of-4-9-ghz-wi-fi-5g",
+            "tab_article_3": "aires-scientific-peer-reviewed-research\/r-d-evaluation-of-the-effective-range-of-the-lifetune-flex-2022-model-at-a-frequency-of-4-9-ghz-wi-fi-5g",
+            "tab_article_4": "aires-scientific-peer-reviewed-research\/r-d-evaluation-of-the-effective-range-of-the-lifetune-zone-max-2022-model-at-a-frequency-of-4-9-ghz-wi-fi-5g",
+            "tab_article_5": "aires-scientific-peer-reviewed-research\/r-d-evaluation-of-the-effective-range-of-the-lifetune-zone-max-2022-model-at-a-frequency-of-4-9-ghz-wi-fi-5g",
+            "tab_article_6": "",
+            "tab_article_7": "",
+            "tab_article_8": ""
+          }
+        },
+        "tab_YiwpcT": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Super Computer Simulation",
+            "tab_article_1": "aires-scientific-peer-reviewed-research\/r-d-calculation-of-the-strength-and-intensity-of-the-electromagnetic-field-in-the-interaction-of-electromagnetic-radiation-at-a-frequency-of-2-4-ghz-wifi-with-an-aires-c28s-resonator",
+            "tab_article_2": "aires-scientific-peer-reviewed-research\/r-d-calculation-of-the-strength-and-intensity-of-the-electromagnetic-field-in-the-interaction-of-electromagnetic-radiation-at-a-frequency-of-28-ghz-wifi-5g-with-an-aires-c20s5g-resonator-microprocessor-which-is-used-in-the-aires-crystal-2019-model",
+            "tab_article_3": "aires-scientific-peer-reviewed-research\/r-d-calculation-of-the-strength-and-intensity-of-the-electromagnetic-field-in-the-interaction-of-electromagnetic-radiation-at-a-frequency-of-28-ghz-wifi-5g-with-an-aires-c20s5g-resonator-microprocessor-which-is-used-in-the-aires-crystal-2019-model",
+            "tab_article_4": "aires-scientific-peer-reviewed-research\/r-d-calculation-of-the-strength-and-intensity-of-the-electromagnetic-field-in-the-interaction-of-electromagnetic-radiation-at-a-frequency-of-28-ghz-wifi-5g-with-an-aires-c20s5g-resonator-microprocessor-which-is-used-in-the-aires-crystal-2019-model",
+            "tab_article_5": "",
+            "tab_article_6": "",
+            "tab_article_7": "",
+            "tab_article_8": ""
+          }
+        },
+        "tab_gNRXc3": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Physics & Biology",
+            "tab_article_1": "aires-scientific-peer-reviewed-research\/research-of-indicators-of-functional-state-of-a-body-exposed-to-the-electromagnetic-radiation-of-a-mobile-phone-and-the-possibility-of-their-correction-in-the-presence-of-an-aires-resonator",
+            "tab_article_2": "aires-scientific-peer-reviewed-research\/the-changing-of-certain-heart-rate-indicators-under-the-corrective-influence-of-an-aires-shield-pro-device-on-the-electromagnetic-radiation-of-a-mobile-phone-prestigio",
+            "tab_article_3": "aires-scientific-peer-reviewed-research\/influence-of-the-aires-shield-electromagnetic-anomaly-neutralizer-on-changes-in-eeg-parameters-caused-by-a-mobile-phones-electromagnetic-field-1",
+            "tab_article_4": "aires-scientific-peer-reviewed-research\/study-of-effect-of-the-aires-fractal-resonator-on-the-state-of-erythrocytes-in-human-blood-1",
+            "tab_article_5": "aires-scientific-peer-reviewed-research\/evaluation-of-the-effectiveness-of-using-aires-shield-electronic-anomaly-neutralizers-to-reduce-the-negative-influence-of-a-cellular-phones-electromagnetic-field-1",
+            "tab_article_6": "aires-scientific-peer-reviewed-research\/special-aspects-of-cerebral-bioelectrical-activity-changes-upon-exposure-of-brain-to-electromagnetic-radiation-emitted-by-mobile-phone-and-possible-correction-thereof-by-combination-of-aires-shield-pro-and-mobile-phone-pilot-studies",
+            "tab_article_7": "aires-scientific-peer-reviewed-research\/detecting-conductivity-variations-in-water-under-the-action-of-the-radiation-emitted-by-a-radiotelephone-with-or-without-the-aires-electromagnetic-abnormalities-neutralizer",
+            "tab_article_8": "aires-scientific-peer-reviewed-research\/investigation-of-the-protective-action-of-the-aires-microprocessor-aires-shield-aires-defender-aires-aquacluster-against-the-effect-of-electromagnetic-radiation-on-the-structural-state-of-an-aqueous-environment-1"
+          }
+        },
+        "tab_VL8yyb": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Rats & Honey Bees",
+            "tab_article_1": "aires-scientific-peer-reviewed-research\/stage-1-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-at-rats-and-honey-bees-apis-mellifera-l",
+            "tab_article_2": "aires-scientific-peer-reviewed-research\/stage-2-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-at-rats-and-honey-bees-apis-mellifera-l",
+            "tab_article_3": "aires-scientific-peer-reviewed-research\/stage-3-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-at-rats-and-honey-bees-apis-mellifera-l",
+            "tab_article_4": "aires-scientific-peer-reviewed-research\/stage-4-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-at-rats-and-honey-bees-apis-mellifera-l",
+            "tab_article_5": "aires-scientific-peer-reviewed-research\/stage-5-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-processes-in-cells-of-central-and-peripheral-organs-models-organisins-rat-rattus-norvegicus",
+            "tab_article_6": "aires-scientific-peer-reviewed-research\/stage-5-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-at-rats-and-honey-bees-apis-mellifera-l",
+            "tab_article_7": "",
+            "tab_article_8": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_6rihC3",
+        "tab_X9LtjM",
+        "tab_cbxyiF",
+        "tab_YiwpcT",
+        "tab_gNRXc3",
+        "tab_VL8yyb"
+      ],
+      "name": "Science - Article Tabs",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Top Scientific Studies & Research",
+        "fs_title_main": 32,
+        "fs_title_main_mob": 26,
+        "fs_title": 22,
+        "fs_excerpt": 18,
+        "fs_btn": 18,
+        "fs_title_mob": 18,
+        "fs_excerpt_mob": 16,
+        "fs_btn_mob": 16,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "replo_science_s_1_v1_T8eHMt",
+    "replo_tech_s_1_rLEBbQ",
+    "brain_scan_videos_NkHaaQ",
+    "replo_science_s_3_bDxPVE",
+    "replo_investor_m_6_pYrpVj",
+    "replo_investor_m_7_6rdLhV",
+    "replo_tech_s_5_tBqzEP",
+    "replo_science_s_5_4FeVD4",
+    "experts_EaYtn6",
+    "replo_investor_m_11_KREeGM",
+    "custom_contact_form_cetmcG",
+    "article_tabs_xiVHhn"
+  ]
+}

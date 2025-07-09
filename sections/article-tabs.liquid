@@ -1,0 +1,374 @@
+{{ 'article-tabs.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    }
+  }
+
+  .article-tabs.section-{{ section.id }}-padding .article-tabs__title h2{
+    font-size: {{ section.settings.fs_title_main_mob }}px;
+  }
+
+  .article-tabs.section-{{ section.id }}-padding .article-item__title{
+    font-size: {{ section.settings.fs_title_mob }}px;
+  }
+
+  .article-tabs.section-{{ section.id }}-padding .article-item__excerpt{
+    font-size: {{ section.settings.fs_excerpt_mob }}px;
+  }
+
+  .article-tabs.section-{{ section.id }}-padding .article-item__read-more span{
+    font-size: {{ section.settings.fs_btn_mob }}px;
+  }
+
+  @media screen and (min-width: 749px) {
+    .article-tabs.section-{{ section.id }}-padding .article-tabs__title h2{
+      font-size: {{ section.settings.fs_title_main }}px;
+    }
+
+    .article-tabs.section-{{ section.id }}-padding .article-item__title{
+      font-size: {{ section.settings.fs_title }}px;
+    }
+
+    .article-tabs.section-{{ section.id }}-padding .article-item__excerpt{
+      font-size: {{ section.settings.fs_excerpt }}px;
+    }
+
+    .article-tabs.section-{{ section.id }}-padding .article-item__read-more span{
+      font-size: {{ section.settings.fs_btn }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  class="article-tabs section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient"
+>
+  <div
+    class="article-tabs__content"
+  >
+    <div class="article-tabs__title">
+      {%- if section.settings.heading != blank -%}
+        <h2>{{ section.settings.heading }}</h2>
+      {%- endif -%}
+    </div>
+    <div class="article-tabs__tabs">
+      <div class="article-tabs__tabs-nav">
+        {% for block in section.blocks %}
+          <button class="article-tabs__tab-btn {% if forloop.first %}active{% endif %}" data-tab="{{ forloop.index0 }}">
+            {{ block.settings.tab_btn_text }}
+          </button>
+        {% endfor %}
+      </div>
+
+      <div class="article-tabs__tabs-content">
+        {% for block in section.blocks %}
+          <div class="article-tabs__tab-content {% if forloop.first %}active{% endif %}" data-tab="{{ forloop.index0 }}">
+            <div class="article-tabs__tab-articles">
+              <div class="article-tabs__articles-group">
+                {% for i in (1..4) %}
+                  {% assign article_key = 'tab_article_' | append: i %}
+                  {% assign article = block.settings[article_key] %}
+                  {% if article != blank %}
+                    <div class="article-item">
+                      <a class="full-unstyled-link" href="{{ article.url }}">
+                        <div class="article-item__title">
+                          {{ article.title }}
+                        </div>
+                        {% if article.excerpt %}
+                          <div class="article-item__excerpt">
+                            {{ article.excerpt }}
+                          </div>
+                        {% endif %}
+                        <div class="article-item__read-more">
+                          <span>Read Paper</span>
+                          <svg
+                            width="26"
+                            height="16"
+                            viewBox="0 0 26 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.2929L19.3431 0.928934C18.9526 0.538409 18.3195 0.538409 17.9289 0.928934C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 8L-8.74227e-08 9L25 9L25 8L25 7L8.74227e-08 7L0 8Z" fill="#273A52"/>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+              <div class="article-tabs__articles-group">
+                {% for i in (5..8) %}
+                  {% assign article_key = 'tab_article_' | append: i %}
+                  {% assign article = block.settings[article_key] %}
+                  {% if article != blank %}
+                    <div class="article-item">
+                      <a class="full-unstyled-link" href="{{ article.url }}">
+                        <div class="article-item__title">
+                          {{ article.title }}
+                        </div>
+                        {% if article.excerpt %}
+                          <div class="article-item__excerpt">
+                            {{ article.excerpt }}
+                          </div>
+                        {% endif %}
+                        <div class="article-item__read-more">
+                          <span>Read Paper</span>
+                          <svg
+                            width="26"
+                            height="16"
+                            viewBox="0 0 26 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.2929L19.3431 0.928934C18.9526 0.538409 18.3195 0.538409 17.9289 0.928934C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 8L-8.74227e-08 9L25 9L25 8L25 7L8.74227e-08 7L0 8Z" fill="#273A52"/>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabButtons = document.querySelectorAll('.article-tabs__tab-btn');
+    const tabContents = document.querySelectorAll('.article-tabs__tab-content');
+
+    tabButtons.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach((b) => b.classList.remove('active'));
+        tabContents.forEach((c) => c.classList.remove('active'));
+
+        btn.classList.add('active');
+        tabContents[index].classList.add('active');
+      });
+    });
+
+    if (tabButtons.length > 0) {
+      tabButtons[0].classList.add('active');
+      tabContents[0].classList.add('active');
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Science - Article Tabs",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "background-1"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Some Title",
+      "label": "Heading"
+    },
+    {
+      "type": "range",
+      "id": "fs_title_main",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size main title",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "fs_title_main_mob",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size main title mobile",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "fs_title",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size title",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "fs_excerpt",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size excerpt",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "fs_btn",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size button",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "fs_title_mob",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size title mobile",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "fs_excerpt_mob",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size excerpt mobile",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "fs_btn_mob",
+      "min": 10,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size button mobile",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Paddings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top Desktop",
+      "default": 66
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom Desktop",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top Mobile",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom Mobile",
+      "default": 24
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_btn_text",
+          "label": "Tab name"
+        },
+        {
+          "type": "article",
+          "id": "tab_article_1",
+          "label": "Tab article 1"
+        },
+        {
+          "type": "article",
+          "id": "tab_article_2",
+          "label": "Tab article 2"
+        },
+        {
+          "type": "article",
+          "id": "tab_article_3",
+          "label": "Tab article 3"
+        },
+        {
+          "type": "article",
+          "id": "tab_article_4",
+          "label": "Tab article 4"
+        },
+        {
+          "type": "article",
+          "id": "tab_article_5",
+          "label": "Tab article 5"
+        },
+        {
+          "type": "article",
+          "id": "tab_article_6",
+          "label": "Tab article 6"
+        },
+        {
+          "type": "article",
+          "id": "tab_article_7",
+          "label": "Tab article 7"
+        },
+        {
+          "type": "article",
+          "id": "tab_article_8",
+          "label": "Tab article 8"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Science - Article Tabs"
+    }
+  ]
+}
+{% endschema %}

@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js no-touch supports-no-cookies" lang="{{ request.locale.iso_code }}">
-  <head>
+  <head>{% render 'yoast-seo' %}
     <script>
       /* >> Heatmap.com :: Snippet << */
       (function (h, e, a, t, m, ap) {
@@ -18,7 +18,7 @@
       })(window, 'https://dashboard.heatmap.com/', 'heatmap.php', document, 3328);
     </script>
 
-    {% render 'yoast-seo' %}
+    
 
     {% render 'replo-head' %}
     {%- render 'head' -%}
@@ -56,7 +56,7 @@
 
   <body
     id="{{ page_title | handle }}"
-    class="template-{{ template.name | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}"
+    class="template-{{ template.name | handle }} template-suffix-{{ template.suffix | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}"
     data-animations="{{ settings.animations_enable }}"
   >
     {%- render 'loading' -%}
@@ -67,7 +67,30 @@
 
     <div class="container" data-site-container>
       <div class="header-sections">
+      {% assign alt_templates = settings.alt_header_templates | split: "," %}
+      {% assign alt_black_templates = settings.alt_black_header_templates | split: "," %}
+      {% assign current_template = template.suffix %}
+      
+      {% assign use_alt_header = false %}
+      {% assign black_text = false %}
+      
+      {% for t in alt_templates %}
+        {% if t == current_template %}
+          {% assign use_alt_header = true %}
+        {% endif %}
+      {% endfor %}
+      {% for t in alt_black_templates %}
+        {% if t  == current_template %}
+          {% assign use_alt_header = true %}
+          {% assign black_text = true %}
+        {% endif %}
+      {% endfor %}
+      
+      {% if use_alt_header %}
+        {% sections 'group-header-investors' %}
+      {% else %}
         {% sections 'group-header' %}
+      {% endif %}
       </div>
 
       {% sections 'group-overlay' %}
@@ -122,7 +145,11 @@
     </script>
     <!-- End eDesk Shopify widget 8c2025d82 -->
     <footer class="footer-sections">
-      {% sections 'group-footer' %}
+      {% if use_alt_header %}
+        {% sections 'group-footer-investors' %}
+      {% else %}
+        {% sections 'group-footer' %}
+      {% endif %}
     </footer>
 
     {% render 'template-swatch' %}
@@ -257,5 +284,32 @@
       }
       setTimeout('USI_installCode()', 10000);
     </script>
+    {% if use_alt_header %}
+      <script>
+        const removeUnknownEDeskIframe = () => {
+          document.querySelectorAll('iframe').forEach((iframe) => {
+            const style = window.getComputedStyle(iframe);
+            const width = parseInt(style.width);
+            const height = parseInt(style.height);
+  
+            if (width === 95 && height === 75) {
+              iframe.remove();
+              console.log('eDesk iframe removed (size matched)');
+            }
+          });
+        };
+  
+        removeUnknownEDeskIframe();
+  
+        const observer = new MutationObserver(() => {
+          removeUnknownEDeskIframe();
+        });
+  
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+      </script>
+    {% endif %}
   </body>
 </html>

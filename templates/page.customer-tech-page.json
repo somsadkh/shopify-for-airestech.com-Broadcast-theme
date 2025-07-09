@@ -1,0 +1,171 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "show_title": true,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper",
+        "color_scheme": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "heading_tag": "automatic"
+      }
+    },
+    "article_tabs_dmpRhy": {
+      "type": "article-tabs",
+      "blocks": {
+        "tab_b7QfwG": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Patents",
+            "tab_article_1": "most-recent\/emfs-and-womens-health-what-the-research-shows",
+            "tab_article_2": "aires-scientific-peer-reviewed-research\/stage-2-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-at-rats-and-honey-bees-apis-mellifera-l",
+            "tab_article_3": "aires-scientific-peer-reviewed-research\/stage-3-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-at-rats-and-honey-bees-apis-mellifera-l",
+            "tab_article_4": "aires-scientific-peer-reviewed-research\/stage-4-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-at-rats-and-honey-bees-apis-mellifera-l",
+            "tab_article_5": "aires-scientific-peer-reviewed-research\/stage-5-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-at-rats-and-honey-bees-apis-mellifera-l",
+            "tab_article_6": "aires-scientific-peer-reviewed-research\/stage-5-study-of-high-frequency-electromagnetic-radiation-impact-and-aires-resonators-influence-on-behavior-genetic-and-epigenetic-processes-in-cells-of-central-and-peripheral-organs-models-organisins-rat-rattus-norvegicus",
+            "tab_article_7": "aires-scientific-peer-reviewed-research\/testing-of-electromagnetic-radiation-resonator-converter-prototype-phase-iii-report",
+            "tab_article_8": "aires-scientific-peer-reviewed-research\/testing-of-electromagnetic-radiation-resonator-converter-prototype-phase-ii-report"
+          }
+        },
+        "tab_99j6LV": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Peer Review",
+            "tab_article_1": "aires-scientific-peer-reviewed-research\/research-on-aires-defenders-influence-on-the-variability-of-heart-rhythm",
+            "tab_article_2": "aires-scientific-peer-reviewed-research\/investigation-of-the-protective-action-of-the-aires-microprocessor-aires-shield-aires-defender-aires-aquacluster-against-the-effect-of-electromagnetic-radiation-on-the-structural-state-of-an-aqueous-environment-1",
+            "tab_article_3": "aires-scientific-peer-reviewed-research\/special-aspects-of-cerebral-bioelectrical-activity-changes-upon-exposure-of-brain-to-electromagnetic-radiation-emitted-by-mobile-phone-and-possible-correction-thereof-by-combination-of-aires-shield-pro-and-mobile-phone-pilot-studies",
+            "tab_article_4": "aires-scientific-peer-reviewed-research\/detecting-conductivity-variations-in-water-under-the-action-of-the-radiation-emitted-by-a-radiotelephone-with-or-without-the-aires-electromagnetic-abnormalities-neutralizer",
+            "tab_article_5": "aires-scientific-peer-reviewed-research\/evaluation-of-the-effectiveness-of-using-aires-shield-electronic-anomaly-neutralizers-to-reduce-the-negative-influence-of-a-cellular-phones-electromagnetic-field-1",
+            "tab_article_6": "aires-scientific-peer-reviewed-research\/study-of-effect-of-the-aires-fractal-resonator-on-the-state-of-erythrocytes-in-human-blood-1",
+            "tab_article_7": "aires-scientific-peer-reviewed-research\/influence-of-the-aires-shield-electromagnetic-anomaly-neutralizer-on-changes-in-eeg-parameters-caused-by-a-mobile-phones-electromagnetic-field-1",
+            "tab_article_8": "aires-scientific-peer-reviewed-research\/the-changing-of-certain-heart-rate-indicators-under-the-corrective-influence-of-an-aires-shield-pro-device-on-the-electromagnetic-radiation-of-a-mobile-phone-prestigio"
+          }
+        },
+        "tab_VxW9Bi": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Publications",
+            "tab_article_1": "aires-scientific-peer-reviewed-research\/r-d-calculation-of-the-strength-and-intensity-of-the-electromagnetic-field-in-the-interaction-of-electromagnetic-radiation-at-a-frequency-of-2-4-ghz-wifi-with-an-aires-c28s-resonator",
+            "tab_article_2": "aires-scientific-peer-reviewed-research\/r-d-calculation-of-the-strength-and-intensity-of-the-electromagnetic-field-in-the-interaction-of-electromagnetic-radiation-at-a-frequency-of-28-ghz-wifi-5g-with-an-aires-c20s5g-resonator-microprocessor-which-is-used-in-the-aires-crystal-2019-model",
+            "tab_article_3": "aires-scientific-peer-reviewed-research\/r-d-calculation-of-the-strength-and-intensity-of-the-electromagnetic-field-in-the-interaction-of-electromagnetic-radiation-at-a-frequency-of-6-ghz-wifi-5g-with-an-aires-c20s5g-resonator-microprocessor-which-is-used-in-the-aires-crystal-2019-model",
+            "tab_article_4": "aires-scientific-peer-reviewed-research\/r-d-calculation-of-the-strength-and-intensity-of-the-electromagnetic-field-in-the-interaction-of-electromagnetic-radiation-at-a-frequency-of-2-4-ghz-wifi-with-an-aires-c16s-resonator-microprocessor",
+            "tab_article_5": "aires-scientific-peer-reviewed-research\/r-d-evaluation-of-the-effective-range-of-the-lifetune-zone-2022-model-at-a-frequency-of-4-9-ghz-wi-fi-5g",
+            "tab_article_6": "aires-scientific-peer-reviewed-research\/computer-simulation-of-the-response-of-a-semiconductor-wafer-with-a-self-affine-pattern-in-the-form-of-a-system-of-coupled-ring-grooves-to-electromagnetic-radiation-1",
+            "tab_article_7": "aires-scientific-peer-reviewed-research\/distributed-computing-of-interaction-of-electromagnetic-radiation-with-a-structured-surface",
+            "tab_article_8": "aires-scientific-peer-reviewed-research\/evaluation-of-the-effectiveness-of-using-aires-shield-electronic-anomaly-neutralizers-to-reduce-the-negative-influence-of-a-cellular-phones-electromagnetic-field"
+          }
+        },
+        "tab_rGGEDk": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Clinical Trials",
+            "tab_article_1": "aires-scientific-peer-reviewed-research\/study-of-effect-of-the-aires-fractal-resonator-on-the-state-of-erythrocytes-in-human-blood",
+            "tab_article_2": "aires-scientific-peer-reviewed-research\/influence-of-the-aires-shield-electromagnetic-anomaly-neutralizer-on-changes-in-eeg-parameters-caused-by-a-mobile-phones-electromagnetic-field",
+            "tab_article_3": "aires-scientific-peer-reviewed-research\/influence-of-the-aires-shield-electromagnetic-anomaly-neutralizer-on-changes-in-eeg-parameters-caused-by-a-mobile-phones-electromagnetic-field",
+            "tab_article_4": "aires-scientific-peer-reviewed-research\/method-for-protecting-biological-objects-from-the-negative-influence-of-technogenic-electromagnetic-radiation-2019",
+            "tab_article_5": "investor-news-2025\/wwe®-and-aires-tech-announce-multi-year-global-marketing-partnership",
+            "tab_article_6": "aires-scientific-peer-reviewed-research\/detecting-conductivity-variations-in-water-under-the-action-of-the-radiation-emitted-by-a-radiotelephone-with-or-without-the-aires-electromagnetic-abnormalities-neutralizer",
+            "tab_article_7": "investor-news-2025\/aires-tech-partners-with-canada-basketball-as-official-emf-protection-technology-partner",
+            "tab_article_8": "investor-news-2024\/american-aires-engages-icp-securities-inc-icp-for-automated-market-making-services"
+          }
+        },
+        "tab_kfy8Bq": {
+          "type": "tab",
+          "settings": {
+            "tab_btn_text": "Other Research",
+            "tab_article_1": "investor-news-2025\/toronto-raptors-and-canada-basketball-star-rj-barrett-teams-with-aires-tech-as-newest-airesathletes-partner",
+            "tab_article_2": "investor-news-2025\/aires-tech-announces-agreement-with-gray-wolf",
+            "tab_article_3": "investor-news-2024\/hockey-star-max-domi-teams-up-with-aires-tech-as-the-newest-airesathletes-ambassador-and-brand-partner",
+            "tab_article_4": "investor-news-2025\/american-aires-announces-q2-2024-results-with-strong-45-yoy-sales-growth-and-engages-clarkham-capital-ltd",
+            "tab_article_5": "investor-news-2025\/ufc-s-michael-chandler-joins-official-ufc-partner-aires-tech-to-champion-emf-protection-as-brand-partner",
+            "tab_article_6": "investor-news-2025\/a-racing-first-mbm-motorsports-and-aires-tech-partner-to-protect-nascar-cup-team-from-in-race-electromagnetic-field-radiation-in-innovative-sponsorship",
+            "tab_article_7": "investor-news-2025\/ceo-s-2024-letter-to-shareholders",
+            "tab_article_8": "investor-news-2025\/aires-teams-with-former-ufc-fighter-tim-kennedy-s-apogee-schools-to-create-first-us-based-emf-friendly-schools"
+          }
+        }
+      },
+      "block_order": [
+        "tab_b7QfwG",
+        "tab_99j6LV",
+        "tab_VxW9Bi",
+        "tab_rGGEDk",
+        "tab_kfy8Bq"
+      ],
+      "name": "Science - Article Tabs",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "Top Scientific Studies & Research",
+        "fs_title_main": 36,
+        "fs_title_main_mob": 20,
+        "fs_title": 22,
+        "fs_excerpt": 16,
+        "fs_btn": 20,
+        "fs_title_mob": 18,
+        "fs_excerpt_mob": 16,
+        "fs_btn_mob": 16,
+        "padding_top": 66,
+        "padding_bottom": 90,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 24
+      }
+    },
+    "section_blog_investors_ixWYCk": {
+      "type": "section-blog-investors",
+      "name": "Media Page - Investor News Blog",
+      "settings": {
+        "section_color_scheme": "",
+        "heading": "Top Scientific Studies & Research",
+        "blog": "investor-news-2025",
+        "text_read_more": "Read More",
+        "fs_title_main": 36,
+        "fs_title_main_mob": 20,
+        "fs_title": 22,
+        "fs_btn": 20,
+        "fs_title_mob": 16,
+        "fs_btn_mob": 16,
+        "padding_top": 90,
+        "padding_bottom": 90,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 50
+      }
+    },
+    "custom_contact_form_q3xR3L": {
+      "type": "custom-contact-form",
+      "blocks": {
+        "powerful_form_builder_app_block_yNkCLC": {
+          "type": "shopify:\/\/apps\/powerful-form-builder\/blocks\/app-block\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"OTI4MjE=\"><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder_app_block_yNkCLC"
+      ],
+      "name": "Custom Contact Form",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Contact",
+        "email": "wifi@airestech.com",
+        "phone": "+1 (415) 707-0102",
+        "padding_top": 66,
+        "padding_bottom": 66,
+        "padding_top_mobile": 42,
+        "padding_bottom_mobile": 42
+      }
+    }
+  },
+  "order": [
+    "main",
+    "article_tabs_dmpRhy",
+    "section_blog_investors_ixWYCk",
+    "custom_contact_form_q3xR3L"
+  ]
+}
