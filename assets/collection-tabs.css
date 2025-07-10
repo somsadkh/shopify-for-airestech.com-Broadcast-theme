@@ -30,6 +30,12 @@
 	}
 }
 
+.collection-tabs__button h1{
+	font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    margin: inherit;
+}
 @media (any-hover: hover) {
 	.collection-tabs__button:hover {
 		background: var(--Mauve, #4B5E7B);

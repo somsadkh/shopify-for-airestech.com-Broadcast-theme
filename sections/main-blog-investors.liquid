@@ -48,7 +48,7 @@
         style="max-width: {{ section.settings.content_width }}px"
         >
         {%- if section.settings.heading != blank -%}
-          <h2>{{ section.settings.heading }}</h2>
+          <h1>{{ section.settings.heading }}</h1>
         {% endif %}
 
         {%- if section.settings.text != blank -%}
@@ -80,9 +80,9 @@
               data-blog-index="{{ forloop.index0 }}"
             >
               {%- if block.settings.custom_blog_title != blank -%}
-                {{- block.settings.custom_blog_title -}}
+                <h1>{{- block.settings.custom_blog_title -}}</h1>
               {%- else -%}
-                {{- block.settings.blog.title -}}
+                <h1>{{- block.settings.blog.title -}}</h1>
               {%- endif -%}
             </button>
           {%- endif -%}

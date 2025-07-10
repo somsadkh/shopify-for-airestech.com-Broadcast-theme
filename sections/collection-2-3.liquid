@@ -82,8 +82,9 @@
           <button
                   class="collection-tabs__button custom-checkbox-label"
                   data-collection-handle="{{ block.settings.collection.handle }}"
+                  data-collection-url="{{ shop.url }}{{ block.settings.collection.url | default: '/collections/all' }}"
           >
-            {{ block.settings.tag_name }}
+            <h1>{{ block.settings.tag_name }}</h1>
           </button>
         {% endif %}
       {% endfor %}
