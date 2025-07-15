@@ -102,27 +102,6 @@
         "disabled": false,
         "settings": {}
       },
-      "7860399670564181960": {
-        "type": "shopify:\/\/apps\/profy-banner-countdown-timer\/blocks\/app_embed\/243a639f-ca73-4afe-b6aa-3a23277fb424",
-        "disabled": false,
-        "settings": {}
-      },
-      "16477486064475509254": {
-        "type": "shopify:\/\/apps\/veeper-stop-coupon-leaks\/blocks\/cd-embed\/701f59c5-5a05-41c0-ad15-29147f0a6331",
-        "disabled": false,
-        "settings": {
-          "show_announcement": true,
-          "bar_bgcolor": "#000000",
-          "bar_textcolor": "#ffffff",
-          "original_textcolor": "#EF233C",
-          "sale_textcolor": "#06A94D"
-        }
-      },
-      "9431293036029666034": {
-        "type": "shopify:\/\/apps\/veeper-stop-coupon-leaks\/blocks\/app-embed\/701f59c5-5a05-41c0-ad15-29147f0a6331",
-        "disabled": false,
-        "settings": {}
-      },
       "1935445597218932304": {
         "type": "shopify:\/\/apps\/avada-seo-suite\/blocks\/avada-seo\/15507c6e-1aa3-45d3-b698-7e175e033440",
         "disabled": false,
