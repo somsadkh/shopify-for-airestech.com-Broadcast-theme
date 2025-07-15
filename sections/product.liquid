@@ -293,6 +293,77 @@ You can learn more about this (and learn how to cleanly revert these changes) at
                   {%- when '@app' -%}
                     {%- render block -%}
 
+                  {%- when 'copy' -%}
+
+                    <style>
+                      .product__copy--wrapper{
+                        background-color: {{ block.settings.bg_cl }};
+                        border-radius: {{ block.settings.border_radius }}px;
+                      }
+                      .product__copy--subtitle{
+                        color: {{ block.settings.subtitle_cl }};
+                        font-size: {{ block.settings.subtitle_fs }}px;
+                      }
+                      .product__copy--title{
+                        color: {{ block.settings.title_cl }};
+                        font-size: {{ block.settings.title_fs }}px;
+                      }
+                      .product__copy--copy{
+                        background-color: {{ block.settings.bg_cl_copy }};
+                        color: {{ block.settings.code_cl }};
+                        font-size: {{ block.settings.code_fs }}px;
+                        border-radius: {{ block.settings.border_radius_copy }}px;
+                      }
+
+                      @media (max-width: 767px) {
+                        .product__copy--subtitle{
+                          font-size: {{ block.settings.subtitle_fs_mob }}px;
+                        }
+                        .product__copy--title{
+                          font-size: {{ block.settings.title_fs_mob }}px;
+                        }
+                        .product__copy--copy{
+                          font-size: {{ block.settings.code_fs_mob }}px;
+                        }
+                      }
+                    </style>
+
+                    <div class="product__copy">
+                      <div class="product__copy--wrapper">
+                        <div class="product__copy--item">
+                          {% if block.settings.subtitle != blank %}
+                            <div class="product__copy--subtitle">{{ block.settings.subtitle }}</div>
+                          {% endif %}
+                          {% if block.settings.title != blank %}
+                            <div class="product__copy--title">{{ block.settings.title }}</div>
+                          {% endif %}
+                        </div>
+                        <div class="product__copy--item copy" onclick="copyToClipboard(this)">
+                          <div class="product__copy--copy">
+                            {{ block.settings.code_text }}
+                            <span>{{ block.settings.code }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <script>
+                      function copyToClipboard(element) {
+                        const span = element.querySelector('span');
+                        if (!span) return;
+
+                        const text = span.innerText;
+
+                        const tempInput = document.createElement("input");
+                        tempInput.value = text;
+                        document.body.appendChild(tempInput);
+                        tempInput.select();
+                        tempInput.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                        document.body.removeChild(tempInput);
+                      }
+                    </script>
+
                   {%- when 'title' -%}
                     {%- render 'product-title' product: product, block: block, block_style: block_style, is_title_linked: is_title_linked -%}
 
@@ -876,6 +947,156 @@ You can learn more about this (and learn how to cleanly revert these changes) at
     "blocks": [
       {
         "type": "@app"
+      },
+      {
+        "type": "copy",
+        "name": "Discount Sales Box",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Discount Sales Box"
+          },
+          {
+            "type": "color",
+            "id": "bg_cl",
+            "label": "Background color",
+            "default": "#F7F5F2"
+          },
+          {
+            "type": "range",
+            "id": "border_radius",
+            "min": 0,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Border radius",
+            "default": 16
+          },
+          {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "4th of July Sale"
+          },
+          {
+            "type": "range",
+            "id": "subtitle_fs",
+            "min": 10,
+            "max": 30,
+            "step": 1,
+            "unit": "px",
+            "label": "Subtitle font-size",
+            "default": 14
+          },
+          {
+            "type": "range",
+            "id": "subtitle_fs_mob",
+            "min": 8,
+            "max": 30,
+            "step": 1,
+            "unit": "px",
+            "label": "Subtitle font-size mobile",
+            "default": 14
+          },
+          {
+            "type": "color",
+            "id": "subtitle_cl",
+            "label": "Subtitle color",
+            "default": "#1D1E23"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "25% OFF SITE-WIDE"
+          },
+          {
+            "type": "range",
+            "id": "title_fs",
+            "min": 10,
+            "max": 30,
+            "step": 1,
+            "unit": "px",
+            "label": "Title font-size",
+            "default": 14
+          },
+          {
+            "type": "range",
+            "id": "title_fs_mob",
+            "min": 8,
+            "max": 32,
+            "step": 1,
+            "unit": "px",
+            "label": "Title font-size mobile",
+            "default": 14
+          },
+          {
+            "type": "color",
+            "id": "title_cl",
+            "label": "Title color",
+            "default": "#1D1E23"
+          },
+          {
+            "type": "color",
+            "id": "bg_cl_copy",
+            "label": "Background color (Copy block)",
+            "default": "#4B5E7B"
+          },
+          {
+            "type": "range",
+            "id": "border_radius_copy",
+            "min": 0,
+            "max": 40,
+            "step": 1,
+            "unit": "px",
+            "label": "Border radius (Copy block)",
+            "default": 6
+          },
+          {
+            "type": "checkbox",
+            "id": "show_icon",
+            "label": "Show copy icon",
+            "default": true
+          },
+          {
+            "type": "text",
+            "id": "code_text",
+            "label": "Code text",
+            "default": "CODE:"
+          },
+          {
+            "type": "text",
+            "id": "code",
+            "label": "Code",
+            "default": "JULY04"
+          },
+          {
+            "type": "range",
+            "id": "code_fs",
+            "min": 10,
+            "max": 30,
+            "step": 1,
+            "unit": "px",
+            "label": "Code font-size",
+            "default": 14
+          },
+          {
+            "type": "range",
+            "id": "code_fs_mob",
+            "min": 8,
+            "max": 20,
+            "step": 1,
+            "unit": "px",
+            "label": "Code font-size mobile",
+            "default": 14
+          },
+          {
+            "type": "color",
+            "id": "code_cl",
+            "label": "Code color",
+            "default": "#FFFFFF"
+          }
+        ],
       },
       {
         "type": "title",

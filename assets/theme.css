@@ -25022,3 +25022,52 @@ body.has-header-sticky .timeline {
 		min-width: calc(50% - 6px);
 	}
 }
+
+
+.product__copy--wrapper {
+	padding: 16px 24px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: space-between;
+	margin-top: 16px;
+    margin-bottom: 25px;
+}
+
+.product__copy--item {
+	max-width: 50%;
+}
+
+.product__copy--item.copy{
+	cursor: copy;
+}
+
+.product__copy--subtitle {
+	font-family: 'Practical Grotesk';
+	font-weight: 400;
+	font-size: 13.99px;
+	line-height: 150%;
+	letter-spacing: 0.2px;
+}
+
+.product__copy--title {
+	font-family: 'Practical Grotesk';
+	font-weight: 500;
+	font-size: 13.99px;
+	line-height: 150%;
+	letter-spacing: 0.2px;
+}
+
+.product__copy--copy {
+	padding: 4px 8px;
+	font-family: 'Practical Grotesk';
+	font-weight: 400;
+	font-size: 13.99px;
+	line-height: 150%;
+	letter-spacing: 0.2px;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	margin-left: auto;
+	cursor: pointer;
+}

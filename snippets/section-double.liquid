@@ -664,7 +664,9 @@
                           assign product_sizes_images = item_sizes_images | replace: item_placeholder, product_list_count
 
                           for product in block.settings.product_list
-                            render 'product-grid-item', product: product, sizes: product_sizes_images, show_product_card: block.settings.show_product_card
+                            unless product.tags contains 'hidden-product'
+                              render 'product-grid-item', product: product, sizes: product_sizes_images, show_product_card: block.settings.show_product_card
+                            endunless
                           endfor
                         else
                           for i in (1..2)

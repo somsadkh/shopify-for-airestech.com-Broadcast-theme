@@ -32,33 +32,36 @@
 
   if collection != blank and collection.products_count > 0
     for product in collection.products
-      assign modifier_class = ''
+      unless product.tags contains 'hidden-product'
+      
+        assign modifier_class = ''
 
-      if product.tags contains 'hide'
-        assign limit = limit | plus: 1
-      endif
+        if product.tags contains 'hide'
+          assign limit = limit | plus: 1
+        endif
 
-      if forloop.index == limit or forloop.last
-        assign products_list_index = forloop.index
-      endif
+        if forloop.index == limit or forloop.last
+          assign products_list_index = forloop.index
+        endif
 
-      if forloop.index0 <= 1 and collection_image == blank
-        capture products_block_html
-          echo products_block_html
-          render 'product-grid-item', product: product, animation_delay: forloop.index0, collection: collection, index: forloop.index
+        if forloop.index0 <= 1 and collection_image == blank
+          capture products_block_html
+            echo products_block_html
+            render 'product-grid-item', product: product, animation_delay: forloop.index0, collection: collection, index: forloop.index
 
-          assign modifier_class = 'mobile'
+            assign modifier_class = 'mobile'
+          endcapture
+        endif
+
+        capture products_list_html
+          echo products_list_html
+          render 'product-grid-item', product: product, animation_delay: forloop.index0, collection: collection, index: forloop.index, modifier_class: modifier_class
         endcapture
-      endif
 
-      capture products_list_html
-        echo products_list_html
-        render 'product-grid-item', product: product, animation_delay: forloop.index0, collection: collection, index: forloop.index, modifier_class: modifier_class
-      endcapture
-
-      if forloop.index == limit
-        break
-      endif
+        if forloop.index == limit
+          break
+        endif
+      endunless
     endfor
   endif
 

@@ -39,7 +39,9 @@
       {%- liquid
         if block.settings.product_list.count > 0
           for product in block.settings.product_list
-            render 'product-grid-item', product: product
+            unless product.tags contains 'hidden-product'
+              render 'product-grid-item', product: product
+            endunless
           endfor
         else
           for i in (1..4)

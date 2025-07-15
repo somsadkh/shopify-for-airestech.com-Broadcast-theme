@@ -162,6 +162,10 @@
         "padding_bottom": 15
       }
     },
+    "replo_duncan_french_t_gzkbX8": {
+      "type": "replo-duncan-french_t",
+      "settings": {}
+    },
     "press-logos": {
       "type": "section-press-logos",
       "blocks": {
@@ -248,10 +252,6 @@
         "padding_top": 50,
         "padding_bottom": 50
       }
-    },
-    "replo_duncan_french_t_gzkbX8": {
-      "type": "replo-duncan-french_t",
-      "settings": {}
     },
     "benefits_section_LmLk9Y": {
       "type": "benefits-section",
@@ -1319,8 +1319,8 @@
   "order": [
     "hero",
     "announcement-1",
-    "press-logos",
     "replo_duncan_french_t_gzkbX8",
+    "press-logos",
     "benefits_section_LmLk9Y",
     "section_double_epb6m3",
     "brain_scan_videos_AiUtNJ",

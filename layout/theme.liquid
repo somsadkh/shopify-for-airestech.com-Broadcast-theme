@@ -18,7 +18,11 @@
       })(window, 'https://dashboard.heatmap.com/', 'heatmap.php', document, 3328);
     </script>
 
-    
+    {% if product.tags contains 'hidden-product' %}
+      <meta name="robots" content="noindex, nofollow">
+    {% endif %}
+
+    {{ 'rebuy-cart.css' | asset_url | stylesheet_tag }}
 
     {% render 'replo-head' %}
     {%- render 'head' -%}
@@ -52,6 +56,20 @@
     <!-- End Snap Pixel Code -->
 
     {% include 'geolocationredirect_snippet' %}
+
+    {%- if template == 'page.investors_main_2-0' -%}
+     <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
+<script>
+    // Version: 2.0
+    window.Brevo = window.Brevo || [];
+    Brevo.push([
+        "init",
+        {
+        client_key: "0dvk2ttkbw3cr3mg2ztbw7ha"
+        }
+    ]);
+</script>
+    {%- endif -%}
   </head>
 
   <body
@@ -59,8 +77,8 @@
     class="template-{{ template.name | handle }} template-suffix-{{ template.suffix | handle }} grid-{{ settings.grid_style }}{% if customer %} customer-logged-in{% endif %}{% if settings.animations_enable %} aos-initialized{% endif %}{% if settings.product_grid_outline %} has-line-design{% endif %}"
     data-animations="{{ settings.animations_enable }}"
   >
-    {%- render 'loading' -%}
 
+    {%- render 'loading' -%}
     <a class="in-page-link visually-hidden skip-link" data-skip-content href="#MainContent">
       {{- 'general.accessibility.skip_to_content' | t -}}
     </a>

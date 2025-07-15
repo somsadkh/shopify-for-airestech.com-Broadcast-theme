@@ -10,8 +10,9 @@
           id="product-recommendations">
           {%- liquid
             for product in recommendations.products
+
               assign hidden_product = false
-              if product.tags contains 'hide'
+              if product.tags contains 'hide' or product.tags contains 'hidden-product'
                 assign hidden_product = true
               endif
 

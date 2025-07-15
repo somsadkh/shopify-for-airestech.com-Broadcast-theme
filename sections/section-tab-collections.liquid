@@ -288,14 +288,16 @@
                       {%- assign hidden_products = 0 -%}
 
                       {%- for product in featured_collection.products limit: block_product_limit -%}
-                        {% liquid
-                          if product.tags contains 'hide'
-                            assign hidden_products = hidden_products | plus: 1
-                          endif
-                          assign product_index = forloop.index | minus: hidden_products
-                          assign animation_index = product_index | modulo: 4
-                        %}
-                        {%- render 'product-grid-item', product: product, animation_delay: animation_index, index: forloop.index, block_index: block_index -%}
+                        {%- unless product.tags contains 'hidden-product' -%}
+                          {% liquid
+                            if product.tags contains 'hide'
+                              assign hidden_products = hidden_products | plus: 1
+                            endif
+                            assign product_index = forloop.index | minus: hidden_products
+                            assign animation_index = product_index | modulo: 4
+                          %}
+                          {%- render 'product-grid-item', product: product, animation_delay: animation_index, index: forloop.index, block_index: block_index -%}
+                        {%- endunless -%}
                       {%- endfor -%}
                     {%- else -%}
                       <div class="no-results">

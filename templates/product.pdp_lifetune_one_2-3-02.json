@@ -56,6 +56,27 @@
             "padding_bottom": 10
           }
         },
+        "copy_RJhzhq": {
+          "type": "copy",
+          "disabled": true,
+          "settings": {
+            "bg_cl": "#f7f5f2",
+            "border_radius": 16,
+            "subtitle": "4th of July Sale",
+            "subtitle_fs": 14,
+            "subtitle_cl": "#1d1e23",
+            "title": "25% OFF SITE-WIDE",
+            "title_fs": 14,
+            "title_cl": "#1d1e23",
+            "bg_cl_copy": "#4b5e7b",
+            "border_radius_copy": 6,
+            "show_icon": true,
+            "code_text": "CODE:",
+            "code": "JULY04",
+            "code_fs": 14,
+            "code_cl": "#FFFFFF"
+          }
+        },
         "pickup": {
           "type": "pickup",
           "disabled": true,
@@ -147,6 +168,7 @@
         "small_description_kWK6Ar",
         "variants",
         "buttons",
+        "copy_RJhzhq",
         "pickup",
         "tabs",
         "divider_BjXPHG",

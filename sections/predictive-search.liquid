@@ -124,15 +124,17 @@
             <div class="predictive-search__products__list grid-outer" role="listbox" aria-labelledby="predictive-search-products" data-search-results>
               <div class="grid">
                 {%- for product in predictive_search.resources.products -%}
-                  {%- render 'search-product-item',
-                    product: product,
-                    animation_delay: animation_delay,
-                    animation_duration: animation_duration,
-                    animation_anchor: animation_anchor,
-                    product_item_classes: product_item_classes
-                    tabindex: false,
-                    index: forloop.index -%}
-                  {%- assign animation_delay = animation_delay | plus: 150 -%}
+                  {%- unless product.tags contains 'hidden-product' -%}
+                    {%- render 'search-product-item',
+                      product: product,
+                      animation_delay: animation_delay,
+                      animation_duration: animation_duration,
+                      animation_anchor: animation_anchor,
+                      product_item_classes: product_item_classes
+                      tabindex: false,
+                      index: forloop.index -%}
+                    {%- assign animation_delay = animation_delay | plus: 150 -%}
+                  {%- endunless -%}
                 {%- endfor -%}
               </div>
             </div>

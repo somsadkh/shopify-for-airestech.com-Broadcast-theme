@@ -65,9 +65,11 @@
             "border_radius": 16,
             "subtitle": "4th of July Sale",
             "subtitle_fs": 14,
+            "subtitle_fs_mob": 14,
             "subtitle_cl": "#1d1e23",
             "title": "25% OFF SITE-WIDE",
             "title_fs": 14,
+            "title_fs_mob": 14,
             "title_cl": "#1d1e23",
             "bg_cl_copy": "#4b5e7b",
             "border_radius_copy": 6,
@@ -75,7 +77,8 @@
             "code_text": "CODE:",
             "code": "JULY04",
             "code_fs": 14,
-            "code_cl": "#FFFFFF"
+            "code_fs_mob": 14,
+            "code_cl": "#ffffff"
           }
         },
         "pickup": {
@@ -145,7 +148,7 @@
             "padding_bottom": 16
           }
         },
-        "text_edWeFf": {
+        "text_8yLEGJ": {
           "type": "text",
           "settings": {
             "title": "Over 300,000 People Trust Aires for EMF Protection",
@@ -154,7 +157,7 @@
             "padding_bottom": 16
           }
         },
-        "code_m8eeVR": {
+        "code_eNz37p": {
           "type": "code",
           "settings": {
             "code": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_67f3b3df32d66300589a231e\"><\/div>",
@@ -176,8 +179,8 @@
         "upsell",
         "icon_1",
         "icon_2",
-        "text_edWeFf",
-        "code_m8eeVR"
+        "text_8yLEGJ",
+        "code_eNz37p"
       ],
       "settings": {
         "product_sticky_enable": true,
@@ -266,6 +269,144 @@
         "color_scheme": "",
         "padding_top": 15,
         "padding_bottom": 15
+      }
+    },
+    "brain_scan_videos_AiUtNJ": {
+      "type": "brain-scan-videos",
+      "blocks": {
+        "item_U4Vbzk": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Desktop_1_0a6700f9-de6f-4ce0-8af0-280dc68a7124.png",
+            "image_mob": "shopify:\/\/shop_images\/Desktop_1_0a6700f9-de6f-4ce0-8af0-280dc68a7124.png",
+            "title": "What Happened to Tim Welch’s Brain When He Tried Aires Tech?",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "EEG scans captured a dramatic shift: before Aires, Tim’s brain showed overstimulation linked to stress and poor focus. Minutes after using Aires Tech, his brainwaves balanced into a calm, high-performance state, proof you can feel and measure.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/Doc2NK18pb0?si=TTih-SgMkLLl4tSX"
+          }
+        },
+        "item_AeQpAM": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Mobile_2.png",
+            "image_mob": "shopify:\/\/shop_images\/Mobile_2.png",
+            "title": "How Aires Helped Cory Sandhagen Stay Calm and React Faster Under Pressure",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Biofeedback scans revealed Cory’s brain was overstimulated by constant EMFs—causing stress spikes and slower reflexes. With Aires, his brainwaves shifted to a calm, high-performance mode, supporting faster reaction speeds when it mattered most.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/SkpDrggZeO4?si=xrQ1IdAat3gBxmdt&amp;start=2"
+          }
+        },
+        "item_M7nFF3": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
+            "title": "How Aires Helped Maycee Barber’s Brain Relax And Eliminate Daily Headaches",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "EEG scans revealed something remarkable: before using Aires, Maycee’s brain was in a constant state of stress that left her drained and battling daily headaches. With Aires active, her brain activity smoothed into a calm, focused rhythm, and she reported feeling clear, balanced, and finally free of the pain.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/_syXvHqHXh0?si=1Jbrj-mKZ_a59ZFx"
+          }
+        },
+        "item_e3NaNr": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
+            "title": "Canada Basketball RJ Barrett's Positive Findings",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris described even with RJ's high-output neural activity, there was significant results above baseline range. This was another example of variability in brain activity by individuals and still Aires' presence showed impactful performance.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/BAItJubdKZI"
+          }
+        },
+        "item_EWKQpa": {
+          "type": "item",
+          "settings": {
+            "show_play": true,
+            "image": "shopify:\/\/shop_images\/Frame_1073-4.webp",
+            "image_mob": "shopify:\/\/shop_images\/Frame_1073-4.webp",
+            "title": "Four Individuals EEG Brain Scan",
+            "color_title": "#000000",
+            "fs_title": 22,
+            "fs_title_mob": 18,
+            "text": "Neuroscientist Dr. Nicholas Dogris performed four separate EEG demonstrations with individuals and their tech devices. Each scan showed positive results with Aires devices present compared to no Aires.",
+            "color_text": "#000000",
+            "fs_text": 18,
+            "fs_text_mob": 14,
+            "button_text": "View Video",
+            "button_type": "btn--black",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "youtube": "https:\/\/www.youtube.com\/embed\/TGh-IEmNeNY?si=8JNrKZlJ-nOPmQxB"
+          }
+        }
+      },
+      "block_order": [
+        "item_U4Vbzk",
+        "item_AeQpAM",
+        "item_M7nFF3",
+        "item_e3NaNr",
+        "item_EWKQpa"
+      ],
+      "settings": {
+        "content_max_width": 26,
+        "subtitle_center": false,
+        "subtitle_center_mobile": false,
+        "subtitle": "See The Scientific Proof for Yourself",
+        "color_subtitle": "#000000",
+        "fs_subtitle": 14,
+        "fs_subtitle_mob": 16,
+        "title": "Watch Real Time EGG Scans Reveal the Instant Impact of Aires on the Brain",
+        "heading_center": false,
+        "heading_center_mobile": false,
+        "color_title": "#000000",
+        "fs_title": 32,
+        "fs_title_mob": 26,
+        "text": "EEG brain scans track electrical activity to help doctors understand brain function. Here, licensed professionals mapped EEG results to show measurable changes in brain activity when using Aires products alongside digital devices.",
+        "color_text": "#000000",
+        "fs_text": 16,
+        "fs_text_mob": 14,
+        "padding_top": 100,
+        "padding_bottom": 50
       }
     },
     "icons_with_text_jKdQci": {
@@ -558,7 +699,7 @@
         "heading_8gbYKU": {
           "type": "heading",
           "settings": {
-            "heading_center": true,
+            "heading_center": false,
             "heading_center_mobile": true,
             "title": "How Does Aires Work?",
             "color_title": "#000000",
@@ -592,7 +733,7 @@
           "type": "icon_text",
           "settings": {
             "svg": "<svg width=\"24\" height=\"25\" viewbox=\"0 0 24 25\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"0.5\" y=\"0.838867\" width=\"23\" height=\"23\" rx=\"11.5\" fill=\"white\"><\/rect>\n<rect x=\"0.5\" y=\"0.838867\" width=\"23\" height=\"23\" rx=\"11.5\" stroke=\"black\"><\/rect>\n<path d=\"M8.88555 17.3389V16.4849L11.8955 13.2089C13.2395 11.7389 13.6875 11.0529 13.6875 10.0309C13.6875 8.93887 13.1135 8.21087 11.9235 8.21087C10.7895 8.21087 10.0335 8.91087 9.99155 10.2269H8.71755C8.75955 8.23887 10.0615 7.13287 11.9795 7.13287C13.8835 7.13287 15.0175 8.22487 15.0175 9.98887C15.0175 11.4169 14.3595 12.3689 12.6375 14.1749L10.6495 16.2609H15.2415V17.3389H8.88555Z\" fill=\"black\"><\/path>\n<\/svg>",
-            "title": "Three C-32-S AIRES Silicon Wafers Resonator Chips",
+            "title": "One C-32-S AIRES Silicon Wafer Resonator Chip",
             "color_title": "#000000",
             "fs_title": 16,
             "fs_title_mob": 16
@@ -600,10 +741,9 @@
         },
         "icon_text_PwgUpx": {
           "type": "icon_text",
-          "disabled": true,
           "settings": {
             "svg": "<svg width=\"24\" height=\"25\" viewbox=\"0 0 24 25\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<rect x=\"0.5\" y=\"0.838867\" width=\"23\" height=\"23\" rx=\"11.5\" fill=\"white\"><\/rect>\n<rect x=\"0.5\" y=\"0.838867\" width=\"23\" height=\"23\" rx=\"11.5\" stroke=\"black\"><\/rect>\n<path d=\"M11.9916 17.4649C9.73763 17.4649 8.49163 16.2049 8.44963 14.1609H9.72363C9.76563 15.5329 10.4516 16.3869 11.9916 16.3869C13.3496 16.3869 14.0496 15.7149 14.0496 14.5949C14.0496 13.3209 13.1816 12.5649 11.7396 12.5649H11.0536V11.5429H11.7116C12.9716 11.5429 13.7696 10.9269 13.7696 9.87687C13.7696 8.79887 13.0416 8.15487 11.9216 8.15487C10.6756 8.15487 9.93363 8.88287 9.91963 10.2269H8.64563C8.67363 8.26687 10.0596 7.13287 11.9216 7.13287C13.8536 7.13287 15.0436 8.16887 15.0436 9.77887C15.0436 10.7589 14.5116 11.5429 13.3636 11.9069V11.9769C14.6936 12.3129 15.3796 13.3769 15.3796 14.6509C15.3796 16.4289 14.0636 17.4649 11.9916 17.4649Z\" fill=\"black\"><\/path>\n<\/svg>",
-            "title": "16S5G Aires silicon resonator chip",
+            "title": "Polimer",
             "color_title": "#000000",
             "fs_title": 16,
             "fs_title_mob": 16
@@ -656,100 +796,6 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "show_placeholder": true
-      }
-    },
-    "brain_scan_videos_AiUtNJ": {
-      "type": "brain-scan-videos",
-      "blocks": {
-        "item_U4Vbzk": {
-          "type": "item",
-          "settings": {
-            "show_play": true,
-            "image": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
-            "image_mob": "shopify:\/\/shop_images\/Frame_1073-1_1.jpg",
-            "title": "Canada Basketball RJ Barrett's Positive Findings",
-            "color_title": "#000000",
-            "fs_title": 22,
-            "fs_title_mob": 18,
-            "text": "Neuroscientist Dr. Nicholas Dogris described even with RJ's high-output neural activity, there was significant results above baseline range. This was another example of variability in brain activity by individuals and still Aires' presence showed impactful performance.",
-            "color_text": "#000000",
-            "fs_text": 18,
-            "fs_text_mob": 14,
-            "button_text": "View Video",
-            "button_type": "btn--black",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "youtube": "https:\/\/www.youtube.com\/embed\/BAItJubdKZI"
-          }
-        },
-        "item_M7nFF3": {
-          "type": "item",
-          "settings": {
-            "show_play": true,
-            "image": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
-            "image_mob": "shopify:\/\/shop_images\/Frame_1073_1.jpg",
-            "title": "Pro UFC Fighter Maycee Barber's Impressive Results",
-            "color_title": "#000000",
-            "fs_title": 22,
-            "fs_title_mob": 18,
-            "text": "Biofeedback Specialist Chris Wyllie performed an EEG brain scan on UFC's Maycee Barber and improvements were clear with Aires present. Maycee has noted that she no longer gets headaches since she's been using Aires!",
-            "color_text": "#000000",
-            "fs_text": 18,
-            "fs_text_mob": 14,
-            "button_text": "View Video",
-            "button_type": "btn--black",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "youtube": "https:\/\/www.youtube.com\/embed\/_syXvHqHXh0?si=1Jbrj-mKZ_a59ZFx"
-          }
-        },
-        "item_EWKQpa": {
-          "type": "item",
-          "settings": {
-            "show_play": true,
-            "image": "shopify:\/\/shop_images\/Frame_1073-4.webp",
-            "image_mob": "shopify:\/\/shop_images\/Frame_1073-4.webp",
-            "title": "Four Individuals EEG Brain Scan",
-            "color_title": "#000000",
-            "fs_title": 22,
-            "fs_title_mob": 18,
-            "text": "Neuroscientist Dr. Nicholas Dogris performed four separate EEG demonstrations with individuals and their tech devices. Each scan showed positive results with Aires devices present compared to no Aires.",
-            "color_text": "#000000",
-            "fs_text": 18,
-            "fs_text_mob": 14,
-            "button_text": "View Video",
-            "button_type": "btn--black",
-            "button_size": "",
-            "button_style": "btn--solid",
-            "youtube": "https:\/\/www.youtube.com\/embed\/TGh-IEmNeNY?si=8JNrKZlJ-nOPmQxB"
-          }
-        }
-      },
-      "block_order": [
-        "item_U4Vbzk",
-        "item_M7nFF3",
-        "item_EWKQpa"
-      ],
-      "settings": {
-        "content_max_width": 26,
-        "subtitle_center": false,
-        "subtitle_center_mobile": false,
-        "subtitle": "AIRES IN ACTION",
-        "color_subtitle": "#000000",
-        "fs_subtitle": 14,
-        "fs_subtitle_mob": 16,
-        "title": "The Real-time Proof of Aires Tech With EEG Brain Scans",
-        "heading_center": false,
-        "heading_center_mobile": false,
-        "color_title": "#000000",
-        "fs_title": 32,
-        "fs_title_mob": 26,
-        "text": "EEG brain scans track electrical activity to help doctors understand brain function. Here, licensed professionals mapped EEG results to show measurable changes in brain activity when using Aires products alongside digital devices.",
-        "color_text": "#000000",
-        "fs_text": 16,
-        "fs_text_mob": 14,
-        "padding_top": 100,
-        "padding_bottom": 50
       }
     },
     "section_rich_text_columns_rtQbfc": {
@@ -978,11 +1024,11 @@
   "order": [
     "main",
     "section_announcement_hiXBBD",
+    "brain_scan_videos_AiUtNJ",
     "icons_with_text_jKdQci",
     "benefits_section_LmLk9Y",
     "benefits_grid_yXmBnj",
     "section_double_xU4i3P",
-    "brain_scan_videos_AiUtNJ",
     "section_rich_text_columns_rtQbfc",
     "related",
     "section_double_U8rttJ",

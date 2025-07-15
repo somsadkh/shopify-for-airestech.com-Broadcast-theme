@@ -71,7 +71,9 @@
                   endif
 
                   if item.object_type == 'product'
-                    render 'product-grid-item', product: item, index: forloop.index, sizes: image_sizes
+                    unless item.tags contains 'hidden-product'
+                      render 'product-grid-item', product: item, index: forloop.index, sizes: image_sizes
+                    endunless
                   else
                     render 'search-results-item', item: item, tabindex: true
                   endif

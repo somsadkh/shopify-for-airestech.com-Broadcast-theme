@@ -80,7 +80,9 @@
 
           <div class="look__slide look__slide--{{ block.id }}" data-slide="{{ block.id }}" data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
             {%- if product != blank -%}
-              {%- render 'product-grid-item', product: product, index: forloop.index, show_product_card: block.settings.show_product_card -%}
+              {%- unless product.tags contains 'hidden-product' -%}
+                {%- render 'product-grid-item', product: product, index: forloop.index, show_product_card: block.settings.show_product_card -%}
+              {%- endunless -%}
             {%- else -%}
               {%- assign placeholder = 'product-' | append: forloop.index -%}
               {%- render 'onboarding-product-grid-item', title: 'Product Title', show_product_card: block.settings.show_product_card, placeholder: placeholder, index: forloop.index, animation_delay: forloop.index0 -%}

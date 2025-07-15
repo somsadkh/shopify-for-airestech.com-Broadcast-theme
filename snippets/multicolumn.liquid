@@ -455,7 +455,9 @@
 
                   assign product = all_products[block.settings.product]
                   if product != blank
-                    render 'product-grid-item', product: product, index: forloop.index, attributes: product_attributes
+                    unless product.tags contains 'hidden-product'
+                      render 'product-grid-item', product: product, index: forloop.index, attributes: product_attributes
+                    endunless
                   else
                     render 'onboarding-product-grid-item', index: forloop.index, attributes: product_attributes
                   endif
