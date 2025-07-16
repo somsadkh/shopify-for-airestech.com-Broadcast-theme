@@ -34,7 +34,7 @@
             "title": "About Us",
             "heading_font_size": "heading-large",
             "padding_bottom": 16,
-            "heading_tag": "automatic"
+            "heading_tag": "h1"
           }
         },
         "text_mpFAY3": {
@@ -152,6 +152,8 @@
         "heading-1-1": {
           "type": "heading",
           "settings": {
+            "heading_center": false,
+            "heading_center_mobile": false,
             "title": "Cutting-edge Technology",
             "color_title": "#000000",
             "fs_title": 32,
@@ -268,6 +270,8 @@
         "heading_n6hj7y": {
           "type": "heading",
           "settings": {
+            "heading_center": false,
+            "heading_center_mobile": false,
             "title": "Powering Perfomance",
             "color_title": "#000000",
             "fs_title": 32,
@@ -471,11 +475,15 @@
       ],
       "settings": {
         "content_max_width": 25,
+        "subtitle_center": false,
+        "subtitle_center_mobile": false,
         "subtitle": "AIRES IN ACTION",
         "color_subtitle": "#000000",
         "fs_subtitle": 14,
         "fs_subtitle_mob": 16,
         "title": "The Real-time Proof of Aires Tech With EEG Brain Scans",
+        "heading_center": false,
+        "heading_center_mobile": false,
         "color_title": "#000000",
         "fs_title": 32,
         "fs_title_mob": 26,
@@ -529,7 +537,8 @@
             "link_text": "Shop One",
             "link_url": "shopify:\/\/products\/lifetune-one",
             "link_size": 16,
-            "link_size_mobile": 14
+            "link_size_mobile": 14,
+            "full_width_mobile": false
           }
         },
         "link_x7i7RK": {
@@ -553,7 +562,8 @@
             "link_text": "Shop Go",
             "link_url": "shopify:\/\/products\/lifetune-go",
             "link_size": 16,
-            "link_size_mobile": 14
+            "link_size_mobile": 14,
+            "full_width_mobile": false
           }
         },
         "link_LJcaym": {
@@ -577,7 +587,8 @@
             "link_text": "Shop Flex",
             "link_url": "shopify:\/\/products\/lifetune-flex",
             "link_size": 16,
-            "link_size_mobile": 14
+            "link_size_mobile": 14,
+            "full_width_mobile": false
           }
         },
         "link_zBgTNa": {
@@ -601,7 +612,8 @@
             "link_text": "Shop Zone",
             "link_url": "shopify:\/\/products\/lifetune-zone",
             "link_size": 16,
-            "link_size_mobile": 14
+            "link_size_mobile": 14,
+            "full_width_mobile": false
           }
         },
         "link_AwexQH": {
@@ -625,7 +637,8 @@
             "link_text": "Shop max",
             "link_url": "shopify:\/\/products\/lifetune-zone-max",
             "link_size": 16,
-            "link_size_mobile": 14
+            "link_size_mobile": 14,
+            "full_width_mobile": false
           }
         }
       },

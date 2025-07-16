@@ -58,17 +58,17 @@
     {% include 'geolocationredirect_snippet' %}
 
     {%- if template == 'page.investors_main_2-0' -%}
-     <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
-<script>
-    // Version: 2.0
-    window.Brevo = window.Brevo || [];
-    Brevo.push([
-        "init",
-        {
-        client_key: "0dvk2ttkbw3cr3mg2ztbw7ha"
-        }
-    ]);
-</script>
+      <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
+      <script>
+          // Version: 2.0
+          window.Brevo = window.Brevo || [];
+          Brevo.push([
+              "init",
+              {
+              client_key: "0dvk2ttkbw3cr3mg2ztbw7ha"
+              }
+          ]);
+      </script>
     {%- endif -%}
   </head>
 
@@ -329,5 +329,18 @@
         });
       </script>
     {% endif %}
+
+    {%- if template == 'page.investors_main_2-0' -%}
+      <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
+      <script>
+        window.Brevo = window.Brevo || [];
+        Brevo.push([
+          "init",
+          {
+            client_key: "0dvk2ttkbw3cr3mg2ztbw7ha"
+          }
+        ]);
+      </script>
+    {%- endif -%}
   </body>
 </html>
